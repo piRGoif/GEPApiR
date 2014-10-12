@@ -1,0 +1,503 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+/****************************************************************************************
+ CSS GEPApiR
+ Version 20140830
+****************************************************************************************/
+
+
+
+/******************
+ GepapiR commun
+******************/
+
+.travaux
+{
+text-align: center;
+}
+
+/** Footer documents (informatique, ...) */
+p#version
+{
+width: 95%;
+text-align: right;
+font: italic small-caps lighter 0.8em "Courier New", Courier, monospace;
+}
+
+p#disclaimer
+{
+width: 95%;
+text-align: center;
+font: italic normal lighter 0.7em "Courier New", Courier, monospace;
+}
+
+body
+{
+background: white url(../images/fonds/nuages_background_nb.jpg) repeat scroll;
+}
+
+h1
+{
+margin-bottom: 2em;
+text-align: center;
+font: bold italic 1em Georgia, "Times New Roman", Times, serif;
+}
+
+h1>a>img
+{
+box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+margin-bottom: 10px;
+}
+
+h2, h3
+{
+font-family: 'Satisfy', cursive;
+}
+
+h2
+{
+margin: 1em 0.1em;
+font-size: 2em;
+}
+
+h3
+{
+margin: 1em 1em;
+margin-top: 2em;
+font-size: 1.3em;
+}
+
+img
+{
+border: none;
+}
+
+img.pretty-img
+{
+margin: 1em;
+border-radius: 5px;
+border: 4px solid white;
+box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+}
+
+/** Liens */
+a:link
+{
+color: #004A4A;
+}
+
+a:visited
+{
+color: #9A9A9A;
+}
+
+/** Blocs contenu */
+p, pre, ul, ol, dl, div, blockquote
+{
+margin: 1.5em 4%;
+color: #000000;
+
+text-align: justify;
+font: normal 0.9em Arial, Helvetica, sans-serif;
+}
+
+/** Listes */
+ul
+{
+padding: 0;
+list-style-image: url("../images/puce_tiret-rouge.gif");
+}
+
+li
+{
+margin: 0.5em 4%;
+}
+
+/* definition term */
+dt
+{
+display: list-item;
+list-style-image: url("../images/puce_spirale.gif");
+
+margin-top: 1.5em;
+margin-bottom: 0;
+
+font-weight: bold;
+font-size: 1.1em;
+}
+
+/* definition description */
+dd
+{
+margin: 0;
+}
+
+dt, dd
+{
+margin-left: 4%;
+margin-right: 8%;
+}
+
+/** Eléments inlines */
+em
+{
+font-weight: bold;
+font-style: italic;
+}
+
+abbr[title]
+{
+cursor: help;
+}
+
+/** Citations */
+blockquote
+{
+margin: 0 8% 0 4%;
+padding: 0.1em 1em 0.1em 2em;
+border: 1px outset white;
+border-left: 1px dashed black;
+border-radius: 0 5px 5px 0;
+background-color: #DDDDDD;
+opacity: 0.75;
+box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+
+blockquote>p
+{
+margin-left: 0;
+margin-right: 0;
+}
+
+blockquote>p>cite
+{
+font-style: normal;
+display: block;
+text-align:right;
+margin-top: 0.5em;
+}
+
+q, blockquote
+{
+font: italic 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+q:before
+{
+content: "“";
+}
+
+q:after
+{
+content: "”";
+}
+
+/** Form */
+label
+{
+cursor: pointer;
+}
+
+label:hover
+{
+text-decoration: underline;
+}
+
+
+
+/******************
+ Séparateurs
+******************/
+hr.sep, hr.sepfin
+{
+clear: left;
+margin: 4ex auto;
+width: 630px;
+border-style: none;
+background-image: url("../images/separateurs/separateurs-sprites.png");
+background-repeat: no-repeat;
+box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+
+/* Win 3.x */
+hr.sep1
+{
+height: 23px;
+background-position: 0 -59px;
+}
+
+/* Mac */
+hr.sep2
+{
+height: 18px;
+background-position: 0 -41px;
+}
+
+/* X11 */
+hr.sep3
+{
+height: 21px;
+background-position: 0 -20px;
+}
+
+/* W95 */
+hr.sep4
+{
+height: 23px;
+background-position: 0 -82px;
+}
+
+/* Mac OS X */
+hr.sep5
+{
+height: 20px;
+background-position: 0 0;
+}
+
+/* Win XP */
+hr.sep6
+{
+height: 26px;
+background-position: 0 -130px;
+}
+
+hr.sepfin
+{
+margin-bottom: 1ex;
+height: 25px;
+background-position: 0 -105px;
+}
+
+@media screen and (max-width: 645px)
+{
+	hr.sep
+	{
+	width: 98%;
+	}
+}
+
+
+
+/******************
+ Menu de navigation
+******************/
+
+body
+{
+/* pour éviter le recouvrement du contenu par le menu*/
+padding-bottom: 3em;
+}
+
+nav
+{
+position: fixed;
+bottom: 0;
+left: 0;
+
+width: 100%;
+padding: 0.2em;
+margin: 0;
+
+background: #DAE2FE url("../images/fonds/nuages_background.jpg") repeat scroll;
+opacity: 0.85;
+border-top: 1px dashed black;
+border-radius: 10% 10% 0 0 / 1em 1em 0 0;
+}
+
+nav ul
+{
+list-style: none;
+
+margin: 0;
+padding: 0;
+
+font: bold 1em arial, helvetica, sans-serif;
+
+text-align: center;
+}
+
+nav li
+{
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+
+nav a
+{
+display: inline-block;
+margin: 0 0.5em;
+padding: 0.5em 1em;
+
+border: 1px outset transparent; /* car on a 1px gray sur :hover */
+
+font-size: 0.9em;
+text-decoration: none;
+}
+
+nav a:hover
+{
+background-color: white;
+border-color: gray;
+border-radius: 5px;
+}
+
+nav a:visited
+{
+color: black;
+}
+
+nav a:before
+{
+content: "➦"; /* U+27A6 Heavy black curved upwards and rightwards arrow (Dingbats) */
+}
+
+nav a>span.menu_icon
+{
+display: inline-block;
+width: 15px;
+height: 15px;
+margin-right: 5px;
+vertical-align: baseline;
+background-image: url("../images/menu/menu-sprites.png");
+background-repeat: no-repeat;
+}
+
+nav a#menu_accueil>span.menu_icon {
+background-position: 0 0;
+}
+
+nav a#menu_info>span.menu_icon {
+width: 18px;
+background-position: -15px 0;
+}
+
+nav a#menu_liens>span.menu_icon {
+background-position: -33px 0;
+}
+
+nav a#menu_moi>span.menu_icon {
+background-position: -48px 0;
+}
+
+nav a#menu_zicmue>span.menu_icon {
+background-position: -63px 0;
+}
+
+/*
+ Ciblage mobiles avec balise meta viewport
+ Les utilisateurs desktop aussi ont besoin de ces modif donc on leur laisse (utilisation max-width plutôt que max-device-width)
+*/
+@media screen and (max-width: 760px)
+{
+	nav a
+	{
+	margin: 0 0.5em;
+	padding: 0.2em;
+	}
+
+	nav a:before
+	{
+	content: none;
+	}
+
+	nav a>span.menu_icon
+	{
+	display: block;
+	margin: auto;
+	}
+}
+
+@media screen and (max-width: 420px)
+{
+	nav ul
+	{
+	font-size: 0.7em;
+	}
+
+	nav a
+	{
+	margin: 0 0.2em;
+	padding: 0.1em;
+	}
+}
+
+
+
+/******************
+ Panneau flottant
+******************/
+.toolbox
+{
+position: fixed;
+top: 0;
+right: 0;
+
+padding: 0.3em;
+
+border: 1px dotted black;
+border-radius: 0 0 0 10px;
+background-color: #808080;
+opacity: 0.85;
+}
+
+
+
+/******************
+ TOC
+******************/
+details#toc
+{
+/*min-width: 250px;*/
+max-width: 50%;
+max-height: 80%;
+overflow: auto;
+text-align: center;
+}
+
+details#toc>summary
+{
+padding: 0.3em;
+font-weight: bolder;
+}
+
+details#toc>ul
+{
+/* transition: all .7s ease-in-out; */
+}
+details#toc ul
+{
+padding: 0;
+padding-left: 30px;
+margin: 0;
+background-color: white;
+border-radius: 10px;
+}
+details#toc>ul.hide, details#toc>ul.hide *
+{
+/* width: 0;
+height: 0;
+opacity: 0; */
+display: none;
+}
+
+details#toc>a
+{
+padding: 0.2em;
+border-style: outset;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+color: white;
+font-size: 0.8em;
+}
+
+details#toc>a#toc-open
+{
+background-color: green;
+}
+
+details#toc>a#toc-close
+{
+background-color: red;
+}

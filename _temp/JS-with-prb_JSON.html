@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>20071211 Prb JS with</title>
+
+<script type="text/javascript">
+// déclaration fonction
+function LblTutu()
+{
+document.write("tutu est passé par là");
+}
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+// déclaration tableau
+var Tab = new Array();
+var obj;
+Tab[0] = {NomLigne: 'Alpha', LblTutu: 'tutu'};
+Tab[1] = {NomLigne: 'Bravo', LblTutu: 'tutu'};
+Tab[2] = {NomLigne: 'Charlie', LblTutu: 'tutu'};
+Tab[3] = {NomLigne: 'Delta', LblTutu: 'tutu'};
+Tab[4] = {NomLigne: 'Echo', LblTutu: 'tutu'};
+Tab[5] = {NomLigne: 'Fox', LblTutu: 'tutu'};
+Tab[6] = {NomLigne: 'Golf', LblTutu: 'tutu'};
+Tab[7] = {NomLigne: 'Hotel', LblTutu: 'tutu'};
+</script>
+
+<table>
+<tbody>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+  <tr><td>Blablabla</td><td><script type="text/javascript">LblTutu();</script></td></tr>
+</tbody>
+</table>
+
+<script type="text/javascript">
+document.write("Tab[4]['NomLigne']=" + Tab[4]['NomLigne']);
+</script>
+
+</body>
+</html>

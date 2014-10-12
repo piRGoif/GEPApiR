@@ -1,0 +1,168 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>background-image sur un TR</title>
+
+<style type="text/css">
+table {
+	background-color: #C8DDF0;
+	border-collapse: collapse;
+}
+
+table td {
+	border-color: white;
+	border-style: solid none;
+	border-width : 1px medium;
+	padding: 4px;
+}
+
+tr.maclasse {
+	background: url("stripes_blue.png") repeat;
+}
+
+tr.maclasse2 {
+	background: url("stripes_blue_vert.png") repeat;
+}
+
+table#exemple3 tr.maclasse td {
+	background-position:expression(-this.offsetLeft);
+}
+</style>
+</head>
+<body>
+
+
+
+<h1>Test d'un background-image appliqué sur le TR d'un tableau</h1>
+
+<p>Besoin : une liste d'éléments sélectionnables (avec menu contextuel et gestion du double clic), avec certaines lignes à rendre de manière bien différente. Pour certaines, besoin d'avoir une image de fond, et donc usage de <code>background-image</code> sur l'élément TR</p>
+
+<p>Ici des exemples simplifiés.</p>
+
+
+<h2>Background sur un TR.maclasse</h2>
+
+<table id="exemple1">
+	<thead>
+		<tr>
+			<th>Col1</th>
+			<th>Col2</th>
+			<th>Col3</th>
+			<th>Col4</th>
+			<th>Col5</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Sans image de fond</td>
+		</tr>
+		<tr class="maclasse">
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Avec image de fond</td>
+		</tr>
+		<tr>
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Sans image de fond</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<h2>Méthode contournement : changer l'image</h2>
+
+<table id="exemple2">
+	<thead>
+		<tr>
+			<th>Col1</th>
+			<th>Col2</th>
+			<th>Col3</th>
+			<th>Col4</th>
+			<th>Col5</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Sans image de fond</td>
+		</tr>
+		<tr class="maclasse2">
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Avec image de fond</td>
+		</tr>
+		<tr>
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Sans image de fond</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+<h2>Hack pour IE</h2>
+
+<p>Appliquer aux td :</p>
+<pre><code>
+td {background-position:expression(-this.offsetLeft);}
+</code></pre>
+
+<table id="exemple3">
+	<thead>
+		<tr>
+			<th>Col1</th>
+			<th>Col2</th>
+			<th>Col3</th>
+			<th>Col4</th>
+			<th>Col5</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Sans image de fond</td>
+		</tr>
+		<tr class="maclasse">
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Avec image de fond</td>
+		</tr>
+		<tr>
+			<td>AAAA</td>
+			<td></td>
+			<td></td>
+			<td>BBBB</td>
+			<td>Sans image de fond</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+</body>
+</html>

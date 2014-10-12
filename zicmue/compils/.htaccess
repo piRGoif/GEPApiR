@@ -1,0 +1,4 @@
+PerlSetVar AuthFile _prvt/gepapir_users.txt
+AuthName "Acces Restreint"
+AuthType Basic
+require user ami

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/****************************************************************************************
+CSS Zicmue / Compils
+Version 20050713
+****************************************************************************************/
+
+
+
+/* image couverture */
+p#couv
+{
+width: 405px;
+height: 405px;
+
+margin: 2em auto;
+padding: 20px;
+
+border: 1px inset blue;
+background: #DAE2FE url(../images/fonds/nuages_background.jpg) repeat scroll;
+
+text-align: center;
+}
+
+
+
+/* Détails des titres */
+h3.trk-titre
+{
+clear: left;
+margin-top: 3em;
+font: normal small-caps bolder larger Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h3.trk-titre img
+{
+float: left;
+margin: 5px;
+}
+
+
+
+/* Commentaires pistes */
+p.trk-comment
+{
+clear: right;
+}
+
+
+
+/* retour au sommaire */
+p.trk-retour
+{
+/*float: right;*/
+width: 90%;
+text-align:right;
+font: lighter small "Courier New", Courier, monospace;
+}
+p.trk-retour a
+{
+text-decoration: none;
+}
+
+
+
+/* séparation entre pistes */
+hr.hr-pistes
+{
+clear: left;
+
+width: 430px;
+height: 3px;
+background-image: url(../images/separateurs/separateur-marron.gif);
+}
+
+
+
+/* Clear pour sepfin final */
+hr.sepfin
+{
+clear: left;
+}

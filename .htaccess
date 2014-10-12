@@ -1,0 +1,36 @@
+AddType application/xhtml+xml .xhtml
+
+AddDefaultCharset UTF-8
+AddCharset	UTF-8	.css
+AddCharset	UTF-8	.csz
+AddCharset	UTF-8	.html
+AddCharset	UTF-8	.xhtml
+
+DefaultLanguage fr
+
+<IfDefine Free>
+ErrorDocument 404 /err404.php
+</IfDefine>
+<IfDefine !Free>
+ErrorDocument 404 /GepapiR/err404.php
+</IfDefine>
+
+# Gestion gzip (source http://les.pages.perso.chez.free.fr/index.php/post/2012/06/05/Activer-la-compression-sur-les-Pages-Perso)
+Options +MultiViews
+AddType text/css .csz
+AddEncoding gzip .csz
+AddType application/x-javascript .jz
+AddEncoding gzip .jz
+
+## Gestion expiration : Expires* ne fonctionne pas avec Free !
+# <IfModule mod_expires.c>
+# ExpiresActive On
+# ExpiresDefault "access plus 1 days"
+# ExpiresByType image/jpg "access plus 1 months"
+# ExpiresByType image/gif "access plus 1 months"
+# ExpiresByType text/css "access plus 1 months"
+# </IfModule>
+## Et idem pour le fix des header...
+# <FilesMatch "\.jpg$">
+# Header set Cache-Control "max-age=604800, public"
+# </FilesMatch>

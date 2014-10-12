@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<!-- meta http-equiv="Content-Style-Type" content="text/css" / -->
+<title>pas de titre</title>
+<script language="Javascript" type="text/javascript">
+function ajax(url) {
+var httpRequest = false;
+if (window.XMLHttpRequest) { // Mozilla, Safari,...
+            httpRequest = new XMLHttpRequest();
+            if (httpRequest.overrideMimeType) {
+                httpRequest.overrideMimeType('text/xml');
+            }
+        } else if (window.ActiveXObject) { // IE
+            try {
+                httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                try {
+                    httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {}
+            }
+        }
+
+        if (!httpRequest) {
+            alert('Abandon :( Impossible de créer une instance XMLHTTP');
+            return false;
+        }
+        httpRequest.onreadystatechange = function() { alertContents(httpRequest); };
+        httpRequest.open('GET', url, true);
+      //  httpRequest.setRequestHeader('Content-Type','text/html; charset=ISO-8859-1');
+        httpRequest.send(null);
+
+    }
+
+    function alertContents(httpRequest) {
+
+        if (httpRequest.readyState == 4) {
+            if (httpRequest.status == 200) {
+                var tmpdiv = document.createElement('div');
+                tmpdiv.innerHTML = httpRequest.responseText;
+                document.body.appendChild(tmpdiv);
+                }
+            else {
+                alert('Un problème est survenu avec la requête.');
+            }
+        }
+
+    }
+</script>
+</head>
+<body>
+
+<h1>page en UTF-8 appelant par XHR <a href="XHR_charset_latin1.php">une page servie en :</a></h1>
+
+<p>é</p>
+<p>ç</p>
+<p><a href="" onclick="ajax('XHR_charset_latin1.php'); return false;">ISO Latin-1</a></p>
+
+<p><a href="" onclick="ajax('XHR_charset_utf8.php'); return false;">UTF-8</a></p>
+
+</body>
+</html>
