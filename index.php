@@ -1,5 +1,6 @@
 <?php ob_start('ob_gzhandler');
 // Version 20141012
+$pageVersion = "v7.9.3";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -43,7 +44,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 alt="La GEPApiR">
 </a><br>
 Le site personnel de Pierre Goiffon<br>
-V 7.8.1 Official Service Release<br>
+<?=$pageVersion?> Official Service Release<br>
 (Build 2751 : Service Pack 8)</h1>
 
 
@@ -122,8 +123,6 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 /****
 <dt>TODO</dt>
 <dd>
-+ info css.php ajout IE8+ car support MS (http://blogs.msdn.com/b/ie/archive/2014/08/07/stay-up-to-date-with-internet-explorer.aspx)
-+ notes doctype darkblog
 + html vs xhtml actualisation
 + css.php blockquote (radius, shadow, border-left)
 + Finale fonctions utiles (ctrl + flèche haut/bas, saisie clavier, nb systèmes par page, nb mesures par systèmes, script raz pauses, créa coda, couches)
@@ -141,11 +140,16 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt>??/10/2014, v??</dt>
+<dt>12/10/2014, v7.9.3</dt>
 <dd>
+- modification du texte de la page d'accueil,<br>
+- correction de la couleur des liens de la barre de navigation,<br>
+- informatique / <a href="info/GepapiR/css.php">CSS mises en forme diverses</a> : 
+complément sur la compatibilité navigateurs,<br>
 - informatique / <a href="info/GepapiR/menu_nav.php">Menu de navigation</a> : complément
 sur la bordure,<br>
-- modification du texte de la page d'accueil
+- informatique / <a href="info/inet/ND_doctype.php">Développement Notes / Domino et doctype HTML</a> : 
+maj suite à constatation que le DarkBlog n'est plus accessible
 </dd>
 
 <dt>02/09/2014, v7.8.1</dt>
@@ -245,7 +249,8 @@ séparations, <br>
 </dd>
 
 <dt>30/07/2014, v7.0.5</dt>
-<dd>Ouf enfin ! Reprise de ce site... Bon, rien de trop visible mais c'est un début de remise à niveau, avant d'attaquer le contenu...<br>
+<dd>Ouf enfin ! Reprise de ce site... Bon, rien de trop visible mais c'est un début 
+de remise à niveau, avant d'attaquer le contenu...<br>
 - doctype HTML5,<br>
 - ajout de liens vers la home sur les titres de rubriques,<br>
 - suppression des hacks IE (nous sommes - et ça fait du bien ! - dans une autre époque),<br>
