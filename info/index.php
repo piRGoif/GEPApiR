@@ -40,12 +40,12 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 à travers des cas très concrets !</p>
 
 <ul>
-	<li><a href="GepapiR/css.php">CSS : mises en forme diverses</a></li>
-	<li><a href="GepapiR/performances.php">Performances</a></li>
-	<li><a href="GepapiR/menu_nav.php">Menu de navigation</a></li>
-	<li><a href="GepapiR/responsive.php">Responsive design</a></li>
-	<li><a href="GepapiR/toc_gen.php">Table des matières (TOC) dynamique</a></li>
-	<li><a href="GepapiR/link_target.php">Liens : option "ouverture dans une nouvelle fenêtre"</a></li>
+	<li><a href="GEPApiR/css.php">CSS : mises en forme diverses</a></li>
+	<li><a href="GEPApiR/performances.php">Performances</a></li>
+	<li><a href="GEPApiR/menu_nav.php">Menu de navigation</a></li>
+	<li><a href="GEPApiR/responsive.php">Responsive design</a></li>
+	<li><a href="GEPApiR/toc_gen.php">Table des matières (TOC) dynamique</a></li>
+	<li><a href="GEPApiR/link_target.php">Liens : option "ouverture dans une nouvelle fenêtre"</a></li>
 </ul>
 
 

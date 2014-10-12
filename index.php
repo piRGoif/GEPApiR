@@ -129,7 +129,7 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 + informatique / perf : limite naviguateurs nb requêtes parallèles
 + informatique / perf : compléments JavaScript
 + informatique / perf : sélecteurs CSS ?
-+ informatique : ajout d'une <a href="info/index.php#dev">rubrique Développement</a>,<br>
++ informatique : ajout d'une <a href="info/index.php#dev">rubrique Développement</a>, article IDE<br>
 + desc dans les liens
 + i18n mise en jambe
 + i18n site dynamiques
@@ -139,14 +139,19 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 </dd>
 ****/
 ?>
+    
+<dt>??, v??</dt>
+<dd>
+    - 
+</dd>
 
 <dt>12/10/2014, v7.9.3</dt>
 <dd>
 - modification du texte de la page d'accueil,<br>
 - correction de la couleur des liens de la barre de navigation,<br>
-- informatique / <a href="info/GepapiR/css.php">CSS mises en forme diverses</a> : 
+- informatique / <a href="info/GEPApiR/css.php">CSS mises en forme diverses</a> : 
 complément sur la compatibilité navigateurs,<br>
-- informatique / <a href="info/GepapiR/menu_nav.php">Menu de navigation</a> : complément
+- informatique / <a href="info/GEPApiR/menu_nav.php">Menu de navigation</a> : complément
 sur la bordure,<br>
 - informatique / <a href="info/inet/ND_doctype.php">Développement Notes / Domino et doctype HTML</a> : 
 maj suite à constatation que le DarkBlog n'est plus accessible
@@ -154,7 +159,7 @@ maj suite à constatation que le DarkBlog n'est plus accessible
 
 <dt>02/09/2014, v7.8.1</dt>
 <dd>
-informatique / <a href="info/GepapiR/responsive.php">responsive design</a> :<br>
+informatique / <a href="info/GEPApiR/responsive.php">responsive design</a> :<br>
 - introduction plus complète,<br>
 - ajout d'exemples sur les marges en %,<br>
 - précision sur le border-radius du menu
@@ -164,7 +169,7 @@ informatique / <a href="info/GepapiR/responsive.php">responsive design</a> :<br>
 <dd>
 - marges horizontales en %,<br>
 - passage de l'arrondi du menu en % pour la composante horizontale,<br>
-- informatique / <a href="info/GepapiR/responsive.php">responsive design</a> :
+- informatique / <a href="info/GEPApiR/responsive.php">responsive design</a> :
 mise à jour des captures du menu et de la fonction writeCSSRespImg(), ajout d'un
 paragraphe sur les unités CSS relatives,<br>
 - ajout de box-shadow, border-radius et border outset sur les blockquote
@@ -174,10 +179,10 @@ paragraphe sur les unités CSS relatives,<br>
 <dd>
 - ajout du gzip sur les pages du site,<br>
 - minification et ajout du gzip sur la css et le javascript du site,<br>
-- informatique / <a href="info/GepapiR/performances.php">performances</a> : renommage de la page (anciennement CSS Sprites) et ajout d'info sur les autres techniques utilisées (concaténation, minification, gzip, ...),<br>
+- informatique / <a href="info/GEPApiR/performances.php">performances</a> : renommage de la page (anciennement CSS Sprites) et ajout d'info sur les autres techniques utilisées (concaténation, minification, gzip, ...),<br>
 - ajout d'arrondis sur la bordure du menu,<br>
 - ajout d'une marge sous les images des H1,<br>
-- informatique / <a href="info/GepapiR/css.php">mises en forme diverses</a> : compléments supplémentaires sur CSS Shapes,<br>
+- informatique / <a href="info/GEPApiR/css.php">mises en forme diverses</a> : compléments supplémentaires sur CSS Shapes,<br>
 - informatique / <a href="info/inet/outils.php">outils pour le concepteur de site personnel</a> :
 ajout d'outils de test responsive design,<br>
 - mini corrections diverses dans des articles
@@ -186,7 +191,7 @@ ajout d'outils de test responsive design,<br>
 <dt>23/08/2014, v7.6.1</dt>
 <dd>
 - musiques : création d'<a href="zicmue/finale.php">une page sur Finale</a>,<br>
-- informatique / <a href="info/GepapiR/css.php">mises en forme diverses</a> : ajout de compléments sur CSS Shapes
+- informatique / <a href="info/GEPApiR/css.php">mises en forme diverses</a> : ajout de compléments sur CSS Shapes
 </dd>
 
 <dt>22/08/2014, v7.5.0</dt>
@@ -194,7 +199,7 @@ ajout d'outils de test responsive design,<br>
 - ajout d'un flux RSS sur le changelog,<br>
 - informatique : fait disparaitre les articles pas encore prets,<br>
 - informatique / <a href="info/i18n/web-charset_html.php">internationalisation pour le concepteur web</a> : mise à jour,<br>
-- informatique / <a href="info/GepapiR/responsive.php">responsive design</a> : compléments sur les attributs HTML 5 data-*
+- informatique / <a href="info/GEPApiR/responsive.php">responsive design</a> : compléments sur les attributs HTML 5 data-*
 </dd>
 
 <dt>15/08/2014, v7.4.3</dt>
