@@ -15,12 +15,12 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 <?php
-'--- Artiste
+// Artiste
 if ($_POST['artiste_radio'] == '2')
 	{
 	// Nouveau
 	// voir LAST_INSERT_ID()
-	$strsql = "INSERT zic_artistes (nom) VALUES ('" . ;
+	$strsql = "INSERT zic_artistes (nom) VALUES ('";
 	}
 else
 	{
@@ -28,7 +28,7 @@ else
 
 
 
-'--- Album infos de base
+// Album infos de base
 ?>
 
 
