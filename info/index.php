@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-// Version 20140830
+// Version 20141012
 
 // NAVIGATION
 $RelBasePath = "../";
@@ -40,7 +40,7 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 à travers des cas très concrets !</p>
 
 <ul>
-	<li><a href="GepapiR/css.php">Mises en forme diverses</a></li>
+	<li><a href="GepapiR/css.php">CSS : mises en forme diverses</a></li>
 	<li><a href="GepapiR/performances.php">Performances</a></li>
 	<li><a href="GepapiR/menu_nav.php">Menu de navigation</a></li>
 	<li><a href="GepapiR/responsive.php">Responsive design</a></li>
