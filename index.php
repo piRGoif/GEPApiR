@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-// Version 20140902
+// Version 20141012
 
 // NAVIGATION
 $RelBasePath = "";
@@ -54,17 +54,25 @@ V 7.8.1 Official Service Release<br>
 
 <h2>Introduction</h2>
 
-<blockquote>
-<p><q>De toute façon on fait mieux que si on faisait moins bien et c'est pas
-parce que ça va pas que ça pourrait pas être pire</q> <cite>Alain Rémond</cite></p>
-</blockquote>
+<p>Ce site est la continuité de ma toute 1<sup>ère</sup> page personnelle,
+apparue au début de l'année 1996 sur un coin du serveur de Mediartis (<q>toute 
+une époque</q>). Au départ liste de liens pour partager les bonnes adresses 
+(Winfiles, le Web Museum - <q>tient, vous avez ressortit le vitriol ?</q>) et 
+une seule et unique page, mon site personnel s'est peu à peu étoffé.</p>
 
-<p>Bienvenue dans mon petit coin d'Internet, que je suis fier d'avoir construit
-avec mes petits doigts et tout&nbsp;!</p>
+<p>Après quelques ajouts, ce site est devenu mon lieu d'expérimentation :
+JavaScript, CSS, etc.<br>
+Plusieurs fois il a été plongé dans de longues phases de sommeil... Il contient
+maintenant un (joyeux ?) bazard, regroupant quelques uns de mes principaux centres
+d'intérêts, et en particulier la musique et le développement web.</p>
 
-<p>Ce site est conforme aux recommandations du W3C :
-<a href="http://www.w3.org/TR/html5/" title="Recommandations W3C pour HTML 5">HTML
-5</a> et <a href="http://www.w3.org/Style/CSS/" title="W3C CSS HomePage">CSS 3</a>.</p>
+<p>Vous constaterez que l'esthétique n'est pas du tout à la mode : c'est un choix 
+délibéré, en souvenir de ce web ancien dont ce site est issu !<br>
+Cependant ces pages respectent plusieur bonnes pratiques (sprites, minification/compression, ...) 
+et sont valides <a href="http://www.w3.org/TR/html5/" title="Recommandations W3C pour HTML 5">HTML
+5</a> et <a href="http://www.w3.org/Style/CSS/" title="W3C CSS HomePage">CSS 3</a>. 
+Vous trouverez des détails sur les techniques utilisées sur ce site en consultant
+cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>.</p>
 
 <p id="w3clogo">
 <a href="http://validator.w3.org/check?uri=referer"><img
@@ -80,54 +88,18 @@ avec mes petits doigts et tout&nbsp;!</p>
 
 
 
-<h2>La suite...</h2>
-
-<p>Ce site est la continuité de ma toute 1<sup>ère</sup> page personnelle,
-apparue au début de l'année 1996 sur un coin du serveur de Mediartis (<q>toute 
-une époque</q>). Au départ liste de liens pour partager les bonnes adresses 
-(Winfiles, le Web Museum - <q>tient, vous avez ressortit le vitriol ?</q>) et 
-une seule et unique page, mon site personnel s'est peu à peu étoffé.</p>
-
-<p>Après quelques ajouts, ce site est devenu mon lieu d'expérimentation :
-JavaScript, CSS, etc.</p>
-
-<p>Plusieurs fois il a été plongé dans de longues phases de sommeil... Il contient
-maintenant un (joyeux ?) bazard, regroupant quelques uns de mes principaux centres
-d'intérêts, et en particulier la musique et le développement web.</p>
-
-<p>Vous trouverez des détails sur les techniques utilisées sur ce site en consultant
-cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>.</p>
+<h2>GEPApiR ?</h2>
 
 <p>Le titre provient de la contraction de "page" en verlan, et de mon pseudo sur
 réseau depuis quelques éternités : piR.<br>
 Ce pseudo est à prononcer comme mon prénom, "Pierre" ! En fait je l'ai étrenné au
-départ (vers fin 1994... toute une époque...) en émulation VT100, et tout déconfi
+départ (vers fin 1994... oui ça date...) en émulation VT100, et tout déconfi
 de ne trouver comment entrer la lettre <a href="http://fr.wikipedia.org/wiki/Pi_%28lettre_grecque%29"
 title="lettre grecque pi">&#x1D6D1;</a>
 (<a href="http://www.unicode.org/charts/PDF/U0370.pdf">U+03CO</a> pour la lettre
 et <a href="http://www.unicode.org/charts/PDF/U1FF80.pdf">U+1D6D1</a> pour le
 symbole mathématique) je m'étais alors résolu à simplement saisir "pi" en toutes
 lettres, le R majuscule marquant la prononciation !</p>
-
-
-
-<?=writeHR()?>
-
-
-
-<h2>Qui ça ?</h2>
-
-<p>En quelques mots :</p>
-
-<ul>
-	<li>Informaticien, et dans le détail : développeur</li>
-	<li>Rêveur...</li>
-	<li>Quoi déjà ? Ha oui ! Distrait (strait)</li>
-	<li>Fou de musique</li>
-	<li>Bien longtemps lyonnais, et grenoblois depuis 2004.</li>
-</ul>
-
-<p>Et tout ce genre de choses !</p>
 
 
 
@@ -169,10 +141,11 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt></dt>
+<dt>??/10/2014, v??</dt>
 <dd>
 - informatique / <a href="info/GepapiR/menu_nav.php">Menu de navigation</a> : complément
-sur la bordure
+sur la bordure,<br>
+- modification du texte de la page d'accueil
 </dd>
 
 <dt>02/09/2014, v7.8.1</dt>
