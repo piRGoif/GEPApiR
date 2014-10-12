@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 // Version 20141012
-$pageVersion = "v7.9.3";
+$pageVersion = "v7.9.5";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -69,7 +69,7 @@ d'intérêts, et en particulier la musique et le développement web.</p>
 
 <p>Vous constaterez que l'esthétique n'est pas du tout à la mode : c'est un choix 
 délibéré, en souvenir de ce web ancien dont ce site est issu !<br>
-Cependant ces pages respectent plusieur bonnes pratiques (sprites, minification/compression, ...) 
+Cependant ces pages respectent les bonnes pratiques du web moderne (sprites, minification/compression, ...) 
 et sont valides <a href="http://www.w3.org/TR/html5/" title="Recommandations W3C pour HTML 5">HTML
 5</a> et <a href="http://www.w3.org/Style/CSS/" title="W3C CSS HomePage">CSS 3</a>. 
 Vous trouverez des détails sur les techniques utilisées sur ce site en consultant
@@ -139,13 +139,8 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 </dd>
 ****/
 ?>
-    
-<dt>??, v??</dt>
-<dd>
-    - 
-</dd>
 
-<dt>12/10/2014, v7.9.3</dt>
+<dt>12/10/2014, v7.9.5</dt>
 <dd>
 - modification du texte de la page d'accueil,<br>
 - correction de la couleur des liens de la barre de navigation,<br>
