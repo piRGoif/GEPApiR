@@ -300,7 +300,7 @@ nav
 
     background: #DAE2FE url("../images/fonds/nuages_background.jpg") repeat scroll;
     opacity: 0.85;
-    border-top: 1px dashed black;
+    border-top: 1px solid grey;
     border-radius: 10% 10% 0 0 / 1em 1em 0 0;
 }
 
