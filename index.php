@@ -123,13 +123,12 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 /****
 <dt>TODO</dt>
 <dd>
-+ html vs xhtml actualisation
++ no titre repl par CSS counter (http://caniuse.com/#search=counter, https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters)
 + css.php blockquote (radius, shadow, border-left)
 + Finale fonctions utiles (ctrl + flèche haut/bas, saisie clavier, nb systèmes par page, nb mesures par systèmes, script raz pauses, créa coda, couches)
 + informatique / perf : limite naviguateurs nb requêtes parallèles
 + informatique / perf : compléments JavaScript
 + informatique / perf : sélecteurs CSS ?
-+ informatique : ajout d'une <a href="info/index.php#dev">rubrique Développement</a>, article IDE<br>
 + desc dans les liens
 + i18n mise en jambe
 + i18n site dynamiques
@@ -139,6 +138,13 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 </dd>
 ****/
 ?>
+
+<dt>??/10/2014, v??</dt>
+<dd>
+- modification de la bordure du menu,<br>
+- informatique / <a href="info/inet/html_ou_xhtml.php">HTML ou XHTML</a> : actualisation du document
+- informatique / <a href="">IDE</a> : création
+</dd>
 
 <dt>12/10/2014, v7.9.5</dt>
 <dd>
