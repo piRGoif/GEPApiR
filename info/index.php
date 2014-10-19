@@ -1,15 +1,10 @@
 <?php ob_start('ob_gzhandler');
-// Version 20141012
-
+ // Version 20141019
 // NAVIGATION
 $RelBasePath = "../";
 $title = "Informatique [GEPApiR]";
 
 require_once($RelBasePath . 'communs/header1.inc');
-?>
-<style type="text/css"><!--
---></style>
-<?php
 require_once($RelBasePath . 'communs/header2.inc');
 ?>
 
@@ -93,6 +88,21 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
  	<li>Web & charset : <a href="i18n/web-charset_sites_dyna.php">notions particulières au développement de sites dynamiques</a></li>
 	<li><a href="i18n/outils.php">Outils & docs</a></li>
 	<li>Web : les informations de langage (entête HTTP, attributs (x)HTML)</li> -->
+</ul>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2>Développement</h2>
+
+<ul>
+    <li><a href="dev/IDE_shortcuts.php">IDE - principaux racourcis</a>
+    <li>Ca date, mais pour mémoire, projet de fin d'étude d'IUT (1997) : 
+        <a href="dev/projet_IUT_liaison_null-modem.pdf">Communication série entre
+        2 PC par câble NULL-MODEM</a>
 </ul>
 
 
