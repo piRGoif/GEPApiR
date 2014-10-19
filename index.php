@@ -142,8 +142,8 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 <dt>??/10/2014, v??</dt>
 <dd>
 - modification de la bordure du menu,<br>
-- informatique / <a href="info/inet/html_ou_xhtml.php">HTML ou XHTML</a> : actualisation du document
-- informatique / <a href="">IDE</a> : création
+- informatique / <a href="info/inet/html_ou_xhtml.php">HTML ou XHTML</a> : actualisation du document,<br>
+- informatique / <a href="info/dev/IDE_shortcuts.php">IDE, principaux raccourcis</a> : création
 </dd>
 
 <dt>12/10/2014, v7.9.5</dt>
