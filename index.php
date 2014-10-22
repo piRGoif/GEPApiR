@@ -138,9 +138,10 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt>??/10/2014, v??</dt>
+<dt>22/10/2014, v7.10.2</dt>
 <dd>
-- accueil : modification de la bordure du menu et adaptations du texte,<br>
+- menu : modification de la bordure,<br>
+- accueil : adaptations du texte,<br>
 - informatique / <a href="info/inet/html_ou_xhtml.php">HTML ou XHTML</a> : actualisation du document,<br>
 - informatique / <a href="info/dev/IDE_shortcuts.php">IDE, principaux raccourcis</a> : création
 </dd>
