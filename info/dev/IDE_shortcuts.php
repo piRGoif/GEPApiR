@@ -1,7 +1,7 @@
 <?php
 ob_start('ob_gzhandler');
 $date_creation = "19/10/2014";
-$date_maj = "19/10/2014";
+$date_maj = "22/10/2014";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -26,7 +26,7 @@ require_once($RelBasePath . 'communs/header1.inc');
     }
     table th, table td {
         border: 1px solid black;
-        padding: 0.2em;
+        padding: 0.2em 0.4em;
     }
     table thead th {
         font-size: 1.8em;
@@ -115,13 +115,13 @@ require_once($RelBasePath . 'communs/header2.inc');
             <th colspan="3">Navigation</th>
         </tr>
         <tr>
-            <td>Ouvrir un type</td>
+            <td>Aller à une classe</td>
             <td>Ctrl+O</td>
             <td></td>
         </tr>
         <tr>
-            <td>Ouvrir un fichier</td>
-            <td>Ctrl+Shift+O</td>
+            <td>Aller à un fichier</td>
+            <td>Alt+Shift+O</td>
             <td></td>
         </tr>
         <tr>
