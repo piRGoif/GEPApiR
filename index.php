@@ -140,14 +140,14 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 
 <dt>??/10/2014, v??</dt>
 <dd>
-- modification de la bordure du menu,<br>
+- accueil : modification de la bordure du menu et adaptations du texte,<br>
 - informatique / <a href="info/inet/html_ou_xhtml.php">HTML ou XHTML</a> : actualisation du document,<br>
 - informatique / <a href="info/dev/IDE_shortcuts.php">IDE, principaux raccourcis</a> : création
 </dd>
 
 <dt>12/10/2014, v7.9.5</dt>
 <dd>
-- modification du texte de la page d'accueil,<br>
+- accueil : modification du texte,<br>
 - correction de la couleur des liens de la barre de navigation,<br>
 - informatique / <a href="info/GEPApiR/css.php">CSS mises en forme diverses</a> : 
 complément sur la compatibilité navigateurs,<br>
