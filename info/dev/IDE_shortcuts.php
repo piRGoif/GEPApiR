@@ -1,7 +1,7 @@
 <?php
 ob_start('ob_gzhandler');
 $date_creation = "19/10/2014";
-$date_maj = "22/10/2014";
+$date_maj = "23/10/2014";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -37,6 +37,22 @@ table td:first-child {
 }
 table td:not(:first-child) {
     text-align: center;
+}
+
+.content span.kbd {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    border-style: outset;
+    border: 1px solid #aaa;
+    background: #fafafa;
+    padding: 0px 3px 1px 3px;
+    margin: 0px 0px 0px 0px;
+    vertical-align: baseline;
+    line-height: 1.8em;
+    white-space: nowrap;
 }
 </style>
 <?
@@ -158,8 +174,7 @@ require_once($RelBasePath . 'communs/header2.inc');
         </tr>
         <tr>
             <td>Parcours historique des éditions</td>
-            <td>Alt+&lt;flèche gauche/droite></td>
-            <td>Alt+&lt;flèche gauche/droite></td>
+            <td colspan="2">Alt+&lt;flèche gauche/droite></td>
         </tr>
     </tbody>
     <tbody>
@@ -216,7 +231,7 @@ require_once($RelBasePath . 'communs/header2.inc');
             <th colspan="3">Gestion fenêtres IDE</th>
         </tr>
         <tr>
-            <td>Parcour des éditeurs ouverts</td>
+            <td>Parcours des éditeurs ouverts</td>
             <td>Ctrl[+Shift]+Tab</td>
             <td>Ctrl+F6</td>
         </tr>

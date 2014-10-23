@@ -122,6 +122,7 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 /****
 <dt>TODO</dt>
 <dd>
++ ide shortcuts add .kbd
 + no titre repl par CSS counter (http://caniuse.com/#search=counter, https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters)
 + css.php blockquote (radius, shadow, border-left)
 + Finale fonctions utiles (ctrl + flèche haut/bas, saisie clavier, nb systèmes par page, nb mesures par systèmes, script raz pauses, créa coda, couches)
@@ -137,6 +138,11 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 </dd>
 ****/
 ?>
+
+<dt>??, v??</dt>
+<dd>
+- informatique / <a href="info/dev/IDE_shortcuts.php">IDE, principaux raccourcis</a> : petites corrections
+</dd>
 
 <dt>22/10/2014, v7.10.2</dt>
 <dd>
