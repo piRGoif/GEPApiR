@@ -1,6 +1,5 @@
 <?php ob_start('ob_gzhandler');
-// Version 20140730
-
+ // Version 20150124
 // NAVIGATION
 $RelBasePath = "../";
 $title = "Divers [GEPApiR]";
@@ -28,7 +27,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 <ul>
 	<li>Comptes <a href="http://www.viadeo.com/fr/profile/pierre.goiffon">Viadeo</a>, 
   <a href="http://www.linkedin.com/profile?viewProfile=&key=17204127">LinkedIn</a></li>
-	<li><a href="CV_pgoiffon_Web.pdf">CV</a> (PDF 80.4Ko)</li>
+	<li><a href="CV_pgoiffon_Web.pdf">CV</a> (PDF)</li>
 </ul>
 
 
