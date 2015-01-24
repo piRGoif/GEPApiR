@@ -1,7 +1,7 @@
 <?php
 ob_start('ob_gzhandler');
 $date_creation = "19/10/2014";
-$date_maj = "23/10/2014";
+$date_maj = "24/01/2015";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -163,6 +163,15 @@ require_once($RelBasePath . 'communs/header2.inc');
             <td>Ctrl+1 (quick fix)</td>
         </tr>
         <tr>
+            <td>Insérer ligne avant</td>
+            <td>-</td>
+            <td>Ctrl+Shift+Enter</td>
+        </tr>
+        <tr>
+            <td>Insérer ligne avant</td>
+            <td colspan="2">Shift+Enter</td>
+        </tr>
+        <tr>
             <td>Toggle bookmark</td>
             <td>Ctrl+Shift+M</td>
             <td>-</td>
@@ -202,9 +211,14 @@ require_once($RelBasePath . 'communs/header2.inc');
             <td>F3</td>
         </tr>
         <tr>
+            <td>Préc/Suiv méthode</td>
+            <td>?</td>
+            <td>Ctrl+Shift+Up/Down</td>
+        </tr>
+        <tr>
             <td>Hiérarchie</td>
             <td>Alt+Shift+F12</td>
-            <td>Ctrl+T</td>
+            <td>Ctrl+T, F4</td>
         </tr>
         <tr>
             <td>Call hierarchy</td>
@@ -316,6 +330,7 @@ require_once($RelBasePath . 'communs/header2.inc');
     <li>Référence des raccourcis Netbeans : <a href="http://wiki.netbeans.org/Keyboard_Shortcuts">Keyboard Shortcuts - NetBeans Wiki</a> (et en particulier pour la v8.0 : <a href="https://netbeans.org/project_downloads/usersguide/shortcuts-80.pdf">Highlights of NetBeans IDE 8.0 Keyboard Shortcuts & Code Templates</a>)</li>
     <li><a href="http://www.eioba.com/a/1mk2/effective-eclipse-ii-shortcut-keys">Effective Eclipse: II. Shortcut keys | eioba.com</a></li>
     <li><a href="http://eclipse-tools.sourceforge.net/Keyboard_shortcuts_%283.0%29.pdf">Keyboard Shortcuts Eclipse 3.0 Default configuration</a></li>
+    <li><a href="http://raccourcis.ikilote.net/Eclipse">Eclipse — Raccourcis</a>
 </ul>
 
 
