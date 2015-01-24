@@ -142,7 +142,7 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 <dt>24/01/2015, v7.10.4</dt>
 <dd>
 - informatique / <a href="info/dev/IDE_shortcuts.php">IDE, principaux raccourcis</a> : petites corrections et compléments,<br>
-- Moi / <a href="moi/CV_pgoiffon_Web.pdf">CV</a> : mise à jour
+- moi / <a href="moi/CV_pgoiffon_Web.pdf">CV</a> : mise à jour
 </dd>
 
 <dt>22/10/2014, v7.10.2</dt>
