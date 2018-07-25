@@ -67,7 +67,7 @@ faire partager ici ! Voici donc : <q>tûte la mûsiqueuuuu queûûûû j'aimeû�
 
 <h2>Les delamort</h2>
 
-<p><q>Patron, un delamort !</q> (© Coach). Voilà, ici se trouvent les oeuvres 
+<p><q>Patron, un delamort !</q> (© Coach). Voilà, ici se trouvent les oeuvres
 qui m'ont le plus touchées, marquées, accompagnées... La crème de la crème !</p>
 
 <ul>
@@ -84,10 +84,10 @@ qui m'ont le plus touchées, marquées, accompagnées... La crème de la crème 
 
 <h2>Coups de coeur</h2>
 
-<p>Toutes les <a href="http://www.pingmachine.org/category/zic/">découvertes</a>, 
-<a href="http://www.pingmachine.org/category/concerts/">concerts vus ou donnés</a>, 
-<a href="http://www.pingmachine.org/category/on-ze-net/">liens rigolo sur le Net</a>, 
-et tout le reste est blogé sur le <a href="http://www.pingmachine.org">site de Ping Machine</a>, 
+<p>Toutes les <a href="http://www.pingmachine.org/category/zic/">découvertes</a>,
+<a href="http://www.pingmachine.org/category/concerts/">concerts vus ou donnés</a>,
+<a href="http://www.pingmachine.org/category/on-ze-net/">liens rigolo sur le Net</a>,
+et tout le reste est blogé sur le <a href="http://www.pingmachine.org">site de Ping Machine</a>,
 en commun avec les compères du groupe !</p>
 
 
@@ -121,16 +121,14 @@ Marge pour éviter le chevauchement du texte.
 <img src="<?=$RelBasePath?>images/piR_tromb1.png" width="200" height="370"
  class="pretty-img" style="float:right; margin-left: 60px; transform: rotate(6deg);"
  alt="piR concert trombone" id="piR_tromb1"></a>
-Actuellement (rentrée 2014), j'ai l'immense plaisir de jouer avec :</p>
+Actuellement (rentrée 2018), j'ai l'immense plaisir de jouer avec :</p>
 
 <ul>
-<li>l'orchestre BoPerCui de l'<a href="http://harmonie-meylan.fr/">EMGB</a>, depuis septembre 2005</li>
-<li>le groupe de ska <a href="https://www.facebook.com/JeudiSoir">JeudiSoir</a> depuis début 2007</li>
-<li>l'ensemble de cuivres <a href="http://www.atoutcuivres.fr/">AtoutCuivres</a>, depuis fin 2007</li>
-<li>le brass band <a href="https://www.facebook.com/InYourBrass">In Your Brass</a> depuis mai 2011</li>
-<li>l'<a href="https://www.facebook.com/OrchestreduPolygoneScientifique">orchestre symphonique du Polygone scientifique</a> depuis septembre 2012
-<li>la mini fanfare de chanson Le Moulin à Paroles depuis mars 2013</li>
-<li>le big band <a href="https://www.facebook.com/shaggiantorchestra">Shag Giant Orchestra</a> depuis avril 2014</li>
+	<li>l'ensemble de cuivres <a href="http://www.atoutcuivres.fr/">AtoutCuivres</a>, depuis fin 2007</li>
+	<li>le brass band <a href="https://www.facebook.com/InYourBrass">In Your Brass</a> depuis mai 2011</li>
+	<li>l'<a href="https://www.facebook.com/OrchestreduPolygoneScientifique">orchestre symphonique du Polygone scientifique</a> depuis septembre 2012
+	<li>le grand ensemble d'harmonie de l'<a href="https://www.harmonie-grenoble.fr/">Harmonie de Grenoble</a> depuis septembre 2016
+	<li>la classe d'improvisation Jazz autour de midi de <a href="http://www.laporteedetous.fr/?page_id=2">la Portée de tous</a> depuis septembre 2017
 </ul>
 
 <p>Et aussi je vois régulièrement les compères du groupe <a href="http://www.pingmachine.org">Ping Machine</a> depuis décembre 2004. En fait avec les amis de promo Vince et Stein, nous étant mis
@@ -138,24 +136,26 @@ Actuellement (rentrée 2014), j'ai l'immense plaisir de jouer avec :</p>
 dis "tiens, on pourrait faire des trucs ensembles", et PAF !</p>
 
 <p>J'ajoute quelques pensées pour les copains avec qui j'ai joué par le passé : l'harmonie
-et la batterie fanfare de Theys, les Bracass, ...</p>
+et la batterie fanfare de Theys, les Bracass, les orchestres de l'<a href="http://harmonie-meylan.fr/">EMGB</a>, le groupe de chanson Le Moulin à Paroles, le groupe de ska JeudiSoir, le Swing Grant Orchestra !</p>
 
 <p id="moi-enreg">Vous pouvez m'entendre sur quelques enregistrements :</p>
 <dl>
-<dt>les 2 démo de JeudiSoir (3 puis 6 titres, 2008)</dt>
-<dd>Ecoutable sur <a href="http://www.myspace.com/jeudisoir">le MySpace du groupe</a></dd>
-<dt>la démo 5 titres de In your brass (2011)</dt>
-<dd>Ecoutable sur <a href="https://inyourbrass.bandpage.com/">le BandPage du groupe</a></dd>
-<dt>"Errons, Errons" de <a href="http://www.tit-patapons.fr/">Tit Patapons</a> (2011)</dt>
-<dd>Sur : "Les sonneurs de rêve", "Centre commercial"<br>
-Album en licence libre et téléchargeable gratuitement <a href="http://www.tit-patapons.fr/musique.php">sur le site du groupe</a></dd>
-<dt>"On s'y risque" de <a href="http://www.revolutionsoundrecords.org/">Revolution sound records</a> (2012)</dt>
-<dd>Sur : "Meli mais l'eau" (de <a href="http://www.tit-patapons.fr/">Tit Patapons</a>)<br>
-Album en licence libre et téléchargeable gratuitement <a href="http://www.revolutionsoundrecords.org/index.php?e=artistes&artiste=60&page=downloads&album=55">sur le site du collectif</a></dd>
-<dt>"BADA BOoM BoOM SWING" de <a href="https://www.facebook.com/lamuzgueule">Lamuzgueule</a> (2014)</dt>
-<dd>Sur : "French Kiss", "Désamour 2.0", "Rodeo", "Rien ne va plus", "Rideau !"<br>
-Ecoutable <a href="http://www.deezer.com/album/7787754">sur Deezer</a> par exemple</dd>
-<dt>Des bidouilles faites de mon côté sur <a href="http://soundcloud.com/pir-3">mon compte Soundcloud</a></dt>
+	<dt>Des bidouilles faites de mon côté sur <a href="http://soundcloud.com/pir-3">mon compte Soundcloud</a></dt>
+	<dt><a href="https://www.okpal.com/daigui/#/">Dernier album Daïgui</a> sur 3 titres (2018)</dt>
+	<dt>Démo 4 titres de In Your Brass (2017)</dt>
+	<dt>"On s'y risque" de <a href="http://www.revolutionsoundrecords.org/">Revolution sound records</a> (2012)</dt>
+	<dd>Sur : "Meli mais l'eau" (de <a href="http://www.tit-patapons.fr/">Tit Patapons</a>)<br>
+	Album en licence libre et téléchargeable gratuitement <a href="http://www.revolutionsoundrecords.org/index.php?e=artistes&artiste=60&page=downloads&album=55">sur le site du collectif</a></dd>
+	<dt>"Errons, Errons" de <a href="http://www.tit-patapons.fr/">Tit Patapons</a> (2011)</dt>
+	<dd>Sur : "Les sonneurs de rêve", "Centre commercial"<br>
+	Album en licence libre et téléchargeable gratuitement <a href="http://www.tit-patapons.fr/musique.php">sur le site du groupe</a></dd>
+	<dt>"BADA BOoM BoOM SWING" de <a href="https://www.facebook.com/lamuzgueule">Lamuzgueule</a> (2014)</dt>
+	<dd>Sur : "French Kiss", "Désamour 2.0", "Rodeo", "Rien ne va plus", "Rideau !"<br>
+	Ecoutable <a href="http://www.deezer.com/album/7787754">sur Deezer</a> par exemple</dd>
+	<dt>la démo 5 titres de In your brass (2011)</dt>
+	<dd>Ecoutable sur <a href="https://inyourbrass.bandpage.com/">le BandPage du groupe</a></dd>
+	<dt>les 2 démo de JeudiSoir (3 puis 6 titres, 2008)</dt>
+	<dd>Ecoutable sur <a href="http://www.myspace.com/jeudisoir">le MySpace du groupe</a></dd>
 </dl>
 
 
@@ -176,30 +176,30 @@ Marge pour éviter le chevauchement du texte.
  class="pretty-img" style="float: left; margin-right: 40px; transform: rotate(-6deg);"
  alt="piR et l'tromb'" id="piR_tromb2">
 </a>
-Et moi ? Hé bien, j'apprend doucement... Car oui, à l'âge de 14 ans environ 
-je me suis mis à vraiment m'intéresser à la musique... Et l'envie d'apprendre, de 
-pratiquer un instrument est venue très vite. Mais cette envie, qui a grandie, 
+Et moi ? Hé bien, j'apprend doucement... Car oui, à l'âge de 14 ans environ
+je me suis mis à vraiment m'intéresser à la musique... Et l'envie d'apprendre, de
+pratiquer un instrument est venue très vite. Mais cette envie, qui a grandie,
 grandie, grandie avec les années, j'ai mis près de 15 ans avant de me décider à la
 concrétiser !</p>
 
 <p>En fait, j'ai profité dun changement de travail et du changement de ville
  pour foncer. Et je ne le regrette vraiment pas !</p>
 
-<p>Le choix de l'instrument ? Mais le trombone bien sûr, pourquoi choisir autre 
-chose ! Bon j'avoue, mes envies ont variées au fûr et à mesure des années. La 
-première envie ça a été la basse (période Pink Floyd). Et puis, la guitare 
-(période REM, Nirvana, ...), le saxophone (Stan Getz revient à la charge), la 
-contrebasse (Hot club)... Et puis non, décidemment, le son des cuivres est 
-inimitable ! Cette énergie, cette chaleur, cette profondeur... Par contre la 
-trompette, trop agressif et perçant, pas drole. C'est donc le trombone, rigolo, 
+<p>Le choix de l'instrument ? Mais le trombone bien sûr, pourquoi choisir autre
+chose ! Bon j'avoue, mes envies ont variées au fûr et à mesure des années. La
+première envie ça a été la basse (période Pink Floyd). Et puis, la guitare
+(période REM, Nirvana, ...), le saxophone (Stan Getz revient à la charge), la
+contrebasse (Hot club)... Et puis non, décidemment, le son des cuivres est
+inimitable ! Cette énergie, cette chaleur, cette profondeur... Par contre la
+trompette, trop agressif et perçant, pas drole. C'est donc le trombone, rigolo,
 beau, magnifique. Le trombone, voilà.</p>
 
-<p>En septembre 2004, après quelques coups de fils infructueux à des écoles de 
-musiques trouvées dans les pages jaunes ("non, nous ne faisons pas trombone 
-monsieur, désolé"), sur un conseil d'un des interlocuteurs que l'on a eu qui a 
-donné de très bon conseils (merci, merci merci !!), j'ai contacté par mail 
-<a href="http://www.grenoble.fr/">l'office du tourisme de Grenoble</a> qui m'a 
-répondu rapidement et efficacement, en me transmettant un fichier Excel plein 
+<p>En septembre 2004, après quelques coups de fils infructueux à des écoles de
+musiques trouvées dans les pages jaunes ("non, nous ne faisons pas trombone
+monsieur, désolé"), sur un conseil d'un des interlocuteurs que l'on a eu qui a
+donné de très bon conseils (merci, merci merci !!), j'ai contacté par mail
+<a href="http://www.grenoble.fr/">l'office du tourisme de Grenoble</a> qui m'a
+répondu rapidement et efficacement, en me transmettant un fichier Excel plein
 d'adresses ! J'ai essayé l'association <a href="http://harmonie-meylan.fr/">Espace
 Musical Gaston Baudry</a> à Meylan... Et c'est ainsi que quelques jours après, j'ai
 serré pour la 1ere fois la main du génial prof' Eric Ferrier, qui m'a donné mon
