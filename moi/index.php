@@ -1,5 +1,4 @@
 <?php ob_start('ob_gzhandler');
- // Version 20150124
 // NAVIGATION
 $RelBasePath = "../";
 $title = "Divers [GEPApiR]";
@@ -22,12 +21,13 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 
-<h2>Moi/Pro</h2>
+<h2>Moi/Pro 🏢</h2>
 
 <ul>
-	<li>Comptes <a href="http://www.viadeo.com/fr/profile/pierre.goiffon">Viadeo</a>, 
-  <a href="http://www.linkedin.com/profile?viewProfile=&key=17204127">LinkedIn</a></li>
-	<li><a href="CV_pgoiffon_Web.pdf">CV</a> (PDF)</li>
+	<li>Comptes <a href="http://www.viadeo.com/fr/profile/pierre.goiffon">Viadeo</a>,
+  <a href="https://www.linkedin.com/in/pierregoiffon/">LinkedIn</a></li>
+  <li>Comptes <a href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a>, <a href="https://github.com/piRGoif">GitHub</a></li>
+  <li>Comptes <a href="https://jsfiddle.net/user/pgoiffon/">JSFiddle</a>, <a href="https://codepen.io/pgoiffon/#">CodePen</a></li>
 </ul>
 
 
@@ -36,7 +36,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 
-<h2>Contenus disponibles en ligne</h2>
+<h2>Moi/Perso 🏡</h2>
 
 <ul>
 	<li>Quelques photos sont disponibles sur <a href="http://www.flickr.com/photos/pirgoif/">mon compte Flickr</a>, en particulier <a href="https://www.flickr.com/photos/pirgoif/collections/72157640928109674/">des sélections des moins pires</a> !</li>
