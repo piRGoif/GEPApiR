@@ -26,6 +26,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 <ul>
 	<li>Comptes <a href="http://www.viadeo.com/fr/profile/pierre.goiffon">Viadeo</a>,
   <a href="https://www.linkedin.com/in/pierregoiffon/">LinkedIn</a></li>
+  <li>Compte <a href="https://www.openhub.net/accounts/piRGoif">Open Hub</a></li>
   <li>Comptes <a href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a>, <a href="https://github.com/piRGoif">GitHub</a></li>
   <li>Comptes <a href="https://jsfiddle.net/user/pgoiffon/">JSFiddle</a>, <a href="https://codepen.io/pgoiffon/#">CodePen</a></li>
 </ul>

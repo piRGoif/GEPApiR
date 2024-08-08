@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v7.11.0";
+$pageVersion = "v7.11.1";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -137,6 +137,11 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 </dd>
 ****/
 ?>
+
+<dt>02/10/2018, v7.11.1</dt>
+<dd>
+- <a href="moi/">Moi</a> : ajout de mon compte Open Hub
+</dd>
 
 <dt>25/07/2018, v7.11.0</dt>
 <dd>
