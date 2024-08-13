@@ -7,7 +7,7 @@ $date_maj = "24/01/2015";
 $RelBasePath = "../../";
 $title = "IDE, principaux raccourcis - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 <style>
 table {
@@ -56,7 +56,7 @@ table td:not(:first-child) {
 }
 </style>
 <?
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -340,7 +340,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -350,7 +350,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

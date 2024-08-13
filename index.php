@@ -1,11 +1,11 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v7.11.1";
+$pageVersion = "v8.0.0";
 
 // NAVIGATION
 $RelBasePath = "";
 $title = "Accueil [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 
 <meta name="description" content="Le site personnel de Pierre Goiffon, contenant
@@ -32,7 +32,7 @@ vertical-align: middle;
 }
 </style>
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -74,11 +74,11 @@ Vous trouverez des détails sur les techniques utilisées sur ce site en consult
 cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>.</p>
 
 <p id="w3clogo">
-<a href="http://validator.w3.org/check?uri=referer"><img
- src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64"
- alt="HTML5 Powered" title="HTML5 Powered"></a> <a
+<a href="http://validator.w3.org/check?uri=referer">
+<img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
+</a> <a
  href="http://jigsaw.w3.org/css-validator/check/referer"><img
- style="border:0px;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+ style="border:0px;width:88px;height:31px" src="https://www.w3.org/Icons/valid-css"
  alt="code CSS valide"></a></p>
 
 
@@ -99,6 +99,8 @@ title="lettre grecque pi">&#x1D6D1;</a>
 et <a href="http://www.unicode.org/charts/PDF/U1FF80.pdf">U+1D6D1</a> pour le
 symbole mathématique) je m'étais alors résolu à simplement saisir "pi" en toutes
 lettres, le R majuscule marquant la prononciation !</p>
+
+<p>Les sources de ce site sont ouvertes et disponibles sur <a href="https://github.com/piRGoif/GEPApiR">un dépôt GitHub</a>.</p>
 
 
 
@@ -138,6 +140,18 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
+<dt>13/08/2024, v8.0.0</dt>
+<dd>
+- Publication avec la GitHub action <a href="https://github.com/marketplace/actions/ftp-deploy">"FTP Deploy"</a><br>
+- Renommage des fichiers communs<br>
+- Résolution des alertes et blocages "mixed content"<br>
+- Mise à jour de la librairie Hightlight.js et changement de style<br>
+- Modification du rendu des citations<br>
+- <a href="zicmue/">Musiques</a> : actualisation et réorganisation des liens<br>
+- <a href="moi/">Moi</a> : actualisation et réorganisation des liens<br>
+- <a href="liens/">Liens</a> : actualisation<br>
+</dd>
+
 <dt>02/10/2018, v7.11.1</dt>
 <dd>
 - <a href="moi/">Moi</a> : ajout de mon compte Open Hub
@@ -172,7 +186,7 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

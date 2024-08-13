@@ -1,8 +1,7 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Satisfy);
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 /****************************************************************************************
  CSS GEPApiR
- Version 20141012
 ****************************************************************************************/
 
 
@@ -174,12 +173,13 @@ blockquote>p>cite
     font-style: normal;
     display: block;
     text-align:right;
-    margin-top: 0.5em;
+    margin-top: 1rem;
+    margin-right: 2rem;
 }
 
 q, blockquote
 {
-    font: italic 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font: normal 1rem Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 q:before

@@ -1,11 +1,9 @@
 <?php ob_start('ob_gzhandler');
-// Version 20140813
-
 // NAVIGATION
 $RelBasePath = "../";
 $title = "Liens [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 
 <style type="text/css">
@@ -38,7 +36,7 @@ for (i = 0; i <= elements.length - 1; i++)
 </script>
 
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -99,27 +97,18 @@ class="pretty-img">
 <dl>
 
 <dt><a href="http://apod.nasa.gov/">APOD</a></dt>
-<dd></dd>
-
-<dt><a href="http://www.dilbert.com/">Dilbert</a></dt>
-<dd></dd>
+<dd>The Astronomy Picture Of the Day de la NASA : une photo d'astronomie chaque jour avec des explications très complètes</dd>
 
 <dt><a href="http://www.xkcd.com/">XKCD</a></dt>
-<dd><!-- ExplainXKCD --></dd>
+<dd>Un comic strip de référence dont les thèmes sont autour de l'informatique et des sciences en général</dd>
+
+<dt><a href="https://www.explainxkcd.com/">Explain XKCD</a></dt>
+<dd>Puisque parfois XKCD est un peu difficile à comprendre pour nous francophones (ou parfois juste pas assez cultivés ;o) ), ce wiki participatif apporte toutes les explications (et références !) sur chaque strip quotidien.</dd>
 
 <dt><a href="http://lesjoiesducode.fr/">Les joies du code</a></dt>
-<dd></dd>
+<dd>Des mêmes internet accompagnés d'une petite phrase sur l'univers du développement</dd>
 
 <dt><a href="http://www.viedemerde.fr/">Vie de merde</a></dt>
-<dd></dd>
-
-<dt><a href="http://vidberg.blog.lemonde.fr/">L'actu en patates</a></dt>
-<dd></dd>
-
-<dt><a href="http://ecrans.liberation.fr/">Ecrans.fr</a></dt>
-<dd></dd>
-
-<dt><a href="http://decodeurs.blog.lemonde.fr/">Le Monde - les décodeurs</a></dt>
 <dd></dd>
 
 </dl>
@@ -134,40 +123,22 @@ class="pretty-img">
 
 <dl>
 
-<dt><a href="http://www.boston.com/bigpicture/">Boston globe, the big picture</a></dt>
-<dd></dd>
-
-<dt><a href="http://blogs.afp.com/makingof/">AFP Making-of</a></dt>
-<dd></dd>
-
-<dt><a href="http://image-cnes.fr/">Le blog de l'image satellite</a></dt>
-<dd></dd>
-
-<dt><a href="http://tumourrasmoinsbete.blogspot.fr/">Tu mourra moins bête</a></dt>
-<dd></dd>
-
-<dt><a href="http://maesterbd.wordpress.com/">Maëster</a></dt>
-<dd></dd>
-
 <dt><a href="http://www.cia.gov/cia/publications/factbook/index.html">CIA - The world factbook </a></dt>
-<dd>Vous vous demandez ce que c'est que ce pays, <a href="http://www.cia.gov/cia/publications/factbook/geos/ne.html">Nieu</a>&nbsp;? 
+<dd>Vous vous demandez ce que c'est que ce pays, <a href="http://www.cia.gov/cia/publications/factbook/geos/ne.html">Nieu</a>&nbsp;?
 Bref un atlas complet, très riche !</dd>
 
 <dt><a href="http://atilf.atilf.fr/">TLFI</a> (le trésor de la langue française informatisée)</dt>
-<dd>Le dictionnaire en ligne, l'officiel. L'interface est... pour résumer, 
-disons, c'est une bonne image de l'immobilisme déprimant qui règne dans les 
-hautes sphères de l'état sur les questions des NTIC. Quand Mr Jeanneney rale du 
-problème posé par Google numérisant des livres... Va falloir accélérer le 
+<dd>Le dictionnaire en ligne, l'officiel. L'interface est... pour résumer,
+disons, c'est une bonne image de l'immobilisme déprimant qui règne dans les
+hautes sphères de l'état sur les questions des NTIC. Quand Mr Jeanneney rale du
+problème posé par Google numérisant des livres... Va falloir accélérer le
 mouvement en effet :D<br>
-Reste que même si le TLFI pourrait être bien mieux en terme d'interface, les 
+Reste que même si le TLFI pourrait être bien mieux en terme d'interface, les
 données sont là et c'est bien avant tout ce qu'on lui demande :)</dd>
 
 <dt><a href="http://www.imdb.com">IMDB</a> (the Internet Movie Database)</dt>
-<dd>Tous les films, les réalisateurs, les acteurs... Ca c'est de la base !! Une 
+<dd>Tous les films, les réalisateurs, les acteurs... Ca c'est de la base !! Une
 vraie référence !</dd>
-
-<dt><a href="http://www.spi0n.com/zapping-web/">Zapping Spi0n.com</a></dt>
-<dd></dd>
 
 </dl>
 
@@ -184,25 +155,13 @@ vraie référence !</dd>
 <dt><a href="http://hacks.mozilla.org/">hacks.mozilla.org</a></dt>
 <dd></dd>
 
-<dt><a href="http://www.cnis-mag.com/">CNIS Mag</a></dt>
-<dd></dd>
-
-<dt><a href="http://www.zataz.com/">Zataz</a></dt>
-<dd></dd>
-
 <dt><a href="http://www.frandroid.com/">FrAndroid</a></dt>
-<dd></dd>
-
-<dt><a href="http://tech.m6web.fr/">Tech M6 Web</a></dt>
 <dd></dd>
 
 <dt><a href="http://sqlpro.developpez.com/">SQL Pro</a></dt>
 <dd>Le site de Frédérique Brouard, une mine d'or pour tout ce qui concerne le
 SQL ! Des cours génériques, des articles sur des sujets précis, des exemples de
 techniques, ...</dd>
-
-<dt><a href="http://www.secunia.com/">Secunia</a></dt>
-<dd>Un excellent site sur la sécurité !</dd>
 
 <dt><a href="http://developer.mozilla.org/">DevMo</a></dt>
 <dd>En son temps, le site pour développeur de Netscape était une vraie mine
@@ -230,16 +189,8 @@ vulgarisation sur HTML, CSS, ... Très bien fait !</dd>
 <a href="http://www.perdu.com">perdu.com</a> ou <a href="http://www.pourquoi.ch">pourquoi.ch</a> ont marqué l'histoire de
 l'Internet :o) Et le plus beau, c'est qu'ils sont toujours en ligne ! 8)</dd>
 
-<dt><a href="http://correcteurs.blog.lemonde.fr/correcteurs/">Langue sauce piquante</a></dt>
-<dd>Le blog des correcteurs du Monde.fr. De nombreux billets sur les bizarreries de
-la langue française, de très précieux liens, ... Lecture très agréable et
-rafraichissante !</dd>
-
 <dt><a href="http://www.standblog.org/">Tristan Nitot</a></dt>
 <dd>Ex Netscape, président de Mozilla Europe.</dd>
-
-<dt><a href="http://bmol.bm-grenoble.fr/">BMol</a></dt>
-<dl>Le blog des bibliothécaires musicaux de la ville de Grenoble. Passionnant !</dl>
 
 </dl>
 
@@ -253,16 +204,8 @@ rafraichissante !</dd>
 
 <dl>
 
-<dt><a href="http://www.pingmachine.org/">Ping Machine</a></dt>
-<dd>Petit blog musical avec les amis Nietzsche, Stein et Vince. Nou nous réunissons
-aussi de temps en temps pour s'essayer à quelques chansons, donc le site contient
-quelques enregistrements !</dd>
-
-<dt><a href="http://steinecrit.wordpress.com/">Sex Bug and Rock'n roll</a></dt>
+<dt><a href="http://steinecrit.wordpress.com/">Stein écrit</a></dt>
 <dd>Format C:, et après ? Ben après, c'est SBRNR !! Yeaaaaah 8)</dd>
-
-<dt><a href="http://adelinemorel.over-blog.com/">Le grenier de Dyna</a></dt>
-<dd></dd>
 
 <dt><a href="http://www.studioah.fr/">Studio ah!</a></dt>
 <dd></dd>
@@ -287,24 +230,11 @@ Magnifique réalisation et surtout superbe aventure, que l'on comprend mieux apr
 ce que l'on peut appeler sans rougir une expérience ! Prenez 10 minutes de votre
 temps, sans AUCUNE interruption... en avant !</dd>
 
-<dt><a href="http://www.pilotlist.org/">Pilotlist</a></dt>
-<dd>Le site de la liste de diffusion du même nom. La liste Pilotlist, c'est
-bcp de récits magnifiques, des photos et des infos échangées... Super !</dd>
-
 <dt><a href="http://20-100-video.blogspot.fr/">Du virtuel au réel</a></dt>
 <dd></dd>
 
-<dt><a href="http://blog.zepyaf.com/">Zepyaf.com</a></dt>
-<dd></dd>
-
-<dt><a href="http://perso.wanadoo.fr/bravomike/">Paneva</a></dt>
-<dd>Le Paneva est pour moi, principallement, l'auteur des scènes pour Flight
-Simulator que je pratique le plus : les altiports et altisurfaces des Alpes.
-Haaaa, les finales à Courchevel, au glacier du Talèfre... Que de bons moments,
-donc merci milles fois à lui et à tous les auteurs de scène qui font profiter
-de leurs talents !<br>
-Sur le site du Paneva, vous trouverez aussi quelques récits de vols, des photos,
-enfin tout un tas de choses très intéressantes !</dd>
+<dt><a href="https://flightsim.to/">Flightsim.to</a></dt>
+<dd>Le site de référence sur les addons pour Flight Simulator</dd>
 
 <dt><a href="http://www.cyberavia.org/">Cyberavia</a></dt>
 <dd>Haaa, CyberAvia... L'une des plus ancienne compagnie virtuelle pour Flight
@@ -323,7 +253,7 @@ doute jamais essayé sinon !</dd>
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

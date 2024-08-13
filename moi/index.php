@@ -3,10 +3,10 @@
 $RelBasePath = "../";
 $title = "Divers [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -21,14 +21,12 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 
-<h2>Moi/Pro 🏢</h2>
+<h2>Pro 🏢</h2>
 
 <ul>
-	<li>Comptes <a href="http://www.viadeo.com/fr/profile/pierre.goiffon">Viadeo</a>,
-  <a href="https://www.linkedin.com/in/pierregoiffon/">LinkedIn</a></li>
-  <li>Compte <a href="https://www.openhub.net/accounts/piRGoif">Open Hub</a></li>
-  <li>Comptes <a href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a>, <a href="https://github.com/piRGoif">GitHub</a></li>
-  <li>Comptes <a href="https://jsfiddle.net/user/pgoiffon/">JSFiddle</a>, <a href="https://codepen.io/pgoiffon/#">CodePen</a></li>
+	<li><a href="https://www.linkedin.com/in/pierregoiffon/">Compte LinkedIn</a></li>
+	<li>Comptes <a href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a>, <a href="https://github.com/piRGoif">GitHub</a></li>
+	<li>Dépôt de <a href="https://github.com/Combodo/iTop">iTop</a>, application web ITSM/CMDB open source sur laquelle j'ai été employé de 2017 à 2024</li>
 </ul>
 
 
@@ -37,13 +35,25 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 
-<h2>Moi/Perso 🏡</h2>
+<h2>Photographie 📷</h2>
 
 <ul>
-	<li>Quelques photos sont disponibles sur <a href="http://www.flickr.com/photos/pirgoif/">mon compte Flickr</a>, en particulier <a href="https://www.flickr.com/photos/pirgoif/collections/72157640928109674/">des sélections des moins pires</a> !</li>
+	<li>Sélection de mes photos sur <a href="https://unsplash.com/fr/@pir">mon compte Unsplash</a></li>
+	<li><a href="https://commons.wikimedia.org/wiki/Special:ListFiles?limit=250&user=PiRGoif&ilshowall=1">Mes contributions Wikimedia Commons</a></li>
+	<li>L'ensemble de mes photos publiées sont disponibles sur <a href="http://www.flickr.com/photos/pirgoif/">mon compte Flickr</a>, compte qui contient <a href="https://www.flickr.com/photos/pirgoif/collections/72157640928109674/">une sélection de mes préférées</a> !</li>
+</ul>
+
+
+
+<?=writeHR()?>
+
+
+
+<h2>Musique 🎶</h2>
+
+<ul>
 	<li>Des enregistrement sur <a href="https://soundcloud.com/pir-3">mon compte Soundcloud</a></li>
-	<li>Des vidéos sur <a href="http://www.dailymotion.com/pgoiffon">mon compte Dailymotion</a></li>
-	<li>Des vidéos aimées et des playlists sur <a href="https://www.youtube.com/user/pgoiffon">ma chaine Youtube</a></li>
+	<li>Des vidéos aimées, des playlists et quelques vidéos personnelles sur <a href="https://www.youtube.com/user/pgoiffon">ma chaine Youtube</a></li>
 	<li>Des films vus et aimés sur <a href="http://www.imdb.com/user/ur10917353/watchlist">ma watchlist IMDB</a></li>
 </ul>
 
@@ -54,7 +64,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

@@ -6,10 +6,10 @@ $date_maj = "12/10/2014";
 $RelBasePath = "../../";
 $title = "CSS : mises en forme diverses - GepapiR - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/highlight.inc');
-require_once($RelBasePath . 'communs/toc/toc-js.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/highlight.inc.php');
+require_once($RelBasePath . 'communs/toc/toc-js.inc.html');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -23,7 +23,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/toc/toc-html.inc');
+require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
 
@@ -35,16 +35,16 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 <h2>Introduction</h2>
 
 <p>
-    Qu'assurer comme compatibilité navigateur ? Vaste question... 
+    Qu'assurer comme compatibilité navigateur ? Vaste question...
 </p>
 
 <p>
-    La compatibilité c'est avant tout la version de IE minimale supportée ! Sur ce 
-    site, j'ai décidé d'être compatible avec IE 8+. En effet, la plus ancienne version 
-    de Microsoft Windows encore maintenue à ce jour (octobre 2014) est Windows Vista, 
-    qui était  livré avec IE7, mais cet OS est assez peu répandu, et la version suivante 
+    La compatibilité c'est avant tout la version de IE minimale supportée ! Sur ce
+    site, j'ai décidé d'être compatible avec IE 8+. En effet, la plus ancienne version
+    de Microsoft Windows encore maintenue à ce jour (octobre 2014) est Windows Vista,
+    qui était  livré avec IE7, mais cet OS est assez peu répandu, et la version suivante
     était livrée avec IE 8.<br>
-    A noter ce billet de blog de août 2014 annonçant les futures échéances de support 
+    A noter ce billet de blog de août 2014 annonçant les futures échéances de support
     pour les différentes versions : <a href="http://blogs.msdn.com/b/ie/archive/2014/08/07/stay-up-to-date-with-internet-explorer.aspx">Stay up-to-date with Internet Explorer - IEBlog - Site Home - MSDN Blogs</a>.
 </p>
 
@@ -163,7 +163,7 @@ transform: rotate(6deg);
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -173,7 +173,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

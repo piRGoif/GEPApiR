@@ -6,10 +6,10 @@ $date_maj = "29/08/2014";
 $RelBasePath = "../../";
 $title = "Performances - GepapiR - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/highlight.inc');
-require_once($RelBasePath . 'communs/toc/toc-js.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/highlight.inc.php');
+require_once($RelBasePath . 'communs/toc/toc-js.inc.html');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -23,7 +23,7 @@ Performances
 
 
 <?
-require_once($RelBasePath . 'communs/toc/toc-html.inc');
+require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
 
@@ -317,7 +317,7 @@ pour vos besoins : <a href="https://www.mnot.net/cache_docs/">Un tutoriel de la 
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -327,7 +327,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

@@ -6,10 +6,10 @@ $date_maj = "14/08/2014";
 $RelBasePath = "../../";
 $title = "CSS : application de la même mise en forme sur plusieurs éléments (groupement, pré-processeurs, variables) - Internet - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/toc/toc-js.inc');
-require_once($RelBasePath . 'communs/highlight.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/toc/toc-js.inc.html');
+require_once($RelBasePath . 'communs/highlight.inc.php');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -25,7 +25,7 @@ pré-processeurs, variables)</h1>
 
 
 <?
-require_once($RelBasePath . 'communs/toc/toc-html.inc');
+require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
 
@@ -57,7 +57,7 @@ besoin naturel de factorisation.</p>
 
 <h3>Un seule déclaration <abbr>CSS</abbr> sur plusieurs éléments</h3>
 
-<p>On peut grouper plusieurs sélecteurs ensembles en les séparant par des 
+<p>On peut grouper plusieurs sélecteurs ensembles en les séparant par des
 virgules :</p>
 
 <pre><code class="css">
@@ -88,10 +88,10 @@ le modèle et une autre positionne simplement le <code>background-position</code
 <h3>Notes</h3>
 
 <ul>
-	<li>Il vaut mieux, autant que possible, éviter d'utiliser les classes. En 
+	<li>Il vaut mieux, autant que possible, éviter d'utiliser les classes. En
 	effet, une multiplication de <code>class=...</code> dans le (x)HTML va à l'encontre
 	de la logique de séparation contenu / mise en forme !</li>
-	<li>Attention aux conflits ! On peut avoir la même propriété <abbr>CSS</abbr> pour un 
+	<li>Attention aux conflits ! On peut avoir la même propriété <abbr>CSS</abbr> pour un
 	élément donné définit plusieurs fois... Dans ce cas, la recommandation<sup>[<a href="#fn3">3</a>]</sup>
 	détaille quoi faire en cas de conflit de définition de propriétés (voyez en
 	particulier la spécificité).</li>
@@ -159,7 +159,7 @@ en working draft, et le support est très réduit : uniquement Firefox 31+ ! Cf
 	<li id="fn2">[2] Dans la recommandation <abbr>HTML</abbr> 4.01, <a href="http://www.w3.org/TR/html401/struct/global.html#adef-class">définition de l'attribut class</a>,
 	indiquant que plusieurs classes peuvent être spécifiées.</li>
 	<li id="fn3">[3] Toujours dans la même recommandation, le <a href="http://www.w3.org/TR/CSS21/cascade.html#cascade">chapitre 6.4 The cascade</a>,
-	indiquant les règles suivies pour l'application de telle ou telle valeur 
+	indiquant les règles suivies pour l'application de telle ou telle valeur
 	en cas de conflit entre de multiples déclarations de la même propriété</li>
 </ul>
 
@@ -170,7 +170,7 @@ en working draft, et le support est très réduit : uniquement Firefox 31+ ! Cf
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -180,7 +180,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

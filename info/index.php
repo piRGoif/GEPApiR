@@ -4,8 +4,8 @@
 $RelBasePath = "../";
 $title = "Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -16,8 +16,8 @@ require_once('info_h1.inc');
 ?>
 </h1>
 
-<p>Informaticien de métier, consacré au développement depuis plusieurs années... 
-et autour des technologies de l'Internet, voici différents petits trucs, 
+<p>Informaticien de métier, consacré au développement depuis plusieurs années...
+et autour des technologies de l'Internet, voici différents petits trucs,
 notamment des documents de synthèse sur quelques points particuliers (souvent
 suite à discussion sur Usenet)</p>
 
@@ -100,7 +100,7 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 
 <ul>
     <li><a href="dev/IDE_shortcuts.php">IDE - principaux racourcis</a>
-    <li>Ca date, mais pour mémoire, projet de fin d'étude d'IUT (1997) : 
+    <li>Ca date, mais pour mémoire, projet de fin d'étude d'IUT (1997) :
         <a href="dev/projet_IUT_liaison_null-modem.pdf">Communication série entre
         2 PC par câble NULL-MODEM</a>
 </ul>
@@ -126,7 +126,7 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

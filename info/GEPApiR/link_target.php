@@ -6,9 +6,9 @@ $date_maj = "14/08/2014";
 $RelBasePath = "../../";
 $title = "Liens : option \"ouverture dans une nouvelle fenêtre\" - GepapiR - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/highlight.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/highlight.inc.php');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -87,7 +87,7 @@ for (i = 0; i <= elements.length - 1; i++)
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -97,7 +97,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

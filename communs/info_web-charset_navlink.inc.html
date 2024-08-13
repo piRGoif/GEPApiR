@@ -1,0 +1,6 @@
+<LINK rel="Glossary" href="<?=$RelBasePath?>info/i18n/glossaire.php" title="Glossaire internationalisation">
+<LINK rel="Contents" href="<?=$RelBasePath?>info/index.php" title="Informatique - index">
+<LINK rel="Chapter" href="<?=$RelBasePath?>info/i18n/web-charset_intro.php" title="notions fondamentales">
+<LINK rel="Chapter" href="<?=$RelBasePath?>info/i18n/web-charset_html.php" title="internationalisation pour le concepteur Web">
+<LINK rel="Chapter" href="<?=$RelBasePath?>info/i18n/web-charset_codages_latin.php" title="principaux codages utilisés en Europe de l'Ouest">
+<LINK rel="Chapter" href="<?=$RelBasePath?>info/i18n/web-charset_sites_dyna.php" title="notions particulières au développement de sites dynamiques">
