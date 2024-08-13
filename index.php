@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v7.11.1";
+$pageVersion = "v8.0.0";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -140,13 +140,16 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt>13/08/2024, v7.12.0</dt>
+<dt>13/08/2024, v8.0.0</dt>
 <dd>
+- Publication avec la GitHub action <a href="https://github.com/marketplace/actions/ftp-deploy">"FTP Deploy"</a><br>
 - Renommage des fichiers communs<br>
-- <a href="musiques/">Musiques</a> : actualisation et réorganisation des liens<br>
+- Résolution des alertes et blocages "mixed content"<br>
+- Mise à jour de la librairie Hightlight.js et changement de style<br>
+- Modification du rendu des citations<br>
+- <a href="zicmue/">Musiques</a> : actualisation et réorganisation des liens<br>
 - <a href="moi/">Moi</a> : actualisation et réorganisation des liens<br>
 - <a href="liens/">Liens</a> : actualisation<br>
-- TODO
 </dd>
 
 <dt>02/10/2018, v7.11.1</dt>
