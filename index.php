@@ -74,11 +74,11 @@ Vous trouverez des détails sur les techniques utilisées sur ce site en consult
 cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>.</p>
 
 <p id="w3clogo">
-<a href="http://validator.w3.org/check?uri=referer"><img
- src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64"
- alt="HTML5 Powered" title="HTML5 Powered"></a> <a
+<a href="http://validator.w3.org/check?uri=referer">
+<img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
+</a> <a
  href="http://jigsaw.w3.org/css-validator/check/referer"><img
- style="border:0px;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+ style="border:0px;width:88px;height:31px" src="https://www.w3.org/Icons/valid-css"
  alt="code CSS valide"></a></p>
 
 

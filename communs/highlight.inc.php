@@ -1,17 +1,17 @@
 <?
 /*******************************************************************************
  Intégration du code hightliter Highlight.js (https://highlightjs.org/)
- Version 20140813
 *******************************************************************************/
 ?>
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/sunburst.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
 <style>
 .hljs
 {
 border-radius: 10px;
 }
 </style>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
 <script>
-hljs.initHighlightingOnLoad();
+hljs.highlightAll();
 </script>
