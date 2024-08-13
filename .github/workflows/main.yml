@@ -19,7 +19,7 @@ jobs:
         dry-run: true
         log-level: verbose
   web-deploy-prod:
-    if: github.ref != 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     name: 🎉 Deploy PROD
     runs-on: ubuntu-latest
     steps:
