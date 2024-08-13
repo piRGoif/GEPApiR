@@ -49,7 +49,7 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
-<h2>Musique 🎶</h2>
+<h2>Autre 😎</h2>
 
 <ul>
 	<li>Des enregistrement sur <a href="https://soundcloud.com/pir-3">mon compte Soundcloud</a></li>
