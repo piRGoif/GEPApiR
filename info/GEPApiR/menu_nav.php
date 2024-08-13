@@ -6,10 +6,10 @@ $date_maj = "04/09/2014";
 $RelBasePath = "../../";
 $title = "Menu de navigation - GepapiR - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/highlight.inc');
-require_once($RelBasePath . 'communs/toc/toc-js.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/highlight.inc.php');
+require_once($RelBasePath . 'communs/toc/toc-js.inc.html');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -24,7 +24,7 @@ Menu de navigation
 
 
 <?
-require_once($RelBasePath . 'communs/toc/toc-html.inc');
+require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
 
@@ -179,7 +179,7 @@ border-radius: 5px;
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -189,7 +189,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

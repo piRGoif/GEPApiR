@@ -6,10 +6,10 @@ $date_maj = "12/10/2014";
 $RelBasePath = "../../";
 $title = "Développement Notes / Domino et doctype HTML - Internet - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/toc/toc-js.inc');
-require_once($RelBasePath . 'communs/highlight.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/toc/toc-js.inc.html');
+require_once($RelBasePath . 'communs/highlight.inc.php');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -23,7 +23,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/toc/toc-html.inc');
+require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
 
@@ -87,7 +87,7 @@ Print |Content-Type: text/html; charset=UTF-8<br>
 
 <p>
     Un exemple de manipulation était proposé sur le très bon blog DarkBlog, mais malheureusement
-    ce site est maintenant hors ligne et visiblement aucun mirroir n'a été créé... 
+    ce site est maintenant hors ligne et visiblement aucun mirroir n'a été créé...
     On retrouve cependant une sauvegarde sur archive.org : <a href="https://web.archive.org/web/20071214042113/http://darkmag.net/darkBlog/index.php?2004/01/06/4-generation-de-pages-web-lotus-notes-conformes-aux-standards-du-w3c">Génération de pages web Lotus Notes conformes aux standards du W3C - darkBlog</a> !<br>
     Attention : comme spécifié en commentaire, cette astuce ne fonctionne plus à partir de Domino 6.5 !<br>
     Pour mémoire l'URL de l'article original : http://darkmag.net/darkBlog/index.php?2004/01/06/4-generation-de-pages-web-lotus-notes-conformes-aux-standards-du-w3c.
@@ -139,7 +139,7 @@ Print |Content-Type: text/html; charset=UTF-8<br>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -149,7 +149,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

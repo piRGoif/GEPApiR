@@ -4,12 +4,12 @@
 $title = "Musiques [GEPApiR]";
 
 $RelBasePath = "../";
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 <style type="text/css"><!--
 --></style>
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -25,7 +25,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 Interprète :<br>
 
 <label>
-<input name="artiste_radio" value="1" type="radio">existant : 
+<input name="artiste_radio" value="1" type="radio">existant :
 </label>
 <select size="1" name="saison">
 <option>John John</option>
@@ -36,7 +36,7 @@ Interprète :<br>
 
 <label>
 <input name="artiste_radio" value="2" type="radio">
-Nouveau : 
+Nouveau :
 </label>
 <input maxlength="30" name="artiste_new">
 
@@ -48,7 +48,7 @@ Nouveau :
 <fieldset>
 <legend>Année découverte</legend>
 
-Découvert en : 
+Découvert en :
 <select size="1" name="saison">
 <option>hivers</option>
 <option>prinptemps</option>

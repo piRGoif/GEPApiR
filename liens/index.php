@@ -3,7 +3,7 @@
 $RelBasePath = "../";
 $title = "Liens [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 
 <style type="text/css">
@@ -36,7 +36,7 @@ for (i = 0; i <= elements.length - 1; i++)
 </script>
 
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -253,7 +253,7 @@ doute jamais essayé sinon !</dd>
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

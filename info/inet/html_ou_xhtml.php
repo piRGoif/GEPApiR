@@ -7,9 +7,9 @@ $date_maj = "16/10/2014";
 $RelBasePath = "../../";
 $title = "HTML ou XHTML ? - Internet - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/toc/toc-js.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/toc/toc-js.inc.html');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -37,7 +37,7 @@ require_once($RelBasePath . 'communs/header2.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/toc/toc-html.inc');
+require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
 
@@ -48,12 +48,12 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 <h2>Les avantages de XHTML</h2>
 
-<p><abbr>HTML</abbr> est basé sur <abbr title="Standard Generalized Markup Language">SGML</abbr>. 
+<p><abbr>HTML</abbr> est basé sur <abbr title="Standard Generalized Markup Language">SGML</abbr>.
     Ce dernier étant assez lourd et compliqué, le <abbr title="World Wide Web Consortium">W3C</abbr>
     s'est orienté vers <abbr title="eXtensible Markup Language">XML</abbr>, et a
     donc adapté <abbr>HTML</abbr>&nbsp;: ainsi est né <abbr>XHTML</abbr>.</p>
 
-<p>Les avantages de <abbr>XHTML</abbr> 
+<p>Les avantages de <abbr>XHTML</abbr>
     tournent donc tous autour du fait qu'il s'agit de <abbr>XML</abbr>.
     Ainsi&nbsp;:</p>
 
@@ -87,21 +87,21 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
         et <a href="http://www.w3.org/TR/html5/embedded-content-0.html#svg">svg</a>.</li>
 </ul>
 
-<p>Ceci étant dit... Il circule beaucoup de fausses idées sur <abbr>XHTML</abbr>. 
+<p>Ceci étant dit... Il circule beaucoup de fausses idées sur <abbr>XHTML</abbr>.
     En voici quelques unes, et les explications associées.</p>
 
 
-<h3>Je veux développer en suivant les standards du <abbr>W3C</abbr>, 
+<h3>Je veux développer en suivant les standards du <abbr>W3C</abbr>,
     et leur standard c'est <abbr>XHTML</abbr>&nbsp!</h3>
 
-<p>Comme dit plus haut, c'est d'abord sur <abbr>HTML</abbr> 
+<p>Comme dit plus haut, c'est d'abord sur <abbr>HTML</abbr>
     que le <abbr>W3C</abbr> a publié des
     recommandations. Avec leurs recommandations, <abbr>XHTML</abbr>
     tout comme <abbr>HTML</abbr> sont donc des
     standards&nbsp;!</p>
 
 
-<h3><abbr>XHTML</abbr> est le futur, 
+<h3><abbr>XHTML</abbr> est le futur,
     il est nécessaire que je l'apprenne</h3>
 
 <p>2 choses&nbsp;:</p>
@@ -123,16 +123,16 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 </ul>
 
 
-<h3>Je veux profiter à fond de <abbr title="Cascading Style Sheets">CSS</abbr>, 
+<h3>Je veux profiter à fond de <abbr title="Cascading Style Sheets">CSS</abbr>,
     supprimer tous les FONT, et <abbr>XHTML</abbr>
     est la solution&nbsp;!</h3>
 
-<p><strong>Très important</strong>&nbsp;: on a finit par l'oublier, mais 
+<p><strong>Très important</strong>&nbsp;: on a finit par l'oublier, mais
     <abbr>HTML</abbr> n'est pas synonyme de
     "bouillie-à-la-mode-des-années-90", bref de multiples tableaux imbriqués,
     de balises font qui n'en finissent pas, etc.</p>
 
-<p>En effet, <abbr>HTML</abbr> comme <abbr>XHTML</abbr> proposent 
+<p>En effet, <abbr>HTML</abbr> comme <abbr>XHTML</abbr> proposent
     plusieurs versions&nbsp;:</p>
 
 <ul>
@@ -141,19 +141,19 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
     <li>Strict</li>
 </ul>
 
-<p>Vous retrouverez ces définitions dans <a href="http://www.w3.org/TR/xhtml1/#dtds">les recommandations <abbr>XHTML</abbr></a> 
+<p>Vous retrouverez ces définitions dans <a href="http://www.w3.org/TR/xhtml1/#dtds">les recommandations <abbr>XHTML</abbr></a>
     comme dans <a href="http://www.w3.org/TR/html401/struct/global.html#version-info">celles pour <abbr>HTML</abbr></a>.
     Un article d'OpenWeb, [<a href="#openweb">Pourquoi plusieurs variantes de <abbr>DTD</abbr> en <abbr>XHTML</abbr>&nbsp;?</a>]
     (qui traite d'ailleurs autant de HTML
     que de <abbr>XHTML</abbr>) détaille
     aussi ces 3 différentes versions.</p>
 
-<p>Si l'on choisit une version Strict, on est dans une véritable séparation 
+<p>Si l'on choisit une version Strict, on est dans une véritable séparation
     fond / forme, et donc plus du tout dans l'horreur que l'on évoquait plus
     haut&nbsp;! Sur ce point, <abbr>HTML</abbr> et <abbr>XHTML</abbr> sont totalement
     comparables.</p>
 
-<p>Dans tous les cas, précisons que passer de <abbr>HTML</abbr> 
+<p>Dans tous les cas, précisons que passer de <abbr>HTML</abbr>
     Strict à <abbr>XHTML</abbr> Strict
     servi en application/xml+xhtml est assez simple. Dans un premier temps et pour
     suivre une progression logique, vous avez donc bien plus intérêt à vous exercer
@@ -162,49 +162,49 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 <h3><abbr>XHTML</abbr> est plus strict que <abbr>HTML</abbr></h3>
 
-<p>En <abbr>HTML</abbr>, des balises peuvent 
+<p>En <abbr>HTML</abbr>, des balises peuvent
     ne pas être fermées (c'est d'ailleurs très accomodant pour les pages contenant
     beaucoup de balisage de tableaux), et seul l'élément TITLE et le DOCTYPE sont
     absolument indispensables. Ainsi, <a href="html_ou_xhtml.ex1.html">cette page au balisage très étrange venu d'ailleurs</a>
     est <a href="http://validator.w3.org/check?verbose=1&amp;uri=http%3A//pgoiffon.free.fr/info/inet/html_ou_xhtml.ex1.html">tout à fait valide...</a></p>
 
-<p>Cependant... Ce genre d'exemples sont plus des cas d'école. Dans la pratique, 
+<p>Cependant... Ce genre d'exemples sont plus des cas d'école. Dans la pratique,
     un concepteur Web doit faire attention à tellement de problématiques (validité,
     séparation fond/forme, accessibilité, temps de chargement, ...) que l'on peut
     considérer comme négligeable cet avantage. En effet, pour produire un site
     respectueux des recommandations <abbr>W3C</abbr>, il faut le vouloir... Et dans
     ce cas on ne produira pas de pages sans BODY ou HEAD&nbsp;!</p>
 
-<p>A noter qu'une page <abbr>XHTML</abbr> invalide et lue comme du <abbr>XML</abbr> 
+<p>A noter qu'une page <abbr>XHTML</abbr> invalide et lue comme du <abbr>XML</abbr>
     ne sera pas affichée (on y reviendra <a href="#xhtml_invalide">plus bas</a>)&nbsp;:
     un peu trop strict pour le coup&nbsp;:).</p>
 
 
 <h3><abbr>XHTML</abbr> est plus simple que <abbr>HTML</abbr></h3>
 
-<p>Même en laissant de côté toutes les complications que l'on rencontre en 
+<p>Même en laissant de côté toutes les complications que l'on rencontre en
     <abbr>XHTML</abbr> pour conserver
     la compatibilité avec les vieux agents (et il y en a foison, et il faut pourtant
     impérativement les respecter aujourd'hui&nbsp;!), c'est un argument qui paraît
     impossible à tenir.</p>
 
-<p>Par exemple, voyez les attributs qui doivent avoir une valeur&nbsp;: <code>selected="selected"</code> 
+<p>Par exemple, voyez les attributs qui doivent avoir une valeur&nbsp;: <code>selected="selected"</code>
     (voir la <a href="http://www.w3.org/TR/xhtml1/diffs.html#h-4.5">rec <abbr>XHTML</abbr> chapitre 4.5</a>).
     Ou encore la nécessité d'entourer les contenus de balises script ou style par
     des blocs CDATA (voir la <a href="http://www.w3.org/TR/xhtml1/diffs.html#h-4.8">rec <abbr>XHTML</abbr> chapitre 4.8</a>)</p>
 
-<p>Bref, même si cela ne complique quand même pas dans des proportions 
+<p>Bref, même si cela ne complique quand même pas dans des proportions
     délirantes la tâche des concepteurs, il reste que <abbr>XHTML</abbr>
     est légèrement plus lourd que <abbr>HTML</abbr> dans sa syntaxe.</p>
 
-<p>Et encore une fois, c'est sans compter toutes les contraintes 
+<p>Et encore une fois, c'est sans compter toutes les contraintes
     de compatibilité (nous les détaillerons <a href="#xhtml_compat">plus loin</a>) à impérativement respecter&nbsp;!</p>
 
 
 <h3>Mon site doit pouvoir être lu parfaitement sur mobile !</h3>
 
-<p>A la rédaction initiale de cette page en 2005, les smartphone étaient tout récents... 
-    On avait plutôt des PDA ou des feature phone en iMode (pages écrites en cHTML) 
+<p>A la rédaction initiale de cette page en 2005, les smartphone étaient tout récents...
+    On avait plutôt des PDA ou des feature phone en iMode (pages écrites en cHTML)
     ou WAP (pages en WML ou XHTML Basic).</p>
 
 <p>Les navigateurs mobiles utilisés aujourd'hui, bien entendu, orientent leur compatibilité
@@ -221,7 +221,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 <h3>Généralités</h3>
 
-<p>De par la nature différente de <abbr>HTML</abbr> et <abbr>XHTML</abbr>, il 
+<p>De par la nature différente de <abbr>HTML</abbr> et <abbr>XHTML</abbr>, il
     y a plusieurs nouveautés à respecter en <abbr>XHTML</abbr> :</p>
 
 <ul>
@@ -238,13 +238,13 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
         de formulaire, cf plus bas)</li>
 </ul>
 
-<p>Ces différences sont bien détaillées dans le <a href="http://www.w3.org/TR/xhtml1/#diffs">chapitre 4 de la recommandation <abbr>XHTML</abbr> 1.0</a>, 
+<p>Ces différences sont bien détaillées dans le <a href="http://www.w3.org/TR/xhtml1/#diffs">chapitre 4 de la recommandation <abbr>XHTML</abbr> 1.0</a>,
     et aussi dans un article d'OpenWeb&nbsp;: [<a href="#openweb">Passer du <abbr>HTML</abbr> au <abbr>XHTML</abbr></a>].</p>
 
 
 <h3 id="attr_id">Attribut id</h3>
 
-<p>L'attribut name disparait comme "fragment identifier" et est remplacé par id : c'est 
+<p>L'attribut name disparait comme "fragment identifier" et est remplacé par id : c'est
     cet attribut en particulier que l'on utilisera comme ancre&nbsp;(http://serveur/chemin/document#ancre).<br>
     Plus de détails sur le sujet dans <a href="http://www.w3.org/TR/xhtml1/#h-4.10">le chapitre 4.10 de la recommandation</a>
     et dans <a href="http://www.w3.org/TR/xhtml1/#C_8">le chapitre 8 de son annexe C</a>.</p>
@@ -258,7 +258,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 <h3 id="xhtml_invalide">Code <abbr>XHTML</abbr> invalide</h3>
 
-<p><a href="html_ou_xhtml.ex2.xhtml">Une page <abbr>XHTML</abbr> servie en tant 
+<p><a href="html_ou_xhtml.ex2.xhtml">Une page <abbr>XHTML</abbr> servie en tant
         que telle (content-type application/xml+xhtml) et dont le code est invalide</a>,
     ne sera pas affichée par un navigateur conforme. A la place, c'est une erreur du
     parseur <abbr>XML</abbr> qui sera affichée.</p>
@@ -273,7 +273,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 <h3>Type <abbr title="Multipurpose Internet Mail Extensions">MIME</abbr></h3>
 
-<p>Le document [<a href="#xhtml_content-type"><abbr>XHTML</abbr> media types</a>] précise 
+<p>Le document [<a href="#xhtml_content-type"><abbr>XHTML</abbr> media types</a>] précise
     qu'un document <abbr>XHTML</abbr> 1.1 doit («&nbsp;SHOULD&nbsp;») être servi en utilisant le
     content-type "application/xml+xhtml", et pas («&nbsp;SHOULD NOT&nbsp;») avec le type
     "text/html". Les termes utilisés pour indiquer ces contraintes sont précisément
@@ -292,11 +292,11 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
         before implementing any behavior described with this label.</p>
 </blockquote>
 
-<p>Sachant qu'aucune règle de compatibilité n'existe en <abbr>XHTML</abbr> 
+<p>Sachant qu'aucune règle de compatibilité n'existe en <abbr>XHTML</abbr>
     1.1, il faudra qu'un tel document soit lu par le parseur <abbr>XML</abbr>
     des agents utilisateurs. Et on comprend donc cette contrainte...</p>
 
-<p>Maintenant, arrivons au plus drole... Internet Explorer (toutes versions 
+<p>Maintenant, arrivons au plus drole... Internet Explorer (toutes versions
     jusqu'à la v8 incluse) ne gère pas ce type MIME... <a href="http://caniuse.com/#feat=xhtml">Cf CanIUse.com</a>.
     Et sur Safari iOS le support aussi est récent (depuis la v7.1). Si vous êtes confrontés
     à ces navigateurs, alors cela condamne pour vous l'usage de XHTML 1.1.</p>
@@ -313,7 +313,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 <h3><abbr>XHTML</abbr> 1.0 Annexe C</h3>
 
-<p>Vu ce qui a été dit juste au-dessus, on se rabat donc sur <abbr>XHTML</abbr> 
+<p>Vu ce qui a été dit juste au-dessus, on se rabat donc sur <abbr>XHTML</abbr>
     1.0, servi en text/html. Or de nombreux navigateurs ne connaissent pas
     <abbr>XHTML</abbr>, et liront un tel document comme du <abbr>HTML</abbr>
     invalide. Afin de ménager ces vieux agents utilisateur, il faut suivre les
@@ -355,12 +355,12 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
         1.0, et ne sera donc pas reconnue par de vieux agents.</li>
 </ul>
 
-<p>En fait, on le voit, on a tout intérêt à développer son <abbr>XHTML</abbr> 
+<p>En fait, on le voit, on a tout intérêt à développer son <abbr>XHTML</abbr>
     d'abord en le servant en tant que <abbr>XML</abbr>. Ensuite, on pourra
     l'adapter pour qu'il soit correctement lu en text/html par
     d'anciens agents.</p>
 
-<p>L'excellent document [<a href="#hixie">Sending <abbr>XHTML</abbr> as text/html Considered Harmful</a>] 
+<p>L'excellent document [<a href="#hixie">Sending <abbr>XHTML</abbr> as text/html Considered Harmful</a>]
     (un must-read, vraiment&nbsp;!) a d'ailleurs été écris au départ en pensant aux
     problèmes rencontrés en passant un document <abbr>XHTML</abbr> du text/html au
     application/xhtml+xml...</p>
@@ -372,11 +372,11 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></pre>
 
-<p>Si ce prologue est présent, alors votre document sera affiché par Internet 
+<p>Si ce prologue est présent, alors votre document sera affiché par Internet
     Explorer, jusqu'à la version 6 incluse, Mac ou Windows, dans son [<a href="#quirks">mode de rendu Quirks</a>]...
     Et cela posera donc beaucoup de problèmes aux <abbr>CSS</abbr>&nbsp;!</p>
 
-<p>Notons que l'absence de prologue rendra difficile l'utilisation d'outils 
+<p>Notons que l'absence de prologue rendra difficile l'utilisation d'outils
     <abbr>XML</abbr> sur ces pages (problèmes codage par exemple).</p>
 
 
@@ -491,7 +491,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -501,7 +501,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

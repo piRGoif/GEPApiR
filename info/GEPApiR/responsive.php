@@ -6,10 +6,10 @@ $date_maj = "14/09/2014";
 $RelBasePath = "../../";
 $title = "Responsive design - GepapiR - Informatique [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
-require_once($RelBasePath . 'communs/highlight.inc');
-require_once($RelBasePath . 'communs/toc/toc-js.inc');
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/highlight.inc.php');
+require_once($RelBasePath . 'communs/toc/toc-js.inc.html');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -24,7 +24,7 @@ Responsive design
 
 
 <?
-require_once($RelBasePath . 'communs/toc/toc-html.inc');
+require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
 
@@ -217,7 +217,7 @@ large que l'image :</p>
 taille réduite !</p>
 
 <p>Une solution serait d'utiliser l'attribut HTML 5 <code>srcset</code>, mais le
-support est assez faible à ce jour (août 2014 : juste Chrome 34+ et Safari 8+ - 
+support est assez faible à ce jour (août 2014 : juste Chrome 34+ et Safari 8+ -
 <a href="http://caniuse.com/#feat=srcset">lien CanIUse</a>) et ça nécessiterai de
 créer de nouvelles images... Un avantage pour renvoyer des images plus légères,
 mais les images concernées sont peu nombreuses, relativement peu lourdes et bien
@@ -318,7 +318,7 @@ onDomReady(writeCSSRespImg);
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc');
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 ?>
 
 
@@ -328,7 +328,7 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc');
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

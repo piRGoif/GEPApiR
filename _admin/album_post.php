@@ -4,12 +4,12 @@
 $title = "Musiques [GEPApiR]";
 
 $RelBasePath = "../";
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 <style type="text/css"><!--
 --></style>
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 

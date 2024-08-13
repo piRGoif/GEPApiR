@@ -5,7 +5,7 @@
 $RelBasePath = "../";
 $title = "Musiques [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 <style type="text/css">
 /* Accès restrain */
@@ -21,7 +21,7 @@ vertical-align: middle;
 }
 </style>
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -229,7 +229,7 @@ Attention : <a href="compils/">pages</a> à accès restreint...
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

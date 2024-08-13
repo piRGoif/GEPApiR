@@ -5,7 +5,7 @@ $pageVersion = "v7.11.1";
 $RelBasePath = "";
 $title = "Accueil [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 
 <meta name="description" content="Le site personnel de Pierre Goiffon, contenant
@@ -32,7 +32,7 @@ vertical-align: middle;
 }
 </style>
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -100,6 +100,8 @@ et <a href="http://www.unicode.org/charts/PDF/U1FF80.pdf">U+1D6D1</a> pour le
 symbole mathématique) je m'étais alors résolu à simplement saisir "pi" en toutes
 lettres, le R majuscule marquant la prononciation !</p>
 
+<p>Les sources de ce site sont ouvertes et disponibles sur <a href="https://github.com/piRGoif/GEPApiR">un dépôt GitHub</a>.</p>
+
 
 
 <?=writeHR()?>
@@ -138,6 +140,15 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
+<dt>13/08/2024, v7.12.0</dt>
+<dd>
+- Renommage des fichiers communs<br>
+- <a href="musiques/">Musiques</a> : actualisation et réorganisation des liens<br>
+- <a href="moi/">Moi</a> : actualisation et réorganisation des liens<br>
+- <a href="liens/">Liens</a> : actualisation<br>
+- TODO
+</dd>
+
 <dt>02/10/2018, v7.11.1</dt>
 <dd>
 - <a href="moi/">Moi</a> : ajout de mon compte Open Hub
@@ -172,7 +183,7 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

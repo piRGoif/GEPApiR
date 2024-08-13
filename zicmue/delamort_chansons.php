@@ -6,11 +6,11 @@ $idrub = 1;
 $RelBasePath = "../";
 $title = "Chansons - Delamort - Musiques [GEPApiR]";
 
-require_once($RelBasePath . 'communs/header1.inc');
+require_once($RelBasePath . 'communs/header1.inc.php');
 ?>
 <link rel="contents" href="index.php#delamort">
 <?php
-require_once($RelBasePath . 'communs/header2.inc');
+require_once($RelBasePath . 'communs/header2.inc.php');
 ?>
 
 
@@ -24,9 +24,9 @@ require_once('zicmue_h1.inc');
 Delamort<br>
 Les chansons</h1>
 
-<p>Voilà, nous y sommes. Dans mon panthéon personnel des chansons. Il s'agit 
-donc de choix très subjectifs, bien entendu... Mais pour moi absolument 
-<strong>incontournables</strong> ! Ces chansons ont en effet marquées mon 
+<p>Voilà, nous y sommes. Dans mon panthéon personnel des chansons. Il s'agit
+donc de choix très subjectifs, bien entendu... Mais pour moi absolument
+<strong>incontournables</strong> ! Ces chansons ont en effet marquées mon
 histoire avec la musique, elles m'ont accompagnées. A vous de les découvrir...</p>
 <!-- Titre & intro - FIN -->
 
@@ -45,9 +45,9 @@ histoire avec la musique, elles m'ont accompagnées. A vous de les découvrir...
 <dd></dd>
 
 <dt>Don't think twice - Bryan Ferry - Frantic (2002)</dt>
-<dd>Bryan Ferry mais si vous le connaissez... "More than this", ça ne vous dis 
+<dd>Bryan Ferry mais si vous le connaissez... "More than this", ça ne vous dis
 rien comme chanson ? Et Roxy Music... Hé ben voilà, c'est lui !<br>
-Cette chanson la est une reprise de Bob Dylan... une vraie grande reprise : une 
+Cette chanson la est une reprise de Bob Dylan... une vraie grande reprise : une
 voix fatiguée, un brin rauque, avec un simple piano. Magnifique !</dd>
 
 <dt>Les partisans - Noir Désir et ?</dt>
@@ -146,8 +146,8 @@ voix fatiguée, un brin rauque, avec un simple piano. Magnifique !</dd>
 
 <dt>Le crocodile - Camille Bazbaz - Sur le bout de la langue (2005)</dt>
 <dd><q>Lui qui ne roule qu'au super, ça te change de mon ordinaire</q></dd>
-<dd>Il y a d'abord cette voix : un mélange de Charlélie, Joe Cocker, et en 
-même temps cette douceur... Et puis, le texte ! Magnifique, ciselé, du travail 
+<dd>Il y a d'abord cette voix : un mélange de Charlélie, Joe Cocker, et en
+même temps cette douceur... Et puis, le texte ! Magnifique, ciselé, du travail
 d'orfèvre ! Et... la mélodie... Du vrai grand Bazbaz !</dd>
 
 </dl>
@@ -180,7 +180,7 @@ d'orfèvre ! Et... la mélodie... Du vrai grand Bazbaz !</dd>
 
 
 <?
-require_once($RelBasePath . 'communs/menu.inc');
+require_once($RelBasePath . 'communs/menu.inc.php');
 ?>
 
 

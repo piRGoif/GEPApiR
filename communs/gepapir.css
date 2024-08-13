@@ -179,7 +179,7 @@ blockquote>p>cite
 
 q, blockquote
 {
-    font: italic 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font: normal 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 q:before
