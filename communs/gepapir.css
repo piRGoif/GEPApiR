@@ -174,12 +174,13 @@ blockquote>p>cite
     font-style: normal;
     display: block;
     text-align:right;
-    margin-top: 0.5em;
+    margin-top: 1rem;
+    margin-right: 2rem;
 }
 
 q, blockquote
 {
-    font: normal 0.9em Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font: normal 1rem Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 q:before
