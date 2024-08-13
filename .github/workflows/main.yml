@@ -3,7 +3,7 @@ on:
 name: 🚀 Deploy site
 jobs:
   web-deploy-test:
-    if: github.ref != 'refs/heads/main'
+    if: github.ref != 'refs/heads/master'
     name: 🎉 Deploy TEST
     runs-on: ubuntu-latest
     steps:
@@ -19,7 +19,7 @@ jobs:
         dry-run: true
         log-level: verbose
   web-deploy-prod:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     name: 🎉 Deploy PROD
     runs-on: ubuntu-latest
     steps:
