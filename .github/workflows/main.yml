@@ -1,12 +1,10 @@
 on:
-  push:
-    branches:
-      - '*'
-      - '!master'
-name: 🚀 Test run deployement
+  push
+name: 🚀 Deploy site
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  web-deploy-test:
+    if: github.ref != 'refs/heads/main'
+    name: 🎉 Deploy TEST
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
@@ -20,14 +18,9 @@ jobs:
         password: ${{ secrets.ftp_password }}
         dry-run: true
         log-level: verbose
-on:
-  push:
-    branches:
-      - master
-name: 🚀 Deploy site
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  web-deploy-prod:
+    if: github.ref == 'refs/heads/main'
+    name: 🎉 Deploy PROD
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
