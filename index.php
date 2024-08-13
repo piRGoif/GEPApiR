@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.0.0";
+$pageVersion = "v8.0.1";
 
 // NAVIGATION
 $RelBasePath = "";
