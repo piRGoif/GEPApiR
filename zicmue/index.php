@@ -268,6 +268,14 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 			<li>2021 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157719939836099">concert Philippe Renard</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157719959862356">concert Pierre Hamon</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157720013003003">Bal</a></li>
 		</ul>
 	</li>
+	<li>Evénements Fanfares :
+		<ul>
+			<li>2023 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720312177018">Les 10 ans des Son'enBulles</a></li>
+			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720300537588">Anniversaire des Garces Embouchées</a></li>
+			<li>2021 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157719802471828">La Valdingue 2021</a></li>
+			<li>2014 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157646265826332">Fort en son 6</a></li>
+		</ul>
+	</li>
 </ul>
 
 
