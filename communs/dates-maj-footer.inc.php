@@ -4,6 +4,5 @@ Dernière mise à jour le <?=$date_maj?>
 </p>
 
 <p id="disclaimer">
-Un oubli, une erreur, une suggestion ? N'hésitez pas à me contacter sur 
-pgoiffon -at- free.fr
+Un oubli, une erreur, une suggestion ? Rendez-vous sur <a href="https://github.com/piRGoif/GEPApiR">le dépôt GitHub</a> !
 </p>

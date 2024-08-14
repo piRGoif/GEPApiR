@@ -210,7 +210,7 @@ label:hover
 ******************/
 hr.sep, hr.sepfin
 {
-    clear: left;
+    clear: both;
     margin: 4ex auto;
     width: 630px;
     border-style: none;
