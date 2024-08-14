@@ -1,5 +1,6 @@
 <?php ob_start('ob_gzhandler');
-// Version 20140823
+$date_creation = "05/08/2005";
+$date_maj = "14/08/2024";
 
 // NAVIGATION
 $RelBasePath = "../";
@@ -52,119 +53,13 @@ right by the exit, just next to the blues.</q><br>
 <cite>Nick Hornby, High Fidelity</cite></p>
 </blockquote>
 
-<p>Aussi loin que je me souvienne, il y a toujours de la musique, beaucoup de
-musiques différentes tout autour de moi. C'est peu dire que la musique m'a
-accompagnée tout au long de ma vie...</p>
-
-<p>Il y a eu quelques découvertes marquantes, et c'est celles-ci que je veux
-faire partager ici ! Voici donc : <q>tûte la mûsiqueuuuu queûûûû j'aimeûûû</q> !</p>
-
 
 
 <?=writeHR()?>
 
 
 
-<h2>Les delamort</h2>
-
-<p><q>Patron, un delamort !</q> (© Coach). Voilà, ici se trouvent les oeuvres
-qui m'ont le plus touchées, marquées, accompagnées... La crème de la crème !</p>
-
-<ul>
-	<li>Albums</li>
-	<li>Concerts</li>
-	<li><a href="delamort_chansons.php">Chansons</a></li>
-</ul>
-
-
-
-<?=writeHR()?>
-
-
-
-<h2>Coups de coeur</h2>
-
-<p>Toutes les <a href="http://www.pingmachine.org/category/zic/">découvertes</a>,
-<a href="http://www.pingmachine.org/category/concerts/">concerts vus ou donnés</a>,
-<a href="http://www.pingmachine.org/category/on-ze-net/">liens rigolo sur le Net</a>,
-et tout le reste est blogé sur le <a href="http://www.pingmachine.org">site de Ping Machine</a>,
-en commun avec les compères du groupe !</p>
-
-
-
-<?=writeHR()?>
-
-
-
-<h2><abbr title="Musique Assistée par Ordinateur">MAO</abbr></h2>
-
-<p>Des petites trucs sur la pratique informatique musicale... Rubrique naissante :)</p>
-
-<ul>
-	<li><a href="finale.php">Finale</a></li>
-</ul>
-
-
-
-<?=writeHR()?>
-
-
-
-<h2>Moi - participations</h2>
-
-<p id="moi-groupes"">
-<a href="https://www.facebook.com/JeudiSoir/photos/a.10150299484164982.1073741825.168878409981/10150299484244982/?type=3&theater">
-<!--
-Marge pour éviter le chevauchement du texte.
- A remplacer à terme par CSS Shape (http://www.w3.org/TR/css-shapes/)
--->
-<img src="<?=$RelBasePath?>images/piR_tromb1.png" width="200" height="370"
- class="pretty-img" style="float:right; margin-left: 60px; transform: rotate(6deg);"
- alt="piR concert trombone" id="piR_tromb1"></a>
-Actuellement (rentrée 2018), j'ai l'immense plaisir de jouer avec :</p>
-
-<ul>
-	<li>l'ensemble de cuivres <a href="http://www.atoutcuivres.fr/">AtoutCuivres</a>, depuis fin 2007</li>
-	<li>le brass band <a href="https://www.facebook.com/InYourBrass">In Your Brass</a> depuis mai 2011</li>
-	<li>l'<a href="https://www.facebook.com/OrchestreduPolygoneScientifique">orchestre symphonique du Polygone scientifique</a> depuis septembre 2012
-	<li>le grand ensemble d'harmonie de l'<a href="https://www.harmonie-grenoble.fr/">Harmonie de Grenoble</a> depuis septembre 2016
-	<li>la classe d'improvisation Jazz autour de midi de <a href="http://www.laporteedetous.fr/?page_id=2">la Portée de tous</a> depuis septembre 2017
-</ul>
-
-<p>Et aussi je vois régulièrement les compères du groupe <a href="http://www.pingmachine.org">Ping Machine</a> depuis décembre 2004. En fait avec les amis de promo Vince et Stein, nous étant mis
-à peu près en même temps et chacun de notre côté à un instrument, nous nous sommes
-dis "tiens, on pourrait faire des trucs ensembles", et PAF !</p>
-
-<p>J'ajoute quelques pensées pour les copains avec qui j'ai joué par le passé : l'harmonie
-et la batterie fanfare de Theys, les Bracass, les orchestres de l'<a href="http://harmonie-meylan.fr/">EMGB</a>, le groupe de chanson Le Moulin à Paroles, le groupe de ska JeudiSoir, le Swing Grant Orchestra !</p>
-
-<p id="moi-enreg">Vous pouvez m'entendre sur quelques enregistrements :</p>
-<dl>
-	<dt>Des bidouilles faites de mon côté sur <a href="http://soundcloud.com/pir-3">mon compte Soundcloud</a></dt>
-	<dt><a href="https://www.okpal.com/daigui/#/">Dernier album Daïgui</a> sur 3 titres (2018)</dt>
-	<dt>Démo 4 titres de In Your Brass (2017)</dt>
-	<dt>"On s'y risque" de <a href="http://www.revolutionsoundrecords.org/">Revolution sound records</a> (2012)</dt>
-	<dd>Sur : "Meli mais l'eau" (de <a href="http://www.tit-patapons.fr/">Tit Patapons</a>)<br>
-	Album en licence libre et téléchargeable gratuitement <a href="http://www.revolutionsoundrecords.org/index.php?e=artistes&artiste=60&page=downloads&album=55">sur le site du collectif</a></dd>
-	<dt>"Errons, Errons" de <a href="http://www.tit-patapons.fr/">Tit Patapons</a> (2011)</dt>
-	<dd>Sur : "Les sonneurs de rêve", "Centre commercial"<br>
-	Album en licence libre et téléchargeable gratuitement <a href="http://www.tit-patapons.fr/musique.php">sur le site du groupe</a></dd>
-	<dt>"BADA BOoM BoOM SWING" de <a href="https://www.facebook.com/lamuzgueule">Lamuzgueule</a> (2014)</dt>
-	<dd>Sur : "French Kiss", "Désamour 2.0", "Rodeo", "Rien ne va plus", "Rideau !"<br>
-	Ecoutable <a href="http://www.deezer.com/album/7787754">sur Deezer</a> par exemple</dd>
-	<dt>la démo 5 titres de In your brass (2011)</dt>
-	<dd>Ecoutable sur <a href="https://inyourbrass.bandpage.com/">le BandPage du groupe</a></dd>
-	<dt>les 2 démo de JeudiSoir (3 puis 6 titres, 2008)</dt>
-	<dd>Ecoutable sur <a href="http://www.myspace.com/jeudisoir">le MySpace du groupe</a></dd>
-</dl>
-
-
-
-<?=writeHR()?>
-
-
-
-<h2>Moi - toute une histoire !</h2>
+<h2>Toute une histoire...</h2>
 
 <p>
 <a href="https://www.flickr.com/photos/pingmachine/223897274/">
@@ -176,17 +71,25 @@ Marge pour éviter le chevauchement du texte.
  class="pretty-img" style="float: left; margin-right: 40px; transform: rotate(-6deg);"
  alt="piR et l'tromb'" id="piR_tromb2">
 </a>
-Et moi ? Hé bien, j'apprend doucement... Car oui, à l'âge de 14 ans environ
-je me suis mis à vraiment m'intéresser à la musique... Et l'envie d'apprendre, de
-pratiquer un instrument est venue très vite. Mais cette envie, qui a grandie,
-grandie, grandie avec les années, j'ai mis près de 15 ans avant de me décider à la
-concrétiser !</p>
+Aussi loin que je me souvienne, il y a toujours eu de la musique, beaucoup de
+musiques différentes tout autour de moi ! C'est peu dire que la musique m'a
+accompagnée tout au long de ma vie...</p>
 
-<p>En fait, j'ai profité dun changement de travail et du changement de ville
- pour foncer. Et je ne le regrette vraiment pas !</p>
+<p>A l'âge de 14 ans environ je me suis mis à vraiment m'y intéresser : non plus
+juste être content lorsque j'en entendais, mais rechercher avidement ! Tout celà suite
+à une énorme claque reçue un été d'ennui : l'écoute hallucinée de Wish you were
+here des Pink Floyd, un moment marquant ! Une émotion musicale intense, que j'ai cherché
+à reproduire depuis !</p>
+
+<p>Et puis rapidement est arrivée l'envie d'apprendre, de pratiquer un instrument.
+Mais cette envie, qui a grandi, grandi, grandi avec les années, j'ai mis près de 15
+ans à la concrétiser !<br>
+En fait, j'ai profité d'un changement de travail et du changement de ville
+qui l'a accompagné pour foncer. C'était en 2004... Et je ne le regrette vraiment pas !</p>
 
 <p>Le choix de l'instrument ? Mais le trombone bien sûr, pourquoi choisir autre
-chose ! Bon j'avoue, mes envies ont variées au fûr et à mesure des années. La
+chose !<br>
+Bon j'avoue, mes envies ont variées au fûr et à mesure des années. La
 première envie ça a été la basse (période Pink Floyd). Et puis, la guitare
 (période REM, Nirvana, ...), le saxophone (Stan Getz revient à la charge), la
 contrebasse (Hot club)... Et puis non, décidemment, le son des cuivres est
@@ -206,7 +109,181 @@ serré pour la 1ere fois la main du génial prof' Eric Ferrier, qui m'a donné m
 premier cours ("bzzzzzzzzzzz"). Et je suis repartit avec une grosse malette
 contenant un trombone...</p>
 
-<p>Depuis, on apprend doucement :)</p>
+<p>Depuis, je pratique avec plusieurs formations, avec un immense bonheur 8)</p>
+
+
+
+<?=writeHR()?>
+
+
+
+<h2 id="groupes">Groupes et orchestres</h2>
+
+<p id="moi-groupes"">
+<a href="https://www.facebook.com/JeudiSoir/photos/a.10150299484164982.1073741825.168878409981/10150299484244982/?type=3&theater">
+<!--
+Marge pour éviter le chevauchement du texte.
+ A remplacer à terme par CSS Shape (http://www.w3.org/TR/css-shapes/)
+-->
+<img src="<?=$RelBasePath?>images/piR_tromb1.png" width="200" height="370"
+ class="pretty-img" style="float:right; margin-left: 60px; transform: rotate(6deg);"
+ alt="piR concert trombone" id="piR_tromb1"></a>
+Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
+
+<ul>
+	<li>Depuis 2004 : Ping Machine (chanson)</li>
+	<li>Depuis 2011 : le brass band <a href="https://www.facebook.com/InYourBrass">In Your Brass</a> (fanfare hip hop)</li>
+	<li>Depuis 2012 : l'<a href="https://www.facebook.com/OrchestreduPolygoneScientifique">orchestre symphonique du Polygone scientifique</a></li>
+	<li>Depuis 2020 : <a href="https://www.facebook.com/jdebert70">Spock Marlone Section</a> (funk)</li>
+	<li>Depuis 2021 : <a href="https://www.facebook.com/SmallBandProject/">Small Band Project</a> (combo jazz)</li>
+	<li>Depuis 2022 : orchestre accompagnant la chorale <a href="https://www.clap-yo-hands.com/">Clap Yo Hands</a> (comédie musicale)</li>
+</ul>
+
+<p>J'ajoute quelques pensées pour les copains avec qui j'ai joué par le passé :</p>
+
+<ul>
+	<li>De 2005 à 2014 : l'orchestre d'harmonie de Theys</li>
+	<li>De 2005 à 2017 : les orchestres de l'<a href="http://harmonie-meylan.fr/">Espace Musical Gaston Baudry</a> (BoPerCui, classe d'improvisation jazz, ensemble de cuivres, et renforts occasionnels à l'orchestre d'harmonie)</li>
+	<li>De 2006 à 2017 : le groupe de ska JeudiSoir</li>
+	<li>De 2007 à 2022 : l'ensemble de cuivres <a href="https://www.harmonie-grenoble.fr/index.php?option=com_content&view=article&id=17&Itemid=153">AtoutCuivres</a></li>
+	<li>De 2013 à 2015 : le groupe de chanson Le Moulin à Paroles</li>
+	<li>De 2014 à 2017 : le big band Swing Grant Orchestra (avec une pensée particulière à son exceptionnel directeur artistique Jean-Pierre Vidal, décédé en 2021)</li>
+	<li>De 2016 à 2019 : le grand ensemble d'harmonie de l'<a href="https://www.harmonie-grenoble.fr/">Harmonie de Grenoble</a></li>
+	<li>De 2017 à 2020 : la classe d'improvisation "Jazz autour de midi" de <a href="http://www.laporteedetous.fr/?page_id=2">la Portée de tous</a> sous la direction de Jérome Dugand</li>
+</ul>
+
+
+
+<?=writeHR()?>
+
+
+
+<h2 id="enregistrements">Participations enregistrements 🎙️</h2>
+
+<p>Avec mes groupes réguliers :</p>
+
+<ul>
+	<li>2008 : les 2 démo de <strong>JeudiSoir</strong> (3 puis 6 titres), écoutables sur <a href="https://myspace.com/jeudisoir/music/songs">le MySpace du groupe</a></dd>
+	<li><strong>In Your Brass</strong>
+		<ul>
+			<li>2011 : <a href="https://soundcloud.com/in-your-brass/sets/demo-nov-2011">Démo 5 titres<a></li>
+			<li>2017 : <a href="https://soundcloud.com/in-your-brass/sets/demo-nov-2017">Démo 4 titres</a></li>
+		</ul>
+	</li>
+</ul>
+
+
+<p>Et en renfort :</p>
+
+<dl>
+	<dt><a href="https://www.tit-patapons.fr/">Tit Patapons</a></dt>
+	<dd>De très bons copains très talentueux 🤩 qui produisent <a href="https://www.tit-patapons.fr/musique.php">des albums sous license libre</a> !
+		<dl>
+			<dt>2011 : "<a href="https://www.deezer.com/fr/album/199704782">Errons, Errons</a>"</dt>
+			<dd>Sur : "Les sonneurs de rêve", "Centre commercial"<br>
+			<dt>2012 : "<a href="http://www.revolutionsoundrecords.org/index.php?e=artistes&artiste=60&page=downloads&album=55">On s'y risque</a>"</dt>
+			<dd>Sur : "Meli mais l'eau"</dt>
+		</dl>
+	</dd>
+	<dt>2014 : "<a href="http://www.deezer.com/album/7787754">BADA BOoM BoOM SWING</a>" de <a href="https://www.facebook.com/lamuzgueule">LMZG (Lamuzgueule)</a></dt>
+	<dd>Sur : "French Kiss", "Désamour 2.0", "Rodeo", "Rien ne va plus", "Rideau !"</dd>
+	<dt>2018 : "<a href="https://open.spotify.com/intl-fr/album/5jwELSauEjKkNWFZ9aLLhi?flow_ctx=c50e1dea-e84a-4651-bdd4-e168f088ab39%3A1723650423">Cette nuit encore</a>" de <a href="https://daigui.wixsite.com/daigui">Daïgui</a></dt>
+	<dd>Sur : "Des années sans contrôle", "A travers pente", "Après plus rien"</dd>
+</dl>
+
+
+
+<?=writeHR()?>
+
+
+
+<h2 id="videos">Participations vidéos 🎥</h2>
+
+<p>Avec mes groupes réguliers, passés ou présents :</p>
+
+<ul>
+	<li><strong>JeudiSoir</strong>
+		<ul>
+			<li>2008 : <a href="https://www.youtube.com/watch?v=1MEWsrSWGjE">teaser de l'album 6 titres</a></li>
+			<li>2013 : <a href="https://youtu.be/-XFf-C1vcck?si=e9LkfawPXZ3kOZS1">festival Canap'Art à Autrans</a></li>
+		</ul>
+	</li>
+	<li><strong>Harmonie de Grenoble</strong>
+		<ul>
+			<li>2018 : captation du "<a href="https://youtu.be/CtfArcQmSZI">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
+			<li>2020 : vidéos de confinement, "<a href="https://youtu.be/_Oct2icbTgU">Daft Punk medley</a>", "<a href="https://youtu.be/QjhzMbHgBVA">Disney Remix</a>" (bravo à Louis Piquard et Sébastien Michel pour la réalisation 👏)</li>
+		</ul>
+	</li>
+	<li><strong>Swing Grant Orchestra</strong>, 2017 : captation de "<a href="https://youtu.be/CtfArcQmSZI">Why don't you do right</a>" au Voiron Jazz Festival</li>
+	<li><strong>In Your Brass</strong> : quelques vidéos <a href="https://www.youtube.com/@inyourbrass9987/videos">sur le compte Youtube du groupe</a>, en particulier :
+		<ul>
+			<li>2011 : captation <a href="https://youtu.be/lPV0o5ngmdM">du concert à la Salle Edmond Vigne de Fontaine</a>, merci aux Yebarov pour leur invitation !</li>
+			<li>2013 : captation <a href="https://youtu.be/s04Va49iWe8">du festival Fort en son au jardin de ville de Grenoble</a>, merci aux Pink It Black pour leur invitation !</li>
+			<li>2013 : captation de "<a href="https://youtu.be/IAS9XwZl3ms">Express Yourself</a>" à la Coupe Icare</li>
+			<li>2017 : captation de "<a href="https://www.youtube.com/watch?v=ttwFnMesnec">War</a>" lors du concert Rap & Brass à la Bifurk de Grenoble</li>
+			<li>2019 : souvenirs de <a href="https://youtu.be/SiLRXsxNarc">Fly to NOLA</a>, voyage inoubliable à la Nouvelle Orléans avec le Jules Ferry Brass Band et les percussions urbaines de Voiron</li>
+			<li>2020 : <a href="https://www.youtube.com/watch?v=C8LNw73F2mY">clôture du festival Livres à vous</a> au Grand Angle de Voiron</li>
+			<li>2022 : <a href="https://www.youtube.com/playlist?list=PLGLp6IvQv-8J7npNLaXbw2MSOuqNrHouZ">les 3 vidéos à la Bifurk de Grenoble</a> réalisées par <a href="https://www.frogerfilm.fr/">Arsene Froger</a></li>
+		</ul>
+	</li>
+	<li><strong>Small Band Project</strong>, 2024 : captation au festival Jazz Alp (merciiiiii Guy Jass !), <a href="https://www.youtube.com/watch?v=bgXkjFr8TJk">montage d'extraits de la soirée</a> et <a href="https://www.facebook.com/share/v/wtvLBXBBvo6aVQmx/">des 2 chansons de Boris Vian</a></li>
+	<li><strong>Clap Yo Hands</strong>, 2023 (spectacle "Hello Broadway") : <a href="https://youtu.be/FqJd3dnxm2s">teaser du spectacle</a>, "<a href="https://www.youtube.com/watch?v=LeYg782cW5s">Singin' In The Rain</a>"</li>
+</ul>
+
+<p>Et en renfort / figurant :</p>
+
+<dl>
+	<dt>2011 : "<a href="https://www.youtube.com/watch?v=9u_gA0ULmBo">Enregistrement Errons Errons (2011) - Jour 9</a>" avec Tit Patapons</dt>
+	<dd>Petite improvisation en fin de journée d'enregistrement O:)</dd>
+	<dt><a href="https://www.facebook.com/lamuzgueule">LMZG (Lamuzgueule)</a></dt>
+	<dd>
+		<ul>
+			<li>2014 : "<a href="https://youtu.be/rV-bV2DD9Cc">BADA BOoM BoOM SWING</a>"</li>
+			<li>2016 : "<a href="https://youtu.be/5LNNX9TeslQ">Fauves</a>"</li>
+		</ul>
+	</dd>
+	<dt>2020 : "<a href="https://www.youtube.com/watch?v=9u_gA0ULmBo">Des années sans contrôle</a>" de <a href="https://daigui.wixsite.com/daigui">Daïgui</a></dt>
+	<dd>Version confinement de cette chanson présente sur l'album "Cette nuit encore"</dd>
+	<dt>2024 : "<a href="https://youtu.be/hU75m0FQlUM">Break my heart</a>" de <a href="https://www.facebook.com/updatemusicofficial">Update</a></dt>
+</dl>
+
+
+
+<?=writeHR()?>
+
+
+
+<h2 id="photo">Photographie de concert 📷</h2>
+
+<p>Passionné de musique, passionné de photographie, j'ai naturellement sortit l'appareil photo pour capturer des moments de concerts de copains :)</p>
+
+<p>Quelques liens pour voir les résultats :</p>
+
+<ul>
+	<li><a href="https://www.flickr.com/photos/pirgoif/collections/72157720527727742/">Classeur dédié</a> sur mon compte Flickr</li>
+	<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
+	<li>Journées des flutes à bec, événement organisé en région grenobloise par l'association <a href="https://www.loiseauaplumes.org/">l'Oiseau à plumes</a> :
+		<ul>
+			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299640616">concert d'ouverture</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299643180">Bal</a></li>
+			<li>2021 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157719939836099">concert Philippe Renard</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157719959862356">concert Pierre Hamon</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157720013003003">Bal</a></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<?=writeHR()?>
+
+
+
+<h2 id="vrac">En vrac</h2>
+
+<ul>
+	<li>Une <a href="delamort_chansons.php">liste de chansons</a> particulières à mon coeur...</li>
+	<li>Des bidouilles faites de mon côté sur <a href="http://soundcloud.com/pir-3">mon compte Soundcloud</a></li>
+	<li>Quelques petits trucs sur <a href="finale.php">Finale</a>, le fameux éditeur de partitions</li>
+</ul>
+
 
 
 <!--
@@ -222,6 +299,16 @@ contenant un trombone...</p>
 Attention : <a href="compils/">pages</a> à accès restreint...
 </p>
 -->
+
+
+<?= writeHR() ?>
+
+
+
+<?
+require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+?>
+
 
 
 <hr class="sep sepfin">
