@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.1.0";
+$pageVersion = "v8.2.0";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -140,9 +140,10 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt>14/08/2024, v8.1.0</dt>
+<dt>14/08/2024, v8.2.0</dt>
 <dd>
-- <a href="zicmue/">Musiques</a> : mise à jour complète du contenu
+- <a href="zicmue/">Musiques</a> : mise à jour complète du contenu<br>
+- Menu : changement d'apparence
 </dd>
 
 <dt>13/08/2024, v8.0.0</dt>
