@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.2.0";
+$pageVersion = "v8.2.1";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -139,6 +139,12 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 </dd>
 ****/
 ?>
+
+<dt>15/08/2024, v8.2.1</dt>
+<dd>
+- Menu : amélioration responsive<br>
+- TODO
+</dd>
 
 <dt>14/08/2024, v8.2.0</dt>
 <dd>

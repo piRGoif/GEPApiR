@@ -311,7 +311,7 @@ nav ul
     padding: 0 1.5em;
 
     background: #DAE2FE url("../images/fonds/nuages_background.jpg") repeat scroll;
-    opacity: 0.85;
+    opacity: 0.9;
     border: 1px solid grey;
     border-bottom: none;
     border-radius: 5% 5% 0 0 / 1em 1em 0 0;
@@ -360,37 +360,30 @@ nav a:link, nav a:visited
  Ciblage mobiles avec balise meta viewport
  Les utilisateurs desktop aussi ont besoin de ces modif donc on leur laisse (utilisation max-width plutôt que max-device-width)
 */
-@media screen and (max-width: 760px)
+@media screen and (max-width: 700px)
 {
     nav a
     {
         margin: 0 0.5em;
         padding: 0.2em;
     }
-
-    nav a:before
-    {
-        content: none;
-    }
-
-    nav a>span.menu_icon
-    {
-        display: block;
-        margin: auto;
-    }
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 590px)
 {
     nav ul
     {
-        font-size: 0.7em;
+        margin: 0;
+        padding : 0.1em;
+
+        font-size: 0.85em;
+        font-style: bold;
     }
 
     nav a
     {
-        margin: 0 0.2em;
-        padding: 0.1em;
+        margin: 0 0.1em;
+        padding: 1em 0.05em;
     }
 }
 
