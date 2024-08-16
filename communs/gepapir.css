@@ -335,7 +335,10 @@ nav a
     margin: 0;
     padding: 0.5em 1em;
 
-    border: 1px outset transparent; /* car on a 1px gray sur :hover */
+    background-color: transparent;
+    transition: background 0.6s;
+
+    border: 1px outset transparent;
     border-left: 1px solid gray;
 
     font-size: 0.9em;
