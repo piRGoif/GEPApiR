@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "29/08/2014";
+$date_maj = "16/08/2024";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -208,7 +208,7 @@ Cet article chez Alsacreations explique bien la chose : <a href="http://www.alsa
 
 <h3>Mise en place</h3>
 
-<p>Sur la GepapiR, ce sont les séparateurs et les icones du menu de navigation qui
+<p>Sur la GepapiR, ce sont les séparateurs qui
 utilisent cette technique (respectivement, mêmes largeurs et mêmes hauteurs).<br>
 Les images ont été regroupées grace à l'excellent <a href="http://draeton.github.io/stitches/">Stitches</a> !</p>
 
@@ -237,28 +237,6 @@ background-position: 0 -59px;
 &lt;/style>
 
 &lt;hr class="sep sep1">
-
-
-&lt;!-- Icone menu navigation -->
-&lt;style>
-nav a>span.menu_icon
-{
-display: inline-block;
-width: 15px;
-height: 15px;
-margin-right: 5px;
-vertical-align: baseline;
-background-image: url("../images/menu/menu-sprites.png");
-background-repeat: no-repeat;
-}
-
-nav a#menu_accueil>span.menu_icon {
-background-position: 0 0;
-}
-&lt;/style>
-
-&lt;a href="..." id="menu_accueil">
-&lt;span class="menu_icon">&lt;/span>&nbsp;Accueil&lt;/a>
 </code></pre>
 
 

@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "14/09/2014";
+$date_maj = "16/08/2024";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -79,7 +79,7 @@ ce qui a été mis en place.</p>
 
 
 
-<h2>Balise meta viewport</h2>
+<h2 id="meta_tag">Balise meta viewport</h2>
 
 <p>Par défaut les navigateurs sur mobile vont initialiser un zoom afin d'afficher la
 page dans son entier, au plus près de ce que l'on aurait sur un écran plus grand.
@@ -99,7 +99,7 @@ Ou cet article sur le très bon quirksmode.org : <a href="http://www.quirksmode.
 
 
 
-<h2>Unités CSS relatives</h2>
+<h2 id="css_unit">Unités CSS relatives</h2>
 
 <p>Les dimensions en CSS peuvent s'exprimer en différentes unités : voir la liste
 <a href="http://www.w3.org/TR/CSS21/syndata.html#length-units">dans la recommandation</a> !</p>
@@ -134,7 +134,7 @@ est simple et fait que les problèmes d'imbrication décrits dans l'article sont
 
 
 
-<h2>Menu de navigation</h2>
+<h2 id="menu">Menu de navigation</h2>
 
 <p>Trois différentes largeurs d'écran sont gérées pour le menu de navigation, via des
 <a href="http://www.w3.org/TR/css3-mediaqueries/">media queries</a>, comme montré
@@ -144,45 +144,48 @@ unité "%".</p>
 
 <dl>
 	<dt>Par défaut</dt>
-	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-default.png" width="1024" height="44"
+	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-default.png" width="796" height="62"
 	data-responsive-img></dd>
-	<dt>Si la largeur <= 760px</dt>
-	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-760.png" width="760" height="49"
+	<dt>Si la largeur <= 700px</dt>
+	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-700.png" width="718" height="42"
 	data-responsive-img>
 <pre><code class="css">
-@media screen and (max-width: 760px)
+@media screen and (max-width: 700px)
 {
-	nav a:before
-	{
-	content: none;
-	}
-
-	nav a>span.menu_icon
-	{
-	display: block;
-	margin: auto;
-	}
+    nav a
+    {
+        margin: 0 0.5em;
+        padding: 0.2em;
+    }
 }
 </code></pre>
 	</dd>
-	<dt>Si la largeur <= 420px</dt>
-	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-420.png" width="420" height="40"
+	<dt>Si la largeur <= 590px</dt>
+	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-590.png" width="256" height="34"
 	data-responsive-img>
 <pre><code class="css">
-@media screen and (max-width: 420px)
+@media screen and (max-width: 590px)
 {
-	nav ul
-	{
-	font-size: 0.7em;
-	}
+    nav ul
+    {
+        margin: 0;
+        padding : 0.1em;
+
+        font-size: 0.85em;
+    }
+
+    nav a
+    {
+        margin: 0 0.1em;
+        padding: 1em 0.05em;
+    }
 }
 </code></pre>
 	</dd>
 </dl>
 
-<p>A noter : on utilise <code>max-width</code> (largeur du viewport) plutôt que <code>max-device-width</code> (largeur physique de l'écran) à dessein : ces modifications sont aussi intéressantes
-si l'on redimensionne la fenêtre d'un navigateur sur grand écran !<br>
-A ce sujet lire : <a href="http://www.hteumeuleu.fr/arreter-media-queries/">Faut arrêter avec les Media Queries ! – HTeuMeuLeu</a></p>
+<p>A noter : on utilise <a href="https://developer.mozilla.org/fr/docs/Web/CSS/max-width"><code>max-width</code></a> (largeur du viewport) plutôt que <a href="https://developer.mozilla.org/fr/docs/Web/CSS/@media/device-width"><code>max-device-width</code></a> (largeur physique de l'écran) à dessein : ces modifications sont aussi intéressantes si l'on redimensionne la fenêtre d'un navigateur sur grand écran !<br>
+Généralement c'est plutôt l'inverse... A ce sujet lire : <a href="http://www.hteumeuleu.fr/arreter-media-queries/">Faut arrêter avec les Media Queries ! – HTeuMeuLeu</a></p>
 
 
 
@@ -190,7 +193,7 @@ A ce sujet lire : <a href="http://www.hteumeuleu.fr/arreter-media-queries/">Faut
 
 
 
-<h2>Séparateurs</h2>
+<h2 id="separateurs">Séparateurs</h2>
 
 <p>On va simplement afficher une partie des séparateurs si le viewport est moins
 large que l'image :</p>
