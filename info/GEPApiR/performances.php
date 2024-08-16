@@ -145,14 +145,11 @@ d'utiliser l'excellent YUI Compressor en ligne : <a href="http://refresh-sf.com/
 
 <dl>
 <dt>Firefox</dt>
-<dd>Dans les outils de développement Firefox la taille affichée est celle
-de la resource décompressée ! Un bug est saisi mais à cette date (août 2014) pas
-encore corrigé : <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=731318">731318 – Display response size before and after content decoding</a>).<br>
-Il faut donc se tourner vers l'extension <a href="http://getfirebug.com/">Firebug</a>,
-éventuellement accompagnée de l'excellent complément <a href="https://developer.yahoo.com/yslow/">YSlow</a>.</dd>
+<dd>Les outils de développements affichent la taille de transfert (ce qui est passé sur le réseau) et la taille réelle entre parenthèse.Exemple : <q>5,97 Ko (taille 14,65 Ko)</q>.<br>
+Attention sur d'anciennes versions un bug était présent, mais il a été corrigé à en 2014 : <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=731318">731318 – Display response size before and after content decoding</a>).</dd>
 <dt>Chrome</dt>
 <dd>Les outils de développement Chrome gèrent bien la compression - un bug
-existe également mais a été corrigé en avril 2011 : <a href="https://code.google.com/p/chromium/issues/detail?id=40502">Issue 40502 - chromium - DevTools don't show compressed size of pages with chunked encoding - An open-source project to help move the web forward. - Google Project Hosting</a>.</dd>
+existait également mais a été corrigé en avril 2011 : <a href="https://code.google.com/p/chromium/issues/detail?id=40502">Issue 40502 - chromium - DevTools don't show compressed size of pages with chunked encoding - An open-source project to help move the web forward. - Google Project Hosting</a>.</dd>
 <dt>Outil en ligne</dt>
 <dd>par exemple sur <a href="http://seositecheckup.com/tool/html_compression_status">HTML Compression/GZIP Test | SeoSiteCheckup.com</a></dd>
 <dt>Et aussi...</dt>
