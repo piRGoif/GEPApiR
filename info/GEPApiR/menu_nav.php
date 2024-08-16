@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "04/09/2014";
+$date_maj = "16/08/2024";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -39,32 +39,39 @@ catégories principales suffit !</p>
 qui est tout indiqué dans ce cas :)<br>
 Les options de menu sont contenues dans une liste UL/LI.</p>
 
-<pre><code class="html">
-&lt;nav>
+<p>Initialement, des icones en image étaient présentes sur chaque entrée, mais je les ai remplacé par des emoji. Par conséquent le rendu est maintenant dépendant de la plateforme... En général on utilise donc plutôt des solutions comme <a href="https://fontawesome.com/">Font Awesome</a> afin de se prémunir de ce problème, mais j'ai ici préféré la simplicité considérant que ces différences de rendu n'étaient pas très importantes. D'autant que les emoji utilisés sont très communs et identifiables par tous !<br>
+Remarque : mon fichier CSS est enregistré et servit en UTF-8, aussi pas de soucis
+pour y inclure directement les caractères voulus. Si ça n'avait pas été le cas il
+aurait toujours été possible d'inclure des emoji par échappement comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la recommandation</a>.</p>
 
-&lt;ul>
-
-&lt;li>
-&lt;a href="..." id="menu_accueil">
-&lt;span class="menu_icon">&lt;/span>&nbsp;Accueil&lt;/a>
-&lt;/li>&lt;li>
-&lt;a href="..." id="menu_info">
-&lt;span class="menu_icon">&lt;/span>&nbsp;Informatique&lt;/a>
-&lt;/li>&lt;li>
-&lt;a href="..." id="menu_zicmue">
-&lt;span class="menu_icon">&lt;/span>&nbsp;Musiques&lt;/a>
-&lt;/li>&lt;li>
-&lt;a href="..." id="menu_moi">
-&lt;span class="menu_icon">&lt;/span>&nbsp;Moi&lt;/a>
-&lt;/li>&lt;li>
-&lt;a href="..." id="menu_liens">
-&lt;span class="menu_icon">&lt;/span>&nbsp;Liens&lt;/a>
-&lt;/li>
-
-&lt;/ul>
-
-&lt;/nav>
-</code></pre>
+<pre><code class="html"><?php
+echo htmlspecialchars(<<< 'PHP'
+<nav>
+	<ul>
+		<li>
+		<a href="<?= ($RelBasePath == "") ? "index.php" : $RelBasePath; ?>" id="menu_accueil">
+				🏡&nbsp;Accueil</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>info/" id="menu_info">
+				💻&nbsp;Informatique</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>zicmue/" id="menu_zicmue">
+				🎵&nbsp;Musiques</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>moi/" id="menu_moi">
+				👤&nbsp;Moi</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>liens/" id="menu_liens">
+				🔗&nbsp;Liens</a>
+		</li>
+	</ul>
+</nav>
+PHP);
+?></code></pre>
 
 
 
@@ -93,14 +100,17 @@ le support est bon sur une grande majorité de navigateurs).</p>
 
 <p>Pour séparer le menu du reste de la page, une bordure particulière est appliquée
 (<a href="http://www.w3.org/TR/CSS21/box.html#value-def-border-style">la liste des styles de bordure dans la recommandation</a>),
-avec un <code>border-radius</code> pour créer un arrondi en haut :</p>
+avec un <code>border-radius</code> pour créer un arrondi en haut (en unité relative comme on le verra dans <a href="responsive.php">la page sur le responsive</a>) :</p>
 
 <pre><code class="css">
-border-top: 1px dashed black;
-border-radius: 10% 10% 0px 0px / 1em 1em 0px 0px;
+border: 1px solid grey;
+border-bottom: none;
+border-radius: 5% 5% 0 0 / 1em 1em 0 0;
 </code></pre>
 
-<p>Egalement un fond différent est appliqué, et une <a href="http://www.w3.org/TR/css3-color/#transparency">opacité</a> de 0.85.</p>
+<p>Egalement est appliqué au menu un fond différent du reste de la page.</p>
+
+<p>Une <a href="http://www.w3.org/TR/css3-color/#transparency">opacité</a> est réglée afin de voir le contenu défiler sous le menu.</p>
 
 
 
@@ -113,36 +123,26 @@ border-radius: 10% 10% 0px 0px / 1em 1em 0px 0px;
 <p>Afin de pouvoir appliquer des margin/padding aux liens, on leur ajoute un
 <code>display: inline-block;</code>.</p>
 
+<p>Des séparateurs sont ajoutés simplement avec une bordure à gauche, sauf sur le premier élément.</p>
+
 <pre><code class="css">
 nav a
 {
-display: inline-block;
-margin: 0 0.5em;
-padding: 0.5em 1em;
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em 1em;
 
-border: 1px solid transparent; /* car on a 1px gray sur :hover */
+    border: 1px outset transparent;
+    border-left: 1px solid gray;
 
-font-size: 0.9em;
-text-decoration: none;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+nav>ul>li:first-child>a {
+    border-left-color: transparent;
 }
 </code></pre>
-
-<p>Afin de séparer les rubriques, j'ai opté pour l'insertion du caractère
-<a href="http://www.unicode.org/charts/PDF/U2700.pdf">U+27A6</a> par CSS avec
-<a href="http://www.w3.org/TR/CSS21/generate.html"><code>:before</code></a>.<br>
-Code utilisé :</p>
-
-<pre><code class="css">
-nav a:before
-{
-content: "➦"; /* U+27A6 Heavy black curved upwards and rightwards arrow (Dingbats) */
-}
-</code></pre>
-
-<p>Remarque : mon fichier CSS est enregistré et servit en UTF-8, aussi pas de soucis
-pour y inclure directement le caractère voulu. Si ça n'avait pas été le cas il
-aurait toujours été possible d'inclure le caractère par l'échappement <code>\27A6</code>
-comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la recommandation</a>.</p>
 
 
 
@@ -152,23 +152,21 @@ comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la rec
 
 <h2>:hover</h2>
 
-<p>Un petit effet graphique est ajouté au survol de chaque rubrique, en utilisant
-<a href="http://www.w3.org/TR/CSS21/box.html#value-def-border-style">le style de bordure outset</a>.<br>
-<strong>Attention !</strong> Pour ne pas provoquer de décalage, il est nécessaire de positionner une
-bordure de même dimension sur le <code>a</code> !</p>
+<p>Un petit effet graphique est ajouté au survol de chaque rubrique avec une couleur de fond dédiée, et une animation de transition (cf <a href="https://developer.mozilla.org/fr/docs/Web/CSS/transition">page dédiée du MDN</a>).</p>
 
 <pre><code class="css">
 nav a
 {
-/* ... */
-border: 1px outset transparent; /* car on a 1px gray sur :hover */
+	/* ... */
+    background-color: transparent;
+    transition: background 0.6s;
+	/* ... */
 }
+
 
 nav a:hover
 {
-background-color: white;
-border-color: gray;
-border-radius: 5px;
+    background-color: white;
 }
 </code></pre>
 

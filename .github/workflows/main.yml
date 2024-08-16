@@ -18,6 +18,9 @@ jobs:
         password: ${{ secrets.ftp_password }}
         dry-run: true
         log-level: standard
+        exclude: |
+          **/.git*
+          **/.git*/**
   web-deploy-prod:
     if: startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master'
     name: 🎉 Deploy PROD
@@ -34,3 +37,6 @@ jobs:
         password: ${{ secrets.ftp_password }}
         dry-run: false
         log-level: verbose
+        exclude: |
+          **/.git*
+          **/.git*/**

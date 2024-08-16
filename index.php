@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.2.0";
+$pageVersion = "v8.2.4";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -139,6 +139,14 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 </dd>
 ****/
 ?>
+
+<dt>16/08/2024, <?=$pageVersion?></dt>
+<dd>
+- Menu : amélioration responsive, ajout d'une transition background<br>
+- Informatique / GEPApiR / <a href="info/GEPApiR/vcs.php">Suivi de version et publication </a> : création de la page<br>
+- Informatique / GEPApiR : mise à jour des pages parlant du menu<br>
+- Informatique / GEPApiR / <a href="info/GEPApiR/css.php">CSS</a> : technique d'échappement du HTML<br>
+</dd>
 
 <dt>14/08/2024, v8.2.0</dt>
 <dd>

@@ -35,6 +35,7 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 à travers des cas très concrets !</p>
 
 <ul>
+	<li><a href="GEPApiR/vcs.php">Suivi de version et publication</a></li>
 	<li><a href="GEPApiR/css.php">CSS : mises en forme diverses</a></li>
 	<li><a href="GEPApiR/performances.php">Performances</a></li>
 	<li><a href="GEPApiR/menu_nav.php">Menu de navigation</a></li>
