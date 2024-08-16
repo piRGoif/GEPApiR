@@ -25,18 +25,26 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
-<h2>Modèle de branches</h2>
+<h2>Besoins initiaux</h2>
 
 <p>Longtemps cette page a simplement été quelques fichiers sur mon disque, avec des sauvegardes de temps en temps. Avec le temps m'ont manqué :</p>
 
 <ul>
     <li>La capacité de facilement revenir en arrière</li>
-    <li>Pouvoir travailler sur de grosse refonte sans bloquer de petite mise à jour</li>
+    <li>Pouvoir travailler sur de grosses refontes sans bloquer de petites mises à jour</li>
     <li>Suivre précisément ce qui a été mis en ligne et quand</li>
 </ul>
 
 <p>Alors très naturellement, pratiquant Git au quotidien dans l'univers professionnel, j'ai fini par versionner les fichiers de ce site sous Git en local.<br>
 Et puis plus tard, envoyer <a href="https://github.com/piRGoif/GEPApiR">sur GitHub</a> !</p>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2>Modèle de branches</h2>
 
 <p>Le modèle que j'ai adopté est proche de <a href="http://danielkummer.github.io/git-flow-cheatsheet/">GitFlow</a>, on a donc 2 branches :</p>
 
@@ -65,8 +73,12 @@ Et puis plus tard, envoyer <a href="https://github.com/piRGoif/GEPApiR">sur GitH
 
 <p>Le fichier de configuration est ici : <a href="https://github.com/piRGoif/GEPApiR/blob/master/.github/workflows/main.yml">.github/workflows/main.yml</a></p>
 
+<p>Quelques références :</p>
 
-
+<ul>
+    <li><a href="https://dev.to/varungujarathi9/setting-up-github-actions-to-deploy-your-website-via-ftp-3n3a">Setting up GitHub Actions to deploy your website via FTP - DEV Community</a> : article très didactique qui a bien aidé la mise en route !</li>
+    <li><a href="https://docs.github.com/fr/actions">Aide GitHub Actions</a></li>
+</ul>
 
 
 
