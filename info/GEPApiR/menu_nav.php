@@ -45,7 +45,7 @@ pour y inclure directement les caractères voulus. Si ça n'avait pas été le c
 aurait toujours été possible d'inclure des emoji par échappement comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la recommandation</a>.</p>
 
 <pre><code class="html"><?php
-echo htmlspecialchars(<<< 'PHP'
+$htmlCode = <<<'PHP'
 <nav>
 	<ul>
 		<li>
@@ -70,7 +70,8 @@ echo htmlspecialchars(<<< 'PHP'
 		</li>
 	</ul>
 </nav>
-PHP);
+PHP;
+echo htmlspecialchars($htmlCode);
 ?></code></pre>
 
 
