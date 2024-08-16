@@ -44,35 +44,32 @@ Remarque : mon fichier CSS est enregistré et servit en UTF-8, aussi pas de souc
 pour y inclure directement les caractères voulus. Si ça n'avait pas été le cas il
 aurait toujours été possible d'inclure des emoji par échappement comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la recommandation</a>.</p>
 
-<pre><code class="html"><?php
-$htmlCode = <<<'PHP'
-<nav>
-	<ul>
-		<li>
-		<a href="<?= ($RelBasePath == "") ? "index.php" : $RelBasePath; ?>" id="menu_accueil">
-				🏡&nbsp;Accueil</a>
-		</li>
-		<li>
-			<a href="<?= $RelBasePath ?>info/" id="menu_info">
-				💻&nbsp;Informatique</a>
-		</li>
-		<li>
-			<a href="<?= $RelBasePath ?>zicmue/" id="menu_zicmue">
-				🎵&nbsp;Musiques</a>
-		</li>
-		<li>
-			<a href="<?= $RelBasePath ?>moi/" id="menu_moi">
-				👤&nbsp;Moi</a>
-		</li>
-		<li>
-			<a href="<?= $RelBasePath ?>liens/" id="menu_liens">
-				🔗&nbsp;Liens</a>
-		</li>
-	</ul>
-</nav>
-PHP;
-echo htmlspecialchars($htmlCode);
-?></code></pre>
+<pre><code class="html">
+&nbsp;nav>
+	&nbsp;ul>
+		&nbsp;li>
+		&nbsp;a href="&nbsp;?= ($RelBasePath == "") ? "index.php" : $RelBasePath; ?>" id="menu_accueil">
+				🏡&nbsp;Accueil&nbsp;/a>
+		&nbsp;/li>
+		&nbsp;li>
+			&nbsp;a href="&nbsp;?= $RelBasePath ?>info/" id="menu_info">
+				💻&nbsp;Informatique&nbsp;/a>
+		&nbsp;/li>
+		&nbsp;li>
+			&nbsp;a href="&nbsp;?= $RelBasePath ?>zicmue/" id="menu_zicmue">
+				🎵&nbsp;Musiques&nbsp;/a>
+		&nbsp;/li>
+		&nbsp;li>
+			&nbsp;a href="&nbsp;?= $RelBasePath ?>moi/" id="menu_moi">
+				👤&nbsp;Moi&nbsp;/a>
+		&nbsp;/li>
+		&nbsp;li>
+			&nbsp;a href="&nbsp;?= $RelBasePath ?>liens/" id="menu_liens">
+				🔗&nbsp;Liens&nbsp;/a>
+		&nbsp;/li>
+	&nbsp;/ul>
+&nbsp;/nav>
+</code></pre>
 
 
 
