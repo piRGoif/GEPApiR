@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "12/10/2014";
+$date_maj = "16/08/2024";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -141,10 +141,13 @@ transform: rotate(6deg);
     un textarea stylé en CSS est le plus souple : <a href="http://dadinck.x10.mx/code_example.html">How to code sample code</a>.
     Ca n'est pas une solution applicable simplement avec highlight.js.</p>
 
-<p>A noter cette solution PHP utilisée sur OpenClassRoom et qui est assez élégante : <a href="http://fr.openclassrooms.com/informatique/cours/geshi-colorer-son-code">[GeSHi] Colorer son code</a>.
-    Conjuguée avec <a href="http://php.net/manual/fr/language.types.string.php#language.types.string.syntax.heredoc">les chaines PHP au format Heredoc</a>,
-    plus besoin d'échappement du HTML !<br>
-    Ca m'a paru cependant un peu lourd...</p>
+<p>Pour ma part, vu que le site utilise déjà PHP, j'ai simplement utilisé la fonction <a href="https://www.php.net/manual/en/function.htmlspecialchars.php">htmlspecialchars</a> couplée à <a href="https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc">la syntaxe de chaine NowDoc</a> :</p>
+
+<pre><code class="php">
+echo htmlspecialchars(<<<'HTML'
+//...
+HTML);
+</code></pre>
 
 
 
