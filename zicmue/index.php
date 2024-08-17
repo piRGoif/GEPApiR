@@ -261,7 +261,6 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 
 <ul>
 	<li><a href="https://www.flickr.com/photos/pirgoif/collections/72157720527727742/">Classeur dédié</a> sur mon compte Flickr</li>
-	<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
 	<li>Journées des flutes à bec, événement organisé en région grenobloise par l'association <a href="https://www.loiseauaplumes.org/">l'Oiseau à plumes</a> :
 		<ul>
 			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299640616">concert d'ouverture</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299643180">Bal</a></li>
@@ -270,6 +269,7 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 	</li>
 	<li>Evénements Fanfares :
 		<ul>
+			<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
 			<li>2023 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720312177018">Les 10 ans des Son'enBulles</a></li>
 			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720300537588">Anniversaire des Garces Embouchées</a></li>
 			<li>2021 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157719802471828">La Valdingue 2021</a></li>
