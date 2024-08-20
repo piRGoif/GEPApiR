@@ -210,7 +210,9 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 	</li>
 	<li><strong>Harmonie de Grenoble</strong>
 		<ul>
-			<li>2018 : captation du "<a href="https://youtu.be/CtfArcQmSZI">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
+			<li>2017 : captation du <a href="https://www.youtube.com/watch?v=w7NTjtdrfAA&list=PLFtYCHpCumpphRYUZQXnS_d6p-vgs_gSh&index=9">concert à la Bridoire</a> (merci à l'Harmonie du Grenand !)</li>
+			<li>2018 : captation du "<a href="https://youtu.be/701PHF8KGp4">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
+			<li>2019 : captation de "<a href="https://www.youtube.com/watch?v=EUx6ZDjZFgI">Oregon</a>" (Jacob de Haan) à la salle Olivier Messiaen de Grenoble</li>
 			<li>2020 : vidéos de confinement, "<a href="https://youtu.be/_Oct2icbTgU">Daft Punk medley</a>", "<a href="https://youtu.be/QjhzMbHgBVA">Disney Remix</a>" (bravo à Louis Piquard et Sébastien Michel pour la réalisation 👏)</li>
 		</ul>
 	</li>
