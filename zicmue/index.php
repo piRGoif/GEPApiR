@@ -210,7 +210,9 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 	</li>
 	<li><strong>Harmonie de Grenoble</strong>
 		<ul>
-			<li>2018 : captation du "<a href="https://youtu.be/CtfArcQmSZI">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
+			<li>2017 : captation du <a href="https://www.youtube.com/watch?v=w7NTjtdrfAA&list=PLFtYCHpCumpphRYUZQXnS_d6p-vgs_gSh&index=9">concert à la Bridoire</a> (merci à l'Harmonie du Grenand !)</li>
+			<li>2018 : captation du "<a href="https://youtu.be/701PHF8KGp4">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
+			<li>2019 : captation de "<a href="https://www.youtube.com/watch?v=EUx6ZDjZFgI">Oregon</a>" (Jacob de Haan) à la salle Olivier Messiaen de Grenoble</li>
 			<li>2020 : vidéos de confinement, "<a href="https://youtu.be/_Oct2icbTgU">Daft Punk medley</a>", "<a href="https://youtu.be/QjhzMbHgBVA">Disney Remix</a>" (bravo à Louis Piquard et Sébastien Michel pour la réalisation 👏)</li>
 		</ul>
 	</li>
@@ -261,7 +263,6 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 
 <ul>
 	<li><a href="https://www.flickr.com/photos/pirgoif/collections/72157720527727742/">Classeur dédié</a> sur mon compte Flickr</li>
-	<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
 	<li>Journées des flutes à bec, événement organisé en région grenobloise par l'association <a href="https://www.loiseauaplumes.org/">l'Oiseau à plumes</a> :
 		<ul>
 			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299640616">concert d'ouverture</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299643180">Bal</a></li>
@@ -270,6 +271,7 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 	</li>
 	<li>Evénements Fanfares :
 		<ul>
+			<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
 			<li>2023 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720312177018">Les 10 ans des Son'enBulles</a></li>
 			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720300537588">Anniversaire des Garces Embouchées</a></li>
 			<li>2021 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157719802471828">La Valdingue 2021</a></li>

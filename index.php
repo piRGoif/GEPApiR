@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.2.4";
+$pageVersion = "v8.2.5";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -140,7 +140,13 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt>16/08/2024, <?=$pageVersion?></dt>
+<dt>20/08/2024, <?=$pageVersion?></dt>
+<dd>
+- Moi : modification de l'emoji pro<br>
+- Musiques : maj des liens des vidéos de l'Harmonie de Grenoble<br>
+</dd>
+
+<dt>16/08/2024, 8.2.4</dt>
 <dd>
 - Menu : amélioration responsive, ajout d'une transition background<br>
 - Informatique / GEPApiR / <a href="info/GEPApiR/vcs.php">Suivi de version et publication </a> : création de la page<br>
