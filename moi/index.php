@@ -21,7 +21,7 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
-<h2>Pro 🏢</h2>
+<h2>Pro 👨‍💼</h2>
 
 <ul>
 	<li><a href="https://www.linkedin.com/in/pierregoiffon/">Compte LinkedIn</a></li>
