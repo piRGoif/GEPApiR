@@ -28,28 +28,19 @@ require_once($RelBasePath . 'communs/separateurs.inc.php');
 
 <?
 /****
- Générateur http://realfavicongenerator.net/
- Fichier .ico laissé à la racine du site sans déclaration (prb avec Chrome)
-   Cf http://www.jonathantneal.com/blog/understand-the-favicon/#highlighter_705436
- Idem pour apple-touch-icon.png
-   iOS : support v7+ uniquement
- Idem pour browserconfig.xml (IE11)
-****/
+ * Favicon
+ *   Générateur http://realfavicongenerator.net/
+ ***/
 ?>
-<link rel="apple-touch-icon" sizes="57x57" href="<?=$RelBasePath?>images/favicons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="<?=$RelBasePath?>images/favicons/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="<?=$RelBasePath?>images/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="<?=$RelBasePath?>images/favicons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="<?=$RelBasePath?>images/favicons/apple-touch-icon-152x152.png">
-<link rel="icon" type="image/png" href="<?=$RelBasePath?>images/favicons/favicon-196x196.png" sizes="196x196">
-<link rel="icon" type="image/png" href="<?=$RelBasePath?>images/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="<?=$RelBasePath?>images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" sizes="180x180" href="<?=$RelBasePath?>images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?=$RelBasePath?>images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?=$RelBasePath?>images/favicons/favicon-16x16.png">
+<link rel="manifest" href="<?=$RelBasePath?>site.webmanifest">
+<link rel="mask-icon" href="<?=$RelBasePath?>images/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="<?=$RelBasePath?>images/favicons/mstile-144x144.png">
-<meta name="msapplication-square70x70logo" content="<?=$RelBasePath?>images/favicons/mstile-70x70.png">
-<meta name="msapplication-square150x150logo" content="<?=$RelBasePath?>images/favicons/mstile-150x150.png">
-<meta name="msapplication-square310x310logo" content="<?=$RelBasePath?>images/favicons/mstile-310x310.png">
-<meta name="msapplication-wide310x150logo" content="<?=$RelBasePath?>images/favicons/mstile-310x150.png">
+<meta name="theme-color" content="#ffffff">
+
+
 
 
 
