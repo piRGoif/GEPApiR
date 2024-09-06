@@ -48,4 +48,4 @@ require_once($RelBasePath . 'communs/separateurs.inc.php');
 
 
 
-<script src="<?= $RelBasePath ?>communs/ondomready/ondomready"></script>
+<script src="<?= $RelBasePath ?>communs/ondomready/ondomready.jz"></script>
