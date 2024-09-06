@@ -252,12 +252,6 @@ doute jamais essayé sinon !</dd>
 
 
 
-<?
-require_once($RelBasePath . 'communs/menu.inc.php');
-?>
-
-
-
 </body>
 </html>
 <?php ob_end_flush(); ?>

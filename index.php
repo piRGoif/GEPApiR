@@ -205,12 +205,6 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 
 
 
-<?
-require_once($RelBasePath . 'communs/menu.inc.php');
-?>
-
-
-
 </body>
 </html>
 <?php ob_end_flush(); ?>

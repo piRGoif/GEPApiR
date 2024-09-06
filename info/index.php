@@ -126,12 +126,6 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 
 
 
-<?
-require_once($RelBasePath . 'communs/menu.inc.php');
-?>
-
-
-
 </body>
 </html>
 <?php ob_end_flush(); ?>

@@ -155,12 +155,6 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 
 
 
-<?
-require_once($RelBasePath . 'communs/menu.inc.php');
-?>
-
-
-
 </body>
 </html>
 <?php ob_end_flush(); ?>
