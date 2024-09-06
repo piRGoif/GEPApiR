@@ -66,6 +66,13 @@ h3
     font-size: 1.3em;
 }
 
+h1>span.permalink, h2>span.permalink, h3>span.permalink, h4>span.permalink, h5>span.permalink, h6>span.permalink {
+	display: none;
+}
+h1:hover>span.permalink, h2:hover>span.permalink, h3:hover>span.permalink, h4:hover>span.permalink, h5:hover>span.permalink, h6:hover>span.permalink {
+	display: initial;
+}
+
 img
 {
     border: none;
@@ -402,10 +409,11 @@ nav a:link, nav a:visited
 
     padding: 0.3em;
 
-    border: 1px dotted black;
+    border: 1px solid grey;
     border-radius: 0 0 0 10px;
     background-color: #808080;
     opacity: 0.85;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 }
 
 
@@ -415,56 +423,50 @@ nav a:link, nav a:visited
 ******************/
 details#toc
 {
-    /*min-width: 250px;*/
-    max-width: 50%;
-    max-height: 80%;
+    max-width: 30%;
+    max-height: 70%;
     overflow: auto;
     text-align: center;
+    z-index: 10; /* to fix blockquote beeing above details content */
+    transition: all .7s ease-in-out;
 }
 
 details#toc>summary
 {
     padding: 0.3em;
     font-weight: bolder;
+    cursor: pointer;
+    transition: margin 400ms ease-out;
+}
+
+details#toc[open] summary {
+  margin-bottom: 10px; /* to fake open/close transition. Source https://stackoverflow.com/a/73447722 ! */
 }
 
 details#toc>ul
 {
-    /* transition: all .7s ease-in-out; */
-}
-details#toc ul
-{
-    padding: 0;
+    padding: 0.1em 0;
     padding-left: 30px;
     margin: 0;
     background-color: white;
     border-radius: 10px;
-}
-details#toc>ul.hide, details#toc>ul.hide *
-{
-    /* width: 0;
-    height: 0;
-    opacity: 0; */
-    display: none;
+    text-align: left;
 }
 
-details#toc>a
+
+/*
+ Ciblage mobiles avec balise meta viewport
+ Les utilisateurs desktop aussi ont besoin de ces modif donc on leur laisse (utilisation max-width plutôt que max-device-width)
+*/
+@media screen and (max-width: 700px)
 {
-    padding: 0.2em;
-    border-style: outset;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    font-size: 0.8em;
+    details#toc {
+    	font-size: 0.85em;
+    	max-width: 40%;
+    	max-height: 60%;
+    }
 }
 
-details#toc>a#toc-open
+@media screen and (max-width: 590px)
 {
-    background-color: green;
-}
-
-details#toc>a#toc-close
-{
-    background-color: red;
 }
