@@ -272,9 +272,9 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 	<li>Evénements Fanfares :
 		<ul>
 			<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
+			<li>Albums de La Valdingue (festival de fanfares à Saint Geoire en Valdaine organisé par Les Val'daingues) : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720319978067">2024</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157719802578248">2021</a></li>
 			<li>2023 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720312177018">Les 10 ans des Son'enBulles</a></li>
 			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720300537588">Anniversaire des Garces Embouchées</a></li>
-			<li>2021 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157719802471828">La Valdingue 2021</a></li>
 			<li>2014 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157646265826332">Fort en son 6</a></li>
 		</ul>
 	</li>
@@ -322,12 +322,6 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 
 
 <hr class="sep sepfin">
-
-
-
-<?
-require_once($RelBasePath . 'communs/menu.inc.php');
-?>
 
 
 

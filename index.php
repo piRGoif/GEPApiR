@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.2.5";
+$pageVersion = "v8.2.6";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -140,7 +140,18 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt>20/08/2024, <?=$pageVersion?></dt>
+<dt>06/09/2024, <?=$pageVersion?></dt>
+<dd>
+- ToC : suppression icone ouverture/fermeture, amélioration responsive, petites modifications esthétiques<br>
+- Ajout permalink sur headings<br>
+- Balise nav déplacé en haut de page (lecteurs d'écran)<br>
+- Mise à jour des favicons<br>
+- Informatique / <a href="info/GEPApiR/responsive.php">Responsive</a> : actualisation sur l'attribut srcset<br>
+- <a href="zicmue/">Musiques</a> : lien Valdingues 2024
+</dd>
+
+
+<dt>20/08/2024, 8.2.5</dt>
 <dd>
 - Moi : modification de l'emoji pro<br>
 - Musiques : maj des liens des vidéos de l'Harmonie de Grenoble<br>
@@ -202,12 +213,6 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 
 
 <hr class="sep sepfin">
-
-
-
-<?
-require_once($RelBasePath . 'communs/menu.inc.php');
-?>
 
 
 

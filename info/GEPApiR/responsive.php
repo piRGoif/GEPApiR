@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "16/08/2024";
+$date_maj = "06/09/2024";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -219,9 +219,9 @@ large que l'image :</p>
 <p>Plusieurs images sont assez larges et dépassent du viewport sur des écrans à
 taille réduite !</p>
 
-<p>Une solution serait d'utiliser l'attribut HTML 5 <code>srcset</code>, mais le
-support est assez faible à ce jour (août 2014 : juste Chrome 34+ et Safari 8+ -
-<a href="http://caniuse.com/#feat=srcset">lien CanIUse</a>) et ça nécessiterai de
+<p>Une solution serait d'utiliser <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">l'attribut HTML 5 <code>srcset</code></a>. Le
+support est correct à ce jour (septembre 2024 : Chrome 34+, Fx 38+, Safari 8+ -
+<a href="http://caniuse.com/#feat=srcset">lien CanIUse</a>), mais ça nécessiterai de
 créer de nouvelles images... Un avantage pour renvoyer des images plus légères,
 mais les images concernées sont peu nombreuses, relativement peu lourdes et bien
 cachées.</p>
@@ -327,12 +327,6 @@ require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
 
 
 <hr class="sep sepfin">
-
-
-
-<?
-require_once($RelBasePath . 'communs/menu.inc.php');
-?>
 
 
 
