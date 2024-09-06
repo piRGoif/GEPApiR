@@ -1,7 +1,6 @@
 /*-------------------------------------------------------------------------------------------
  Fonctions utilitaires CSS
-   /!\ à insérer en tête de page /!\
- Version 20140813
+   /!\ Ã  insÃ©rer en tÃªte de page /!\
 -------------------------------------------------------------------------------------------*/
 
 
@@ -13,8 +12,7 @@
 	 - supprime les attributs width / height du tag img
 	 - ajoute du css pour basculer en width: 98% si le max-device-width est > width + 5
 ******************************/
-function writeCSSRespImg()
-{
+function writeCSSRespImg() {
 	var elements = document.getElementsByTagName("img"),
 		image,
 		width,
@@ -27,7 +25,7 @@ function writeCSSRespImg()
 	for (i = 0; i <= elements.length - 1; i++) {
 		image = elements[i];
 		if (image.hasAttribute("data-responsive-img")) {
-			// Récup width / height
+			// RÃ©cup width / height
 			width = parseInt(image.getAttribute("width"));
 			height = parseInt(image.getAttribute("height"));
 
@@ -68,3 +66,22 @@ height: " + height + "px;\n\
 		}
 	}
 }
+
+
+
+
+function addPermalinkToHeadings() {
+	if (document.querySelector(".permalink")) {
+		return;
+	}
+
+	const HEADINGS_SELECTOR = "h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]";
+	let headingNodes = document.querySelectorAll(HEADINGS_SELECTOR);
+
+	for (let i = 0; i < headingNodes.length; i++) {
+		let headingNodeCurrent = headingNodes[i];
+		let nodeId = headingNodeCurrent.getAttribute("id");
+		headingNodeCurrent.insertAdjacentHTML("beforeend", `<span class="permalink">&nbsp;<a href="#${nodeId}">#</a></span>`);
+	}
+}
+
