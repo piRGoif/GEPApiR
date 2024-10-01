@@ -236,7 +236,8 @@ background-position: 0 -59px;
 </style>
 
 <hr class="sep sep1">
-HTML);
+HTML
+);
 ?>
 </code></pre>
 
