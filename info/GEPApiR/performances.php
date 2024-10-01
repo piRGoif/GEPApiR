@@ -212,8 +212,10 @@ Les images ont été regroupées grace à l'excellent <a href="http://draeton.gi
 <p>Le code :</p>
 
 <pre><code class="html">
-&lt;!-- Séparateurs -->
-&lt;style>
+<?php
+echo htmlspecialchars(<<<'HTML'
+<!-- Séparateurs -->
+<style>
 hr.sep
 {
 clear: left;
@@ -231,9 +233,11 @@ hr.sep1
 height: 23px;
 background-position: 0 -59px;
 }
-&lt;/style>
+</style>
 
-&lt;hr class="sep sep1">
+<hr class="sep sep1">
+HTML);
+?>
 </code></pre>
 
 

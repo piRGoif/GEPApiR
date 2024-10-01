@@ -1,5 +1,5 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.2.6";
+$pageVersion = "v8.2.7";
 
 // NAVIGATION
 $RelBasePath = "";
@@ -141,6 +141,12 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ?>
 
 <dt>06/09/2024, <?=$pageVersion?></dt>
+<dd>
+- <a href="zicmue/">Musiques</a> : ré-ordonné par ordre anté chronologique
+</dd>
+
+
+<dt>06/09/2024, 8.2.6</dt>
 <dd>
 - ToC : suppression icone ouverture/fermeture, amélioration responsive, petites modifications esthétiques<br>
 - Ajout permalink sur headings<br>

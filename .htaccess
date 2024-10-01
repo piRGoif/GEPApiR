@@ -10,6 +10,7 @@ DefaultLanguage fr
 
 <IfDefine Free>
 ErrorDocument 404 /err404.php
+php56 1
 </IfDefine>
 <IfDefine !Free>
 ErrorDocument 404 /GepapiR/err404.php

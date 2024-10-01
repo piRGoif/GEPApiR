@@ -142,14 +142,14 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 <p>J'ajoute quelques pensées pour les copains avec qui j'ai joué par le passé :</p>
 
 <ul>
-	<li>De 2005 à 2014 : l'orchestre d'harmonie de Theys</li>
-	<li>De 2005 à 2017 : les orchestres de l'<a href="http://harmonie-meylan.fr/">Espace Musical Gaston Baudry</a> (BoPerCui, classe d'improvisation jazz, ensemble de cuivres, et renforts occasionnels à l'orchestre d'harmonie)</li>
-	<li>De 2006 à 2017 : le groupe de ska JeudiSoir</li>
-	<li>De 2007 à 2022 : l'ensemble de cuivres <a href="https://www.harmonie-grenoble.fr/index.php?option=com_content&view=article&id=17&Itemid=153">AtoutCuivres</a></li>
-	<li>De 2013 à 2015 : le groupe de chanson Le Moulin à Paroles</li>
-	<li>De 2014 à 2017 : le big band Swing Grant Orchestra (avec une pensée particulière à son exceptionnel directeur artistique Jean-Pierre Vidal, décédé en 2021)</li>
-	<li>De 2016 à 2019 : le grand ensemble d'harmonie de l'<a href="https://www.harmonie-grenoble.fr/">Harmonie de Grenoble</a></li>
 	<li>De 2017 à 2020 : la classe d'improvisation "Jazz autour de midi" de <a href="http://www.laporteedetous.fr/?page_id=2">la Portée de tous</a> sous la direction de Jérome Dugand</li>
+	<li>De 2016 à 2019 : le grand ensemble d'harmonie de l'<a href="https://www.harmonie-grenoble.fr/">Harmonie de Grenoble</a></li>
+	<li>De 2014 à 2017 : le big band Swing Grant Orchestra (avec une pensée particulière à son exceptionnel directeur artistique Jean-Pierre Vidal, décédé en 2021)</li>
+	<li>De 2013 à 2015 : le groupe de chanson Le Moulin à Paroles</li>
+	<li>De 2007 à 2022 : l'ensemble de cuivres <a href="https://www.harmonie-grenoble.fr/index.php?option=com_content&view=article&id=17&Itemid=153">AtoutCuivres</a></li>
+	<li>De 2006 à 2017 : le groupe de ska JeudiSoir</li>
+	<li>De 2005 à 2017 : les orchestres de l'<a href="http://harmonie-meylan.fr/">Espace Musical Gaston Baudry</a> (BoPerCui, classe d'improvisation jazz, ensemble de cuivres, et renforts occasionnels à l'orchestre d'harmonie)</li>
+	<li>De 2005 à 2014 : l'orchestre d'harmonie de Theys</li>
 </ul>
 
 
@@ -163,12 +163,12 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 <p>Avec mes groupes réguliers :</p>
 
 <ul>
-	<li>2008 : les 2 démo de <strong>JeudiSoir</strong> (3 puis 6 titres), écoutables sur <a href="https://myspace.com/jeudisoir/music/songs">le MySpace du groupe</a></dd>
 	<li><strong>In Your Brass</strong>
-		<ul>
-			<li>2011 : <a href="https://soundcloud.com/in-your-brass/sets/demo-nov-2011">Démo 5 titres<a></li>
-			<li>2017 : <a href="https://soundcloud.com/in-your-brass/sets/demo-nov-2017">Démo 4 titres</a></li>
-		</ul>
+	<ul>
+		<li>2017 : <a href="https://soundcloud.com/in-your-brass/sets/demo-nov-2017">Démo 4 titres</a></li>
+		<li>2011 : <a href="https://soundcloud.com/in-your-brass/sets/demo-nov-2011">Démo 5 titres<a></li>
+	</ul>
+	<li>2008 : les 2 démo de <strong>JeudiSoir</strong> (3 puis 6 titres), écoutables sur <a href="https://myspace.com/jeudisoir/music/songs">le MySpace du groupe</a></dd>
 	</li>
 </ul>
 
@@ -176,19 +176,19 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 <p>Et en renfort :</p>
 
 <dl>
+	<dt>2018 : "<a href="https://open.spotify.com/intl-fr/album/5jwELSauEjKkNWFZ9aLLhi?flow_ctx=c50e1dea-e84a-4651-bdd4-e168f088ab39%3A1723650423">Cette nuit encore</a>" de <a href="https://daigui.wixsite.com/daigui">Daïgui</a></dt>
+	<dd>Sur : "Des années sans contrôle", "A travers pente", "Après plus rien"</dd>
+	<dt>2014 : "<a href="http://www.deezer.com/album/7787754">BADA BOoM BoOM SWING</a>" de <a href="https://www.facebook.com/lamuzgueule">LMZG (Lamuzgueule)</a></dt>
+	<dd>Sur : "French Kiss", "Désamour 2.0", "Rodeo", "Rien ne va plus", "Rideau !"</dd>
 	<dt><a href="https://www.tit-patapons.fr/">Tit Patapons</a></dt>
 	<dd>De très bons copains très talentueux 🤩 qui produisent <a href="https://www.tit-patapons.fr/musique.php">des albums sous license libre</a> !
 		<dl>
-			<dt>2011 : "<a href="https://www.deezer.com/fr/album/199704782">Errons, Errons</a>"</dt>
-			<dd>Sur : "Les sonneurs de rêve", "Centre commercial"<br>
 			<dt>2012 : "<a href="http://www.revolutionsoundrecords.org/index.php?e=artistes&artiste=60&page=downloads&album=55">On s'y risque</a>"</dt>
 			<dd>Sur : "Meli mais l'eau"</dt>
+			<dt>2011 : "<a href="https://www.deezer.com/fr/album/199704782">Errons, Errons</a>"</dt>
+			<dd>Sur : "Les sonneurs de rêve", "Centre commercial"<br>
 		</dl>
 	</dd>
-	<dt>2014 : "<a href="http://www.deezer.com/album/7787754">BADA BOoM BoOM SWING</a>" de <a href="https://www.facebook.com/lamuzgueule">LMZG (Lamuzgueule)</a></dt>
-	<dd>Sur : "French Kiss", "Désamour 2.0", "Rodeo", "Rien ne va plus", "Rideau !"</dd>
-	<dt>2018 : "<a href="https://open.spotify.com/intl-fr/album/5jwELSauEjKkNWFZ9aLLhi?flow_ctx=c50e1dea-e84a-4651-bdd4-e168f088ab39%3A1723650423">Cette nuit encore</a>" de <a href="https://daigui.wixsite.com/daigui">Daïgui</a></dt>
-	<dd>Sur : "Des années sans contrôle", "A travers pente", "Après plus rien"</dd>
 </dl>
 
 
@@ -202,51 +202,51 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 <p>Avec mes groupes réguliers, passés ou présents :</p>
 
 <ul>
-	<li><strong>JeudiSoir</strong>
+	<li><strong>Small Band Project</strong>, 2024 : captation au festival Jazz Alp (merciiiiii Guy Jass !), <a href="https://www.youtube.com/watch?v=bgXkjFr8TJk">montage d'extraits de la soirée</a> et <a href="https://www.facebook.com/share/v/wtvLBXBBvo6aVQmx/">des 2 chansons de Boris Vian</a></li>
+	<li><strong>Clap Yo Hands</strong>, 2023 (spectacle "Hello Broadway") : <a href="https://youtu.be/FqJd3dnxm2s">teaser du spectacle</a>, "<a href="https://www.youtube.com/watch?v=LeYg782cW5s">Singin' In The Rain</a>"</li>
+	<li><strong>In Your Brass</strong> : quelques vidéos <a href="https://www.youtube.com/@inyourbrass9987/videos">sur le compte Youtube du groupe</a>, en particulier :
 		<ul>
-			<li>2008 : <a href="https://www.youtube.com/watch?v=1MEWsrSWGjE">teaser de l'album 6 titres</a></li>
-			<li>2013 : <a href="https://youtu.be/-XFf-C1vcck?si=e9LkfawPXZ3kOZS1">festival Canap'Art à Autrans</a></li>
+			<li>2022 : <a href="https://www.youtube.com/playlist?list=PLGLp6IvQv-8J7npNLaXbw2MSOuqNrHouZ">les 3 vidéos à la Bifurk de Grenoble</a> réalisées par <a href="https://www.frogerfilm.fr/">Arsene Froger</a></li>
+			<li>2020 : <a href="https://www.youtube.com/watch?v=C8LNw73F2mY">clôture du festival Livres à vous</a> au Grand Angle de Voiron</li>
+			<li>2019 : <a href="https://youtu.be/SiLRXsxNarc">souvenirs de Fly to NOLA</a>, voyage inoubliable à la Nouvelle Orléans avec le Jules Ferry Brass Band et les percussions urbaines de Voiron</li>
+			<li>2017 : captation de "<a href="https://www.youtube.com/watch?v=ttwFnMesnec">War</a>" lors du concert Rap & Brass à la Bifurk de Grenoble</li>
+			<li>2013 : captation de "<a href="https://youtu.be/IAS9XwZl3ms">Express Yourself</a>" à la Coupe Icare</li>
+			<li>2013 : captation <a href="https://youtu.be/s04Va49iWe8">du festival Fort en son au jardin de ville de Grenoble</a>, merci aux Pink It Black pour leur invitation !</li>
+			<li>2011 : captation <a href="https://youtu.be/lPV0o5ngmdM">du concert à la Salle Edmond Vigne de Fontaine</a>, merci aux Yebarov pour leur invitation !</li>
 		</ul>
 	</li>
 	<li><strong>Harmonie de Grenoble</strong>
 		<ul>
-			<li>2017 : captation du <a href="https://www.youtube.com/watch?v=w7NTjtdrfAA&list=PLFtYCHpCumpphRYUZQXnS_d6p-vgs_gSh&index=9">concert à la Bridoire</a> (merci à l'Harmonie du Grenand !)</li>
-			<li>2018 : captation du "<a href="https://youtu.be/701PHF8KGp4">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
-			<li>2019 : captation de "<a href="https://www.youtube.com/watch?v=EUx6ZDjZFgI">Oregon</a>" (Jacob de Haan) à la salle Olivier Messiaen de Grenoble</li>
 			<li>2020 : vidéos de confinement, "<a href="https://youtu.be/_Oct2icbTgU">Daft Punk medley</a>", "<a href="https://youtu.be/QjhzMbHgBVA">Disney Remix</a>" (bravo à Louis Piquard et Sébastien Michel pour la réalisation 👏)</li>
+			<li>2019 : captation de "<a href="https://www.youtube.com/watch?v=EUx6ZDjZFgI">Oregon</a>" (Jacob de Haan) à la salle Olivier Messiaen de Grenoble</li>
+			<li>2018 : captation du "<a href="https://youtu.be/701PHF8KGp4">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
+			<li>2017 : captation du <a href="https://www.youtube.com/watch?v=w7NTjtdrfAA&list=PLFtYCHpCumpphRYUZQXnS_d6p-vgs_gSh&index=9">concert à la Bridoire</a> (merci à l'Harmonie du Grenand !)</li>
 		</ul>
 	</li>
 	<li><strong>Swing Grant Orchestra</strong>, 2017 : captation de "<a href="https://youtu.be/CtfArcQmSZI">Why don't you do right</a>" au Voiron Jazz Festival</li>
-	<li><strong>In Your Brass</strong> : quelques vidéos <a href="https://www.youtube.com/@inyourbrass9987/videos">sur le compte Youtube du groupe</a>, en particulier :
+	<li><strong>JeudiSoir</strong>
 		<ul>
-			<li>2011 : captation <a href="https://youtu.be/lPV0o5ngmdM">du concert à la Salle Edmond Vigne de Fontaine</a>, merci aux Yebarov pour leur invitation !</li>
-			<li>2013 : captation <a href="https://youtu.be/s04Va49iWe8">du festival Fort en son au jardin de ville de Grenoble</a>, merci aux Pink It Black pour leur invitation !</li>
-			<li>2013 : captation de "<a href="https://youtu.be/IAS9XwZl3ms">Express Yourself</a>" à la Coupe Icare</li>
-			<li>2017 : captation de "<a href="https://www.youtube.com/watch?v=ttwFnMesnec">War</a>" lors du concert Rap & Brass à la Bifurk de Grenoble</li>
-			<li>2019 : souvenirs de <a href="https://youtu.be/SiLRXsxNarc">Fly to NOLA</a>, voyage inoubliable à la Nouvelle Orléans avec le Jules Ferry Brass Band et les percussions urbaines de Voiron</li>
-			<li>2020 : <a href="https://www.youtube.com/watch?v=C8LNw73F2mY">clôture du festival Livres à vous</a> au Grand Angle de Voiron</li>
-			<li>2022 : <a href="https://www.youtube.com/playlist?list=PLGLp6IvQv-8J7npNLaXbw2MSOuqNrHouZ">les 3 vidéos à la Bifurk de Grenoble</a> réalisées par <a href="https://www.frogerfilm.fr/">Arsene Froger</a></li>
+			<li>2013 : <a href="https://youtu.be/-XFf-C1vcck?si=e9LkfawPXZ3kOZS1">festival Canap'Art à Autrans</a></li>
+			<li>2008 : <a href="https://www.youtube.com/watch?v=1MEWsrSWGjE">teaser de l'album 6 titres</a></li>
 		</ul>
 	</li>
-	<li><strong>Small Band Project</strong>, 2024 : captation au festival Jazz Alp (merciiiiii Guy Jass !), <a href="https://www.youtube.com/watch?v=bgXkjFr8TJk">montage d'extraits de la soirée</a> et <a href="https://www.facebook.com/share/v/wtvLBXBBvo6aVQmx/">des 2 chansons de Boris Vian</a></li>
-	<li><strong>Clap Yo Hands</strong>, 2023 (spectacle "Hello Broadway") : <a href="https://youtu.be/FqJd3dnxm2s">teaser du spectacle</a>, "<a href="https://www.youtube.com/watch?v=LeYg782cW5s">Singin' In The Rain</a>"</li>
 </ul>
 
 <p>Et en renfort / figurant :</p>
 
 <dl>
-	<dt>2011 : "<a href="https://www.youtube.com/watch?v=9u_gA0ULmBo">Enregistrement Errons Errons (2011) - Jour 9</a>" avec Tit Patapons</dt>
-	<dd>Petite improvisation en fin de journée d'enregistrement O:)</dd>
+	<dt>2024 : "<a href="https://youtu.be/hU75m0FQlUM">Break my heart</a>" de <a href="https://www.facebook.com/updatemusicofficial">Update</a></dt>
+	<dt>2020 : "<a href="https://www.youtube.com/watch?v=9u_gA0ULmBo">Des années sans contrôle</a>" de <a href="https://daigui.wixsite.com/daigui">Daïgui</a></dt>
+	<dd>Version confinement de cette chanson présente sur l'album "Cette nuit encore"</dd>
 	<dt><a href="https://www.facebook.com/lamuzgueule">LMZG (Lamuzgueule)</a></dt>
 	<dd>
 		<ul>
-			<li>2014 : "<a href="https://youtu.be/rV-bV2DD9Cc">BADA BOoM BoOM SWING</a>"</li>
 			<li>2016 : "<a href="https://youtu.be/5LNNX9TeslQ">Fauves</a>"</li>
+			<li>2014 : "<a href="https://youtu.be/rV-bV2DD9Cc">BADA BOoM BoOM SWING</a>"</li>
 		</ul>
 	</dd>
-	<dt>2020 : "<a href="https://www.youtube.com/watch?v=9u_gA0ULmBo">Des années sans contrôle</a>" de <a href="https://daigui.wixsite.com/daigui">Daïgui</a></dt>
-	<dd>Version confinement de cette chanson présente sur l'album "Cette nuit encore"</dd>
-	<dt>2024 : "<a href="https://youtu.be/hU75m0FQlUM">Break my heart</a>" de <a href="https://www.facebook.com/updatemusicofficial">Update</a></dt>
+	<dt>2011 : "<a href="https://www.youtube.com/watch?v=9u_gA0ULmBo">Enregistrement Errons Errons (2011) - Jour 9</a>" avec Tit Patapons</dt>
+	<dd>Petite improvisation en fin de journée d'enregistrement O:)</dd>
 </dl>
 
 
