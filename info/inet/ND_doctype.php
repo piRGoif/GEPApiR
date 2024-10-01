@@ -58,16 +58,20 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <p>Exemple :</p>
 
-<pre><code class="html">
-Print |Content-Type: text/html; charset=UTF-8<br>
-<br>
-&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"<br>
-            "http://www.w3.org/TR/html4/strict.dtd"><br>
-<br>
-&lt;html lang="fr"><br>
-<br>
-&lt;head><br>
+<pre><code class="html"><?php
+echo htmlspecialchars(<<<'HTML'
+Print |Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="fr">
+
+<head>
 |
+HTML
+);
+?>
 </code></pre>
 
 

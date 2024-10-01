@@ -55,12 +55,16 @@ qui répond à ce besoin ! Et j'ai fait apparaitre le contenu dans un panel flot
 HTML 5 <a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-details-element">details</a>
 et <a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.html#the-summary-element">summary</a>.</p>
 
-<pre><code class="html">
-&lt;details id="toc" class="toolbox">
-&lt;summary>Table des matières&lt;/summary>
-&lt;a id="toc-open" onClick="toggleToc()">+&lt;/a>
-&lt;a id="toc-close" onClick="toggleToc()">X&lt;/a>
-&lt;/details>
+<pre><code class="html"><?php
+echo htmlspecialchars(<<<'HTML'
+<details id="toc" class="toolbox">
+<summary>Table des matières</summary>
+<a id="toc-open" onClick="toggleToc()">+</a>
+<a id="toc-close" onClick="toggleToc()">X</a>
+</details>
+HTML
+);
+?>
 </code></pre>
 
 <p>La TOC sera ajoutée par le script sous forme d'un UL, à la fin du noeud DOM
