@@ -144,10 +144,19 @@ transform: rotate(6deg);
 <p>Pour ma part, vu que le site utilise déjà PHP, j'ai simplement utilisé la fonction <a href="https://www.php.net/manual/en/function.htmlspecialchars.php">htmlspecialchars</a> couplée à <a href="https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc">la syntaxe de chaine NowDoc</a> :</p>
 
 <pre><code class="php">
+&lt;?php
 echo htmlspecialchars(<<<'HTML'
 //...
-HTML);
+HTML
+);
+?>
 </code></pre>
+
+<p>Attention, comme <a href="https://www.php.net/manual/en/language.types.string.php">le dit la documentation PHP</a> pour rester compatible avec d'anciennes versions de PHP il faut être attentif à la syntaxe :</p>
+
+<blockquote>
+<p>Prior to PHP 7.3.0, it is very important to note that the line with the closing identifier must contain no other characters, except a semicolon (;)</p>
+</blockquote>
 
 
 

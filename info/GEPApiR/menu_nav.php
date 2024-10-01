@@ -45,30 +45,35 @@ pour y inclure directement les caractères voulus. Si ça n'avait pas été le c
 aurait toujours été possible d'inclure des emoji par échappement comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la recommandation</a>.</p>
 
 <pre><code class="html">
-&lt;nav>
-	&lt;ul>
-		&lt;li>
-		&lt;a href="&lt;?= ($RelBasePath == "") ? "index.php" : $RelBasePath; ?>" id="menu_accueil">
-				🏡&lt;Accueil&lt;/a>
-		&lt;/li>
-		&lt;li>
-			&lt;a href="&lt;?= $RelBasePath ?>info/" id="menu_info">
-				💻&lt;Informatique&lt;/a>
-		&lt;/li>
-		&lt;li>
-			&lt;a href="&lt;?= $RelBasePath ?>zicmue/" id="menu_zicmue">
-				🎵&lt;Musiques&lt;/a>
-		&lt;/li>
-		&lt;li>
-			&lt;a href="&lt;?= $RelBasePath ?>moi/" id="menu_moi">
-				👤&lt;Moi&lt;/a>
-		&lt;/li>
-		&lt;li>
-			&lt;a href="&lt;?= $RelBasePath ?>liens/" id="menu_liens">
-				🔗&lt;Liens&lt;/a>
-		&lt;/li>
-	&lt;/ul>
-&lt;/nav>
+<?php
+echo htmlspecialchars(<<<'HTML'
+<nav>
+	<ul>
+		<li>
+		<a href="<?= ($RelBasePath == "") ? "index.php" : $RelBasePath; ?>" id="menu_accueil">
+				🏡<Accueil</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>info/" id="menu_info">
+				💻<Informatique</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>zicmue/" id="menu_zicmue">
+				🎵<Musiques</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>moi/" id="menu_moi">
+				👤<Moi</a>
+		</li>
+		<li>
+			<a href="<?= $RelBasePath ?>liens/" id="menu_liens">
+				🔗<Liens</a>
+		</li>
+	</ul>
+</nav>
+HTML
+);
+?>
 </code></pre>
 
 

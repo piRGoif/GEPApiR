@@ -70,14 +70,19 @@ for (i = 0; i <= elements.length - 1; i++)
 <h2>HTML</h2>
 
 <pre><code class="html">
-&lt;form action="" onSubmit="return false;">
-&lt;p>
-&lt;label>
-&lt;input type="checkbox" name="newwin" onClick="chgATarget(this.checked)" onFocus="this.blur()">
-&nbsp;Liens dans nouvelle fenêtre
-&lt;/label>
-&lt;/p>
-&lt;/form>
+<?php
+echo htmlspecialchars(<<<'HTML'
+<form action="" onSubmit="return false;">
+<p>
+<label>
+<input type="checkbox" name="newwin" onClick="chgATarget(this.checked)" onFocus="this.blur()">
+ Liens dans nouvelle fenêtre
+</label>
+</p>
+</form>
+HTML
+);
+?>
 </code></pre>
 
 
