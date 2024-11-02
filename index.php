@@ -12,9 +12,6 @@ toute la musique qu'il aime (elle vient de là, elle vient... oui bon), quelques
 bafouilles techniques autour des technologies de l'Internet et du développement,
 et encore d'autres trucs (pour le goût)">
 
-<link rel="alternate" type="application/rss+xml" title="GepapiR Changelog"
- href="http://feed43.com/gepapir.xml">
-
 <style>
 #w3clogo
 {
@@ -110,9 +107,8 @@ lettres, le R majuscule marquant la prononciation !</p>
 <h2 id="changelog-title">Changelog</h2>
 
 <p>
-Ci dessous les dernières mises à jour sur le site.<br>
-Ces mises à jour sont disponibles en RSS grace au service de <a href="http://feed43.com/">Feed43</a> :
-<a href="http://feed43.com/gepapir.xml"><img src="images/feed-icon.gif" alt="RSS" width="16" height="16"></a></p>
+Ci dessous les dernières mises à jour sur le site. Elles sont également <a href="rss.php">disponibles en RSS</a>.
+</p>
 
 <?
 /****
@@ -135,7 +131,7 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<?=GepapirChangelog::getForHtml(7)?>
+<?=HtmlChangelogRenderer::getContent(7)?>
 
 
 <hr class="sep sepfin">

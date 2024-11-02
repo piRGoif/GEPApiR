@@ -10,6 +10,7 @@ class GepapirChangelog {
         return [
             new ChangelogEntry('2024-11-02', '8.3.0', [
                 'Changelog : passage en dynamique',
+                "Changelog : rss généré maison pour remplacer le service Feed43 qui n'existe plus",
             ]),
             new ChangelogEntry('2024-09-06', '8.2.7', [
                 'Musiques : ré-ordonné par ordre anté chronologique',
@@ -283,5 +284,136 @@ class ChangelogEntry
         $this->entryDate = $entryDate;
         $this->entryVersion = $entryVersion;
         $this->aEntryContent = $aEntryContent;
+    }
+}
+
+
+
+/**
+ * @uses GepapirChangelog
+ */
+abstract class AbstractChangelogRenderer {
+    public static function getContent($numberOfEntriesToReturn = null): string
+    {
+        $htmlChangelog = static::getHeader();
+        $changelogEntries = GepapirChangelog::getChangelogEntries();
+        $numberOfEntriesReturned = 0;
+
+        foreach ($changelogEntries as $changelogEntry) {
+            if ((!is_null($numberOfEntriesToReturn)) && ($numberOfEntriesReturned >= $numberOfEntriesToReturn)) {
+                break;
+            }
+
+            $entryDate = $changelogEntry->entryDate;
+            $entryVersion = $changelogEntry->entryVersion;
+            $entryTitle = $entryDate;
+            if (!is_null($entryVersion)) {
+                $entryTitle .= ', v' . $entryVersion;
+            }
+
+            $htmlChangelog .= static::getEntryBefore($entryTitle, $entryDate);
+
+            $entryContent = $changelogEntry->aEntryContent;
+            foreach ($entryContent as $entryContentItem) {
+                $htmlChangelog .= static::getEntryContentItem($entryContentItem);
+            }
+
+            $htmlChangelog .= static::getEntryAfter();
+            $numberOfEntriesReturned++;
+        }
+
+        $htmlChangelog .= static::getFooter();
+
+        return $htmlChangelog;
+    }
+
+    abstract protected static function getHeader(): string;
+    abstract protected static function getEntryBefore(string $entryTitle, string $entryId): string;
+    abstract protected static function getEntryContentItem(string $entryContentItem): string;
+    abstract protected static function getEntryAfter(): string;
+    abstract protected static function getFooter(): string;
+}
+
+
+
+class HtmlChangelogRenderer extends AbstractChangelogRenderer {
+    protected static function getHeader(): string
+    {
+        return '<dl id="changelog-ul">';
+    }
+
+    protected static function getEntryBefore(string $entryTitle, string $entryId):string {
+        return <<<HTML
+            <dt>{$entryTitle}</dt>
+            <dd>
+        HTML;
+    }
+    protected static function getEntryContentItem(string $entryContentItem): string {
+        return '- ' . $entryContentItem . '<br>';
+    }
+
+    protected static function getEntryAfter(): string
+    {
+        return '</dd>';
+    }
+
+    protected static function getFooter(): string
+    {
+        return '</dl>';
+    }
+}
+
+
+
+/**
+ * @link https://validator.w3.org/feed/ W3C feed validator service
+ * @link https://en.wikipedia.org/wiki/RSS
+ * @link https://www.wakdev.com/fr/more/wiki/php-mysql/generation-dun-flux-rss-en-php.html Créer en php son propre flux RSS dynamique
+ */
+class RssChangelogRenderer extends AbstractChangelogRenderer
+{
+    protected static function getHeader():string {
+        return <<<XML
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>GEPApiR</title>
+    <link>http://pgoiffon.free.fr/</link>
+    <description>Le site personnel de Pierre Goiffon</description>
+
+XML;
+    }
+
+    protected static function getEntryBefore(string $entryTitle, string $entryId): string
+    {
+        $entryTitleEscaped = htmlspecialchars($entryTitle);
+        return <<<XML
+ <item>
+  <title>{$entryTitleEscaped}</title>
+  <guid>{$entryId}</guid>
+  <description>
+
+XML;
+    }
+
+    protected static function getEntryContentItem(string $entryContentItem): string
+    {
+        return '- ' . htmlspecialchars($entryContentItem) . "\n";
+    }
+
+    protected static function getEntryAfter(): string
+    {
+        return <<<XML
+            </description>
+        </item>
+        XML;
+    }
+
+    protected static function getFooter(): string
+    {
+        return <<<XML
+    </channel>
+</rss>
+XML;
     }
 }

@@ -1,7 +1,6 @@
 <?php
 /*******************************************************************************
  Entête commun pages
- Version 20140813
 *******************************************************************************/
 
 
@@ -49,3 +48,7 @@ require_once($RelBasePath . 'communs/separateurs.inc.php');
 
 
 <script src="<?= $RelBasePath ?>communs/ondomready/ondomready.jz"></script>
+
+
+
+<link rel="alternate" type="application/rss+xml" title="GEPApiR changelog" href="<?= $RelBasePath ?>rss.php">
