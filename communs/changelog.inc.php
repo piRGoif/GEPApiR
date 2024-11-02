@@ -402,7 +402,7 @@ XML;
         return <<<XML
             </description>
         </item>
-        XML;
+XML;
     }
 
     protected static function getFooter()
