@@ -8,6 +8,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2024-11-02', '8.3.1', [
+                'Changelog : corrections pour le vieux PHP de Free, plus quelques oublis',
+            ]),
             new ChangelogEntry('2024-11-02', '8.3.0', [
                 'Changelog : passage en dynamique',
                 "Changelog : rss généré maison pour remplacer le service Feed43 qui n'existe plus",
@@ -222,49 +225,13 @@ class GepapirChangelog {
         ];
     }
 
-    public static function getCurrentVersion():string {
+    /**
+     * @return string
+     */
+    public static function getCurrentVersion() {
         $latestEntry = static::getChangelogEntries()[0];
-        return $latestEntry->entryVersion;
-    }
-
-    public static function getForHtml($numberOfEntriesToReturn = 10):string {
-        $htmlChangelog = '<dl id="changelog-ul">';
-        $changelogEntries = static::getChangelogEntries();
-        $numberOfEntriesReturned = 0;
-
-        foreach ($changelogEntries as $changelogEntry) {
-            if ($numberOfEntriesReturned >= $numberOfEntriesToReturn) {
-                break;
-            }
-
-            $entryDate = $changelogEntry->entryDate;
-            $entryVersion = $changelogEntry->entryVersion;
-            $entryTitle = $entryDate;
-            if (!is_null($entryVersion)) {
-                $entryTitle .= ', v' . $entryVersion;
-            }
-
-            $htmlChangelog .= <<<HTML
-<dt>{$entryTitle}</dt>
-<dd>
-HTML;
-
-            $entryContent = $changelogEntry->aEntryContent;
-            foreach ($entryContent as $entryContentItem) {
-                $htmlChangelog .= '- ' . $entryContentItem.'<br>';
-            }
-
-            $htmlChangelog .= '</dd>';
-            $numberOfEntriesReturned++;
-        }
-
-        $htmlChangelog .= '</dl>';
-
-        return $htmlChangelog;
-    }
-
-    public static function getForRss():string {
-        return 'TODO';
+        $currentVersion = $latestEntry->entryVersion;
+        return (is_null($currentVersion)) ? 'N/A' : $currentVersion;
     }
 }
 
@@ -293,7 +260,11 @@ class ChangelogEntry
  * @uses GepapirChangelog
  */
 abstract class AbstractChangelogRenderer {
-    public static function getContent($numberOfEntriesToReturn = null): string
+    /**
+     * @param ?int $numberOfEntriesToReturn
+     * @return string
+     */
+    public static function getContent($numberOfEntriesToReturn = null)
     {
         $htmlChangelog = static::getHeader();
         $changelogEntries = GepapirChangelog::getChangelogEntries();
@@ -327,37 +298,56 @@ abstract class AbstractChangelogRenderer {
         return $htmlChangelog;
     }
 
-    abstract protected static function getHeader(): string;
-    abstract protected static function getEntryBefore(string $entryTitle, string $entryId): string;
-    abstract protected static function getEntryContentItem(string $entryContentItem): string;
-    abstract protected static function getEntryAfter(): string;
-    abstract protected static function getFooter(): string;
+    /**
+     * @return string
+     */
+    abstract protected static function getHeader();
+    /**
+     * @param string $entryTitle
+     * @param string $entryId
+     * @return string
+     */
+    abstract protected static function getEntryBefore(string $entryTitle, string $entryId);
+    /**
+     * @param string $entryContentItem
+     * @return string
+     */
+    abstract protected static function getEntryContentItem(string $entryContentItem);
+    /**
+     * @return string
+     */
+    abstract protected static function getEntryAfter();
+    /**
+     * @return string
+     */
+    abstract protected static function getFooter();
 }
 
 
 
 class HtmlChangelogRenderer extends AbstractChangelogRenderer {
-    protected static function getHeader(): string
+    protected static function getHeader()
     {
         return '<dl id="changelog-ul">';
     }
 
-    protected static function getEntryBefore(string $entryTitle, string $entryId):string {
+    protected static function getEntryBefore(string $entryTitle, string $entryId) {
         return <<<HTML
             <dt>{$entryTitle}</dt>
             <dd>
         HTML;
     }
-    protected static function getEntryContentItem(string $entryContentItem): string {
+
+    protected static function getEntryContentItem(string $entryContentItem) {
         return '- ' . $entryContentItem . '<br>';
     }
 
-    protected static function getEntryAfter(): string
+    protected static function getEntryAfter()
     {
         return '</dd>';
     }
 
-    protected static function getFooter(): string
+    protected static function getFooter()
     {
         return '</dl>';
     }
@@ -372,7 +362,8 @@ class HtmlChangelogRenderer extends AbstractChangelogRenderer {
  */
 class RssChangelogRenderer extends AbstractChangelogRenderer
 {
-    protected static function getHeader():string {
+    protected static function getHeader()
+    {
         return <<<XML
 <?xml version="1.0"?>
 <rss version="2.0">
@@ -384,7 +375,7 @@ class RssChangelogRenderer extends AbstractChangelogRenderer
 XML;
     }
 
-    protected static function getEntryBefore(string $entryTitle, string $entryId): string
+    protected static function getEntryBefore(string $entryTitle, string $entryId)
     {
         $entryTitleEscaped = htmlspecialchars($entryTitle);
         return <<<XML
@@ -396,12 +387,12 @@ XML;
 XML;
     }
 
-    protected static function getEntryContentItem(string $entryContentItem): string
+    protected static function getEntryContentItem(string $entryContentItem)
     {
         return '- ' . htmlspecialchars($entryContentItem) . "\n";
     }
 
-    protected static function getEntryAfter(): string
+    protected static function getEntryAfter()
     {
         return <<<XML
             </description>
@@ -409,7 +400,7 @@ XML;
         XML;
     }
 
-    protected static function getFooter(): string
+    protected static function getFooter()
     {
         return <<<XML
     </channel>
