@@ -312,12 +312,12 @@ abstract class AbstractChangelogRenderer {
      * @param string $entryId
      * @return string
      */
-    abstract protected static function getEntryBefore(string $entryTitle, string $entryId);
+    abstract protected static function getEntryBefore($entryTitle, $entryId);
     /**
      * @param string $entryContentItem
      * @return string
      */
-    abstract protected static function getEntryContentItem(string $entryContentItem);
+    abstract protected static function getEntryContentItem($entryContentItem);
     /**
      * @return string
      */
@@ -336,14 +336,14 @@ class HtmlChangelogRenderer extends AbstractChangelogRenderer {
         return '<dl id="changelog-ul">';
     }
 
-    protected static function getEntryBefore(string $entryTitle, string $entryId) {
+    protected static function getEntryBefore($entryTitle, $entryId) {
         return <<<HTML
             <dt>{$entryTitle}</dt>
             <dd>
-        HTML;
+HTML;
     }
 
-    protected static function getEntryContentItem(string $entryContentItem) {
+    protected static function getEntryContentItem($entryContentItem) {
         return '- ' . $entryContentItem . '<br>';
     }
 
@@ -380,7 +380,7 @@ class RssChangelogRenderer extends AbstractChangelogRenderer
 XML;
     }
 
-    protected static function getEntryBefore(string $entryTitle, string $entryId)
+    protected static function getEntryBefore($entryTitle, $entryId)
     {
         $entryTitleEscaped = htmlspecialchars($entryTitle);
         return <<<XML
@@ -392,7 +392,7 @@ XML;
 XML;
     }
 
-    protected static function getEntryContentItem(string $entryContentItem)
+    protected static function getEntryContentItem($entryContentItem)
     {
         return '- ' . htmlspecialchars($entryContentItem) . "\n";
     }
