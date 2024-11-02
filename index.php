@@ -1,11 +1,10 @@
 <?php ob_start('ob_gzhandler');
-$pageVersion = "v8.2.7";
-
 // NAVIGATION
 $RelBasePath = "";
 $title = "Accueil [GEPApiR]";
 
 require_once($RelBasePath . 'communs/header1.inc.php');
+require_once($RelBasePath . 'communs/changelog.inc.php');
 ?>
 
 <meta name="description" content="Le site personnel de Pierre Goiffon, contenant
@@ -43,7 +42,7 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 alt="La GEPApiR">
 </a><br>
 Le site personnel de Pierre Goiffon<br>
-<?=$pageVersion?> Official Service Release<br>
+<?=GepapirChangelog::getCurrentVersion()?> Official Service Release<br>
 (Build 2751 : Service Pack 8)</h1>
 
 
@@ -115,10 +114,6 @@ Ci dessous les dernières mises à jour sur le site.<br>
 Ces mises à jour sont disponibles en RSS grace au service de <a href="http://feed43.com/">Feed43</a> :
 <a href="http://feed43.com/gepapir.xml"><img src="images/feed-icon.gif" alt="RSS" width="16" height="16"></a></p>
 
-
-
-<dl id="changelog-ul">
-
 <?
 /****
 <dt>TODO</dt>
@@ -140,82 +135,7 @@ Ces mises à jour sont disponibles en RSS grace au service de <a href="http://fe
 ****/
 ?>
 
-<dt>06/09/2024, <?=$pageVersion?></dt>
-<dd>
-- <a href="zicmue/">Musiques</a> : ré-ordonné par ordre anté chronologique
-</dd>
-
-
-<dt>06/09/2024, 8.2.6</dt>
-<dd>
-- ToC : suppression icone ouverture/fermeture, amélioration responsive, petites modifications esthétiques<br>
-- Ajout permalink sur headings<br>
-- Balise nav déplacé en haut de page (lecteurs d'écran)<br>
-- Mise à jour des favicons<br>
-- Informatique / <a href="info/GEPApiR/responsive.php">Responsive</a> : actualisation sur l'attribut srcset<br>
-- <a href="zicmue/">Musiques</a> : lien Valdingues 2024
-</dd>
-
-
-<dt>20/08/2024, 8.2.5</dt>
-<dd>
-- Moi : modification de l'emoji pro<br>
-- Musiques : maj des liens des vidéos de l'Harmonie de Grenoble<br>
-</dd>
-
-<dt>16/08/2024, 8.2.4</dt>
-<dd>
-- Menu : amélioration responsive, ajout d'une transition background<br>
-- Informatique / GEPApiR / <a href="info/GEPApiR/vcs.php">Suivi de version et publication </a> : création de la page<br>
-- Informatique / GEPApiR : mise à jour des pages parlant du menu<br>
-- Informatique / GEPApiR / <a href="info/GEPApiR/css.php">CSS</a> : technique d'échappement du HTML<br>
-</dd>
-
-<dt>14/08/2024, v8.2.0</dt>
-<dd>
-- <a href="zicmue/">Musiques</a> : mise à jour complète du contenu<br>
-- Menu : changement d'apparence
-</dd>
-
-<dt>13/08/2024, v8.0.0</dt>
-<dd>
-- Publication avec la GitHub action <a href="https://github.com/marketplace/actions/ftp-deploy">"FTP Deploy"</a><br>
-- Renommage des fichiers communs<br>
-- Résolution des alertes et blocages "mixed content"<br>
-- Mise à jour de la librairie Hightlight.js et changement de style<br>
-- Modification du rendu des citations<br>
-- <a href="zicmue/">Musiques</a> : actualisation et réorganisation des liens<br>
-- <a href="moi/">Moi</a> : actualisation et réorganisation des liens<br>
-- <a href="liens/">Liens</a> : actualisation<br>
-</dd>
-
-<dt>02/10/2018, v7.11.1</dt>
-<dd>
-- <a href="moi/">Moi</a> : ajout de mon compte Open Hub
-</dd>
-
-<dt>25/07/2018, v7.11.0</dt>
-<dd>
-- <a href="moi/">Moi</a> : actualisation de la rubrique, ajout de liens<br>
-- <a href="zicmue/">Musiques</a> : actualisation des groupes et enregistrements
-</dd>
-
-<dt>24/01/2015, v7.10.4</dt>
-<dd>
-- informatique / <a href="info/dev/IDE_shortcuts.php">IDE, principaux raccourcis</a> : petites corrections et compléments,<br>
-- moi / <a href="moi/CV_pgoiffon_Web.pdf">CV</a> : mise à jour
-</dd>
-
-<dt>22/10/2014, v7.10.2</dt>
-<dd>
-- menu : modification de la bordure,<br>
-- accueil : adaptations du texte,<br>
-- informatique / <a href="info/inet/html_ou_xhtml.php">HTML ou XHTML</a> : actualisation du document,<br>
-- informatique / <a href="info/dev/IDE_shortcuts.php">IDE, principaux raccourcis</a> : création
-</dd>
-
-</dl>
-
+<?=GepapirChangelog::getForHtml(7)?>
 
 
 <hr class="sep sepfin">
