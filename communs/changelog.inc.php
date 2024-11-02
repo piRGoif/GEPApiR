@@ -243,10 +243,15 @@ class ChangelogEntry
     public $entryDate;
     /** @var ?string date version, might be null (wasn't present in the GEPApiR early days) */
     public $entryVersion;
-    /** @var array<string> list of entry content */
+    /** @var string[] list of entry content */
     public $aEntryContent;
 
-    function __construct(string $entryDate, ?string $entryVersion, array $aEntryContent)
+    /**
+     * @param string $entryDate
+     * @param ?string $entryVersion
+     * @param string[] $aEntryContent
+     */
+    function __construct($entryDate, $entryVersion, $aEntryContent)
     {
         $this->entryDate = $entryDate;
         $this->entryVersion = $entryVersion;
