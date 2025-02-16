@@ -15,10 +15,21 @@ require_once('info_h1.inc');
 ?>
 </h1>
 
-<p>Informaticien de métier, consacré au développement depuis plusieurs années...
-et autour des technologies de l'Internet, voici différents petits trucs,
-notamment des documents de synthèse sur quelques points particuliers (souvent
-suite à discussion sur Usenet)</p>
+<?= writeHR() ?>
+
+
+
+<h2>Pro 👨‍💼</h2>
+
+<p>Développeur d'applications Web depuis 1997, voici quelques liens sur mes comptes professionnels :</p>
+
+<ul>
+	<li><a href="https://www.linkedin.com/in/pierregoiffon/">Compte LinkedIn</a></li>
+	<li>Comptes <a href="https://github.com/piRGoif">GitHub</a> et <a
+			href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a></li>
+	<li>Dépôt de <a href="https://github.com/Combodo/iTop">iTop</a>, application web ITSM/CMDB open source sur laquelle
+		j'ai été employé de 2017 à 2024</li>
+</ul>
 
 
 
