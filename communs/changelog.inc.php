@@ -2,7 +2,8 @@
 
 class GepapirChangelog {
     /**
-     * Should be a constant, but expressions in constants are only allowed since PHP (see https://www.php.net/manual/en/migration56.new-features.php#migration56.new-features.const-scalar-exprs)
+     * Should be a constant, but expressions in constants are only allowed since PHP 5.6.0
+     * see https://www.php.net/manual/en/migration56.new-features.php#migration56.new-features.const-scalar-exprs)
      * @var ChangelogEntry[]
      */
     public static function getChangelogEntries()
