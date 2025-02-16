@@ -21,25 +21,11 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
-<h2>Pro 👨‍💼</h2>
-
-<ul>
-	<li><a href="https://www.linkedin.com/in/pierregoiffon/">Compte LinkedIn</a></li>
-	<li>Comptes <a href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a>, <a href="https://github.com/piRGoif">GitHub</a></li>
-	<li>Dépôt de <a href="https://github.com/Combodo/iTop">iTop</a>, application web ITSM/CMDB open source sur laquelle j'ai été employé de 2017 à 2024</li>
-</ul>
-
-
-
-<?=writeHR()?>
-
-
-
 <h2>Photographie 📷</h2>
 
 <ul>
-	<li>Sélection de mes photos sur <a href="https://unsplash.com/fr/@pir">mon compte Unsplash</a></li>
 	<li><a href="https://commons.wikimedia.org/wiki/Special:ListFiles?limit=250&user=PiRGoif&ilshowall=1">Mes contributions Wikimedia Commons</a></li>
+	<li>Sélection de mes photos sur <a href="https://unsplash.com/fr/@pir">mon compte Unsplash</a></li>
 	<li>L'ensemble de mes photos publiées sont disponibles sur <a href="http://www.flickr.com/photos/pirgoif/">mon compte Flickr</a>, compte qui contient <a href="https://www.flickr.com/photos/pirgoif/collections/72157640928109674/">une sélection de mes préférées</a> !</li>
 </ul>
 
@@ -53,6 +39,7 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 <ul>
 	<li>Des enregistrement sur <a href="https://soundcloud.com/pir-3">mon compte Soundcloud</a></li>
+	<li>Musiques aimées sur <a href="https://www.deezer.com/fr/profile/969669">mon compte Deezer</a></li>
 	<li>Des vidéos aimées, des playlists et quelques vidéos personnelles sur <a href="https://www.youtube.com/user/pgoiffon">ma chaine Youtube</a></li>
 	<li>Des films vus et aimés sur <a href="http://www.imdb.com/user/ur10917353/watchlist">ma watchlist IMDB</a></li>
 </ul>

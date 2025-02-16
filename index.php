@@ -67,7 +67,8 @@ délibéré, en souvenir de ce web ancien dont ce site est issu !<br>
 Cependant ces pages respectent les bonnes pratiques du web moderne (responsive design,
 sprites, minification/compression, ...) et sont valides <a href="http://www.w3.org/TR/html5/" title="Recommandations W3C pour HTML 5">HTML 5</a> et <a href="http://www.w3.org/Style/CSS/" title="W3C CSS HomePage">CSS 3</a>.
 Vous trouverez des détails sur les techniques utilisées sur ce site en consultant
-cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>.</p>
+cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>, et les sources
+sur <a href="https://github.com/piRGoif/GEPApiR">un dépôt GitHub</a>.</p>
 
 <p id="w3clogo">
 <a href="http://validator.w3.org/check?uri=referer">
@@ -88,15 +89,13 @@ cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>.</
 <p>Le titre provient de la contraction de "page" en verlan, et de mon pseudo sur
 réseau depuis quelques éternités : piR.<br>
 Ce pseudo est à prononcer comme mon prénom, "Pierre" ! En fait je l'ai étrenné au
-départ (vers fin 1994... oui ça date...) en émulation VT100, et tout déconfi
+départ (vers fin 1994... oui ça date...) en émulation <a href="https://fr.wikipedia.org/wiki/VT100">VT100</a>, et tout déconfi
 de ne trouver comment entrer la lettre <a href="http://fr.wikipedia.org/wiki/Pi_%28lettre_grecque%29"
 title="lettre grecque pi">&#x1D6D1;</a>
 (<a href="http://www.unicode.org/charts/PDF/U0370.pdf">U+03CO</a> pour la lettre
 et <a href="http://www.unicode.org/charts/PDF/U1FF80.pdf">U+1D6D1</a> pour le
 symbole mathématique) je m'étais alors résolu à simplement saisir "pi" en toutes
 lettres, le R majuscule marquant la prononciation !</p>
-
-<p>Les sources de ce site sont ouvertes et disponibles sur <a href="https://github.com/piRGoif/GEPApiR">un dépôt GitHub</a>.</p>
 
 
 

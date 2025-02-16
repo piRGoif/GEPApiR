@@ -2,12 +2,20 @@
 
 class GepapirChangelog {
     /**
-     * Should be a constant, but expressions in constants are only allowed since PHP (see https://www.php.net/manual/en/migration56.new-features.php#migration56.new-features.const-scalar-exprs)
+     * Should be a constant, but expressions in constants are only allowed since PHP 5.6.0
+     * see https://www.php.net/manual/en/migration56.new-features.php#migration56.new-features.const-scalar-exprs)
      * @var ChangelogEntry[]
      */
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2025-02-16', '8.3.2', [
+                'Accueil : déplacement du lien GitHub de GEPApiR vers Introduction',
+                'Informatique : déplacement des liens Pro depuis la rubrique Moi',
+                'Moi : ajout du lien Deezer',
+                "Musiques : ajout lien album Brass'tille avril 2024",
+                'Highlight.js : switch theme from monokai to monokai-sublime',
+            ]),
             new ChangelogEntry('2024-11-02', '8.3.1', [
                 'Changelog : corrections pour le vieux PHP de Free, plus quelques oublis',
             ]),
