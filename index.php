@@ -89,7 +89,7 @@ sur <a href="https://github.com/piRGoif/GEPApiR">un dépôt GitHub</a>.</p>
 <p>Le titre provient de la contraction de "page" en verlan, et de mon pseudo sur
 réseau depuis quelques éternités : piR.<br>
 Ce pseudo est à prononcer comme mon prénom, "Pierre" ! En fait je l'ai étrenné au
-départ (vers fin 1994... oui ça date...) en émulation VT100, et tout déconfi
+départ (vers fin 1994... oui ça date...) en émulation <a href="https://fr.wikipedia.org/wiki/VT100">VT100</a>, et tout déconfi
 de ne trouver comment entrer la lettre <a href="http://fr.wikipedia.org/wiki/Pi_%28lettre_grecque%29"
 title="lettre grecque pi">&#x1D6D1;</a>
 (<a href="http://www.unicode.org/charts/PDF/U0370.pdf">U+03CO</a> pour la lettre
