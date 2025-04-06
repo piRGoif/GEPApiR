@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2025-04-06', '8.3.3', [
+                "Musiques : ajout lien album Fanfaronnades 2025",
+            ]),
             new ChangelogEntry('2025-02-16', '8.3.2', [
                 'Accueil : déplacement du lien GitHub de GEPApiR vers Introduction',
                 'Informatique : déplacement des liens Pro depuis la rubrique Moi',
