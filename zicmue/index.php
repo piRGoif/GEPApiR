@@ -50,7 +50,7 @@ bit more evenly, I want to tell her, get a better balance, but I can't seem to
 get it sorted. I can see she wouldn't be interested in my internal stock
 control problems though, so I simply point to where I keep the soul I have,
 right by the exit, just next to the blues.</q><br>
-<cite>Nick Hornby, High Fidelity</cite></p>
+<cite>Nick Hornby, <a href="https://fr.wikipedia.org/wiki/Haute_Fid%C3%A9lit%C3%A9">High Fidelity</a></cite></p>
 </blockquote>
 
 
