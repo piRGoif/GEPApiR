@@ -9,8 +9,11 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2025-04-06', '8.3.4', [
-                "Musiques : ajout captation vidéo Jazz'Alp, modif des titres",
+            new ChangelogEntry('2025-04-06', '8.4.0', [
+                "Musiques : ajout captation vidéo Jazz'Alp",
+                "Musiques : passage des émoji au début des titres",
+                "Musiques : lien High Fidelity",
+                "CSS : corrigé la taille de police dans les listes imbriquées",
             ]),
             new ChangelogEntry('2025-04-06', '8.3.3', [
                 "Musiques : ajout lien album Fanfaronnades 2025",
