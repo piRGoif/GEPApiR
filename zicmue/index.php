@@ -117,7 +117,7 @@ contenant un trombone...</p>
 
 
 
-<h2 id="groupes">Groupes et orchestres</h2>
+<h2 id="groupes">🪪 Groupes et orchestres</h2>
 
 <p id="moi-groupes"">
 <a href="https://www.facebook.com/JeudiSoir/photos/a.10150299484164982.1073741825.168878409981/10150299484244982/?type=3&theater">
@@ -158,7 +158,7 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 
 
 
-<h2 id="enregistrements">Participations enregistrements 🎙️</h2>
+<h2 id="enregistrements">🎙️ Participations enregistrements</h2>
 
 <p>Avec mes groupes réguliers :</p>
 
@@ -197,12 +197,12 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 
 
 
-<h2 id="videos">Participations vidéos 🎥</h2>
+<h2 id="videos">🎥 Participations vidéos</h2>
 
 <p>Avec mes groupes réguliers, passés ou présents :</p>
 
 <ul>
-	<li><strong>Small Band Project</strong>, 2024 : captation au festival Jazz Alp (merciiiiii Guy Jass !), <a href="https://www.youtube.com/watch?v=bgXkjFr8TJk">montage d'extraits de la soirée</a> et <a href="https://www.facebook.com/share/v/wtvLBXBBvo6aVQmx/">des 2 chansons de Boris Vian</a></li>
+	<li><strong>Small Band Project</strong>, 2024 : captation au festival Jazz'Alp (merciiiiii Guy Jass !), montages <a href="https://www.youtube.com/watch?v=bgXkjFr8TJk">d'extraits de la soirée</a> et <a href="https://www.facebook.com/share/v/wtvLBXBBvo6aVQmx/">des 2 chansons de Boris Vian</a>, et enfin <a href="https://www.youtube.com/watch?v=4FZ2jM2m5Wo">l'intégralité du concert</a></li>
 	<li><strong>Clap Yo Hands</strong>, 2023 (spectacle "Hello Broadway") : <a href="https://youtu.be/FqJd3dnxm2s">teaser du spectacle</a>, "<a href="https://www.youtube.com/watch?v=LeYg782cW5s">Singin' In The Rain</a>"</li>
 	<li><strong>In Your Brass</strong> : quelques vidéos <a href="https://www.youtube.com/@inyourbrass9987/videos">sur le compte Youtube du groupe</a>, en particulier :
 		<ul>
@@ -255,7 +255,7 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 
 
 
-<h2 id="photo">Photographie de concert 📷</h2>
+<h2 id="photo">📷 Photographie de concert</h2>
 
 <p>Passionné de musique, passionné de photographie, j'ai naturellement sortit l'appareil photo pour capturer des moments de concerts de copains :)</p>
 
