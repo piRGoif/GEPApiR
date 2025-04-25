@@ -265,6 +265,7 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 	<li><a href="https://www.flickr.com/photos/pirgoif/collections/72157720527727742/">Classeur dédié</a> sur mon compte Flickr</li>
 	<li>Journées des flutes à bec, événement organisé en région grenobloise par l'association <a href="https://www.loiseauaplumes.org/">l'Oiseau à plumes</a> :
 		<ul>
+			<li>2025 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720325324682">scène ouverte et jam</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72177720325340268">concert du samedi</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72177720325449072">Bal renaissance</a></li>
 			<li>2022 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299640616">concert d'ouverture</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72177720299643180">Bal</a></li>
 			<li>2021 : <a href="https://www.flickr.com/photos/pirgoif/albums/72157719939836099">concert Philippe Renard</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157719959862356">concert Pierre Hamon</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157720013003003">Bal</a></li>
 		</ul>

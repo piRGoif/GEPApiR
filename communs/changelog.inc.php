@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2025-04-25', '8.4.1', [
+                'Musiques : lien vers les images des Journées de la Flute à Bec 2025',
+            ]),
             new ChangelogEntry('2025-04-06', '8.4.0', [
                 "Musiques : ajout captation vidéo Jazz'Alp",
                 "Musiques : passage des émoji au début des titres",
