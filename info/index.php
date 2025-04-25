@@ -19,7 +19,7 @@ require_once('info_h1.inc');
 
 
 
-<h2>Pro 👨‍💼</h2>
+<h2 id="pro">👨‍💼 Pro</h2>
 
 <p>Développeur d'applications Web depuis 1997, voici quelques liens sur mes comptes professionnels :</p>
 
