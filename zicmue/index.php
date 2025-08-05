@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/08/2005";
-$date_maj = "14/08/2024";
+$date_maj = "04/08/2025";
 
 // NAVIGATION
 $RelBasePath = "../";
@@ -128,7 +128,7 @@ Marge pour éviter le chevauchement du texte.
 <img src="<?=$RelBasePath?>images/piR_tromb1.png" width="200" height="370"
  class="pretty-img" style="float:right; margin-left: 60px; transform: rotate(6deg);"
  alt="piR concert trombone" id="piR_tromb1"></a>
-Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
+Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 
 <ul>
 	<li>Depuis 2004 : Ping Machine (chanson)</li>
@@ -172,6 +172,7 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 	</li>
 </ul>
 
+<p>Aussi, des enregistrement fait tout seul sur <a href="https://soundcloud.com/pir-3">mon compte Soundcloud</a></p>
 
 <p>Et en renfort :</p>
 
@@ -291,8 +292,8 @@ Actuellement (rentrée 2024), j'ai l'immense plaisir de jouer avec :</p>
 <h2 id="vrac">En vrac</h2>
 
 <ul>
+	<li>Musiques aimées sur <a href="https://www.deezer.com/fr/profile/969669">mon compte Deezer</a></li>
 	<li>Une <a href="delamort_chansons.php">liste de chansons</a> particulières à mon coeur...</li>
-	<li>Des bidouilles faites de mon côté sur <a href="http://soundcloud.com/pir-3">mon compte Soundcloud</a></li>
 	<li>Quelques petits trucs sur <a href="finale.php">Finale</a>, le fameux éditeur de partitions</li>
 </ul>
 
