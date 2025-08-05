@@ -9,6 +9,10 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-08-11', '9.2.0', [
+                'Liens : séparation en plusieurs pages',
+                "Liens : ajout d'une sélection de chaînes Youtube",
+            ]),
             new ChangelogEntry('2026-08-11', '9.1.5', [
                 'CSS : callouts note en violet',
                 'Informatique Linux Gnome : quelques corrections de typo et des reformulations',
