@@ -31,18 +31,6 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
-<?=writeHR()?>
-
-
-
-<h2>Autre 😎</h2>
-
-<ul>
-	<li>Des vidéos aimées, des playlists et quelques vidéos personnelles sur <a href="https://www.youtube.com/user/pgoiffon">ma chaine Youtube</a></li>
-</ul>
-
-
-
 <hr class="sep sepfin">
 
 
