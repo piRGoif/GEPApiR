@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "24/08/2005";
-$date_maj = "14/08/2014";
+$date_maj = "07/08/2025";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -77,6 +77,8 @@ virgules :</p>
 <pre><code class="html">
 &lt;p id="foobar" class="class1 class2">
 </code></pre>
+
+<p>🔍 Un exemple à voir dans <a href="https://codepen.io/pgoiffon/pen/WNvxRbK">ce codepen</a> !</p>
 
 <p>On trouvera cette information dans la définition de l'attribut class de la
 recommandation <abbr>HTML</abbr><sup>[<a href="#fn2">2</a>]</sup>.</p>

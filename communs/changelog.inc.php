@@ -9,9 +9,10 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2025-08-04', '8.4.3', [
+            new ChangelogEntry('2025-08-07', '8.4.4', [
                 "Changelog : ajout d'un lien sur chaque entrée rss",
                 'Musiques : déplacement des liens musicaux depuis la rubrique Moi',
+                "Informatique : CSS biclasse ajout d'un codepen exemple",
             ]),
             new ChangelogEntry('2025-04-25', '8.4.1', [
                 'Musiques : lien vers les images des Journées de la Flute à Bec 2025',
