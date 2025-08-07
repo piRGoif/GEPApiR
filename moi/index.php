@@ -38,10 +38,7 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 <h2>Autre 😎</h2>
 
 <ul>
-	<li>Des enregistrement sur <a href="https://soundcloud.com/pir-3">mon compte Soundcloud</a></li>
-	<li>Musiques aimées sur <a href="https://www.deezer.com/fr/profile/969669">mon compte Deezer</a></li>
 	<li>Des vidéos aimées, des playlists et quelques vidéos personnelles sur <a href="https://www.youtube.com/user/pgoiffon">ma chaine Youtube</a></li>
-	<li>Des films vus et aimés sur <a href="http://www.imdb.com/user/ur10917353/watchlist">ma watchlist IMDB</a></li>
 </ul>
 
 

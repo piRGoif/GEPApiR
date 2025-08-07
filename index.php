@@ -39,7 +39,8 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 alt="La GEPApiR">
 </a><br>
 Le site personnel de Pierre Goiffon<br>
-<?=GepapirChangelog::getCurrentVersion()?> Official Service Release<br>
+<img alt="GEPApiR version" src="https://img.shields.io/badge/version-<?=GepapirChangelog::getCurrentVersion()?>-blue"><br>
+Official Service Release<br>
 (Build 2751 : Service Pack 8)</h1>
 
 

@@ -1,29 +1,47 @@
 <?
 /*-------------------------------------------------------------------------------------------
  Menu navigation - DEBUT
- Version 20140808
 -------------------------------------------------------------------------------------------*/
+
+const GEPAPIR_NAVIGATION = [
+    '' => '🏡&nbsp;Accueil',
+    'info' => '💻&nbsp;Informatique',
+    'zicmue' => '🎵&nbsp;Musiques',
+    'moi' => '👤&nbsp;Moi',
+    'liens' => '🔗&nbsp;Liens',
+];
+
 ?>
 <nav>
 
 <ul>
+    
+<?php
+$currentPagePath = $_SERVER['REQUEST_URI'];
+$currentCategory = null;
+foreach (GEPAPIR_NAVIGATION as $path => $label) {
+    if ($path === '') {continue;}
+    if (strpos($currentPagePath, $path) !== false) { $currentCategory = $path;}
+}
+if ($currentCategory === null) { $currentCategory = '';}
 
+
+foreach (GEPAPIR_NAVIGATION as $path => $label) {
+    $currentCategoryHtml = ($path === $currentCategory)
+        ? ' class="current"'
+        : '';
+        
+    $pathForHtml = ($path === '') ? '' : $path.'/';
+    
+    echo <<<HTML
 <li>
-<a href="<?=($RelBasePath == "")?"index.php":$RelBasePath;?>" id="menu_accueil">
-🏡&nbsp;Accueil</a>
-</li><li>
-<a href="<?=$RelBasePath?>info/" id="menu_info">
-💻&nbsp;Informatique</a>
-</li><li>
-<a href="<?=$RelBasePath?>zicmue/" id="menu_zicmue">
-🎵&nbsp;Musiques</a>
-</li><li>
-<a href="<?=$RelBasePath?>moi/" id="menu_moi">
-👤&nbsp;Moi</a>
-</li><li>
-<a href="<?=$RelBasePath?>liens/" id="menu_liens">
-🔗&nbsp;Liens</a>
+<a href="{$RelBasePath}{$pathForHtml}" id="menu_{$path}"{$currentCategoryHtml}>
+{$label}</a>
 </li>
+HTML;
+}
+?>
+
 
 </ul>
 
