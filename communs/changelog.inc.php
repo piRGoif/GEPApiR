@@ -9,6 +9,10 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2025-08-08', '8.5.2', [
+                'Menu : modification indicateur rubrique en cours',
+                'Menu : correction menu sous les blockquote et images .pretty-images',
+            ]),
             new ChangelogEntry('2025-08-07', '8.5.1', [
                 "Changelog : ajout d'un lien sur chaque entrée rss",
                 'Musiques : déplacement des liens musicaux depuis la rubrique Moi',
