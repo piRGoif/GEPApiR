@@ -366,6 +366,13 @@ nav>ul>li:first-child>a {
 nav>ul>li>a:hover
 {
     background-color: white;
+    border-top: 4px solid gray;
+}
+
+nav>ul>li>a.current:hover
+{
+    background-color: white;
+    border-top: 4px solid black;
 }
 
 nav a:link, nav a:visited

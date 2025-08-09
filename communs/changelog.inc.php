@@ -9,6 +9,10 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2025-08-09', '8.5.3', [
+                'Menu : personnalisation du :hover',
+                'Menu: anti-cache sur la CSS',
+            ]),
             new ChangelogEntry('2025-08-08', '8.5.2', [
                 'Menu : modification indicateur rubrique en cours',
                 'Menu : correction menu sous les blockquote et images .pretty-images',
