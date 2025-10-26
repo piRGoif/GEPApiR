@@ -36,6 +36,8 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
+<h2>Applications utiles</h2>
+
 Applis "Ajustements" (Gnome Tweaks)
 - Polices : facteur de mise à l'échelle < 1
 - Fenêtres : actions de la barre de titre
@@ -49,22 +51,36 @@ https://extensions.gnome.org/
 
 
 
+<?= writeHR() ?>
+
+
 
 <h2>Navigation fenêtres</h2>
 
 <ul>
     <li>AATWS (Advanced Alt-Tab Window Switcher) : complète personnalisation du alt-tab, bandeau affiché et liste des applications, surlignage de l'application qui va récupérer le focus</li>
     <li>Another Window Session Manager : enregistre le positionnement des fenêtres, peut ré-ouvrir des configurations</li>
+    <li>Dash in panel</li>
 </ul>
 
+
+
+<?= writeHR() ?>
 
 
 
 <h2>Esthétique</h2>
 
 <ul>
-    <li>Bon Wallpaper</li>
+    <li>Bing Wallpaper</li>
+    <li>Dim Background Windows</li>
+    <li>Just perfection : personnalisation de ce qui est affiché</li>
+    <li>Open Bar : properties (mode Trilands, height, margins), window max-bar, foreground, background (gradient, alpha, palette), bar border</li>
 </ul>
+
+
+
+<?= writeHR() ?>
 
 
 
@@ -78,6 +94,43 @@ https://extensions.gnome.org/
     <li>Bluetooth Battery Meter</li>
     <li>Bring Out Submenu Of Power Off Button</li>
 </ul>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2>Notifications</h2>
+
+<ul>
+    <li>Notification Banner Reloaded</li>
+    <li>Notification Configurator : rate limiting, timeout, filtering, themes</li>
+    <li>Top Panel Notification Icons /w Count</li>
+</ul>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2>Fonctionnalités supplémentaires</h2>
+
+<ul>
+    <li>Clipboard indicator</li>
+    <li>Emote</li>
+    <li>Pomodoro</li>
+    <li>Removable Drive Menu</li>
+    <li>Top Bar Organizer</li>
+    <li>Unblanck lock screen</li>
+    <li>Wifi QR Code</li>
+    <li>Wiggle : retrouver son curseur (agrandissement, sinon voir options accessibilités)</li>
+</ul>
+
+
+
+<?= writeHR() ?>
 
 
 
