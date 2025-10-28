@@ -45,9 +45,14 @@ Applis "Ajustements" (Gnome Tweaks)
 
 
 Gestionnaire d'extensions
+    https://flathub.org/fr/apps/com.mattjakeman.ExtensionManager
 
 
 https://extensions.gnome.org/
+
+
+Gnome Save desktop
+    https://github.com/vikdevelop/SaveDesktop
 
 
 
