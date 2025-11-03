@@ -48,7 +48,7 @@ h1>a>img
     margin-bottom: 10px;
 }
 
-h2, h3
+h2, h3, h4
 {
     font-family: 'Satisfy', cursive;
 }
@@ -59,7 +59,7 @@ h2
     font-size: 2em;
 }
 
-h3
+h3, h4
 {
     margin: 1em 1em;
     margin-top: 2em;
@@ -73,6 +73,29 @@ h1:hover>span.permalink, h2:hover>span.permalink, h3:hover>span.permalink, h4:ho
 	display: initial;
 }
 
+figure
+{
+    margin: 1.5em 4%;
+    text-align: center;
+}
+
+figure > figcaption
+{
+    font-style: italic;
+}
+
+figure img
+{
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+}
+figure img.pretty-img
+{
+    margin-bottom: 0;
+}
+
+
 img
 {
     border: none;
@@ -84,6 +107,11 @@ img.pretty-img
     border-radius: 5px;
     border: 4px solid white;
     box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+}
+
+img.screenshot-img
+{
+    margin: inherit auto;
 }
 
 /** Liens */
@@ -199,6 +227,32 @@ q:after
     content: "”";
 }
 
+code
+{
+    color: springgreen;
+    background-color: black;
+    border-radius: 0.3rem;
+    padding: 0 0.1rem;
+}
+
+body kbd {
+  background-color: #eeeeee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgb(0 0 0 / 0.2),
+    0 2px 0 0 rgb(255 255 255 / 0.7) inset;
+  color: #333333;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+
+
 /** Form */
 label
 {
@@ -208,6 +262,103 @@ label
 label:hover
 {
     text-decoration: underline;
+}
+
+
+
+/** Callouts */
+.callout:before {
+  content: var(--callout-icon);
+  margin-right: 0.5rem;
+}
+.callout {
+  --callout-icon: "";
+  --callout-bg: #222222;
+  --callout-fg: #9e9e9e;
+  
+  width: 60%;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  
+  border : 1px outset black;
+  border-radius: 5px;
+  
+  background-color: var(--callout-bg);
+  color: var(--callout-fg);
+  
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+}
+
+.callout :where(ul, li) {
+  background-color: transparent;
+  color: inherit;
+}
+.callout :where(p, ul) {
+  margin: 1rem;
+}
+
+.callout[data-variant="note"] {
+  --callout-icon: "✏️";
+  --callout-bg: #151e2c;
+  --callout-fg: #157aff;
+}
+
+.callout[data-variant="info"] {
+  --callout-icon: "ℹ️";
+  --callout-bg: #151e2c;
+  --callout-fg: #1577f9;
+}
+
+.callout[data-variant="tip"] {
+  --callout-icon: "💡";
+  --callout-bg: #1a2929;
+  --callout-fg: #53dfdd;
+}
+
+.callout[data-variant="warning"] {
+  --callout-icon: "⚠️";
+  --callout-bg: #2a2118;
+  --callout-fg: #e9973f;
+}
+
+
+
+/******************
+ Tableaux
+******************/
+table {
+  table-layout: fixed;
+  margin: auto;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+/* graphics */
+thead,
+tfoot {
+  color: white;
+  line-height: 1.5;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.1), rgb(0 0 0 / 0.5));
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 0.2rem;
+}
+
+tbody {
+  background-color: white;
+}
+
+table th, table td {
+  border: 1px solid black;
+  padding: 1rem;
 }
 
 
@@ -399,6 +550,11 @@ nav a:link, nav a:visited
         
         font-size: 1em;
     }
+    
+    figure img
+    {
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 590px)
@@ -465,7 +621,7 @@ details#toc[open] summary {
   margin-bottom: 10px; /* to fake open/close transition. Source https://stackoverflow.com/a/73447722 ! */
 }
 
-details#toc>ul
+details#toc ul
 {
     padding: 0.1em 0;
     padding-left: 30px;
