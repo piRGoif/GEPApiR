@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "14/08/2014";
+$date_maj = "06/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -36,9 +36,14 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <p>Plusieurs des pages, en particulier dans la rubrique Informatique, contiennent
 un long contenu. Aussi, afin de faciliter la lecture je voulais inclure une table
-des matières, et pour me faciliter l'édition, qu'elle soit générée dynamiquement.<br>
-J'ai donc intégré <a href="http://www.whitsoftdev.com/articles/toc.html">un script de Matt Whitlock</a>
-qui répond à ce besoin ! Et j'ai fait apparaitre le contenu dans un panel flottant.</p>
+des matières, et pour me faciliter l'édition, qu'elle soit générée dynamiquement.</p>
+
+<p>Plusieurs choses à régler pour y arriver :</p>
+
+<ul>
+	<li>Génération dynamique : j'ai intégré un script de Matt Whitlock (malheureusement plus disponible) qui répond à ce besoin ! Que j'ai ensuite adapté, en particulier pour conserver les id des titres lorsque ceux-ci sont déjà présents.</li>
+	<li>Affichage : contenu HTML et rendu CSS</li>
+</ul>
 
 
 
@@ -111,7 +116,7 @@ La fonction <code>toggleToc()</code> est cablée sur les liens d'ouverture / fer
 et va permettre d'afficher ou masquer la table.</p>
 
 <pre><code class="html">
-&lt;script src="...">&lt;/script> // librairie de Matt Whitlock
+&lt;script src="...">&lt;/script> // librairie de Matt Whitlock modifiée
 &lt;script>
 var HIDE_CLASS = "hide";
 
@@ -143,6 +148,8 @@ onDomReady(function() {
 });
 &lt;/script>
 </code></pre>
+
+<p class="callout" data-variant="info">Le <a href="https://github.com/piRGoif/GEPApiR/blob/develop/communs/toc/toc.js">code de la librairie est disponible sur GitHub</a></p>
 
 
 
