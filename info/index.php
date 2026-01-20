@@ -37,6 +37,25 @@ require_once('info_h1.inc');
 
 
 
+<h2 id="linux">🐧 Linux</h2>
+
+<ul>
+	<li>Pense-bête de <a href="linux/commandes.php">commandes utiles</a>, un petit guide de survie en somme O:)</li>
+	<li>Utilisateur de Linux sur serveur depuis longtemps (avant le début de ma carrière professionnelle, c'est dire si ça remonte !), c'est cependant tout récemment que j'utilise Linux sur mon poste de travail professionnel (avril 2024).<br>
+	Voici quelques petites astuces de ce que j'ai mis en place de mon côté :
+		<ul>
+			<li><a href="linux/shell.php">Personnalisation de la ligne de commande</a></li>
+			<li>(à venir bientôt !!) Gnome : ma configuration</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<?=writeHR()?>
+
+
+
 <h2 id="GepapiR">La GepapiR côté technique</h2>
 
 <p>Quelques détails sur les techniques utilisées sur ce site... Pour la plupart des
