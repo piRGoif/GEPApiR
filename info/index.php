@@ -27,8 +27,22 @@ require_once('info_h1.inc');
 	<li><a href="https://www.linkedin.com/in/pierregoiffon/">Compte LinkedIn</a></li>
 	<li>Comptes <a href="https://github.com/piRGoif">GitHub</a> et <a
 			href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a></li>
-	<li>Dépôt de <a href="https://github.com/Combodo/iTop">iTop</a>, application web ITSM/CMDB open source sur laquelle
-		j'ai été employé de 2017 à 2024</li>
+</ul>
+
+<p>Et les applications Open Source sur lesquelles j'ai travaillé en tant que salarié : </p>
+
+<ul>
+	<li>depuis 2025, société <a href="https://www.algoo.fr/">Algoo</a> :
+		<ul>
+			<li><a href="https://github.com/tracim/tracim">Tracim</a>, solution collaborative web</li>
+			<li><a href="https://github.com/algoo/galae">Galae</a>, solution de mail tout en un pour <a href="https://galae.net/fr/">le service en ligne Galae</a>, fork de <a href="https://github.com/mailcow/mailcow-dockerized">mailcow</a></li>
+		</ul> 
+	</li>
+	<li>2017 à 2024, société <a href="https://www.combodo.com/">Combodo</a> :
+		<ul>
+			<li><a href="https://github.com/Combodo/iTop">iTop</a>, application web ITSM/CMDB</li></li>
+			<li>et aussi beaucoup d'extensions et d'utilitaires disponible dans <a href="https://github.com/Combodo">l'organisation GitHub Combodo</a></li>
+		</ul>
 </ul>
 
 
