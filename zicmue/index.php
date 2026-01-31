@@ -142,6 +142,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 <p>J'ajoute quelques pensées pour les copains avec qui j'ai joué par le passé :</p>
 
 <ul>
+	<li>De 2017 à 2022 : <a href="https://www.facebook.com/ReggLab">ReggLab</a> avec des anciens de JeudiSoir !</li>
 	<li>De 2017 à 2020 : la classe d'improvisation "Jazz autour de midi" de <a href="http://www.laporteedetous.fr/?page_id=2">la Portée de tous</a> sous la direction de Jérome Dugand</li>
 	<li>De 2016 à 2019 : le grand ensemble d'harmonie de l'<a href="https://www.harmonie-grenoble.fr/">Harmonie de Grenoble</a></li>
 	<li>De 2014 à 2017 : le big band Swing Grant Orchestra (avec une pensée particulière à son exceptionnel directeur artistique Jean-Pierre Vidal, décédé en 2021)</li>
@@ -150,6 +151,16 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 	<li>De 2006 à 2017 : le groupe de ska JeudiSoir</li>
 	<li>De 2005 à 2017 : les orchestres de l'<a href="http://harmonie-meylan.fr/">Espace Musical Gaston Baudry</a> (BoPerCui, classe d'improvisation jazz, ensemble de cuivres, et renforts occasionnels à l'orchestre d'harmonie)</li>
 	<li>De 2005 à 2014 : l'orchestre d'harmonie de Theys</li>
+</ul>
+
+<p>Et aussi les bons moments passés en renfort (merci pour l'accueil !!) :</p>
+
+<ul>
+	<li>Harmonie de Vizille</li>
+	<li>Harmonie de Fontaine (en particulier mémorable <a href="https://www.flickr.com/photos/pirgoif/albums/72177720327623451">voyage à Fécamp en juillet 2025</a> !)</li>
+	<li>Le fantastique <a href="https://www.le-gro.com/">Grenoble Reggae Orchestra</a> dès que je peux !</li>
+	<li><a href="https://ord-meylan.fr/">Orchestre Régional du Dauphiné</a> (souvenir d'un exceptionnel projet Queen en 2018 !)</li>
+	<li>Big Mother Funker, groupe hélas disparu :~(</li>
 </ul>
 
 
@@ -222,6 +233,12 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 			<li>2019 : captation de "<a href="https://www.youtube.com/watch?v=EUx6ZDjZFgI">Oregon</a>" (Jacob de Haan) à la salle Olivier Messiaen de Grenoble</li>
 			<li>2018 : captation du "<a href="https://youtu.be/701PHF8KGp4">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
 			<li>2017 : captation du <a href="https://www.youtube.com/watch?v=w7NTjtdrfAA&list=PLFtYCHpCumpphRYUZQXnS_d6p-vgs_gSh&index=9">concert à la Bridoire</a> (merci à l'Harmonie du Grenand !)</li>
+		</ul>
+	</li>
+	<li><strong>Grenoble Reggae Orchestra</strong>
+		<ul>
+			<li>2018 : <a href="https://www.youtube.com/watch?v=jPNoELlxFSw">Slavery days</a></li>
+			<li>2017 : <a href="https://www.youtube.com/watch?v=vDRE5VKv4t8">Milk and Honey</a></li>
 		</ul>
 	</li>
 	<li><strong>Swing Grant Orchestra</strong>, 2017 : captation de "<a href="https://youtu.be/CtfArcQmSZI">Why don't you do right</a>" au Voiron Jazz Festival</li>

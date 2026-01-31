@@ -19,6 +19,7 @@ class GepapirChangelog {
                 'Accueil : ajout icone RSS et passage dans un callout',
                 'Informatique : le lien sur le titre renvoie maintenant à l\'index de la rubrique plutôt que l\'accueil du site (de nombreuses sous-pages existent dans cette rubrique !)',
                 'Informatique : ajout manques Tracim et Galae',
+                'Musique : ajout manques (ReggLab, renforts, GRO)'
             ]),
             new ChangelogEntry('2025-08-09', '8.5.3', [
                 'Menu : personnalisation du :hover',
