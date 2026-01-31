@@ -66,18 +66,19 @@ d'intérêts, et en particulier la musique et le développement web.</p>
 <p>Vous constaterez que l'esthétique n'est pas du tout à la mode : c'est un choix
 délibéré, en souvenir de ce web ancien dont ce site est issu !<br>
 Cependant ces pages respectent les bonnes pratiques du web moderne (responsive design,
-sprites, minification/compression, ...) et sont valides <a href="http://www.w3.org/TR/html5/" title="Recommandations W3C pour HTML 5">HTML 5</a> et <a href="http://www.w3.org/Style/CSS/" title="W3C CSS HomePage">CSS 3</a>.
-Vous trouverez des détails sur les techniques utilisées sur ce site en consultant
-cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a>, et les sources
-sur <a href="https://github.com/piRGoif/GEPApiR">un dépôt GitHub</a>.</p>
+sprites, minification/compression, ...) et sont valides <a href="http://www.w3.org/TR/html5/" title="Recommandations W3C pour HTML 5">HTML 5</a> et <a href="http://www.w3.org/Style/CSS/" title="W3C CSS HomePage">CSS 3</a>.</p>
 
 <p id="w3clogo">
 <a href="http://validator.w3.org/check?uri=referer">
 <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
 </a> <a
- href="http://jigsaw.w3.org/css-validator/check/referer"><img
- style="border:0px;width:88px;height:31px" src="https://www.w3.org/Icons/valid-css"
- alt="code CSS valide"></a></p>
+    href="http://jigsaw.w3.org/css-validator/check/referer"><img
+    style="border:0px;width:88px;height:31px" src="https://www.w3.org/Icons/valid-css"
+    alt="code CSS valide"></a></p>
+
+<p class="callout" data-variant="tip">Vous trouverez des détails sur les techniques utilisées sur ce site en consultant
+cette sous rubrique : <a href="info/#GepapiR">La GepapiR côté technique</a><br>
+Aussi les sources sont disponibles sur <a href="https://github.com/piRGoif/GEPApiR">un dépôt GitHub</a>.</p>
 
 
 
@@ -107,7 +108,11 @@ lettres, le R majuscule marquant la prononciation !</p>
 <h2 id="changelog-title">Changelog</h2>
 
 <p>
-Ci dessous les dernières mises à jour sur le site. Elles sont également <a href="rss.php">disponibles en RSS</a>.
+Ci dessous les dernières mises à jour sur le site :
+</p>
+
+<p class="callout" data-variant="tip">
+    Elles sont également <a href="rss.php">disponibles en RSS <img src="images/feed-icon.gif"></a> !
 </p>
 
 <?
@@ -117,16 +122,11 @@ Ci dessous les dernières mises à jour sur le site. Elles sont également <a hr
 + ide shortcuts add .kbd
 + no titre repl par CSS counter (http://caniuse.com/#search=counter, https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters)
 + css.php blockquote (radius, shadow, border-left)
-+ Finale fonctions utiles (ctrl + flèche haut/bas, saisie clavier, nb systèmes par page, nb mesures par systèmes, script raz pauses, créa coda, couches)
 + informatique / perf : limite naviguateurs nb requêtes parallèles
 + informatique / perf : compléments JavaScript
-+ informatique / perf : sélecteurs CSS ?
 + desc dans les liens
 + i18n mise en jambe
 + i18n site dynamiques
-+ apps android
-+ apps windows
-+ bureaux
 </dd>
 ****/
 ?>
