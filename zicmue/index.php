@@ -316,21 +316,6 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 
 
 
-<!--
-<?=writeHR()?>
-
-
-
-<h2>Les compils du piR</h2>
-
-<p class="prvt">
-<img src="<?=$RelBasePath?>images/stop_ahead.gif" width="64" height="64" alt="stop ahead">
-&nbsp;
-Attention : <a href="compils/">pages</a> à accès restreint...
-</p>
--->
-
-
 <?= writeHR() ?>
 
 
