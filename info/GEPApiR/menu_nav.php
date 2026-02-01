@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "16/08/2024";
+$date_maj = "01/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -39,10 +39,14 @@ catégories principales suffit !</p>
 qui est tout indiqué dans ce cas :)<br>
 Les options de menu sont contenues dans une liste UL/LI.</p>
 
-<p>Initialement, des icones en image étaient présentes sur chaque entrée, mais je les ai remplacé par des emoji. Par conséquent le rendu est maintenant dépendant de la plateforme... En général on utilise donc plutôt des solutions comme <a href="https://fontawesome.com/">Font Awesome</a> afin de se prémunir de ce problème, mais j'ai ici préféré la simplicité considérant que ces différences de rendu n'étaient pas très importantes. D'autant que les emoji utilisés sont très communs et identifiables par tous !<br>
-Remarque : mon fichier CSS est enregistré et servit en UTF-8, aussi pas de soucis
-pour y inclure directement les caractères voulus. Si ça n'avait pas été le cas il
-aurait toujours été possible d'inclure des emoji par échappement comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la recommandation</a>.</p>
+<p>Initialement, des icones en image étaient présentes sur chaque entrée, mais je les ai remplacé par des <strong>emoji</strong>. Par conséquent le rendu est maintenant dépendant de la plateforme... En général on utilise donc plutôt des solutions comme <a href="https://fontawesome.com/">Font Awesome</a> afin de se prémunir de ce problème, mais j'ai ici préféré la simplicité considérant que ces différences de rendu n'étaient pas très importantes. D'autant que les emoji utilisés sont très communs et identifiables par tous !</p>
+	
+<p class="callout" data-variant="info">
+	Remarque : mon fichier CSS est enregistré et servit en UTF-8, aussi pas de soucis
+	pour y inclure directement les caractères voulus.<br>
+	Si ça n'avait pas été le cas il aurait toujours été possible d'inclure des emoji par échappement 
+	comme <a href="http://www.w3.org/TR/CSS21/syndata.html#strings">l'indique la recommandation</a>.
+</p>
 
 <pre><code class="html">
 <?php

@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "16/08/2024";
+$date_maj = "01/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -34,7 +34,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <h2>Introduction</h2>
 
-<p>Attention, on va parler ici de performances front-end : il ne s'agit donc pas
+<p class="callout" data-variant="warning">Attention, on va parler ici de performances front-end : il ne s'agit donc pas
 d'optimisation côté serveur, mais plutôt d'améliorer les temps de téléchargement
 et rendu côté client !</p>
 
@@ -190,9 +190,9 @@ plusieurs resources sont appelées sur les sites originaux :</p>
 
 <h3>Principe</h3>
 
-<p>Les CSS Sprites sont une technique permettant de réduire le nombre de resources
-à appeler dans une page : on regroupe en effet plusieurs images en une seule ! Cela
-permet aussi de mieux gérer la politique de cache, et parfois apporte des gains de
+<p class="callout" data-variant="info">Les CSS Sprites sont une technique permettant de réduire le nombre de resources
+à appeler dans une page : on regroupe en effet plusieurs images en une seule ! <br>
+Cela permet aussi de mieux gérer la politique de cache, et parfois apporte des gains de
 taille de fichiers (un fichier regroupant plusieurs icones aura souvent une taille
 inférieure à la somme des petits fichiers de chaque icone).</p>
 
@@ -205,7 +205,7 @@ Cet article chez Alsacreations explique bien la chose : <a href="http://www.alsa
 
 <h3>Mise en place</h3>
 
-<p>Sur la GepapiR, ce sont les séparateurs qui
+<p>Sur la GEPApiR, ce sont les séparateurs qui
 utilisent cette technique (respectivement, mêmes largeurs et mêmes hauteurs).<br>
 Les images ont été regroupées grace à l'excellent <a href="http://draeton.github.io/stitches/">Stitches</a> !</p>
 
@@ -249,7 +249,7 @@ HTML
 
 <h2>Nombre de requêtes HTTP : cache</h2>
 
-<p>C'est un moyen simple de réduire le nombre de requêtes : permettre de mettre en
+<p class="callout" data-variant="info">C'est un moyen simple de réduire le nombre de requêtes : permettre de mettre en
 cache sur le navigateur des resources, qui ne seront ainsi téléchargées que une
 seule fois !</p>
 
@@ -259,9 +259,10 @@ contenter de la configuration par défaut, basée sur Etag et requêtes <code>If
 En conséquent, si on gagne sur les données transférées, on a quand même toujours
 des requêtes http qui partent...</p>
 
-<p>Le document d'absolu référence sur le sujet, qui vous fera tout comprendre du
+<p class="callout" data-variant="tip">Le document d'absolu référence sur le sujet, qui vous fera tout comprendre du
 fonctionnement du cache sur HTTP, et vous permettra de décider quelle technique adopter
-pour vos besoins : <a href="https://www.mnot.net/cache_docs/">Un tutoriel de la mise en cache pour les auteurs Web et les webmestres</a>.</p>
+pour vos besoins : <br>
+<a href="https://www.mnot.net/cache_docs/">Un tutoriel de la mise en cache pour les auteurs Web et les webmestres</a>.</p>
 
 
 

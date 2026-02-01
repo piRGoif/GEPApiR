@@ -18,6 +18,7 @@ class GepapirChangelog {
                 'CSS : corrections diverses + ajout de callouts, code, kbd, table, figure',
                 'Suppression des vieux fichiers',
                 'Accueil : ajout icone RSS et passage dans un callout',
+                'Informatique GEPApiR côté technique : généralisation des callouts + quelques actualisation du contenu',
                 'Informatique : le lien sur le titre renvoie maintenant à l\'index de la rubrique plutôt que l\'accueil du site (de nombreuses sous-pages existent dans cette rubrique !)',
                 'Informatique : ajout manques Tracim et Galae',
                 'Musique : ajout manques (ReggLab, renforts, GRO)'

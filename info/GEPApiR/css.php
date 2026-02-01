@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "16/08/2024";
+$date_maj = "01/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -35,17 +35,14 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <h2>Introduction</h2>
 
 <p>
-    Qu'assurer comme compatibilité navigateur ? Vaste question...
+    Lors de la dernière refonte de ce site en 2014, la question de la compatibilité navigateur se 
+    posait encore de manière aigue avec la présence large d'Internet Explorer sur les postes de 
+    travail...
 </p>
 
 <p>
-    La compatibilité c'est avant tout la version de IE minimale supportée ! Sur ce
-    site, j'ai décidé d'être compatible avec IE 8+. En effet, la plus ancienne version
-    de Microsoft Windows encore maintenue à ce jour (octobre 2014) est Windows Vista,
-    qui était  livré avec IE7, mais cet OS est assez peu répandu, et la version suivante
-    était livrée avec IE 8.<br>
-    A noter ce billet de blog de août 2014 annonçant les futures échéances de support
-    pour les différentes versions : <a href="http://blogs.msdn.com/b/ie/archive/2014/08/07/stay-up-to-date-with-internet-explorer.aspx">Stay up-to-date with Internet Explorer - IEBlog - Site Home - MSDN Blogs</a>.
+    Aujourd'hui (février 2026), enfin (!!), les navigateurs répandus supportent bien les standards du web basique 
+    qui sont utilisés sur ce site.
 </p>
 
 
@@ -60,8 +57,12 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
     sous forme d'images également, comme ci-dessous :<br>
     <img src="<?= $RelBasePath ?>images/info/rub2_informatique.png" width="204" height="47"></p>
 
-<p>Evidemment, ça n'était pas idéal ni pour le visiteur, ni pour le référencement, ni
-    pour les évolutions...<br>
+<p class="callout" data-variant="warning">
+    Du texte sous forme d'image évidemment, ça n'est pas idéal ni pour le visiteur, ni pour le référencement, ni
+    pour les évolutions...
+</p>
+    
+<p>
     J'ais donc remplacé ces images par du texte, mais mis en forme avec des <a href="http://dev.w3.org/csswg/css-fonts/#font-face-rule">Web Fonts</a> ! Le support est assez large (cf <a href="http://caniuse.com/#feat=fontface">CanIUse</a>).
     C'est une police de la librairie <a href="https://www.google.com/fonts">Google Fonts</a>
     qui est utilisée : <a href="https://www.google.com/fonts/specimen/Satisfy">Satisfy</a>.
@@ -112,13 +113,13 @@ transform: rotate(6deg);
 </blockquote>
 
 <p>La solution pour contrer ce problème serait d'utiliser les <a href="http://www.w3.org/TR/css-shapes/">CSS Shapes</a>,
-    mais leur support est encore (août 2014) bien trop limité ! En conséquence, c'est
-    simplement une marge qui est appliquée !</p>
+    mais au moment de l'ajout (août 2014) leur support était bien trop limité ! En conséquence, c'est
+    simplement une marge qui est appliquée.</p>
 
 <p>Plus de détails :</p>
 
 <ul>
-    <li><a href="<?= $RelBasePath ?>_temp/transform-rotate.html">Une page</a> pour reproduire le problème</li>
+    <li><a href="css_transform-rotate.html">Une page</a> pour reproduire le problème</li>
     <li>Un article parlant des CSS Shapes : <a href="http://sarasoueidan.com/blog/css-shapes/">Creating Non-Rectangular Layouts With CSS Shapes</a></li>
 </ul>
 

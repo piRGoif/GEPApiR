@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "06/09/2024";
+$date_maj = "01/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -23,7 +23,7 @@ Responsive design
 
 
 
-<?
+<p?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
@@ -37,19 +37,19 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <p>La possibilité d'enfin utiliser CSS à son plein potentiel (mise en forme de texte
 mais aussi et surtout positionnement) a conduit à un principe de design permettant
-de s'adapter à tous les écrans : l'elastic design. Cet article de A list apart de
+de s'adapter à tous les écrans : l'<strong>elastic design</strong>. Cet article de A list apart de
 2004 décrit bien le principe : <a href="http://alistapart.com/article/elastic/">Elastic Design · An A List Apart Article</a>.</p>
 
 <p>Avec la généralisation des smartphone et tablettes, la donne a brutalement changé,
 la diversité d'équipements pouvant utiliser les sites et applications devenant immense !</p>
 
 <p>Grace aux <a href="http://www.w3.org/TR/css3-mediaqueries/">Media Queries</a> en
-CSS, un nouveau principe est apparu, dérivé de l'elastic design : le responsive design.
+CSS, un nouveau principe est apparu, dérivé de l'elastic design : le <strong>responsive design</strong>.
 L'idée est alors, suivant la dimension de l'écran, d'adapter le positionnement et
 même carrément l'affichage des éléments.</p>
 
 <p>Un autre système de conception est apparu en 2011, proposé par Luke Wroblewski
-dans son livre "Mobile First". Comme son nom l'indique, l'idée est de concevoir d'abord
+dans son livre "<strong>Mobile First</strong>". Comme son nom l'indique, l'idée est de concevoir d'abord
 à destination des mobiles, puis d'enrichir successivement. Les avantages de la méthode
 sont bien décrits dans la conclusion de l'ouvrage :</p>
 
@@ -83,11 +83,13 @@ ce qui a été mis en place.</p>
 
 <p>Par défaut les navigateurs sur mobile vont initialiser un zoom afin d'afficher la
 page dans son entier, au plus près de ce que l'on aurait sur un écran plus grand.
-L'utilisateur est alors obligé d'utiliser massivement le zoom manuel...</p>
+L'utilisateur est alors obligé d'utiliser massivement le zoom manuel...<br>
+Une balise meta viewport permet d'éviter ce comportement !.</p>
 
-<p>Une balise meta viewport permet d'éviter ce comportement !.<br>
+<p class="callout" data-variant="note">
 Voir le document de recommandation du W3C : <a href="http://www.w3.org/TR/mwabp/#bp-viewport">Mobile Web Application Best Practices - Use Meta Viewport Element To Identify Desired Screen Size</a><br>
-Ou cet article sur le très bon quirksmode.org : <a href="http://www.quirksmode.org/mobile/metaviewport/">Meta viewport</a>.</p>
+Ou cet article sur le très bon quirksmode.org : <a href="http://www.quirksmode.org/mobile/metaviewport/">Meta viewport</a>.
+</p>
 
 <p>Sur la GepapiR j'utilise :</p>
 
@@ -124,8 +126,9 @@ Exemples d'adaptation des marges horizontales dans les captures ci-dessous :</p>
 	alt="" class="pretty-img" data-responsive-img></dd>
 </dl>
 
-<p>Un très bon article à lire sur les unités CSS et leurs effets : <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">Font sizing with rem - Snook.ca</a>.<br>
-Sur la GepapiR, je n'utilise pas l'unité <code>rem</code> car la structure des pages
+<p class="callout" data-variant="note">Un très bon article à lire sur les unités CSS et leurs effets : <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">Font sizing with rem - Snook.ca</a>.</p>
+
+<p>Sur la GepapiR, je n'utilise pas l'unité <code>rem</code> car la structure des pages
 est simple et fait que les problèmes d'imbrication décrits dans l'article sont absents.</p>
 
 
@@ -184,7 +187,7 @@ unité "%".</p>
 	</dd>
 </dl>
 
-<p>A noter : on utilise <a href="https://developer.mozilla.org/fr/docs/Web/CSS/max-width"><code>max-width</code></a> (largeur du viewport) plutôt que <a href="https://developer.mozilla.org/fr/docs/Web/CSS/@media/device-width"><code>max-device-width</code></a> (largeur physique de l'écran) à dessein : ces modifications sont aussi intéressantes si l'on redimensionne la fenêtre d'un navigateur sur grand écran !<br>
+<p class="callout" data-variant="tip">A noter : on utilise <a href="https://developer.mozilla.org/fr/docs/Web/CSS/max-width"><code>max-width</code></a> (largeur du viewport) plutôt que <a href="https://developer.mozilla.org/fr/docs/Web/CSS/@media/device-width"><code>max-device-width</code></a> (largeur physique de l'écran) à dessein : ces modifications sont aussi intéressantes si l'on redimensionne la fenêtre d'un navigateur sur grand écran !<br>
 Généralement c'est plutôt l'inverse... A ce sujet lire : <a href="http://www.hteumeuleu.fr/arreter-media-queries/">Faut arrêter avec les Media Queries ! – HTeuMeuLeu</a></p>
 
 

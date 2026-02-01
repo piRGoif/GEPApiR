@@ -163,11 +163,12 @@ onDomReady(function() {
 Au départ j'ai masqué la TOC par un simple <code>display: none</code>. Erreur !
 C'est <a href="http://www.w3.org/TR/css3-transitions/#animatable-properties">une propriété qui n'est pas gérée dans les CSS Transition</a>...</p>
 
-<p>Une solution possible est présentée sur ce chouette article : <a href="http://rhumaric.com/2013/12/hiding-elements-and-css-animations/">Hiding elements and CSS animations | Rhumaric, pixel distiller</a>.
-Mais c'est quand même assez "overkill"...<br>
-Une autre ici : <a href="http://www.alsacreations.com/tuto/lire/1234-creer-volet-coulissant-CSS3-target-transition.html">Créer un volet coulissant en CSS3 avec :target et transition - Alsacreations</a>.
-Mais difficilement applicable dans mon cas...<br>
-J'ai tenté d'utiliser une classe nommée "hide" comme ci-dessous, qui
+<p class="callout" data-variant="info">Une solution possible est présentée sur ce chouette article : <a href="http://rhumaric.com/2013/12/hiding-elements-and-css-animations/">Hiding elements and CSS animations | Rhumaric, pixel distiller</a>.<br>
+Mais c'est quand même assez "overkill"...<br><br>
+Une autre ici : <a href="http://www.alsacreations.com/tuto/lire/1234-creer-volet-coulissant-CSS3-target-transition.html">Créer un volet coulissant en CSS3 avec :target et transition - Alsacreations</a>.<br>
+Mais difficilement applicable dans mon cas...</p>
+
+<p>J'ai tenté d'utiliser une classe nommée "hide" comme ci-dessous, qui
 joue sur <code>width</code>, <code>height</code> et <code>opacity</code> plutôt
 que <code>display</code>. L'affichage et le masquage de la TOC se fait donc en
 jouant sur la valeur de l'attribut <code>className</code> du noeud (vide ou avec
@@ -187,7 +188,7 @@ opacity: 0;
 }
 </code></pre>
 
-<p>Il ne s'agit clairement pas d'une solution idéale : la transition ne s'exécutant
+<p class="callout" data-variant="warning">Il ne s'agit clairement pas d'une solution idéale : la transition ne s'exécutant
 pas à la fermeture, des artefacts de liens restant après fermeture, et des problèmes
 apparaissant avec le <code>overflow: auto</code> !... Ca sera à améliorer plus
 tard, et donc pour l'instant pas de transitions !</p>
