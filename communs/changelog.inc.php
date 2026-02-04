@@ -9,13 +9,14 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2026-02-01', '9.0.0', [
+            new ChangelogEntry('2026-02-04', '9.0.0', [
                 'Informatique : nouvelle rubrique Linux',
                 'Informatique : création page Linux / commandes utiles',
                 'Informatique : création page Linux / personnalisation de la ligne de commande',
                 'tools.js : modernisation du code',
                 'ToC : les id existants sont maintenant conservés',
                 'CSS : corrections diverses + ajout de callouts, code, kbd, table, figure',
+                'Maj de highlight.js',
                 'Suppression des vieux fichiers',
                 'Accueil : ajout icone RSS et passage dans un callout',
                 'Informatique GEPApiR côté technique : généralisation des callouts + quelques actualisation du contenu',
