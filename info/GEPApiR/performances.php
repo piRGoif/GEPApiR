@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "01/02/2026";
+$date_maj = "06/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -96,6 +96,8 @@ faisant varier la compression pour s'approcher du meilleur compromis taille/qual
 
 <p>Plusieurs sites proposent ce service en ligne, et également des outils à installer.
 Citons en particulier <a href="http://pngcrush.com/">PNGCrush</a> et le site <a href="http://compresspng.com/">http://compresspng.com/</a>.</p>
+
+<p>Le format <a href="https://fr.wikipedia.org/wiki/WebP">WebP</a> offre quand même des résultats assez époustouflants... Et est par conséquent utilisé sur ce site !</p>
 
 
 

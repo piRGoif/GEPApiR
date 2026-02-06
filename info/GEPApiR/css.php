@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "01/02/2026";
+$date_maj = "06/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -55,7 +55,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <p>Les titres H1 de ce site sont sous forme d'image. Les h2 ont longtemps été
     sous forme d'images également, comme ci-dessous :<br>
-    <img src="<?= $RelBasePath ?>images/info/rub2_informatique.png" width="204" height="47"></p>
+    <img src="<?= $RelBasePath ?>images/info/rub2_informatique.png" width="204" height="47" alt="Rubrique Informatique"></p>
 
 <p class="callout" data-variant="warning">
     Du texte sous forme d'image évidemment, ça n'est pas idéal ni pour le visiteur, ni pour le référencement, ni
@@ -68,6 +68,120 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
     qui est utilisée : <a href="https://www.google.com/fonts/specimen/Satisfy">Satisfy</a>.
     Cette collection est très vaste, les polices sont en général au format le plus
     approprié (Woff), les fichiers sont très légers, et Google propose un CDN !</p>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2>Mise en forme contenu</h2>
+
+<h3>Raccourcis clavier</h3>
+
+<p>La balise <code>kbd</code> est dédiée à celà !</p>
+
+<p class="callout" data-variant="info">Plus d'informations sur cette balise : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/kbd">&lt;kbd> : l'élément de saisie au clavier - HTML | MDN</a></p>
+
+<p>Exemple :</p>
+
+<pre><code><?php echo htmlspecialchars(<<<HTML
+<kbd>Ctrl</kbd> + <kbd>C</kbd>
+HTML
+); ?></code></pre>
+
+<p>Qui va rendre ainsi : <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+
+<h3>Citations</h3>
+
+<p>Pour les citations j'ai utilisé naturellement la balise <code>blockquote</code> qui est prévue à cet effet, contenant un <code>p</code> et des balises <code>q</code> et <code>cite</code>.<br>
+Du CSS va ajouter un effet de relief grace à <code>border-style: outset</code> et du <code>box-shadow</code>.<br>
+Exemple de contenu :</p>
+
+<blockquote>
+    <p>
+        <q>De deux choses Lune, l'autre, c'est le Soleil.</q>
+        <br>
+        <cite>Jacques Prevert</cite>
+    </p>
+</blockquote>
+
+<p>Extrait de code CSS :</p>
+
+<pre><code class="css">blockquote
+{
+    border: 1px outset white;
+    border-left: 1px dashed black;
+    border-radius: 0 5px 5px 0;
+    background-color: #DDDDDD;
+    opacity: 0.75;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+</code></pre>
+
+<div class="callout" data-variant="info">Quelques références : 
+    <ul>
+        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/cite">&lt;cite> : l'élément de citation - HTML | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/q">&lt;q> : l'élément de citation en incise - HTML | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/border-style">border-style - CSS | MDN</a></li>
+        <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/box-shadow">box-shadow - CSS | MDN</a></li>
+    </ul>
+</div>
+
+
+<h3>Callouts</h3>
+
+<p>Les callouts ou alertes permettent d'avoir une étiquette de texte caractérisée par une icone et une couleur, pour représenter facilement une info, alerte, warning, tip, ...</p>
+
+<p>On en retrouve dans plusieurs systèmes de documentation :</p>
+
+<ul>
+    <li>DokuWiki : <a href="https://www.dokuwiki.org/plugin:alertbox">plugin alertbox</a></li>
+    <li>Markdown Obsidian : <a href="https://help.obsidian.md/Editing+and+formatting/Callouts">Callouts</a></li>
+    <li>Markdown GitHub : <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts">Alerts</a></li>
+    <li>Markdown GitLab : <a href="https://docs.gitlab.com/user/markdown/#alerts">Alerts</a></li>
+</ul>
+
+<p>J'ai donc rajouté un système similaire pour agrémenter mes pages ! J'ai très largement récupéré un contenu figurant <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes#examples">sur la page MDN pour l'attribut data.</a>. J'ai repris le principe d'avoir une seule classe pour la mise en forme par défaut, et un attribut data pour les variantes : ainsi on peut facilement avoir un sélecteur CSS ciblant les callout sans variante !</p>
+
+<p>Et pour faciliter la définition des règles, j'ai utilisé des <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties">variables CSS</a>.<br>
+Egalement le pseudo élément <code>:where</code> permet de gérer une surcharge de la mise en forme par défaut de certains blocs (<code>p</code>, <code>ul</code>, <code>li</code>)<br>
+La mise en forme reprend le <code>border-style</code> et <code>box-shadow</code> utilisé sur les citations.<br>
+Voir cet extrait de code :</p>
+
+<pre><code class="css">
+.callout:before {
+  content: var(--callout-icon);
+}
+.callout {
+  --callout-icon: "";
+  --callout-bg: #222222;
+  --callout-fg: #9e9e9e;
+  
+  background-color: var(--callout-bg);
+  color: var(--callout-fg);
+  
+  border : 1px outset black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+}
+
+.callout :where(ul, li) {
+  background-color: transparent;
+  color: inherit;
+}
+.callout :where(p, ul) {
+  margin: 1rem;
+}
+
+.callout[data-variant="note"] {
+  --callout-icon: "✏️";
+  --callout-bg: #151e2c;
+  --callout-fg: #157aff;
+}
+
+// ...
+</code></pre>
 
 
 
@@ -144,14 +258,15 @@ transform: rotate(6deg);
 
 <p>Pour ma part, vu que le site utilise déjà PHP, j'ai simplement utilisé la fonction <a href="https://www.php.net/manual/en/function.htmlspecialchars.php">htmlspecialchars</a> couplée à <a href="https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc">la syntaxe de chaine NowDoc</a> :</p>
 
-<pre><code class="php">
-&lt;?php
+<pre><code class="php"><?php echo htmlspecialchars(<<<'PHP'
+<?php
 echo htmlspecialchars(<<<'HTML'
 //...
 HTML
 );
 ?>
-</code></pre>
+PHP
+);?></code></pre>
 
 <p>Attention, comme <a href="https://www.php.net/manual/en/language.types.string.php">le dit la documentation PHP</a> pour rester compatible avec d'anciennes versions de PHP il faut être attentif à la syntaxe :</p>
 
