@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-02-07', '9.0.0', [
+                'tools.js : modernisation du code',
+            ]),
             new ChangelogEntry('2025-08-09', '8.5.3', [
                 'Menu : personnalisation du :hover',
                 'Menu: anti-cache sur la CSS',
