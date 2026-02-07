@@ -88,7 +88,7 @@ figure img
 {
     margin: 0;
     padding: 0;
-    max-width: 500px;
+    max-width: 1200px;
 }
 figure img.pretty-img
 {
@@ -549,11 +549,6 @@ nav a:link, nav a:visited
         padding: 1em 0.1em;
         
         font-size: 1em;
-    }
-    
-    figure img
-    {
-        max-width: 90%;
     }
 }
 

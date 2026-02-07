@@ -9,7 +9,7 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2026-02-06', '9.0.0', [
+            new ChangelogEntry('2026-02-07', '9.0.0', [
                 'Informatique : nouvelle rubrique Linux',
                 'Informatique : création page Linux / commandes utiles',
                 'Informatique : création page Linux / personnalisation de la ligne de commande',
