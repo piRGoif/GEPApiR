@@ -9,10 +9,11 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2026-02-07', '9.0.0', [
+            new ChangelogEntry('2026-02-08', '9.0.0', [
                 'Informatique : nouvelle rubrique Linux',
                 'Informatique : création page Linux / commandes utiles',
                 'Informatique : création page Linux / personnalisation de la ligne de commande',
+                'Informatique CSS groupe : actualisation de la section variables CSS',
                 'Ajout robots.txt basique',
                 'tools.js : modernisation du code',
                 'ToC : les id existants sont maintenant conservés',
