@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "24/08/2005";
-$date_maj = "07/08/2025";
+$date_maj = "08/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
