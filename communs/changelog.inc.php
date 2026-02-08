@@ -9,6 +9,10 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-02-08', '9.0.1', [
+                'Informatique CSS groupe : ajout article AlsaCréations',
+                'Correction régression tools.jz',
+            ]),
             new ChangelogEntry('2026-02-08', '9.0.0', [
                 'Informatique : nouvelle rubrique Linux',
                 'Informatique : création page Linux / commandes utiles',
