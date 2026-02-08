@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "16/08/2024";
-$date_maj = "16/08/2024";
+$date_maj = "01/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -36,7 +36,9 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 </ul>
 
 <p>Alors très naturellement, pratiquant Git au quotidien dans l'univers professionnel, j'ai fini par versionner les fichiers de ce site sous Git en local.<br>
-Et puis plus tard, envoyer <a href="https://github.com/piRGoif/GEPApiR">sur GitHub</a> !</p>
+Et puis plus tard, envoyer sur GitHub !</p>
+
+<p class="callout" data-variant="info">Le dépôt est ici : <a href="https://github.com/piRGoif/GEPApiR">https://github.com/piRGoif/GEPApiR</a></p>
 
 
 
@@ -71,14 +73,15 @@ Et puis plus tard, envoyer <a href="https://github.com/piRGoif/GEPApiR">sur GitH
 
 <p>Pour pousser la logique au bout, un simple push sur la branche master va automatiquement mettre en ligne les fichiers. C'est grace aux GitHub Actions, et en particulier l'action <a href="https://github.com/marketplace/actions/ftp-deploy#exclude-files">FTP Deploy</a> !</p>
 
-<p>Le fichier de configuration est ici : <a href="https://github.com/piRGoif/GEPApiR/blob/master/.github/workflows/main.yml">.github/workflows/main.yml</a></p>
+<p class="callout" data-variant="info">Le fichier de configuration est ici : <a href="https://github.com/piRGoif/GEPApiR/blob/master/.github/workflows/main.yml">.github/workflows/main.yml</a></p>
 
-<p>Quelques références :</p>
-
-<ul>
-    <li><a href="https://dev.to/varungujarathi9/setting-up-github-actions-to-deploy-your-website-via-ftp-3n3a">Setting up GitHub Actions to deploy your website via FTP - DEV Community</a> : article très didactique qui a bien aidé la mise en route !</li>
-    <li><a href="https://docs.github.com/fr/actions">Aide GitHub Actions</a></li>
-</ul>
+<div class="callout" data-variant="tip">
+    Quelques références :
+    <ul>
+        <li><a href="https://dev.to/varungujarathi9/setting-up-github-actions-to-deploy-your-website-via-ftp-3n3a">Setting up GitHub Actions to deploy your website via FTP - DEV Community</a> : article très didactique qui a bien aidé la mise en route !</li>
+        <li><a href="https://docs.github.com/fr/actions">Aide GitHub Actions</a></li>
+    </ul>
+</div>
 
 
 

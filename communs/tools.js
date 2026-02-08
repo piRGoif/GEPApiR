@@ -22,48 +22,58 @@ function writeCSSRespImg() {
 		cssCode,
 		style,
 		maxWidth;
+		
 	for (i = 0; i <= elements.length - 1; i++) {
 		image = elements[i];
-		if (image.hasAttribute("data-responsive-img")) {
-			// Récup width / height
-			width = parseInt(image.getAttribute("width"));
-			height = parseInt(image.getAttribute("height"));
-
-			// Ajoute classe
-			cssClassName = "responsive-img-" + i;
-			cssClasses = image.className;
-			if (cssClasses != "") {
-				cssClasses += " ";
-			} else {
-				cssClasses = "";
-			}
-			cssClasses += cssClassName;
-			image.className = cssClasses;
-
-			// Ecriture du CSS
-			cssCode = "";
-			style = document.createElement("style");
-			maxWidth = width + 5;
-			cssCode = "\nimg." + cssClassName + "\n\
-{\n\
-width: " + width + "px;\n\
-height: " + height + "px;\n\
-}\n\
-@media screen and (max-device-width: " + maxWidth + "px)\n\
-{\n\
-	img." + cssClassName + "\n\
-	{\n\
-	width: 98%;\n\
-	height: auto;\n\
-	}\n\
-}\n";
-			style.appendChild(document.createTextNode(cssCode));
-			document.head.appendChild(style);
-
-			// Suppression des attributs du tag img
-			image.removeAttribute("width");
-			image.removeAttribute("height");
+		if (!image.hasAttribute("data-responsive-img")) {
+			continue;
 		}
+		
+		// Récup width / height
+		width = parseInt(image.getAttribute("width"));
+		height = parseInt(image.getAttribute("height"));
+		
+		if (isNaN(width) || isNaN(height)) {
+			continue;
+		}
+
+		// Ajoute classe
+		cssClassName = "responsive-img-" + i;
+		cssClasses = image.className;
+		if (cssClasses != "") {
+			cssClasses += " ";
+		} else {
+			cssClasses = "";
+		}
+		cssClasses += cssClassName;
+		image.className = cssClasses;
+
+		// Ecriture du CSS
+		cssCode = "";
+		style = document.createElement("style");
+		maxWidth = width + 5;
+		cssCode = `
+img${cssClassName}
+{
+	width: ${width}px;
+	height: ${height}px;
+}
+@media screen and (max-device-width: ${maxWidth}px)
+{
+	img.${cssClassName}
+
+	{
+		width: 98%;
+		height: auto;
+	}
+}
+`;
+		style.appendChild(document.createTextNode(cssCode));
+		document.head.appendChild(style);
+
+		// Suppression des attributs du tag img
+		image.removeAttribute("width");
+		image.removeAttribute("height");
 	}
 }
 

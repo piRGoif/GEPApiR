@@ -9,6 +9,23 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-02-08', '9.0.0', [
+                'Informatique : nouvelle rubrique Linux',
+                'Informatique : création page Linux / commandes utiles',
+                'Informatique : création page Linux / personnalisation de la ligne de commande',
+                'Informatique CSS groupe : actualisation de la section variables CSS',
+                'Ajout robots.txt basique',
+                'tools.js : modernisation du code',
+                'ToC : les id existants sont maintenant conservés',
+                'CSS : corrections diverses + ajout de callouts, code, kbd, table, figure',
+                'Maj de highlight.js',
+                'Suppression des vieux fichiers',
+                'Accueil : ajout icone RSS et passage dans un callout',
+                'Informatique GEPApiR côté technique : généralisation des callouts + quelques actualisation du contenu',
+                'Informatique : le lien sur le titre renvoie maintenant à l\'index de la rubrique plutôt que l\'accueil du site (de nombreuses sous-pages existent dans cette rubrique !)',
+                'Informatique : ajout manques Tracim et Galae',
+                'Musique : ajout manques (ReggLab, renforts, GRO)'
+            ]),
             new ChangelogEntry('2025-08-09', '8.5.3', [
                 'Menu : personnalisation du :hover',
                 'Menu: anti-cache sur la CSS',
@@ -277,7 +294,7 @@ class ChangelogEntry
 {
     /** @var string date in the ISO-8601 format */
     public $entryDate;
-    /** @var ?string date version, might be null (wasn't present in the GEPApiR early days) */
+    /** @var ?string GEPApiR version, might be null (wasn't present in the site early days) */
     public $entryVersion;
     /** @var string[] list of entry content */
     public $aEntryContent;

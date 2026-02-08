@@ -127,11 +127,61 @@ le modèle et une autre positionne simplement le <code>background-position</code
 <h2>Variables CSS</h2>
 
 <p>Une recommandation<sup>[<a href="#fn4">4</a>]</sup> permet de répondre à ce
-besoin... Mais à l'heure de l'écriture de ces lignes (août 2014) elle est toujours
-en working draft, et le support est très réduit : uniquement Firefox 31+ ! Cf
-<a href="http://caniuse.com/#feat=css-variables">CanIUse</a>.</p>
+besoin, et maintenant (février 2026) le support est assez large !</p>
 
-<p>Un article sur DevMo bien intéressant sur le sujet : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">Using CSS variables - CSS | MDN</a></p>
+<p class="callout" data-variant="info">Support des variables CSS sur caniuse : <a href="https://caniuse.com/css-variables">CSS Variables (Custom Properties) | Can I use... Support tables for HTML5, CSS3, etc</a></p>
+
+<p>Quelques règles à retenir :</p>
+
+<ul>
+	<li>Le nom de la variable personnalisée commencera par 2 tirets : <code>--maVariable</code></li>
+	<li>A noter que les variables auront la portée du sélecteur dans lesquelles on les défini. Pour avoir des variables globales, on peut utiliser la pseudo classe <code>root</code></li>
+</ul>
+
+
+
+<pre><code class="css"><?php echo htmlspecialchars(<<<'HTML'
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+.class1 {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.class2 {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+HTML
+); ?></code></pre>
+
+<p>On peut aussi redéfinir les valeurs des variables :</p>
+
+<pre><code class="css"><?php echo htmlspecialchars(<<<'HTML'
+p {
+  --primary-color: black;
+  --secondary-color: white;
+
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+p.class1 {
+  --primary-color: cyan;
+  --secondary-color: black;
+}
+
+p.class2 {
+  --primary-color: red;
+  --secondary-color: white;
+}
+HTML
+); ?></code></pre>
+
+<p class="callout" data-variant="tip">Un article de référence sur le MDN : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties">Using CSS custom properties (variables) - CSS | MDN</a></p>
 
 
 

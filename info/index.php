@@ -27,8 +27,41 @@ require_once('info_h1.inc');
 	<li><a href="https://www.linkedin.com/in/pierregoiffon/">Compte LinkedIn</a></li>
 	<li>Comptes <a href="https://github.com/piRGoif">GitHub</a> et <a
 			href="https://sourceforge.net/u/pgoiffon/profile/">SourceForge</a></li>
-	<li>Dépôt de <a href="https://github.com/Combodo/iTop">iTop</a>, application web ITSM/CMDB open source sur laquelle
-		j'ai été employé de 2017 à 2024</li>
+</ul>
+
+<p>Et les applications Open Source sur lesquelles j'ai travaillé en tant que salarié : </p>
+
+<ul>
+	<li>depuis 2025, société <a href="https://www.algoo.fr/">Algoo</a> :
+		<ul>
+			<li><a href="https://github.com/tracim/tracim">Tracim</a>, solution collaborative web</li>
+			<li><a href="https://github.com/algoo/galae">Galae</a>, solution de mail tout en un pour <a href="https://galae.net/fr/">le service en ligne Galae</a>, fork de <a href="https://github.com/mailcow/mailcow-dockerized">mailcow</a></li>
+		</ul> 
+	</li>
+	<li>2017 à 2024, société <a href="https://www.combodo.com/">Combodo</a> :
+		<ul>
+			<li><a href="https://github.com/Combodo/iTop">iTop</a>, application web ITSM/CMDB</li></li>
+			<li>et aussi beaucoup d'extensions et d'utilitaires disponible dans <a href="https://github.com/Combodo">l'organisation GitHub Combodo</a></li>
+		</ul>
+</ul>
+
+
+
+<?=writeHR()?>
+
+
+
+<h2 id="linux">🐧 Linux</h2>
+
+<ul>
+	<li>Pense-bête de <a href="linux/commandes.php">commandes utiles</a>, un petit guide de survie en somme O:)</li>
+	<li>Utilisateur de Linux sur serveur depuis longtemps (avant le début de ma carrière professionnelle, c'est dire si ça remonte !), c'est cependant tout récemment que j'utilise Linux sur mon poste de travail professionnel (avril 2024).<br>
+	Voici quelques petites astuces de ce que j'ai mis en place de mon côté :
+		<ul>
+			<li><a href="linux/shell.php">Personnalisation de la ligne de commande</a></li>
+			<li>(à venir bientôt !!) Gnome : ma configuration</li>
+		</ul>
+	</li>
 </ul>
 
 

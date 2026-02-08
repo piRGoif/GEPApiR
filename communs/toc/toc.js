@@ -1,6 +1,7 @@
 /*
  * Dynamic Table of Contents script
  * by Matt Whitlock <http://www.whitsoftdev.com/>
+ * modified by piR
  */
 
 function createLink(href, innerHTML) {
@@ -10,34 +11,56 @@ function createLink(href, innerHTML) {
 	return a;
 }
 
+function setNodeId(node, suggestedId) {
+	if (node.id) {
+		return node.id;
+	}
+	
+	node.id = suggestedId;
+	return suggestedId;
+}
+
 function generateTOC(toc) {
 	var i2 = 0, i3 = 0, i4 = 0;
 	toc = toc.appendChild(document.createElement("ul"));
 	for (var i = 0; i < document.body.childNodes.length; ++i) {
 		var node = document.body.childNodes[i];
 		var tagName = node.nodeName.toLowerCase();
+		var tocParentNode, sectionNumber, headingId;
+		var isHeadingNode = false;
+		
 		if (tagName == "h4") {
+			isHeadingNode = true;
 			++i4;
-			if (i4 == 1) toc.lastChild.lastChild.lastChild.appendChild(document.createElement("ul"));
-			var section = i2 + "." + i3 + "." + i4;
-			node.insertBefore(document.createTextNode(section + ". "), node.firstChild);
-			node.id = "section" + section;
-			toc.lastChild.lastChild.lastChild.lastChild.appendChild(document.createElement("li")).appendChild(createLink("#section" + section, node.innerHTML));
+			if (i4 == 1) {
+				toc.lastChild.lastChild.lastChild.appendChild(document.createElement("ul"));
+			}
+			sectionNumber = i2 + "." + i3 + "." + i4;
+			headingId = "section" + sectionNumber;
+			tocParentNode = toc.lastChild.lastChild.lastChild.lastChild;
 		}
 		else if (tagName == "h3") {
+			isHeadingNode = true;
 			++i3, i4 = 0;
-			if (i3 == 1) toc.lastChild.appendChild(document.createElement("ul"));
-			var section = i2 + "." + i3;
-			node.insertBefore(document.createTextNode(section + ". "), node.firstChild);
-			node.id = "section" + section;
-			toc.lastChild.lastChild.appendChild(document.createElement("li")).appendChild(createLink("#section" + section, node.innerHTML));
+			if (i3 == 1) {
+				toc.lastChild.appendChild(document.createElement("ul"));
+			}
+			sectionNumber = i2 + "." + i3;
+			headingId = "section" + sectionNumber;
+			tocParentNode = toc.lastChild.lastChild;
 		}
 		else if (tagName == "h2") {
+			isHeadingNode = true;
 			++i2, i3 = 0, i4 = 0;
-			var section = i2;
-			node.insertBefore(document.createTextNode(section + ". "), node.firstChild);
-			node.id = "section" + section;
-			toc.appendChild(h2item = document.createElement("li")).appendChild(createLink("#section" + section, node.innerHTML));
+			sectionNumber = i2;
+			headingId = "section" + sectionNumber;
+			tocParentNode = toc;
+		}
+		
+		if (isHeadingNode) {
+			var sectionHeadingId = setNodeId(node, headingId);
+			node.insertBefore(document.createTextNode(sectionNumber + ". "), node.firstChild);
+			tocParentNode.appendChild(document.createElement("li")).appendChild(createLink("#" + sectionHeadingId, node.innerHTML));
 		}
 	}
 }
