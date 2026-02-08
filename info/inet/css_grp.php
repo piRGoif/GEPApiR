@@ -183,6 +183,8 @@ HTML
 
 <p class="callout" data-variant="tip">Un article de référence sur le MDN : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties">Using CSS custom properties (variables) - CSS | MDN</a></p>
 
+<p class="callout" data-variant="tip">Et un autre très détaillé et non moins didactique chez AlsaCréations : <a href="https://www.alsacreations.com/tuto/lire/1929-Tout-savoir-sur-les-variables-CSS-custom-properties.html">Tout savoir sur les variables CSS (custom properties) - Alsacreations</a></p>
+
 
 
 <?=writeHR()?>
