@@ -12,6 +12,7 @@ class GepapirChangelog {
             new ChangelogEntry('2026-02-13', '9.0.2', [
                 'ToC : maintenant fermée par défaut',
                 'ToC : ajout CSS scroll-behavior: smooth',
+                'CSS callouts : remplacé icone tip',
             ]),
             new ChangelogEntry('2026-02-08', '9.0.1', [
                 'Informatique CSS groupe : ajout article AlsaCréations',
