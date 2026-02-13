@@ -21,6 +21,8 @@ function setNodeId(node, suggestedId) {
 }
 
 function generateTOC(toc) {
+	setCss();
+	
 	var i2 = 0, i3 = 0, i4 = 0;
 	toc = toc.appendChild(document.createElement("ul"));
 	for (var i = 0; i < document.body.childNodes.length; ++i) {
@@ -62,5 +64,20 @@ function generateTOC(toc) {
 			node.insertBefore(document.createTextNode(sectionNumber + ". "), node.firstChild);
 			tocParentNode.appendChild(document.createElement("li")).appendChild(createLink("#" + sectionHeadingId, node.innerHTML));
 		}
+	}
+}
+
+/**
+ * @link https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior MDN documentation on scroll-behavior
+ */
+function setCss() {
+	try {
+		var html = document.documentElement || document.getElementsByTagName('html')[0];
+		if (html && html.style) {
+			html.style.scrollBehavior = 'smooth';
+		}
+	}
+	catch (e) {
+		// fail silently on older browsers
 	}
 }
