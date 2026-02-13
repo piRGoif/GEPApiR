@@ -13,6 +13,7 @@ class GepapirChangelog {
                 'ToC : maintenant fermée par défaut',
                 'ToC : ajout CSS scroll-behavior: smooth',
                 'CSS callouts : remplacé icone tip',
+                'Changelog RSS : correction entrées dupliquées pour les versions 9.0.0 et 9.0.1',
                 'Musiques : ajout vidéo IYB des Allées Chantent 2020',
             ]),
             new ChangelogEntry('2026-02-08', '9.0.1', [
@@ -349,8 +350,20 @@ abstract class AbstractChangelogRenderer {
             if (!is_null($entryVersion)) {
                 $entryTitle .= ', v' . $entryVersion;
             }
+            
+            $entryId = $entryDate;
+            if (!is_null($entryVersion) 
+                // Don't change for previous versions as they were already published : we don't want to mess 
+                // with RSS aggregators that already did the download !
+                // 9.0.0 was already published but we had a duplicate with 9.0.1 dated the same day,
+                // and they are the latest versions so this shouldn't cause too much arm
+                && version_compare($entryVersion, '9.0.0', '>=')) 
+            {
+                // Adding version to avoid date duplicates, see GH#38
+                $entryId .= '__' . $entryVersion;
+            }
 
-            $htmlChangelog .= static::getEntryBefore($entryTitle, $entryDate);
+            $htmlChangelog .= static::getEntryBefore($entryTitle, $entryId);
 
             $entryContent = $changelogEntry->aEntryContent;
             foreach ($entryContent as $entryContentItem) {
@@ -365,7 +378,7 @@ abstract class AbstractChangelogRenderer {
 
         return $htmlChangelog;
     }
-
+    
     /**
      * @return string
      */
