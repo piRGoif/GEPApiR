@@ -13,6 +13,7 @@ class GepapirChangelog {
                 'ToC : maintenant fermée par défaut',
                 'ToC : ajout CSS scroll-behavior: smooth',
                 'CSS callouts : remplacé icone tip',
+                'Musiques : ajout vidéo IYB des Allées Chantent 2020',
             ]),
             new ChangelogEntry('2026-02-08', '9.0.1', [
                 'Informatique CSS groupe : ajout article AlsaCréations',
@@ -33,7 +34,7 @@ class GepapirChangelog {
                 'Informatique GEPApiR côté technique : généralisation des callouts + quelques actualisation du contenu',
                 'Informatique : le lien sur le titre renvoie maintenant à l\'index de la rubrique plutôt que l\'accueil du site (de nombreuses sous-pages existent dans cette rubrique !)',
                 'Informatique : ajout manques Tracim et Galae',
-                'Musique : ajout manques (ReggLab, renforts, GRO)'
+                'Musiques : ajout manques (ReggLab, renforts, GRO)'
             ]),
             new ChangelogEntry('2025-08-09', '8.5.3', [
                 'Menu : personnalisation du :hover',
