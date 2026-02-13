@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "27/01/2026";
+$date_maj = "13/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -89,108 +89,104 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 
 
-<h2>Navigation fenêtres</h2>
+<h2>Applications supplémentaires</h2>
+
+<dl>
+    <dd>Doplhin</dd>
+    Emote
+    Kate
+</dl>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2>Extensions Gnome</h2>
+
+
+
+<h3>Navigation fenêtres</h3>
 
 <dl>
     <dt>AATWS (Advanced Alt-Tab Window Switcher)</dt>
-    <dd>complète personnalisation du alt-tab, bandeau affiché et liste des applications, surlignage de l'application qui va récupérer le focus</dd>
+    <dd>complète personnalisation du alt-tab (et windows-tab pour appli), modification du bandeau affiché avec liste et miniatures des applications (plus grand, show window titles, sort), surlignage de l'application qui va récupérer le focus, minimized windows last</dd>
     <dt>Another Window Session Manager</dt>
-    <dd>enregistre le positionnement des fenêtres, peut ré-ouvrir des configurations</dd>
+    <dd>enregistre le positionnement des fenêtres par profil, peut réouvrir la liste des appli et les positionner directement, possible restore at startup, icone dans la top bar</dd>
     <dt>Dash in panel</dt>
-    <dd>TODO</dd>
+    <dd>dash dans la top bar avec surlignage apps en cours, masquage du bouton activites, 1 clic focus app et 2ème réduit ou cycle si plusieurs fenêtres</dd>
 </dl>
 
 
 
-<?= writeHR() ?>
-
-
-
-<h2>Esthétique</h2>
+<h3>Esthétique</h3>
 
 <dl>
     <dt>Bing Wallpaper</dt>
-    <dd>TODO</dd>
+    <dd>Image du jour, avec sauvegarde en local et corbeille, favoris, random, changement périodique</dd>
     <dt>Dim Background Windows</dt>
-    <dd>TODO</dd>
-    <dt>Just perfection : personnalisation de ce qui est affiché</dt>
-    <dd>TODO</dd>
-    <dt>Open Bar : properties (mode Trilands, height, margins), window max-bar, foreground, background (gradient, alpha, palette), bar border</dt>
-    <dd>TODO</dd>
+    <dd>sur les fenêtres en arrière plan permet de modifier brightness et saturation, désactivable sur raccourci</dd>
+    <dt>Just perfection</dt>
+    <dd>personnalisation du contenu de la top bar et des menu, suppr notif "la fenêtre est prête", tapez pour rechercher, double appui sur super donne grille apps, état de démarrage, position de l'horloge'</dd>
+    <dt>Open Bar</dt>
+    <dd>top bar personnalisée (mode Trilands, height, margins), window max-bar, foreground, background (gradient, alpha, palette), bar border</dd>
 </dl>
 
 
 
-<?= writeHR() ?>
-
-
-
-<h2>Informations supplémentaires</h2>
+<h3>Top bar informations supplémentaires</h3>
 
 <dl>
     <dt>Asta Monitor</dt>
-    <dd>TODO</dd>
+    <dd>Ajoute dans la top bar une zone avec des moniteurs personnalisables, que l'on peut avoir repliés par défaut</dd>
     <dt>Autohide battery</dt>
-    <dd>TODO</dd>
-    <dt>Battery indicator icon : pour afficher une icone plus sympa que celle par défaut, avec pas mal de possibilités</dt>
-    <dd>TODO</dd>
+    <dd>Masque sur seuil</dd>
+    <dt>Battery indicator icon</dt>
+    <dd>pour afficher une icone plus sympa que celle par défaut, avec pas mal de possibilités</dd>
     <dt>Battery time (Percentage) Compact</dt>
-    <dd>TODO</dd>
+    <dd>Temps restant pour décharge ou charge, à côté de l'icone'</dd>
     <dt>Bluetooth Battery Meter</dt>
     <dd>Bring Out Submenu Of Power Off Button</dd>
 </dl>
 
 
 
-<?= writeHR() ?>
-
-
-
-<h2>Notifications</h2>
+<h3>Notifications</h3>
 
 <dl>
     <dt>Notification Banner Reloaded</dt>
-    <dd>TODO</dd>
-    <dt>Notification Configurator : rate limiting, timeout, filtering, themes</dt>
-    <dd>TODO</dd>
+    <dd>Personnalisation des animations de notifications : horiz/vert pos/padding, animation direction/time</dd>
+    <dt>Notification Configurator</dt>
+    <dd>rate limiting, timeout, filtering, themes</dd>
     <dt>Top Panel Notification Icons /w Count</dt>
-    <dd>TODO</dd>
+    <dd>Si notif alors ajoute icone avec compte</dd>
 </dl>
 
 
 
-<?= writeHR() ?>
-
-
-
-<h2>Fonctionnalités supplémentaires</h2>
+<h3>Fonctionnalités supplémentaires</h3>
 
 <dl>
     <dt>Clipboard indicator</dt>
-    <dd>TODO</dd>
-    <dt>Emote</dt>
-    <dd>TODO</dd>
+    <dd>Historique du presse papier, accessible sur raccourci clavier</dd>
     <dt>Pomodoro</dt>
-    <dd>TODO</dd>
+    <dd>Inclus de base, pas besoin d'installer. Durée pomodoro, durée pause et pause longue, nb avant pause longue</dd>
     <dt>Removable Drive Menu</dt>
-    <dd>TODO</dd>
+    <dd>Ajoute une icone quand on a un media amovible connecté</dd>
     <dt>Top Bar Organizer</dt>
-    <dd>TODO</dd>
+    <dd>reorg top bar (zone gauche, centre, droite)</dd>
     <dt>Unblanck lock screen</dt>
-    <dd>TODO</dd>
+    <dd>TODO désactivé pour vérifier utilité</dd>
     <dt>Wifi QR Code</dt>
-    <dd>TODO</dd>
+    <dd>Permet d'afficher un QR code du Wifi actif, dans le drop down système de la top bar</dd>
     <dt>Wiggle</dt>
-    <dd>retrouver son curseur (agrandissement, sinon voir options accessibilités)</dd>
+    <dd>retrouver son curseur (agrandissement après avoir agité pendant un temps donné, sinon voir options accessibilités : ctrl génère un highlight)</dd>
 </dl>
 
 
 
-<?= writeHR() ?>
-
-
-
-<h2>Inutile et donc indispensable</h2>
+<h3>Inutile et donc indispensable</h3>
 
 <dl>
     <dt><a href="https://github.com/brndnmtthws/Eye-on-cursor">Eye on cursor</a></dt>
