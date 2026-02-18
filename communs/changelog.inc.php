@@ -18,6 +18,7 @@ class GepapirChangelog {
                 'Changelog RSS : correction entrées dupliquées pour les versions 9.0.0 et 9.0.1',
                 'Musiques : ajout vidéo IYB des Allées Chantent 2020',
                 'GEPApiR CSS : correction des URL des Google Fonts, ajout de callouts et d\'une mention sur la confidentialité',
+                'GEPApiR Perf : ajout de callouts',
             ]),
             new ChangelogEntry('2026-02-08', '9.0.1', [
                 'Informatique CSS groupe : ajout article AlsaCréations',

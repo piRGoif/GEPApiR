@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "06/02/2026";
+$date_maj = "18/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -115,8 +115,9 @@ et caractères blancs (espaces, tabulations, ...). En particulier sur les fichie
 CSS et JavaScript, le gain peut être important !</p>
 
 <p>Il existe aussi la compression gzip. C'est un mécanisme présent depuis longtemps
-maintenant et par conséquent très largement supporté !<br>
-Voir cet article pour plus de détails : <a href="http://www.alsacreations.com/article/lire/914-compression-pages-html-css-gzip-deflate.html">Cache et compression des pages web avec Gzip ou Deflate en HTTP - Alsacreations</a>.</p>
+maintenant et par conséquent très largement supporté !</p>
+
+<p class="callout" data-variant="info">Voir cet article pour plus de détails : <a href="http://www.alsacreations.com/article/lire/914-compression-pages-html-css-gzip-deflate.html">Cache et compression des pages web avec Gzip ou Deflate en HTTP - Alsacreations</a>.</p>
 
 <p>Plusieurs outils proposent de réaliser ces tâches de manière automatique, et il
 est bien sûr possible de le faire dynamiquement sur le serveur à chaque requête ou
@@ -126,8 +127,9 @@ de l'intégrer à votre outil de build.</p>
 <h3>Mise en place</h3>
 
 <p>Sur le serveur de pages perso de Free malheureusement, il y a peu de latitudes
-de configuration. Mais il reste possible d'utiliser plusieurs mécanismes !<br>
-Cet article m'a donné toutes les clés pour avancer : <a href="http://les.pages.perso.chez.free.fr/index.php/post/2012/06/05/Activer-la-compression-sur-les-Pages-Perso">Activer la compression sur les Pages Perso - Les Pages Perso Chez Free</a></p>
+de configuration. Mais il reste possible d'utiliser plusieurs mécanismes !</p>
+
+<p class="callout" data-variant="info">Cet article m'a donné toutes les clés pour avancer : <a href="http://les.pages.perso.chez.free.fr/index.php/post/2012/06/05/Activer-la-compression-sur-les-Pages-Perso">Activer la compression sur les Pages Perso - Les Pages Perso Chez Free</a></p>
 
 <p>Et j'ai donc mis en place une compression sur :</p>
 
@@ -137,7 +139,7 @@ Cet article m'a donné toutes les clés pour avancer : <a href="http://les.pages
 	<li>le fichier JavaScript de fonctions utilitaires</li>
 </ul>
 
-<p>Les fichiers CSS et JS ont été minifiés et compressés en utilisant un site permettant
+<p class="callout" data-variant="tip">Les fichiers CSS et JS ont été minifiés et compressés en utilisant un site permettant
 d'utiliser l'excellent YUI Compressor en ligne : <a href="http://refresh-sf.com/">Online YUI Compressor</a>.</p>
 
 
