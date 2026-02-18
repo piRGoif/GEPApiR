@@ -9,6 +9,17 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-02-18', '9.0.3', [
+                'ToC : maintenant fermée par défaut',
+                'ToC : ajout CSS scroll-behavior: smooth',
+                'CSS callouts : remplacé icone tip',
+                'Ajout de données structurées sur les dates de création et maj (référencement)',
+                'GEPApiR référencement : création',
+                'Changelog RSS : correction entrées dupliquées pour les versions 9.0.0 et 9.0.1',
+                'Musiques : ajout vidéo IYB des Allées Chantent 2020',
+                'GEPApiR CSS : correction des URL des Google Fonts, ajout de callouts et d\'une mention sur la confidentialité',
+                'GEPApiR Perf : ajout de callouts',
+            ]),
             new ChangelogEntry('2026-02-08', '9.0.1', [
                 'Informatique CSS groupe : ajout article AlsaCréations',
                 'Correction régression tools.jz',
@@ -28,7 +39,7 @@ class GepapirChangelog {
                 'Informatique GEPApiR côté technique : généralisation des callouts + quelques actualisation du contenu',
                 'Informatique : le lien sur le titre renvoie maintenant à l\'index de la rubrique plutôt que l\'accueil du site (de nombreuses sous-pages existent dans cette rubrique !)',
                 'Informatique : ajout manques Tracim et Galae',
-                'Musique : ajout manques (ReggLab, renforts, GRO)'
+                'Musiques : ajout manques (ReggLab, renforts, GRO)'
             ]),
             new ChangelogEntry('2025-08-09', '8.5.3', [
                 'Menu : personnalisation du :hover',
@@ -343,8 +354,20 @@ abstract class AbstractChangelogRenderer {
             if (!is_null($entryVersion)) {
                 $entryTitle .= ', v' . $entryVersion;
             }
+            
+            $entryId = $entryDate;
+            if (!is_null($entryVersion) 
+                // Don't change for previous versions as they were already published : we don't want to mess 
+                // with RSS aggregators that already did the download !
+                // 9.0.0 was already published but we had a duplicate with 9.0.1 dated the same day,
+                // and they are the latest versions so this shouldn't cause too much arm
+                && version_compare($entryVersion, '9.0.0', '>=')) 
+            {
+                // Adding version to avoid date duplicates, see GH#38
+                $entryId .= '__' . $entryVersion;
+            }
 
-            $htmlChangelog .= static::getEntryBefore($entryTitle, $entryDate);
+            $htmlChangelog .= static::getEntryBefore($entryTitle, $entryId);
 
             $entryContent = $changelogEntry->aEntryContent;
             foreach ($entryContent as $entryContentItem) {
@@ -359,7 +382,7 @@ abstract class AbstractChangelogRenderer {
 
         return $htmlChangelog;
     }
-
+    
     /**
      * @return string
      */

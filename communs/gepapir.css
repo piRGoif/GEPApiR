@@ -310,7 +310,7 @@ label:hover
 }
 
 .callout[data-variant="tip"] {
-  --callout-icon: "💡";
+  --callout-icon:"🔥";
   --callout-bg: #1a2929;
   --callout-fg: #53dfdd;
 }

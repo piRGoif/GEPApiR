@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "06/02/2026";
+$date_maj = "18/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -62,12 +62,18 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
     pour les évolutions...
 </p>
     
-<p>
-    J'ais donc remplacé ces images par du texte, mais mis en forme avec des <a href="http://dev.w3.org/csswg/css-fonts/#font-face-rule">Web Fonts</a> ! Le support est assez large (cf <a href="http://caniuse.com/#feat=fontface">CanIUse</a>).
-    C'est une police de la librairie <a href="https://www.google.com/fonts">Google Fonts</a>
-    qui est utilisée : <a href="https://www.google.com/fonts/specimen/Satisfy">Satisfy</a>.
+<p>J'ais donc remplacé ces images par du texte, mais mis en forme avec des <a href="http://dev.w3.org/csswg/css-fonts/#font-face-rule">Web Fonts</a> ! Le support est assez large (cf <a href="http://caniuse.com/#feat=fontface">CanIUse</a>).</p>
+    
+<p class="callout" data-variant="info">
+    C'est une police de la librairie <a href="https://fonts.google.com/">Google Fonts</a>
+    qui est utilisée : <a href="https://fonts.google.com/specimen/Satisfy">Satisfy</a>.<br>
     Cette collection est très vaste, les polices sont en général au format le plus
-    approprié (Woff), les fichiers sont très légers, et Google propose un CDN !</p>
+    approprié (Woff), les fichiers sont très légers, et Google propose un CDN !
+</p>
+    
+<p class="callout" data-variant="warning">
+    Le CDN de Google est évidemment un moyen pour eux de récupérer des données... Dans le cadre de ce site à très faible traffic je considère que c'est acceptable ?
+</p> 
 
 
 

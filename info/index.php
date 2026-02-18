@@ -84,6 +84,7 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 	<li><a href="GEPApiR/menu_nav.php">Menu de navigation</a></li>
 	<li><a href="GEPApiR/responsive.php">Responsive design</a></li>
 	<li><a href="GEPApiR/toc_gen.php">Table des matières (TOC) dynamique</a></li>
+	<li><a href="GEPApiR/referencement.php">Référencement</a></li>
 	<li><a href="GEPApiR/link_target.php">Liens : option "ouverture dans une nouvelle fenêtre"</a></li>
 </ul>
 

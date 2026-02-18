@@ -219,6 +219,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 	<li><strong>In Your Brass</strong> : quelques vidéos <a href="https://www.youtube.com/@inyourbrass9987/videos">sur le compte Youtube du groupe</a>, en particulier :
 		<ul>
 			<li>2022 : <a href="https://www.youtube.com/playlist?list=PLGLp6IvQv-8J7npNLaXbw2MSOuqNrHouZ">les 3 vidéos à la Bifurk de Grenoble</a> réalisées par <a href="https://www.frogerfilm.fr/">Arsene Froger</a></li>
+			<li>2020 : <a href="https://www.youtube.com/watch?v=YeXLyoTI4yM">festival Les Allées Chantent</a> au musée de l'ancien évêché à Grenoble</li>
 			<li>2020 : <a href="https://www.youtube.com/watch?v=C8LNw73F2mY">clôture du festival Livres à vous</a> au Grand Angle de Voiron</li>
 			<li>2019 : <a href="https://youtu.be/SiLRXsxNarc">souvenirs de Fly to NOLA</a>, voyage inoubliable à la Nouvelle Orléans avec le Jules Ferry Brass Band et les percussions urbaines de Voiron</li>
 			<li>2017 : captation de "<a href="https://www.youtube.com/watch?v=ttwFnMesnec">War</a>" lors du concert Rap & Brass à la Bifurk de Grenoble</li>
