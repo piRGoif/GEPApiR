@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-02-18', '9.0.4', [
+                'Fix parse error dans header2.inc.php sur les vieux PHP de Free... encore..........',
+            ]),
             new ChangelogEntry('2026-02-18', '9.0.3', [
                 'ToC : maintenant fermée par défaut',
                 'ToC : ajout CSS scroll-behavior: smooth',

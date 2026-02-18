@@ -26,7 +26,8 @@ if (isset($date_maj)) {
       "dateModified": "{$date_maj}"
     }
     </script>
-    HTML;
+    HTML
+    ;
 }
 ?>
 
