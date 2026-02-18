@@ -26,8 +26,7 @@ if (isset($date_maj)) {
       "dateModified": "{$date_maj}"
     }
     </script>
-    HTML
-    ;
+HTML; // DO NOT change indentation here, otherwise it will cause a Parse Error
 }
 ?>
 
