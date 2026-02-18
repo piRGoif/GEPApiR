@@ -9,10 +9,12 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2026-02-18', '9.0.2', [
+            new ChangelogEntry('2026-02-18', '9.0.3', [
                 'ToC : maintenant fermée par défaut',
                 'ToC : ajout CSS scroll-behavior: smooth',
                 'CSS callouts : remplacé icone tip',
+                'Ajout de données structurées sur les dates de création et maj (référencement)',
+                'GEPApiR référencement : création',
                 'Changelog RSS : correction entrées dupliquées pour les versions 9.0.0 et 9.0.1',
                 'Musiques : ajout vidéo IYB des Allées Chantent 2020',
                 'GEPApiR CSS : correction des URL des Google Fonts, ajout de callouts et d\'une mention sur la confidentialité',
