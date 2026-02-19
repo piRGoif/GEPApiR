@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "06/02/2026";
+$date_maj = "19/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -174,14 +174,97 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 </p>
 
 
+<p class="callout" data-variant="warning">Il y a quand même des choses à savoir lorsque l'on vient de bash... Regardez aux chapitre ci-dessous !</p>
+
+<h3>Nouvelle commande <code>cdh</code></h3>
+
+<p>Le shell Fish apporte plusieurs nouvelles commandes, mais je me sert particulièrement de <code>cdh</code> qui affiche l'historique des répertoires visités. Très pratique !</p>
+
+<p class="callout" data-variant="info">Référence de la commande : <a href="https://fishshell.com/docs/current/cmds/cdh.html">cdh - change to a recently visited directory — fish-shell 4.5.0 documentation</a></p>
+
+
+<h3>Variables d'environnement</h3>
+
+<p>Dans bash :</p>
+
+<pre><code class="bash">export MY_VAR="my value"</code></pre>
+
+<p>La même chose dans le shell Fish :</p>
+
+<pre><code class="bash">set -U MY_VAR "my value"</code></pre>
+
+<p class="callout" data-variant="info">Voir la documentation Fish associée : <a href="https://fishshell.com/docs/current/tutorial.html#universal-variables">Universal Variables</a></p>
+
+
+<h3>Virtual env Python</h3>
+
+<p>Lorsque l'on crée un virtual environment Python, il faut l'activer à l'aide d'un script, par exemple :</p>
+
+<pre><code class="bash">source venv/bin/activate</code></pre>
+
+<p class="callout" data-variant="error">Ce script ne fonctionne pas dans le shell Fish</p>
+
+<p>Par contre un script pour Fish est bien généré ! Il suffit donc de le lancer à la place :</p>
+
+<pre><code class="bash">source venv/bin/activate.fish</code></pre>
+
+<p class="callout" data-variant="info">Référence dans la documentation officielle Python : <a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments">Creating Virtual Environments</a></p>
+
+<p class="callout" data-variant="tip">Il existe de multiples solutions pour automatiquement activer le venv lorsque l'on entre dans le répertoire, et donc éviter de devoir manuellement lancer son activation...<br>
+Je peux citer par exemple <a href="https://github.com/safigo/fish-autovenv">safigo/fish-autovenv: Automatically activate/deactivate Python virtual enviroments when entering/leaving a directory</a></code></p>
+
+
 
 <?= writeHR() ?>
 
 
 
-<h2 id="utils">Utilitaires : wrappers et <abbr title="Terminal User Interface">TUI</abbr></h2>
+<h2 id="utils">Utilitaires</h2>
 
-<p>Un wrapper, c'est simplement une commande "façade" qui utilise les mêmes arguments qu'une commande existante mais lui apporte quelques fonctionnalités en plus.</p>
+<h3 id="up">up</h3>
+
+<p>Un petit utilitaire pour remonter très facilement dans l'arborescence des répertoires !<br>
+Exemple d'usage :</p>
+
+<pre><code class="bash">/home/user/foo/bar/baz/head/foot $ up
+/home/user/foo/bar/baz/head $
+/home/user/foo/bar/baz/head $ up 2
+/home/user/foo/bar $ 
+/home/user/foo/bar $ up ho
+/home $ 
+</code></pre>
+
+<p class="callout" data-variant="info">
+    À récupérer sur GitHub : <a href="https://github.com/shannonmoeller/up">shannonmoeller/up: Quickly navigate to a parent directory via tab-completion.</a>
+</p>
+
+<p class="callout" data-variant="tip">
+    Le dépôt contient de quoi installer très rapidement sous les shell bash, ZSH ou Fish !
+</p>
+
+
+<h3 id="rsyncy">rsyncy</h3>
+
+<p>Un wrapper de la commande <code>rsync</code> qui permet d'ajouter une barre de progression, avec de nombreuses informations utiles :</p>
+
+<ul>
+    <li>bien sûr barre de progression et pourcentage total</li>
+    <li>vitesse de transfert</li>
+    <li>temps passé depuis le début</li>
+    <li>indique si rsync est toujours en cours de scan</li>
+</ul>
+
+<p class="callout" data-variant="info">
+    À récupérer sur GitHub : <a href="https://github.com/laktak/rsyncy">laktak/rsyncy: A status/progress bar for rsync</a>
+</p>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2 id="tui"><abbr title="Terminal User Interface">TUI</abbr></h2>
 
 <p>Le terme barbare de <abbr title="Terminal User Interface">TUI</abbr> est lui bien décrit par la définition donnée sur <a href="https://fr.wikipedia.org/wiki/Environnement_en_mode_texte">la fiche Wikipedia :</a></p>
 
@@ -220,7 +303,15 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 <h3 id="fzffish">fzf.fish</h3>
 
 <p>Un plugin très pratique au shell Fish ! Il apporte du fuzzy finder pour l'historique de commande, les chemins, fichiers, dans git, pour les id de processus.<br>
-Exemple avec l'historique de commandes (qui s'ouvre comme d'habitude avec <kbd>Ctrl</kbd> + <kbd>r</kbd>) :</p>
+Je me sert particulièrement de :</p>
+
+<ul>
+    <li>L'historique des commandes (qui s'ouvre comme d'habitude avec <kbd>Ctrl</kbd> + <kbd>R</kbd>)</li>
+    <li>Un explorateur de fichiers (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>)</li>
+    <li>Parcours de log Git (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>)</li>
+</ul>
+
+<p>Exemple avec l'historique de commandes :</p>
 
 <figure>
     <a href="tui_fzf.fish.webp">
@@ -262,22 +353,6 @@ Exemple avec l'historique de commandes (qui s'ouvre comme d'habitude avec <kbd>C
 
 <p class="callout" data-variant="info">
     A récupérer sur GitHub : <a href="https://github.com/deponian/logalize">deponian/logalize: Fast and extensible log colorizer Alternative to ccze</a>
-</p>
-
-
-<h3 id="rsyncy">rsyncy</h3>
-
-<p>Un wrapper de la commande <code>rsync</code> qui permet d'ajouter une barre de progression, avec de nombreuses informations utiles :</p>
-
-<ul>
-    <li>bien sûr barre de progression et pourcentage total</li>
-    <li>vitesse de transfert</li>
-    <li>temps passé depuis le début</li>
-    <li>indique si rsync est toujours en cours de scan</li>
-</ul>
-
-<p class="callout" data-variant="info">
-    À récupérer sur GitHub : <a href="https://github.com/laktak/rsyncy">laktak/rsyncy: A status/progress bar for rsync</a>
 </p>
 
 

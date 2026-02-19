@@ -43,7 +43,7 @@ require_once($RelBasePath . 'communs/separateurs.inc.php');
 
 
 
-<link href="<?=$RelBasePath?>communs/gepapir?2026-02" rel="stylesheet" type="text/css">
+<link href="<?=$RelBasePath?>communs/gepapir?2026-02-19" rel="stylesheet" type="text/css">
 
 
 

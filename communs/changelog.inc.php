@@ -10,8 +10,10 @@ class GepapirChangelog {
     {
         return [
             new ChangelogEntry('2026-02-19', '9.0.5', [
+                'CSS : ajout d\'un callout error',
                 'GEPApiR CSS : citations ajout de notes de bas de page pour les éléments techniques des citations',
                 'Informatique commandes : ajout du paramètre z à l\'exemple de rsync',
+                'Informatique shell : compléments sur Fish, ajout de up',
             ]),
             new ChangelogEntry('2026-02-18', '9.0.4', [
                 'Fix parse error dans header2.inc.php sur les vieux PHP de Free... encore..........',

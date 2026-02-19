@@ -321,6 +321,12 @@ label:hover
   --callout-fg: #e9973f;
 }
 
+.callout[data-variant="error"] {
+  --callout-icon: "❌";
+  --callout-bg: #2c191a;
+  --callout-fg: #fb464c;
+}
+
 
 
 /******************
