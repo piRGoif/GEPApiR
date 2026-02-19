@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-02-19', '9.0.5', [
+                'GEPApiR CSS : citations ajout de notes de bas de page pour les éléments techniques des citations',
+            ]),
             new ChangelogEntry('2026-02-18', '9.0.4', [
                 'Fix parse error dans header2.inc.php sur les vieux PHP de Free... encore..........',
             ]),
