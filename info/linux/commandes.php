@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "06/02/2026";
+$date_maj = "19/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -412,7 +412,7 @@ HTML
 <p>De son côté rsync est un utilitaire de... synchronisation, comme son nom l'indique !</p>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
-rsync -e "ssh -p 10022" -avn <source> <dest>
+rsync -e "ssh -p 10022" -avnz <source> <dest>
 # -e : remote shell program to use (permet de spécifier un port ssh différent)
 # a = all
 # v = verbose

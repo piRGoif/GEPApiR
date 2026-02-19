@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "18/02/2026";
+$date_maj = "19/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -100,8 +100,8 @@ HTML
 
 <h3>Citations</h3>
 
-<p>Pour les citations j'ai utilisé naturellement la balise <code>blockquote</code> qui est prévue à cet effet, contenant un <code>p</code> et des balises <code>q</code> et <code>cite</code>.<br>
-Du CSS va ajouter un effet de relief grace à <code>border-style: outset</code> et du <code>box-shadow</code>.<br>
+<p>Pour les citations j'ai utilisé naturellement la balise <code>blockquote</code> qui est prévue à cet effet, contenant un <code>p</code> et des balises <code>q</code><sup>[<a href="#fn1">1</a>]</sup> et <code>cite</code><sup>[<a href="#fn2">2</a>]</sup>.<br>
+Du CSS va ajouter un effet de relief grace à <code>border-style: outset</code><sup>[<a href="#fn3">3</a>]</sup> et du <code>box-shadow</code><sup>[<a href="#fn4">4</a>]</sup>.<br>
 Exemple de contenu :</p>
 
 <blockquote>
@@ -127,10 +127,10 @@ Exemple de contenu :</p>
 
 <div class="callout" data-variant="info">Quelques références : 
     <ul>
-        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/cite">&lt;cite> : l'élément de citation - HTML | MDN</a></li>
-        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/q">&lt;q> : l'élément de citation en incise - HTML | MDN</a></li>
-        <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/border-style">border-style - CSS | MDN</a></li>
-        <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/box-shadow">box-shadow - CSS | MDN</a></li>
+        <li id="fn1"><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/q">&lt;q> : l'élément de citation en incise - HTML | MDN</a></li>
+        <li id="fn2"><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/cite">&lt;cite> : l'élément de citation - HTML | MDN</a></li>
+        <li id="fn3"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/border-style">border-style - CSS | MDN</a></li>
+        <li id="fn4"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/box-shadow">box-shadow - CSS | MDN</a></li>
     </ul>
 </div>
 
