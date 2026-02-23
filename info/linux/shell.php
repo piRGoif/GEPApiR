@@ -176,9 +176,22 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 
 <p class="callout" data-variant="warning">Il y a quand même des choses à savoir lorsque l'on vient de bash... Regardez aux chapitre ci-dessous !</p>
 
+
 <h3 id="fishshell_cmd_cdh">Nouvelle commande <code>cdh</code></h3>
 
 <p>Le shell Fish apporte plusieurs nouvelles commandes, mais je me sert particulièrement de <code>cdh</code> qui affiche l'historique des répertoires visités. Très pratique !</p>
+
+<figure>
+    <a href="fishshell_cdh.webp">
+        <img 
+            src="fishshell_cdh.webp" 
+            alt="Capture d'écran de la commande cdh du shell Fish"
+            class="pretty-img screenshot-img"
+            width="633" height="114" data-responsive-img
+        >
+    </a>
+    <figcaption>Capture d'écran de la commande cdh du shell Fish</figcaption>
+</figure>
 
 <p class="callout" data-variant="info">Référence de la commande : <a href="https://fishshell.com/docs/current/cmds/cdh.html">cdh - change to a recently visited directory — fish-shell 4.5.0 documentation</a></p>
 

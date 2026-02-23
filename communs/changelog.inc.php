@@ -12,6 +12,7 @@ class GepapirChangelog {
             new ChangelogEntry('2026-02-23', '9.0.6', [
                 'Informatique : ajout d\'id sur les titres importants pour pouvoir transmettre des liens directs',
                 'Informatique Linux commandes : ajout scp -r',
+                'Informatique Linux shell : ajout capture commande Fish cdh',
             ]),
             new ChangelogEntry('2026-02-19', '9.0.5', [
                 'CSS : ajout d\'un callout error',
