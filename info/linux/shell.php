@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "19/02/2026";
+$date_maj = "23/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -59,7 +59,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <p>Le prompt, c'est ce qui s'affiche à côté du curseur : c'est très intéressant d'y faire figurer des informations comme le répertoire courant ou la branche sur un dépôt de code !</p>
 
-<h3>🤔 Bash</h3>
+<h3 id="prompt_bash">🤔 Bash</h3>
 
 <p>De base avec le shell bash livré par défaut sur la plupart des systèmes, on a des possibilités limitées. On peut cependant personnaliser grace à la variable <code>PS1</code> mais la syntaxe est vraiment complexe et difficile à maintenir !</p>
 
@@ -111,7 +111,7 @@ Un grand MAIS entoure ce projet :
 <p>Je n'ai donc pas cherché à l'utiliser...</p>
 
 
-<h3 id="starship">😍 Starship</h3>
+<h3 id="prompt_starship">😍 Starship</h3>
 
 <p>Je ne remercierai jamais assez mon ancien collègue <a href="https://www.linkedin.com/in/th%C3%A9o-larue-712a4651/">Théo</a> qui m'a fait découvrir <a href="https://starship.rs/">Starship</a> ! Là, les possibilités sont décuplées, et on a une configuration ultra simple et très bien documentée !<br>
 De plus, on a <a href="https://starship.rs/presets/">des presets</a> qui permettent d'avoir une configuration en 2 clics !</p>
@@ -176,14 +176,27 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 
 <p class="callout" data-variant="warning">Il y a quand même des choses à savoir lorsque l'on vient de bash... Regardez aux chapitre ci-dessous !</p>
 
-<h3>Nouvelle commande <code>cdh</code></h3>
+
+<h3 id="fishshell_cmd_cdh">Nouvelle commande <code>cdh</code></h3>
 
 <p>Le shell Fish apporte plusieurs nouvelles commandes, mais je me sert particulièrement de <code>cdh</code> qui affiche l'historique des répertoires visités. Très pratique !</p>
+
+<figure>
+    <a href="fishshell_cdh.webp">
+        <img 
+            src="fishshell_cdh.webp" 
+            alt="Capture d'écran de la commande cdh du shell Fish"
+            class="pretty-img screenshot-img"
+            width="633" height="114" data-responsive-img
+        >
+    </a>
+    <figcaption>Capture d'écran de la commande cdh du shell Fish</figcaption>
+</figure>
 
 <p class="callout" data-variant="info">Référence de la commande : <a href="https://fishshell.com/docs/current/cmds/cdh.html">cdh - change to a recently visited directory — fish-shell 4.5.0 documentation</a></p>
 
 
-<h3>Variables d'environnement</h3>
+<h3 id="fishshell_varenv">Variables d'environnement</h3>
 
 <p>Dans bash :</p>
 
@@ -196,7 +209,7 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 <p class="callout" data-variant="info">Voir la documentation Fish associée : <a href="https://fishshell.com/docs/current/tutorial.html#universal-variables">Universal Variables</a></p>
 
 
-<h3>Virtual env Python</h3>
+<h3 id="fishshell_python_venv">Virtual env Python</h3>
 
 <p>Lorsque l'on crée un virtual environment Python, il faut l'activer à l'aide d'un script, par exemple :</p>
 

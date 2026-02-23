@@ -9,6 +9,18 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-02-23', '9.0.6', [
+                'Informatique : ajout d\'id sur les titres importants pour pouvoir transmettre des liens directs',
+                'Informatique Linux commandes : ajout scp -r',
+                'Informatique Linux shell : ajout capture commande Fish cdh',
+                'GEPApiR CSS : ajout d\'un callout',
+                'GEPApiR CSS : ajout d\'un lien vers des exemples de box-shadow',
+                'GEPApiR CSS : callouts quelques modifications de forme',
+                'Informatique CSS groupe : exemple dans un callout',
+                'Informatique CSS groupe : ajout de la référence au calcul de spécificité dans la recommandation',
+                'Informatique CSS groupe : recommandation CSS passé de 2.1 à 2.2',
+                'Référencement LD+JSON : ajout du titre',
+            ]),
             new ChangelogEntry('2026-02-19', '9.0.5', [
                 'CSS : ajout d\'un callout error',
                 'GEPApiR CSS : citations ajout de notes de bas de page pour les éléments techniques des citations',

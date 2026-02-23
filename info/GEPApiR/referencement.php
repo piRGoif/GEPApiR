@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "18/02/2026";
-$date_maj = "18/02/2026";
+$date_maj = "23/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -51,7 +51,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 
 
-<h2>Google Search Console : suivi du référencement</h2>
+<h2 id="google_search_console">Google Search Console : suivi du référencement</h2>
 
 <p>Cette interface mise à disposition gratuitement par Google permet de vérifier que les URL sont bien référencées par le moteur, et donne des clés pour améliorer leur utilisation par le moteur de rechercher !</p>
 
@@ -65,13 +65,13 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <h2>Données structurées pour les dates de mise à jour</h2>
 
-<h3>Sitemaps</h3>
+<h3 id="sitemaps">Sitemaps</h3>
 
 <p>Un bon moyen d'aider les moteurs de recherche est de fournir un plan de son site sous forme structurée en XML. Mais je ne souhaitais pas me lancer dans la maintenance de ce fichier pour un si petit site...</p>
 
 <p class="callout" data-variant="info">Les informations sur le format Sitemaps : <a href="https://en.wikipedia.org/wiki/Sitemaps">Sitemaps - Wikipedia</a></p>
 
-<h3>CreativeWork</h3>   
+<h3 id="creativework">CreativeWork</h3>   
     
 <p>Il est aussi possible de fournir des données sous format JSON dans chacune des pages concernées ! C'est un moyen très simple de fournir les dates de manière compréhensibles pour les robots des moteurs de recherche, et c'est ce que j'ai fait ! Ainsi, chaque page portant une date de création / modification, comme la page que ovus êtes en train de lire, se voit ajouter les données.</p>
 

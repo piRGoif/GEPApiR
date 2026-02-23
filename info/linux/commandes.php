@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "19/02/2026";
+$date_maj = "23/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -68,7 +68,7 @@ HTML
 
 <h3>Contenu fichier</h3>
 
-<h4><code>cat</code>, <code>more</code>, <code>less</code></h4>
+<h4 id="cat_more_less"><code>cat</code>, <code>more</code>, <code>less</code></h4>
 
 <p>Quelles différences ?</p>
 
@@ -111,7 +111,7 @@ HTML
     Ou cet article sur le site de Stéphane Robert : <a href="https://blog.stephane-robert.info/docs/outils/fichiers/bat/">bat, un cat survitaminé</a>
 </p>
 
-<h4>Logs</h4>
+<h4 id="logs">Logs</h4>
 
 <p>Les commandes <code>head</code> et <code>tail</code> pour voir contenu en début ou fin de fichier. Par défaut, les 2 commandes affichent 10 lignes, pour changer ce nombre utiliser <code>-n &lt;nb_lignes></code> ou simplement <code>- &lt;nb_lignes></code> (ancienne syntaxe).<br>
 Le paramètre <code>f</code> permet de rafraichir en continu, pratique pour suivre un log par exemple !</p>
@@ -135,7 +135,7 @@ HTML
 );?></code></pre>
 
 
-<h3>Contenu arborescence</h3>
+<h3 id="tree">Contenu arborescence</h3>
 
 <p>Avec la commande <code>tree</code> on peut afficher le contenu d'une arborescence</p>
 
@@ -158,7 +158,7 @@ HTML
 );?></code></pre>
 
 
-<h3>Permissions</h3>
+<h3 id="permissions">Permissions</h3>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 chmod +wx <fichier> # ajout à tous drois d'écriture et exécution
@@ -178,7 +178,7 @@ HTML
 );?></code></pre>
 
 
-<h3>Historique</h3>
+<h3 id="historique">Historique</h3>
 
 <p class="callout" data-variant="info">Sur le shell le raccourci <kbd>Ctrl</kbd>+<kbd>R</kbd> permet de rechercher dans l'historique des commandes. Indispensable !</p>
 
@@ -198,7 +198,7 @@ cd $OLDPWD # idem mais avec var d'env
 </p>
 
 
-<h3>Comptage</h3>
+<h3 id="comptage">Comptage</h3>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 <commande> | wc -l
@@ -215,7 +215,7 @@ HTML
 
 <h2>Recherche fichiers</h2>
 
-<h3>Find</h3>
+<h3 id="find">Find</h3>
 
 <p>Un outil destiné à trouver des fichiers à partir de leurs attributs.<br>
 Les options :</p>
@@ -255,7 +255,7 @@ HTML
     Pour aller plus loin, le toujours excellent Stéphane Robert a une page parfaite sur l'outil : <a href="https://blog.stephane-robert.info/docs/admin-serveurs/linux/find/">Maîtriser Find : Recherche Linux efficace</a>
 </p>
 
-<h3>Grep</h3>
+<h3 id="grep">Grep</h3>
 
 <p>Cet outil-ci est destiné à trouver des fichiers à partir de leur contenu.</p>
 
@@ -291,7 +291,7 @@ stat <fichier> # infos dont le type (fichier, répertoire, symlink), les dates, 
 HTML
 );?></code></pre>
 
-<h3>Stats espace disque</h3>
+<h3 id="espace_disque">Stats espace disque</h3>
 
 <p>Espace disponible et occupé sur les différents points de montage :</p>
 
@@ -331,9 +331,9 @@ HTML
 );?></code></pre>
 
 
-<h3>Archives</h3>
+<h3 id="archives">Archives</h3>
 
-<h4>Création</h4>
+<h4 id="archives_creation">Création</h4>
 
 <p>Création d'une archive gzip pour un fichier :</p>
 
@@ -363,7 +363,7 @@ tar -czvf <dest>.tar.gz <source>
 HTML
 );?></code></pre>
 
-<h4>Décompression</h4>
+<h4 id="archives_decompression">Décompression</h4>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 unzip file.zip -d my_directory
@@ -397,13 +397,14 @@ HTML
 
 <h2>Serveur</h2>
 
-<h3>Transferts</h3>
+<h3 id="transferts">Transferts</h3>
 
 <p>L'utilitaire SCP permet de transférer des fichiers à une machine sur laquelle on a un accès SSH.</p>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 scp /file/to/send username@remote:/where/to/put/remotely
 scp -P 10022 <file> myuser@mymachine.fr:/tmp # -P : n° port si différent du 22 par défaut
+# -r : récursif (permet de transférer des répertoires)
 scp username@remote:/file/to/receive /where/to/put/locally
 scp username@remote_1:/file/to/get username@remote_2:/where/to/put
 HTML
@@ -429,7 +430,7 @@ HTML
 </p>
 
 
-<h3>Daemon</h3>
+<h3 id="daemon">Daemon</h3>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 sudo systemctl disable mariadb # arrête le démarrage automatique au boot de la machine
@@ -440,7 +441,7 @@ HTML
 );?></code></pre>
 
 
-<h3>Enchaînement de commandes</h3>
+<h3 id="cmd_chain">Enchaînement de commandes</h3>
 
 <p>Particulièrement utile dans un DockerFile ou pour une CI !</p>
 
@@ -456,7 +457,7 @@ HTML
 );?></code></pre>
 
 
-<h3>Docker</h3>
+<h3 id="docker">Docker</h3>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 docker logs -f <nom_container>
@@ -491,7 +492,7 @@ HTML
 
 
 
-<h2>Processus</h2>
+<h2 id="processus">Processus</h2>
 
 <h3>Liste</h3>
 

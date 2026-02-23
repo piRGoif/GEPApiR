@@ -22,6 +22,7 @@ if (isset($date_maj)) {
     {
       "@context": "https://schema.org",
       "@type": "Article",
+      "headline": "{$title}",
       "datePublished": "{$date_creation}",
       "dateModified": "{$date_maj}"
     }
