@@ -404,6 +404,7 @@ HTML
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 scp /file/to/send username@remote:/where/to/put/remotely
 scp -P 10022 <file> myuser@mymachine.fr:/tmp # -P : n° port si différent du 22 par défaut
+# -r : récursif (permet de transférer des répertoires)
 scp username@remote:/file/to/receive /where/to/put/locally
 scp username@remote_1:/file/to/get username@remote_2:/where/to/put
 HTML
