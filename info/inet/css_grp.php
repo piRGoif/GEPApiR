@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "24/08/2005";
-$date_maj = "08/02/2026";
+$date_maj = "23/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -78,7 +78,7 @@ virgules :</p>
 &lt;p id="foobar" class="class1 class2">
 </code></pre>
 
-<p>🔍 Un exemple à voir dans <a href="https://codepen.io/pgoiffon/pen/WNvxRbK">ce codepen</a> !</p>
+<p class="callout" data-variant="info">Un exemple à voir dans <a href="https://codepen.io/pgoiffon/pen/WNvxRbK">ce codepen</a> !</p>
 
 <p>On trouvera cette information dans la définition de l'attribut class de la
 recommandation <abbr>HTML</abbr><sup>[<a href="#fn2">2</a>]</sup>.</p>
@@ -96,7 +96,7 @@ le modèle et une autre positionne simplement le <code>background-position</code
 	<li>Attention aux conflits ! On peut avoir la même propriété <abbr>CSS</abbr> pour un
 	élément donné définit plusieurs fois... Dans ce cas, la recommandation<sup>[<a href="#fn3">3</a>]</sup>
 	détaille quoi faire en cas de conflit de définition de propriétés (voyez en
-	particulier la spécificité).</li>
+	particulier la spécificité<sup>[<a href="#fn4">4</a>]</sup>).</li>
 </ul>
 
 
@@ -126,7 +126,7 @@ le modèle et une autre positionne simplement le <code>background-position</code
 
 <h2>Variables CSS</h2>
 
-<p>Une recommandation<sup>[<a href="#fn4">4</a>]</sup> permet de répondre à ce
+<p>Une recommandation<sup>[<a href="#fn5">5</a>]</sup> permet de répondre à ce
 besoin, et maintenant (février 2026) le support est assez large !</p>
 
 <p class="callout" data-variant="info">Support des variables CSS sur caniuse : <a href="https://caniuse.com/css-variables">CSS Variables (Custom Properties) | Can I use... Support tables for HTML5, CSS3, etc</a></p>
@@ -200,8 +200,8 @@ HTML
 	<li><a href="http://www.w3.org/TR/html401/">Recommandation <abbr>HTML</abbr> 4.01</a></li>
 	<li id="rec_xhtml1.0"><a href="http://www.w3.org/TR/xhtml1/">Recommandation <abbr>XHTML</abbr> 1.0</a></li>
 	<li><a href="http://www.w3.org/TR/xhtml11/">Recommandation <abbr>XHTML</abbr> 1.1</a></li>
-	<li><a href="http://www.w3.org/TR/CSS21/">Recommandation <abbr>CSS</abbr> 2.1</a></li>
-	<li id="fn4">[4] <a href="http://dev.w3.org/csswg/css-variables/">CSS Custom Properties for Cascading Variables Module Level 1</a></li>
+	<li><a href="http://www.w3.org/TR/CSS22/">Recommandation <abbr>CSS</abbr> 2.2</a></li>
+	<li id="fn5">[5] <a href="http://dev.w3.org/csswg/css-variables/">CSS Custom Properties for Cascading Variables Module Level 1</a></li>
 </ul>
 
 
@@ -215,6 +215,7 @@ HTML
 	<li id="fn3">[3] Toujours dans la même recommandation, le <a href="http://www.w3.org/TR/CSS21/cascade.html#cascade">chapitre 6.4 The cascade</a>,
 	indiquant les règles suivies pour l'application de telle ou telle valeur
 	en cas de conflit entre de multiples déclarations de la même propriété</li>
+	<li id="fn4">[4] Dans les recommandations CSS 2.2 : <a href="https://www.w3.org/TR/CSS22/cascade.html#specificity">Calculating a selector's specificity</a></li>
 </ul>
 
 
