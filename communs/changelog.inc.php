@@ -16,6 +16,7 @@ class GepapirChangelog {
                 'GEPApiR CSS : ajout d\'un callout',
                 'GEPApiR CSS : ajout d\'un lien vers des exemples de box-shadow',
                 'GEPApiR CSS : callouts quelques modifications de forme',
+                'Référencement LD+JSON : ajout du titre',
             ]),
             new ChangelogEntry('2026-02-19', '9.0.5', [
                 'CSS : ajout d\'un callout error',
