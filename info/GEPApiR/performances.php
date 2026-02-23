@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "18/02/2026";
+$date_maj = "23/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -67,7 +67,7 @@ dure 1.21s, dont environ 300ms de rendu serveur... soit moins du quart !</p>
 
 
 
-<h2>Outils</h2>
+<h2 id="outils">Outils</h2>
 
 <p>Pour diagnostiquer, vérifier ce qui est mis en place etc il va falloir s'outiller !
 Quelques exemples de logiciels importants :</p>
@@ -88,7 +88,7 @@ Quelques exemples de logiciels importants :</p>
 
 
 
-<h2>Taille : compression des images</h2>
+<h2 id="taille_img">Taille : compression des images</h2>
 
 <p>Quelque soit le format de l'image (PNG, JPEG, GIF, WebP), il y a possibilité d'optimiser
 la taille... ne serait-ce qu'en supprimant les métadonnées, et aussi bien sûr en
@@ -105,7 +105,7 @@ Citons en particulier <a href="http://pngcrush.com/">PNGCrush</a> et le site <a 
 
 
 
-<h2>Taille : minification, compression gzip</h2>
+<h2 id="taille_resources">Taille : minification, compression gzip</h2>
 
 
 <h3>Généralités</h3>
@@ -167,7 +167,7 @@ existait également mais a été corrigé en avril 2011 : <a href="https://code.
 
 
 
-<h2>Nombre de requêtes HTTP : concaténation, CDN</h2>
+<h2 id="requetes_concat">Nombre de requêtes HTTP : concaténation, CDN</h2>
 
 <p>Première chose à faire pour réduire le nombre de requêtes HTTP : regrouper le
 code ! En particulier en CSS et JavaScript (on verra au chapitre suivant que c'est
@@ -189,7 +189,7 @@ plusieurs resources sont appelées sur les sites originaux :</p>
 
 
 
-<h2>Nombre de requêtes HTTP : CSS Sprites</h2>
+<h2 id="requetes_sprites">Nombre de requêtes HTTP : CSS Sprites</h2>
 
 
 <h3>Principe</h3>
@@ -251,7 +251,7 @@ HTML
 
 
 
-<h2>Nombre de requêtes HTTP : cache</h2>
+<h2 id="requetes_cache">Nombre de reqh2tes HTTP : cache</h2>
 
 <p class="callout" data-variant="info">C'est un moyen simple de réduire le nombre de requêtes : permettre de mettre en
 cache sur le navigateur des resources, qui ne seront ainsi téléchargées que une

@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "19/02/2026";
+$date_maj = "23/02/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -83,7 +83,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <h2>Mise en forme contenu</h2>
 
-<h3>Raccourcis clavier</h3>
+<h3 id="kbd">Raccourcis clavier</h3>
 
 <p>La balise <code>kbd</code> est dédiée à celà !</p>
 
@@ -98,7 +98,7 @@ HTML
 
 <p>Qui va rendre ainsi : <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
 
-<h3>Citations</h3>
+<h3 id="citations">Citations</h3>
 
 <p>Pour les citations j'ai utilisé naturellement la balise <code>blockquote</code> qui est prévue à cet effet, contenant un <code>p</code> et des balises <code>q</code><sup>[<a href="#fn1">1</a>]</sup> et <code>cite</code><sup>[<a href="#fn2">2</a>]</sup>.<br>
 Du CSS va ajouter un effet de relief grace à <code>border-style: outset</code><sup>[<a href="#fn3">3</a>]</sup> et du <code>box-shadow</code><sup>[<a href="#fn4">4</a>]</sup>.<br>
@@ -135,7 +135,7 @@ Exemple de contenu :</p>
 </div>
 
 
-<h3>Callouts</h3>
+<h3 id="callouts">Callouts</h3>
 
 <p>Les callouts ou alertes permettent d'avoir une étiquette de texte caractérisée par une icone et une couleur, pour représenter facilement une info, alerte, warning, tip, ...</p>
 
@@ -195,7 +195,7 @@ Voir cet extrait de code :</p>
 
 
 
-<h2>Mise en forme des images</h2>
+<h2 id="img">Mise en forme des images</h2>
 
 
 <h3>CSS Transform</h3>
@@ -249,7 +249,7 @@ transform: rotate(6deg);
 
 
 
-<h2>Coloration du code CSS/HTML/JS/...</h2>
+<h2 id="code_highlighting">Coloration du code CSh2HTML/JS/...</h2>
 
 <p>J'ai choisit d'utiliser <a href="https://highlightjs.org/">highlight.js</a>, en
     intégrant les dépendances <a href="https://highlightjs.org/download/#cdns">depuis le CDN officiel</a>.
