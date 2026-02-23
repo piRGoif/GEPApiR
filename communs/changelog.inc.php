@@ -13,6 +13,9 @@ class GepapirChangelog {
                 'Informatique : ajout d\'id sur les titres importants pour pouvoir transmettre des liens directs',
                 'Informatique Linux commandes : ajout scp -r',
                 'Informatique Linux shell : ajout capture commande Fish cdh',
+                'GEPApiR CSS : ajout d\'un callout',
+                'GEPApiR CSS : ajout d\'un lien vers des exemples de box-shadow',
+                'GEPApiR CSS : callouts quelques modifications de forme',
             ]),
             new ChangelogEntry('2026-02-19', '9.0.5', [
                 'CSS : ajout d\'un callout error',

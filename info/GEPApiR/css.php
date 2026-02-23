@@ -100,8 +100,8 @@ HTML
 
 <h3 id="citations">Citations</h3>
 
-<p>Pour les citations j'ai utilisé naturellement la balise <code>blockquote</code> qui est prévue à cet effet, contenant un <code>p</code> et des balises <code>q</code><sup>[<a href="#fn1">1</a>]</sup> et <code>cite</code><sup>[<a href="#fn2">2</a>]</sup>.<br>
-Du CSS va ajouter un effet de relief grace à <code>border-style: outset</code><sup>[<a href="#fn3">3</a>]</sup> et du <code>box-shadow</code><sup>[<a href="#fn4">4</a>]</sup>.<br>
+<p>Pour les citations j'ai utilisé naturellement la balise <code>blockquote</code> qui est prévue à cet effet, contenant un <code>p</code> et des balises <code>q</code><sup>[<a href="#citation_fn1">1</a>]</sup> et <code>cite</code><sup>[<a href="#citation_fn2">2</a>]</sup>.<br>
+Du CSS va ajouter un effet de relief grace à <code>border-style: outset</code><sup>[<a href="#citation_fn3">3</a>]</sup> et du <code>box-shadow</code><sup>[<a href="#citation_fn4">4</a>]</sup>.<br>
 Exemple de contenu :</p>
 
 <blockquote>
@@ -127,33 +127,43 @@ Exemple de contenu :</p>
 
 <div class="callout" data-variant="info">Quelques références : 
     <ul>
-        <li id="fn1"><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/q">&lt;q> : l'élément de citation en incise - HTML | MDN</a></li>
-        <li id="fn2"><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/cite">&lt;cite> : l'élément de citation - HTML | MDN</a></li>
-        <li id="fn3"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/border-style">border-style - CSS | MDN</a></li>
-        <li id="fn4"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/box-shadow">box-shadow - CSS | MDN</a></li>
+        <li id="citation_fn1"><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/q">&lt;q> : l'élément de citation en incise - HTML | MDN</a></li>
+        <li id="citation_fn2"><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/cite">&lt;cite> : l'élément de citation - HTML | MDN</a></li>
+        <li id="citation_fn3"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/border-style">border-style - CSS | MDN</a></li>
+        <li id="citation_fn4"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Properties/box-shadow">box-shadow - CSS | MDN</a></li>
     </ul>
 </div>
+
+<p class="callout" data-variant="tip">Un site regroupant beaucoup d'exemples inspirants de <code>box-shadow</code> : <a href="https://getcssscan.com/css-box-shadow-examples">95 Beautiful CSS box-shadow examples - CSS Scan</a></p>
 
 
 <h3 id="callouts">Callouts</h3>
 
 <p>Les callouts ou alertes permettent d'avoir une étiquette de texte caractérisée par une icone et une couleur, pour représenter facilement une info, alerte, warning, tip, ...</p>
 
-<p>On en retrouve dans plusieurs systèmes de documentation :</p>
+<div class="callout" data-variant="tip">
+    On en retrouve dans plusieurs systèmes de documentation :
+    <ul>
+        <li>DokuWiki : <a href="https://www.dokuwiki.org/plugin:alertbox">plugin alertbox</a></li>
+        <li>Markdown Obsidian : <a href="https://help.obsidian.md/Editing+and+formatting/Callouts">Callouts</a></li>
+        <li>Markdown GitHub : <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts">Alerts</a></li>
+        <li>Markdown GitLab : <a href="https://docs.gitlab.com/user/markdown/#alerts">Alerts</a></li>
+    </ul>
+</div>
+
+<p>J'ai donc rajouté un système similaire pour agrémenter mes pages ! J'ai très largement récupéré un contenu figurant <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes#examples">sur la page MDN pour l'attribut data.</a>.</p> 
+
+<p class="callout" data-variant="tip">J'ai repris le principe d'avoir une seule classe pour la mise en forme par défaut, et un attribut data pour les variantes : ainsi on peut facilement avoir un sélecteur CSS ciblant les callout sans variante !</p>
+
+<p>Et pour faciliter la définition des règles, j'ai utilisé :</p>
 
 <ul>
-    <li>DokuWiki : <a href="https://www.dokuwiki.org/plugin:alertbox">plugin alertbox</a></li>
-    <li>Markdown Obsidian : <a href="https://help.obsidian.md/Editing+and+formatting/Callouts">Callouts</a></li>
-    <li>Markdown GitHub : <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts">Alerts</a></li>
-    <li>Markdown GitLab : <a href="https://docs.gitlab.com/user/markdown/#alerts">Alerts</a></li>
+    <li>Des variables CSS<sup><a href="#callout_fn1">[1]</a></sup></li>
+    <li>Egalement le pseudo élément <code>:where</code><sup><a href="#callout_fn2">[2]</a></sup> permet de gérer une surcharge de la mise en forme par défaut de certains blocs (<code>p</code>, <code>ul</code>, <code>li</code>)</li>
+    <li>La mise en forme reprend le <code>border-style</code> et <code>box-shadow</code> utilisé sur les citations<sup><a href="#citations">[3]</a></sup>.</li>
 </ul>
 
-<p>J'ai donc rajouté un système similaire pour agrémenter mes pages ! J'ai très largement récupéré un contenu figurant <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes#examples">sur la page MDN pour l'attribut data.</a>. J'ai repris le principe d'avoir une seule classe pour la mise en forme par défaut, et un attribut data pour les variantes : ainsi on peut facilement avoir un sélecteur CSS ciblant les callout sans variante !</p>
-
-<p>Et pour faciliter la définition des règles, j'ai utilisé des <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties">variables CSS</a>.<br>
-Egalement le pseudo élément <code>:where</code> permet de gérer une surcharge de la mise en forme par défaut de certains blocs (<code>p</code>, <code>ul</code>, <code>li</code>)<br>
-La mise en forme reprend le <code>border-style</code> et <code>box-shadow</code> utilisé sur les citations.<br>
-Voir cet extrait de code :</p>
+<p>Voir cet extrait de code :</p>
 
 <pre><code class="css">
 .callout:before {
@@ -188,6 +198,13 @@ Voir cet extrait de code :</p>
 
 // ...
 </code></pre>
+
+<div class="callout" data-variant="info">Quelques références : 
+    <ul>
+        <li id="callout_fn1"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties">Using CSS custom properties (variables) - CSS | MDN</a></li>
+        <li id="callout_fn2"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Selectors/:where">:where() - CSS | MDN</a></li>
+    </ul>
+</div>
 
 
 
@@ -274,11 +291,13 @@ HTML
 PHP
 );?></code></pre>
 
-<p>Attention, comme <a href="https://www.php.net/manual/en/language.types.string.php">le dit la documentation PHP</a> pour rester compatible avec d'anciennes versions de PHP il faut être attentif à la syntaxe :</p>
+<div class="callout" data-variant="warning">
+    Attention, comme <a href="https://www.php.net/manual/en/language.types.string.php">le dit la documentation PHP</a> pour rester compatible avec d'anciennes versions de PHP il faut être attentif à la syntaxe :</p>
 
-<blockquote>
-<p>Prior to PHP 7.3.0, it is very important to note that the line with the closing identifier must contain no other characters, except a semicolon (;)</p>
-</blockquote>
+    <blockquote>
+    <p>Prior to PHP 7.3.0, it is very important to note that the line with the closing identifier must contain no other characters, except a semicolon (;)</p>
+    </blockquote>
+</div>
 
 
 
