@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/08/2005";
-$date_maj = "04/08/2025";
+$date_maj = "06/04/2026";
 
 // NAVIGATION
 $RelBasePath = "../";
@@ -159,6 +159,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 	<li>Harmonie de Vizille</li>
 	<li>Harmonie de Fontaine (en particulier mémorable <a href="https://www.flickr.com/photos/pirgoif/albums/72177720327623451">voyage à Fécamp en juillet 2025</a> !)</li>
 	<li>Le fantastique <a href="https://www.le-gro.com/">Grenoble Reggae Orchestra</a> dès que je peux !</li>
+	<li>Big Band de Saint Martin d'Hères</li>
 	<li><a href="https://ord-meylan.fr/">Orchestre Régional du Dauphiné</a> (souvenir d'un exceptionnel projet Queen en 2018 !)</li>
 	<li>Big Mother Funker, groupe hélas disparu :~(</li>
 </ul>
@@ -232,7 +233,6 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 		<ul>
 			<li>2020 : vidéos de confinement, "<a href="https://youtu.be/_Oct2icbTgU">Daft Punk medley</a>", "<a href="https://youtu.be/QjhzMbHgBVA">Disney Remix</a>" (bravo à Louis Piquard et Sébastien Michel pour la réalisation 👏)</li>
 			<li>2019 : captation de "<a href="https://www.youtube.com/watch?v=EUx6ZDjZFgI">Oregon</a>" (Jacob de Haan) à la salle Olivier Messiaen de Grenoble</li>
-			<li>2018 : captation du "<a href="https://youtu.be/701PHF8KGp4">Chant des esclaves</a>" (Nabucco) au théâtre de Grenoble</li>
 			<li>2017 : captation du <a href="https://www.youtube.com/watch?v=w7NTjtdrfAA&list=PLFtYCHpCumpphRYUZQXnS_d6p-vgs_gSh&index=9">concert à la Bridoire</a> (merci à l'Harmonie du Grenand !)</li>
 		</ul>
 	</li>
@@ -291,7 +291,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 	</li>
 	<li>Evénements Fanfares :
 		<ul>
-			<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720324904220/">2025</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
+			<li>Albums des Fanfaronnades (festival de fanfares grenoblois organisé par Pink It Black) : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720332900806">2026</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72177720324904220/">2025</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720307334752/">2023</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72177720297685805/">2022</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157706831924795/">2019</a>, <a href="https://www.flickr.com/photos/pirgoif/sets/72157713972430191/">2018</a></li>
 			<li>Albums de La Valdingue (festival de fanfares à Saint Geoire en Valdaine organisé par Les Val'daingues) : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720319978067">2024</a>, <a href="https://www.flickr.com/photos/pirgoif/albums/72157719802578248">2021</a></li>
 			<li>2024 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720321910045">MCM et la Brass'tille à Eve'</a></li>
 			<li>2023 : <a href="https://www.flickr.com/photos/pirgoif/albums/72177720312177018">Les 10 ans des Son'enBulles</a></li>
