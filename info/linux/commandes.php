@@ -337,7 +337,7 @@ HTML
 
 <p>Création d'une archive gzip pour un fichier :</p>
 
-<p class="callout" data-variant="tip">Par défaut la commande gzip va supprimer le fichier source en fin de traitement</p>
+<p class="callout" data-variant="warning">Par défaut la commande gzip va supprimer le fichier source en fin de traitement</p>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 gzip fichier_source.log

@@ -9,6 +9,12 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-04-06', '9.0.7', [
+                'Musiques : ajout Fanfaronnades 2026',
+                'Musiques : suppression d\'une vidéo plus disponible (Nabucco par l\'Harmonie de Grenoble)',
+                'Musiques : renforts ajout BB SMH',
+                'Informatique Linux commandes : modification d\'un callout sur gzip',
+            ]),
             new ChangelogEntry('2026-02-23', '9.0.6', [
                 'Informatique : ajout d\'id sur les titres importants pour pouvoir transmettre des liens directs',
                 'Informatique Linux commandes : ajout scp -r',
