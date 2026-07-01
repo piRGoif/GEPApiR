@@ -159,7 +159,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 	<li>Harmonie de Vizille</li>
 	<li>Harmonie de Fontaine (en particulier mémorable <a href="https://www.flickr.com/photos/pirgoif/albums/72177720327623451">voyage à Fécamp en juillet 2025</a> !)</li>
 	<li>Le fantastique <a href="https://www.le-gro.com/">Grenoble Reggae Orchestra</a> dès que je peux !</li>
-	<li>Big Band de Saint Martin d'Hères</li>
+	<li><a href="https://www.smh-big-band.com/">Big Band de Saint Martin d'Hères</a></li>
 	<li><a href="https://ord-meylan.fr/">Orchestre Régional du Dauphiné</a> (souvenir d'un exceptionnel projet Queen en 2018 !)</li>
 	<li>Big Mother Funker, groupe hélas disparu :~(</li>
 </ul>

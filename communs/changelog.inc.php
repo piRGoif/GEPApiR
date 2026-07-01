@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-07-01', '9.0.8', [
+                'Musiques : ajout lien big band SMH',
+            ]),
             new ChangelogEntry('2026-04-06', '9.0.7', [
                 'Musiques : ajout Fanfaronnades 2026',
                 'Musiques : suppression d\'une vidéo plus disponible (Nabucco par l\'Harmonie de Grenoble)',
