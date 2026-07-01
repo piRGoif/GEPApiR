@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "23/02/2026";
+$date_maj = "01/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -137,6 +137,7 @@ Les modifications apportées :
     <li>Côté git, modification de quelques options (qui sont toutes <a href="https://starship.rs/config/#directory">documentées ici</a>): directory <code>truncation_length</code>, <code>truncate_to_repo=false</code>, format dans l'option <code>repo_root</code></li>
     <li>Changement du time format</li>
     <li>Affichage du shell courant (pratique pour se souvenir que l'on est en Fish Shell ou en Bash)</li>
+    <li>Affichage du nom du venv courant</li>
     <li>Ajout du command duration, mais sur seuil (seulement si la commande a duré plus de 500ms)</li>
 </ul>
 </div>
