@@ -116,7 +116,7 @@ HTML
 <p>Les commandes <code>head</code> et <code>tail</code> pour voir contenu en début ou fin de fichier. Par défaut, les 2 commandes affichent 10 lignes, pour changer ce nombre utiliser <code>-n &lt;nb_lignes></code> ou simplement <code>- &lt;nb_lignes></code> (ancienne syntaxe).<br>
 Le paramètre <code>f</code> permet de rafraichir en continu, pratique pour suivre un log par exemple !</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tail -2000f wildfly/standalone/log/server.log
 tail -2000f wildfly/standalone/log/server.log | grep "fr.mycompany.product."
 
@@ -131,7 +131,7 @@ watch <commande> # rafraichit l'affichage de la commande toutes les 2 secondes
 tail -f <fichier> | grep "chaine" | tee -a output.log # la sortie est affichée dans stdout et également envoyée dans output.log en append (paramètre a)
 
 <commande> 2>&1 # renvoie stderr et stdout
-HTML
+BASH
 );?></code></pre>
 
 
@@ -139,7 +139,7 @@ HTML
 
 <p>Avec la commande <code>tree</code> on peut afficher le contenu d'une arborescence</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tree -adugph ~/Documents/logs | less
 # a = all
 # d = uniquement répertoire
@@ -154,13 +154,13 @@ tree -adugph ~/Documents/logs | less
 # --du = taille cumulée
 # c = trie par date dernière modif
 # r = ordre inverse
-HTML
+BASH
 );?></code></pre>
 
 
 <h3 id="permissions">Permissions</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 chmod +wx <fichier> # ajout à tous drois d'écriture et exécution
 # options possibles :
 # u : user (propriétaire)
@@ -174,7 +174,7 @@ chown -R www-data . # pour le dossier courant et récursivement change le groupe
 chown -R www-data:www-data . # pour le dossier courant et récursivement change groupe et propriétaire
 
 usermod -a -G www-data pierre # ajoute le groupe www-data à l'utilisateur pierre
-HTML
+BASH
 );?></code></pre>
 
 
@@ -200,9 +200,9 @@ cd $OLDPWD # idem mais avec var d'env
 
 <h3 id="comptage">Comptage</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 <commande> | wc -l
-HTML
+BASH
 );?></code></pre>
 
 <p>Paramètre <code>l</code> pour le nombre de lignes.</p>
@@ -237,7 +237,7 @@ Les options :</p>
 <li><code>ls</code> : donne le même résultat que la commande ls (donc info de taille, date, droits, etc)</li>
 </ul>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 find /my_directory -mtime
 find /my_directory -name <name>
 
@@ -248,7 +248,7 @@ find /my_directory -mmin -180 -type f -exec grep -l '<string>' {} +
 # Fichiers modifiés il y a au moins 183 jours ou plus
 # le -exec pour déplacer chaque fichier trouvé dans un répertoire _archive
 find . -maxdepth 1 -type f -mtime +183 -exec mv {} _archive/ \;
-HTML
+BASH
 );?></code></pre>
 
 <p class="callout" data-variant="info">
@@ -259,7 +259,7 @@ HTML
 
 <p>Cet outil-ci est destiné à trouver des fichiers à partir de leur contenu.</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 grep "<chaine>" <sources_sep_space>
 grep -l <chaine> <file>
 grep -rn <file> -e "<pattern>"
@@ -271,7 +271,7 @@ grep -rn <file> -e "<pattern>"
 
 # Déplacer les fichiers trouvés :
 grep -lir <chaine>" <source> | xargs mv -t <dest>
-HTML
+BASH
 );?></code></pre>
 
 <p class="callout" data-variant="tip"><code>zgrep</code> : recherche dans les fichiers normaux mais aussi les archives gzip !</p>
@@ -286,9 +286,9 @@ HTML
 
 <h3>Info fichiers</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 stat <fichier> # infos dont le type (fichier, répertoire, symlink), les dates, ...
-HTML
+BASH
 );?></code></pre>
 
 <h3 id="espace_disque">Stats espace disque</h3>
@@ -301,11 +301,11 @@ df -h /my_directory
 
 <p>Espace occupé dans les différents sous-répertoires, avec total :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 du -sch *
 du -sch dir1/ dir2/ dir3/
 du -sch * --exclude=/my_directory
-HTML
+BASH
 );?></code></pre>
 
 <p>Espace par sous répertoire éclaté, trié par ordre croissant :</p>
@@ -325,10 +325,11 @@ HTML
     
 <p>Création lien symbolique (paramètre <code>-s</code> pour lien symbolique plutôt que physique) :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 ln -s my_directory_target my_link_name
-HTML
+BASH
 );?></code></pre>
+
 
 
 <h3 id="archives">Archives</h3>
@@ -339,7 +340,7 @@ HTML
 
 <p class="callout" data-variant="warning">Par défaut la commande gzip va supprimer le fichier source en fin de traitement</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 gzip fichier_source.log
 gzip -9 <fichier>
 # 1..9 : niveau de compression, 9 pour le max, défaut 6
@@ -349,23 +350,23 @@ gzip -9 <fichier>
 
 cat data3673693003010299638.data.xml | gzip -9 > /tmp/grosxml.gz
 mysqldump database_name | gzip -c > database_name.sql.gz
-HTML
+BASH
 );?></code></pre>
 
 <p>Création d'une archive tar compressée :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tar -czvf <dest>.tar.gz <source>
 # c = create
 # z = ajoute la compression gzip
 # v = verbose
 # f = utilise le fichier donné en paramètre
-HTML
+BASH
 );?></code></pre>
 
 <h4 id="archives_decompression">Décompression</h4>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 unzip file.zip -d my_directory
 
 gzip -d file.gz
@@ -378,15 +379,15 @@ gunzip *.gz
 # lv = list verbose
 
 find . -name "*.gz" -exec gunzip {} \;
-HTML
+BASH
 );?></code></pre>
 
 <p>Extraction d'un <code>.tar.gz</code> :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tar -xvf <archive>
 # x = extrait une archive
-HTML
+BASH
 );?></code></pre>
 
 
@@ -401,18 +402,18 @@ HTML
 
 <p>L'utilitaire SCP permet de transférer des fichiers à une machine sur laquelle on a un accès SSH.</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 scp /file/to/send username@remote:/where/to/put/remotely
 scp -P 10022 <file> myuser@mymachine.fr:/tmp # -P : n° port si différent du 22 par défaut
 # -r : récursif (permet de transférer des répertoires)
 scp username@remote:/file/to/receive /where/to/put/locally
 scp username@remote_1:/file/to/get username@remote_2:/where/to/put
-HTML
+BASH
 );?></code></pre>
 
 <p>De son côté rsync est un utilitaire de... synchronisation, comme son nom l'indique !</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 rsync -e "ssh -p 10022" -avnz <source> <dest>
 # -e : remote shell program to use (permet de spécifier un port ssh différent)
 # a = all
@@ -422,7 +423,7 @@ rsync -e "ssh -p 10022" -avnz <source> <dest>
 # i = itemize-changes (liste chg sur les fichiers)
 # c = comp sur taille plutôt que date
 # --exclude /chemin/du/dossier/ (avec / relatif à source)
-HTML
+BASH
 );?></code></pre>
 
 <p class="callout" data-variant="info">
@@ -432,12 +433,12 @@ HTML
 
 <h3 id="daemon">Daemon</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 sudo systemctl disable mariadb # arrête le démarrage automatique au boot de la machine
 sudo systemctl stop mariadb apache2
 sudo systemctl start mariadb apache2
 sudo systemctl status mariadb apache2
-HTML
+BASH
 );?></code></pre>
 
 
@@ -445,7 +446,7 @@ HTML
 
 <p>Particulièrement utile dans un DockerFile ou pour une CI !</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 commande & # lance en arrière plan
 commande1 && commande2 && commande3 # chaîne plusieurs commandes, arrêt si erreur
 commande1 || commande2 || commande 3 # chaîne plusieurs commande, arrêt si succès
@@ -453,13 +454,13 @@ commande1 ; commande2 ; commande3 # chaine quelque soit le code de retour
 
 echo $? # code retour dernière commande (BASH)
 echo $status # idem dans Fish
-HTML
+BASH
 );?></code></pre>
 
 
 <h3 id="docker">Docker</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 docker logs -f <nom_container>
     
 docker exec -ti <nom_container> bash
@@ -478,7 +479,7 @@ docker compose ps # état des services
 docker compose stop # arrêt SANS suppr containers
 docker compose down # arrêt AVEC suppr containers
 docker compose rm # suppr container arrêtés
-HTML
+BASH
 );?></code></pre>
 
 <p class="callout" data-variant="warning">
