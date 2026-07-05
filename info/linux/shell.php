@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "01/07/2026";
+$date_maj = "05/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -203,7 +203,9 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 
 <pre><code class="bash">export MY_VAR="my value"</code></pre>
 
-<p>La même chose dans le shell Fish :</p>
+<p class="callout" data-variant="error">Cette commande ne fonctionne pas dans le shell Fish</p>
+
+<p>L'équivalent pour le shell Fish :</p>
 
 <pre><code class="bash">set -U MY_VAR "my value"</code></pre>
 

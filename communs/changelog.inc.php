@@ -14,6 +14,7 @@ class GepapirChangelog {
                 'Musiques : ajout dates sur les renforts',
                 'Musiques : ajout album JFàB 2026',
                 'Informatique Linux shell : Starship ajout nom venv courant',
+                'Informatique Linux shell : Fish compléments sur les variables d\'environnement',
             ]),
             new ChangelogEntry('2026-04-06', '9.0.7', [
                 'Musiques : ajout Fanfaronnades 2026',
