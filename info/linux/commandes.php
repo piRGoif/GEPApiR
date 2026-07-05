@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "23/02/2026";
+$date_maj = "01/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -59,12 +59,16 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 cp -r /my_directory <target>
 
-cp -aR source/. destination
+cp -ar source/. destination
 # a = preserve file attrib + symlinks
 # . = copie aussi fichiers / dossiers cachés
 HTML
 );?>
 </code></pre>
+
+<p class="callout" data-variant="info">
+    Les paramètres <code>-r</code> et <code>-R</code> sont équivalents, cf <a href="https://manpages.debian.org/trixie/coreutils/cp.1.en.html#R">page man</a>
+</p>
 
 <h3>Contenu fichier</h3>
 
@@ -195,6 +199,10 @@ cd $OLDPWD # idem mais avec var d'env
 
 <p class="callout" data-variant="info">
     Une page sur le sujet : <a href="https://techpiezo.com/linux/pwd-vs-oldpwd-bash-environment-variables/">PWD vs OLDPWD – Bash environment variables – techPiezo</a>
+</p>
+
+<p class="callout" data-variant="tip">
+    Avec le shell Fish, une commande permet de parcourir l'historique des répertoires visités, cf <a href="shell.php#fishshell_cmd_cdh">le répertoire dans la page personnalisation du shell</a>
 </p>
 
 
@@ -330,6 +338,33 @@ ln -s my_directory_target my_link_name
 BASH
 );?></code></pre>
 
+<p class="callout" data-variant="tip">
+    L'utilitaire TUI <a href="https://dev.yorhel.nl/ncdu">ncdu</a> est très pratique pour visualiser l'espace occupé dans une hiérarchie de répertoires.
+</p>
+
+<p>Tâches de nettoyage à effectuer régulièrement :</p>
+    
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+# 1️⃣ vérifier le volume de logs !
+du -sh /var/log
+
+# 2️⃣ Docker
+docker system df # regarder en particulier build cache
+docker system prune # ⚠️attention va supprimer aussi les container arrêtés !
+docker builder prune --all # juste le build cache
+docker image prune -a
+docker volume prune
+
+docker images
+docker rmi <id_ou_tag>
+
+# 3️⃣ apt
+sudo apt autoremove
+sudo apt autoclean
+# on peut avoir par exemple sa partition /boot qui déborde suite à une maj de noyau
+BASH
+);?></code></pre>
+
 
 
 <h3 id="archives">Archives</h3>
@@ -400,16 +435,26 @@ BASH
 
 <h3 id="transferts">Transferts</h3>
 
+<h4 id="scp">SCP</h4>
+
 <p>L'utilitaire SCP permet de transférer des fichiers à une machine sur laquelle on a un accès SSH.</p>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 scp /file/to/send username@remote:/where/to/put/remotely
-scp -P 10022 <file> myuser@mymachine.fr:/tmp # -P : n° port si différent du 22 par défaut
+scp -P 10022 <file> myuser@mymachine.fr:/tmp 
+# -P : n° port si différent du 22 par défaut
 # -r : récursif (permet de transférer des répertoires)
+# -c : compression
 scp username@remote:/file/to/receive /where/to/put/locally
 scp username@remote_1:/file/to/get username@remote_2:/where/to/put
 BASH
 );?></code></pre>
+
+<p class="callout" data-variant="info">
+    Une excellente référence sur SCP est présente sur le site de Stéphane Robert : <a href="https://blog.stephane-robert.info/docs/admin-serveurs/linux/scp/">SCP : transfert de fichiers sécurisé</a>
+</p>
+
+<h4 id="rsync">rsync</h4>
 
 <p>De son côté rsync est un utilitaire de... synchronisation, comme son nom l'indique !</p>
 
@@ -458,6 +503,49 @@ BASH
 );?></code></pre>
 
 
+
+<?= writeHR() ?>
+
+
+
+<h2 id="processus">Processus</h2>
+
+<h3>Liste</h3>
+
+<pre><code class="bash">ps aux
+ps -afu my_user
+</code></pre>
+
+<p>Les paramètres de <code>ps</code> :</p>
+
+<ul>
+    <li><code>aux</code> : tous les processus de tous les utilisateurs (attention pas de tiret !)</li>
+    <li><code>-a</code> : tous les processus (sauf certains non rattachés à un terminal)</li>
+    <li><code>-u my_user</code> : les processus de my_user</li>
+    <li><code>-f</code> : "full format listing"</li>
+</ul>
+
+<p>La liste des process par user peut être utile pour lister les cron toujours en cours !<br>
+Pour éditer la crontab :</p>
+
+<pre><code class="bash">crontab -e</code></pre>
+
+<h3>Monitoring</h3>
+
+<pre><code class="bash">htop # TUI de visualisation des processus et des resources utilisées, avec tri, filtre, etc
+htop -F borg # directement positionné sur un processus précis
+
+iotop # idem pour les I/O !
+</code></pre>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2 id="dev">Développement</h2>
+
 <h3 id="docker">Docker</h3>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
@@ -488,38 +576,13 @@ BASH
     <strong>down</strong> = détruit tout (containers, réseaux, volumes associés) !
 </p>
 
+<h3 id="perf">Performances</h3>
 
-<?= writeHR() ?>
+<pre><code class="bash">time my_script.sh</code></pre>
 
-
-
-<h2 id="processus">Processus</h2>
-
-<h3>Liste</h3>
-
-<pre><code class="bash">ps aux
-ps -afu my_user
-</code></pre>
-
-<p>Les paramètres de <code>ps</code> :</p>
-
-<ul>
-    <li><code>aux</code> : tous les processus de tous les utilisateurs (attention pas de tiret !)</li>
-    <li><code>-a</code> : tous les processus (sauf certains non rattachés à un terminal)</li>
-    <li><code>-u my_user</code> : les processus de my_user</li>
-    <li><code>-f</code> : "full format listing"</li>
-</ul>
-
-<p>La liste des process par user peut être utile pour lister les cron toujours en cours !<br>
-Pour éditer la crontab :</p>
-
-<pre><code class="bash">crontab -e</code></pre>
-
-<h3>Performances</h3>
-
-<pre><code class="bash">htop # TUI de visualisation des processus et des resources utilisées, avec tri, filtre, etc
-iotop # idem pour les I/O !
-</code></pre>
+<p class="callout" data-variant="tip">
+    L'utilitaire <a href="https://github.com/sharkdp/hyperfine">hyperfine</a> permet de lancer plusieurs fois une commande et d'obtenir des statistiques sur les temps d'exécution.
+</p>
 
 
 
@@ -548,6 +611,10 @@ iotop # idem pour les I/O !
 
 <p class="callout" data-variant="note">
     Sur mon poste de travail j'utilise majoritairement des éditeurs ou IDE graphiques, et sur tous les serveurs que j'utilise VIM est présent à contrario de NeoVIM : c'est donc lui que j'utilise maintenant !
+</p>
+
+<p class="callout" data-variant="info">
+    Une bonne référence sur VIM est présente sur le site de Stéphane Robert : <a href="https://blog.stephane-robert.info/docs/admin-serveurs/linux/exploiter/editeurs/vim/">Vim pour l'administration (certif)</a>
 </p>
 
 <h3 id="vi-commands">Commandes</h3>
