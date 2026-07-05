@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "23/02/2026";
+$date_maj = "01/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -59,12 +59,16 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
 cp -r /my_directory <target>
 
-cp -aR source/. destination
+cp -ar source/. destination
 # a = preserve file attrib + symlinks
 # . = copie aussi fichiers / dossiers cachés
 HTML
 );?>
 </code></pre>
+
+<p class="callout" data-variant="info">
+    Les paramètres <code>-r</code> et <code>-R</code> sont équivalents, cf <a href="https://manpages.debian.org/trixie/coreutils/cp.1.en.html#R">page man</a>
+</p>
 
 <h3>Contenu fichier</h3>
 
@@ -116,7 +120,7 @@ HTML
 <p>Les commandes <code>head</code> et <code>tail</code> pour voir contenu en début ou fin de fichier. Par défaut, les 2 commandes affichent 10 lignes, pour changer ce nombre utiliser <code>-n &lt;nb_lignes></code> ou simplement <code>- &lt;nb_lignes></code> (ancienne syntaxe).<br>
 Le paramètre <code>f</code> permet de rafraichir en continu, pratique pour suivre un log par exemple !</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tail -2000f wildfly/standalone/log/server.log
 tail -2000f wildfly/standalone/log/server.log | grep "fr.mycompany.product."
 
@@ -131,7 +135,7 @@ watch <commande> # rafraichit l'affichage de la commande toutes les 2 secondes
 tail -f <fichier> | grep "chaine" | tee -a output.log # la sortie est affichée dans stdout et également envoyée dans output.log en append (paramètre a)
 
 <commande> 2>&1 # renvoie stderr et stdout
-HTML
+BASH
 );?></code></pre>
 
 
@@ -139,7 +143,7 @@ HTML
 
 <p>Avec la commande <code>tree</code> on peut afficher le contenu d'une arborescence</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tree -adugph ~/Documents/logs | less
 # a = all
 # d = uniquement répertoire
@@ -154,13 +158,13 @@ tree -adugph ~/Documents/logs | less
 # --du = taille cumulée
 # c = trie par date dernière modif
 # r = ordre inverse
-HTML
+BASH
 );?></code></pre>
 
 
 <h3 id="permissions">Permissions</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 chmod +wx <fichier> # ajout à tous drois d'écriture et exécution
 # options possibles :
 # u : user (propriétaire)
@@ -174,7 +178,7 @@ chown -R www-data . # pour le dossier courant et récursivement change le groupe
 chown -R www-data:www-data . # pour le dossier courant et récursivement change groupe et propriétaire
 
 usermod -a -G www-data pierre # ajoute le groupe www-data à l'utilisateur pierre
-HTML
+BASH
 );?></code></pre>
 
 
@@ -197,12 +201,16 @@ cd $OLDPWD # idem mais avec var d'env
     Une page sur le sujet : <a href="https://techpiezo.com/linux/pwd-vs-oldpwd-bash-environment-variables/">PWD vs OLDPWD – Bash environment variables – techPiezo</a>
 </p>
 
+<p class="callout" data-variant="tip">
+    Avec le shell Fish, une commande permet de parcourir l'historique des répertoires visités, cf <a href="shell.php#fishshell_cmd_cdh">le répertoire dans la page personnalisation du shell</a>
+</p>
+
 
 <h3 id="comptage">Comptage</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 <commande> | wc -l
-HTML
+BASH
 );?></code></pre>
 
 <p>Paramètre <code>l</code> pour le nombre de lignes.</p>
@@ -237,7 +245,7 @@ Les options :</p>
 <li><code>ls</code> : donne le même résultat que la commande ls (donc info de taille, date, droits, etc)</li>
 </ul>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 find /my_directory -mtime
 find /my_directory -name <name>
 
@@ -248,7 +256,7 @@ find /my_directory -mmin -180 -type f -exec grep -l '<string>' {} +
 # Fichiers modifiés il y a au moins 183 jours ou plus
 # le -exec pour déplacer chaque fichier trouvé dans un répertoire _archive
 find . -maxdepth 1 -type f -mtime +183 -exec mv {} _archive/ \;
-HTML
+BASH
 );?></code></pre>
 
 <p class="callout" data-variant="info">
@@ -259,7 +267,7 @@ HTML
 
 <p>Cet outil-ci est destiné à trouver des fichiers à partir de leur contenu.</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 grep "<chaine>" <sources_sep_space>
 grep -l <chaine> <file>
 grep -rn <file> -e "<pattern>"
@@ -271,7 +279,7 @@ grep -rn <file> -e "<pattern>"
 
 # Déplacer les fichiers trouvés :
 grep -lir <chaine>" <source> | xargs mv -t <dest>
-HTML
+BASH
 );?></code></pre>
 
 <p class="callout" data-variant="tip"><code>zgrep</code> : recherche dans les fichiers normaux mais aussi les archives gzip !</p>
@@ -286,9 +294,9 @@ HTML
 
 <h3>Info fichiers</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 stat <fichier> # infos dont le type (fichier, répertoire, symlink), les dates, ...
-HTML
+BASH
 );?></code></pre>
 
 <h3 id="espace_disque">Stats espace disque</h3>
@@ -301,11 +309,11 @@ df -h /my_directory
 
 <p>Espace occupé dans les différents sous-répertoires, avec total :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 du -sch *
 du -sch dir1/ dir2/ dir3/
 du -sch * --exclude=/my_directory
-HTML
+BASH
 );?></code></pre>
 
 <p>Espace par sous répertoire éclaté, trié par ordre croissant :</p>
@@ -325,10 +333,38 @@ HTML
     
 <p>Création lien symbolique (paramètre <code>-s</code> pour lien symbolique plutôt que physique) :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 ln -s my_directory_target my_link_name
-HTML
+BASH
 );?></code></pre>
+
+<p class="callout" data-variant="tip">
+    L'utilitaire TUI <a href="https://dev.yorhel.nl/ncdu">ncdu</a> est très pratique pour visualiser l'espace occupé dans une hiérarchie de répertoires.
+</p>
+
+<p>Tâches de nettoyage à effectuer régulièrement :</p>
+    
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+# 1️⃣ vérifier le volume de logs !
+du -sh /var/log
+
+# 2️⃣ Docker
+docker system df # regarder en particulier build cache
+docker system prune # ⚠️attention va supprimer aussi les container arrêtés !
+docker builder prune --all # juste le build cache
+docker image prune -a
+docker volume prune
+
+docker images
+docker rmi <id_ou_tag>
+
+# 3️⃣ apt
+sudo apt autoremove
+sudo apt autoclean
+# on peut avoir par exemple sa partition /boot qui déborde suite à une maj de noyau
+BASH
+);?></code></pre>
+
 
 
 <h3 id="archives">Archives</h3>
@@ -339,7 +375,7 @@ HTML
 
 <p class="callout" data-variant="warning">Par défaut la commande gzip va supprimer le fichier source en fin de traitement</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 gzip fichier_source.log
 gzip -9 <fichier>
 # 1..9 : niveau de compression, 9 pour le max, défaut 6
@@ -349,23 +385,23 @@ gzip -9 <fichier>
 
 cat data3673693003010299638.data.xml | gzip -9 > /tmp/grosxml.gz
 mysqldump database_name | gzip -c > database_name.sql.gz
-HTML
+BASH
 );?></code></pre>
 
 <p>Création d'une archive tar compressée :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tar -czvf <dest>.tar.gz <source>
 # c = create
 # z = ajoute la compression gzip
 # v = verbose
 # f = utilise le fichier donné en paramètre
-HTML
+BASH
 );?></code></pre>
 
 <h4 id="archives_decompression">Décompression</h4>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 unzip file.zip -d my_directory
 
 gzip -d file.gz
@@ -378,15 +414,15 @@ gunzip *.gz
 # lv = list verbose
 
 find . -name "*.gz" -exec gunzip {} \;
-HTML
+BASH
 );?></code></pre>
 
 <p>Extraction d'un <code>.tar.gz</code> :</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 tar -xvf <archive>
 # x = extrait une archive
-HTML
+BASH
 );?></code></pre>
 
 
@@ -399,20 +435,30 @@ HTML
 
 <h3 id="transferts">Transferts</h3>
 
+<h4 id="scp">SCP</h4>
+
 <p>L'utilitaire SCP permet de transférer des fichiers à une machine sur laquelle on a un accès SSH.</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 scp /file/to/send username@remote:/where/to/put/remotely
-scp -P 10022 <file> myuser@mymachine.fr:/tmp # -P : n° port si différent du 22 par défaut
+scp -P 10022 <file> myuser@mymachine.fr:/tmp 
+# -P : n° port si différent du 22 par défaut
 # -r : récursif (permet de transférer des répertoires)
+# -c : compression
 scp username@remote:/file/to/receive /where/to/put/locally
 scp username@remote_1:/file/to/get username@remote_2:/where/to/put
-HTML
+BASH
 );?></code></pre>
+
+<p class="callout" data-variant="info">
+    Une excellente référence sur SCP est présente sur le site de Stéphane Robert : <a href="https://blog.stephane-robert.info/docs/admin-serveurs/linux/scp/">SCP : transfert de fichiers sécurisé</a>
+</p>
+
+<h4 id="rsync">rsync</h4>
 
 <p>De son côté rsync est un utilitaire de... synchronisation, comme son nom l'indique !</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 rsync -e "ssh -p 10022" -avnz <source> <dest>
 # -e : remote shell program to use (permet de spécifier un port ssh différent)
 # a = all
@@ -422,7 +468,7 @@ rsync -e "ssh -p 10022" -avnz <source> <dest>
 # i = itemize-changes (liste chg sur les fichiers)
 # c = comp sur taille plutôt que date
 # --exclude /chemin/du/dossier/ (avec / relatif à source)
-HTML
+BASH
 );?></code></pre>
 
 <p class="callout" data-variant="info">
@@ -432,12 +478,12 @@ HTML
 
 <h3 id="daemon">Daemon</h3>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 sudo systemctl disable mariadb # arrête le démarrage automatique au boot de la machine
 sudo systemctl stop mariadb apache2
 sudo systemctl start mariadb apache2
 sudo systemctl status mariadb apache2
-HTML
+BASH
 );?></code></pre>
 
 
@@ -445,7 +491,7 @@ HTML
 
 <p>Particulièrement utile dans un DockerFile ou pour une CI !</p>
 
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 commande & # lance en arrière plan
 commande1 && commande2 && commande3 # chaîne plusieurs commandes, arrêt si erreur
 commande1 || commande2 || commande 3 # chaîne plusieurs commande, arrêt si succès
@@ -453,39 +499,9 @@ commande1 ; commande2 ; commande3 # chaine quelque soit le code de retour
 
 echo $? # code retour dernière commande (BASH)
 echo $status # idem dans Fish
-HTML
+BASH
 );?></code></pre>
 
-
-<h3 id="docker">Docker</h3>
-
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
-docker logs -f <nom_container>
-    
-docker exec -ti <nom_container> bash
-# t = allocate tty
-# i = interactive
-
-docker compose build # construit uniquement les images
-docker compose pull # maj des images
-
-docker compose up # build + run images
-docker compose up -d # d = detached
-docker compose start # démarrage des containers existants uniquement
-
-docker compose ps # état des services
-
-docker compose stop # arrêt SANS suppr containers
-docker compose down # arrêt AVEC suppr containers
-docker compose rm # suppr container arrêtés
-HTML
-);?></code></pre>
-
-<p class="callout" data-variant="warning">
-    Bien faire attention entre les 2 commandes d'arrêt !<br> 
-    <strong>stop</strong> = simple arrêt de service<br>
-    <strong>down</strong> = détruit tout (containers, réseaux, volumes associés) !
-</p>
 
 
 <?= writeHR() ?>
@@ -514,11 +530,59 @@ Pour éditer la crontab :</p>
 
 <pre><code class="bash">crontab -e</code></pre>
 
-<h3>Performances</h3>
+<h3>Monitoring</h3>
 
 <pre><code class="bash">htop # TUI de visualisation des processus et des resources utilisées, avec tri, filtre, etc
+htop -F borg # directement positionné sur un processus précis
+
 iotop # idem pour les I/O !
 </code></pre>
+
+
+
+<?= writeHR() ?>
+
+
+
+<h2 id="dev">Développement</h2>
+
+<h3 id="docker">Docker</h3>
+
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+docker logs -f <nom_container>
+    
+docker exec -ti <nom_container> bash
+# t = allocate tty
+# i = interactive
+
+docker compose build # construit uniquement les images
+docker compose pull # maj des images
+
+docker compose up # build + run images
+docker compose up -d # d = detached
+docker compose start # démarrage des containers existants uniquement
+
+docker compose ps # état des services
+
+docker compose stop # arrêt SANS suppr containers
+docker compose down # arrêt AVEC suppr containers
+docker compose rm # suppr container arrêtés
+BASH
+);?></code></pre>
+
+<p class="callout" data-variant="warning">
+    Bien faire attention entre les 2 commandes d'arrêt !<br> 
+    <strong>stop</strong> = simple arrêt de service<br>
+    <strong>down</strong> = détruit tout (containers, réseaux, volumes associés) !
+</p>
+
+<h3 id="perf">Performances</h3>
+
+<pre><code class="bash">time my_script.sh</code></pre>
+
+<p class="callout" data-variant="tip">
+    L'utilitaire <a href="https://github.com/sharkdp/hyperfine">hyperfine</a> permet de lancer plusieurs fois une commande et d'obtenir des statistiques sur les temps d'exécution.
+</p>
 
 
 
@@ -547,6 +611,10 @@ iotop # idem pour les I/O !
 
 <p class="callout" data-variant="note">
     Sur mon poste de travail j'utilise majoritairement des éditeurs ou IDE graphiques, et sur tous les serveurs que j'utilise VIM est présent à contrario de NeoVIM : c'est donc lui que j'utilise maintenant !
+</p>
+
+<p class="callout" data-variant="info">
+    Une bonne référence sur VIM est présente sur le site de Stéphane Robert : <a href="https://blog.stephane-robert.info/docs/admin-serveurs/linux/exploiter/editeurs/vim/">Vim pour l'administration (certif)</a>
 </p>
 
 <h3 id="vi-commands">Commandes</h3>

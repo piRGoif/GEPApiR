@@ -9,6 +9,20 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-07-05', '9.0.8', [
+                'Musiques : ajout lien big band SMH',
+                'Musiques : ajout dates sur les renforts',
+                'Musiques : ajout album JFàB 2026',
+                'Informatique Linux shell : Starship ajout nom venv courant',
+                'Informatique Linux shell : Fish compléments sur les variables d\'environnement',
+                'Informatique Linux commandes : cp paramètre r/R',
+                'Informatique Linux commandes : hisorique ajout commande Fish cdh',
+                'Informatique Linux commandes : compléments scp (param c et référence sur le site de Stéphane Robert)',
+                'Informatique Linux commandes : compléments ménage disque',
+                'Informatique Linux commandes : ajout htop -F processus',
+                'Informatique Linux commandes : création section Développement et ajout time/hyperfine',
+                'Informatique Linux commandes : VIM ajout référence sur le site de Stéphane Robert',
+            ]),
             new ChangelogEntry('2026-04-06', '9.0.7', [
                 'Musiques : ajout Fanfaronnades 2026',
                 'Musiques : suppression d\'une vidéo plus disponible (Nabucco par l\'Harmonie de Grenoble)',
