@@ -227,7 +227,7 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 <p class="callout" data-variant="info">Référence dans la documentation officielle Python : <a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments">Creating Virtual Environments</a></p>
 
 <p class="callout" data-variant="tip">Il existe de multiples solutions pour automatiquement activer le venv lorsque l'on entre dans le répertoire, et donc éviter de devoir manuellement lancer son activation...<br>
-Je peux citer par exemple <a href="https://github.com/safigo/fish-autovenv">safigo/fish-autovenv: Automatically activate/deactivate Python virtual enviroments when entering/leaving a directory</a></code></p>
+Je peux citer par exemple <a href="https://github.com/safigo/fish-autovenv">safigo/fish-autovenv: Automatically activate/deactivate Python virtual enviroments when entering/leaving a directory</a></p>
 
 
 
