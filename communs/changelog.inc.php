@@ -12,6 +12,7 @@ class GepapirChangelog {
             new ChangelogEntry('2026-07-01', '9.0.8', [
                 'Musiques : ajout lien big band SMH',
                 'Musiques : ajout dates sur les renforts',
+                'Musiques : ajout album JFàB 2026',
                 'Informatique Linux shell : Starship ajout nom venv courant',
             ]),
             new ChangelogEntry('2026-04-06', '9.0.7', [
