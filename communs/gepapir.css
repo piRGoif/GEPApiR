@@ -269,12 +269,12 @@ label:hover
 /** Callouts */
 .callout:before {
   content: var(--callout-icon);
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 .callout {
   --callout-icon: "";
-  --callout-bg: #222222;
-  --callout-fg: #9e9e9e;
+  --callout-bg: #242424;
+  --callout-fg: #b8b8b8;
   
   width: 60%;
   padding: 1rem;
@@ -299,32 +299,32 @@ label:hover
 
 .callout[data-variant="note"] {
   --callout-icon: "✏️";
-  --callout-bg: #151e2c;
-  --callout-fg: #157aff;
+  --callout-bg: #141d2b;
+  --callout-fg: #cfe1ff;
 }
 
 .callout[data-variant="info"] {
   --callout-icon: "ℹ️";
-  --callout-bg: #151e2c;
-  --callout-fg: #1577f9;
+  --callout-bg: #131d2e;
+  --callout-fg: #5fb0ff;
 }
 
 .callout[data-variant="tip"] {
-  --callout-icon:"🔥";
+  --callout-icon: "🔥";
   --callout-bg: #1a2929;
   --callout-fg: #53dfdd;
 }
 
 .callout[data-variant="warning"] {
   --callout-icon: "⚠️";
-  --callout-bg: #2a2118;
-  --callout-fg: #e9973f;
+  --callout-bg: #241c12;
+  --callout-fg: #f2b563;
 }
 
 .callout[data-variant="error"] {
   --callout-icon: "❌";
-  --callout-bg: #2c191a;
-  --callout-fg: #fb464c;
+  --callout-bg: #2a1618;
+  --callout-fg: #ff868b;
 }
 
 

@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "23/02/2026";
+$date_maj = "07/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -203,6 +203,14 @@ Exemple de contenu :</p>
     <ul>
         <li id="callout_fn1"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties">Using CSS custom properties (variables) - CSS | MDN</a></li>
         <li id="callout_fn2"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference/Selectors/:where">:where() - CSS | MDN</a></li>
+    </ul>
+</div>
+
+<div class="callout" data-variant="warning">
+    Attention à adopter des couleurs qui se marient bien ensembles mais surtout qui restent lisibles !
+    <ul>
+        <li>Un excellent outil pour vérifier l'accessibilité des couleurs est <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>.</li>
+        <li>Se référer aussi aux directives WCAG qui donnent un score pour les contrastes de couleurs : <a href="https://developer.mozilla.org/fr/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast">Contraste de la couleur - Accessibilité | MDN</a></li>
     </ul>
 </div>
 
