@@ -315,6 +315,10 @@ Exemple d'usage :</p>
 
 <p class="callout" data-variant="info">Voici donc quelques exemples d'interfaces qui agrémentent efficacement le terminal, et dont je me sert au quotidien !</p>
 
+<p class="callout" data-variant="tip">
+    Pour trouver d'autres outils TUI sympa, aller consulter le site de référence et notamment sa sélection "Tool of the Week" : <a href="https://terminaltrove.com/explore/?__cf_chl_f_tk=s5wSR3_VLLvZZ8GHg_T.LqDi4p_lODtKNt9R4iZz47Q-1783444723-1.0.1.1-BLwekVLo1XyQTg6v0E1XnEo66cRx1wQwwwA5n.QWFh4">Search and Explore Terminal Tools - Terminal Trove</a>
+</p>
+
 
 <h3 id="lazyssh">Lazy SSH</h3>
 
