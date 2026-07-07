@@ -11,6 +11,7 @@ class GepapirChangelog {
         return [
             new ChangelogEntry('2026-07-07', '9.1.0', [
                 'GEPApiR CSS : callouts amélioration des couleurs',
+                'Informatique Linux shell : déplacement Legalize dans les utilitaires',
             ]),
             new ChangelogEntry('2026-07-05', '9.0.8', [
                 'Musiques : ajout lien big band SMH',

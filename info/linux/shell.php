@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "05/07/2026";
+$date_maj = "07/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -275,6 +275,27 @@ Exemple d'usage :</p>
 </p>
 
 
+<h3 id="logalize">Logalize</h3>
+
+<p>Affichage de log avec coloration syntaxique... et on peut même ajouter les siennes avec un descripteur YAML ! Mais de base beaucoup de formats sont déjà pris en charge.</p>
+
+<figure>
+    <a href="logalize.jpg">
+        <img 
+            src="logalize.jpg" 
+            alt="Affichage d'un log avec Logalize"
+            class="pretty-img screenshot-img"
+            width="1200" height="294" data-responsive-img
+        >
+    </a>
+    <figcaption>Affichage d'un log avec Logalize</figcaption>
+</figure>
+
+<p class="callout" data-variant="info">
+    A récupérer sur GitHub : <a href="https://github.com/deponian/logalize">deponian/logalize: Fast and extensible log colorizer Alternative to ccze</a>
+</p>
+
+
 
 <?= writeHR() ?>
 
@@ -348,27 +369,6 @@ Je me sert particulièrement de :</p>
 <p class="callout" data-variant="tip">
     Au passage, dans le navigateur de fichiers il est bien possible de scroller la preview avec le clavier : pour cela il faut utiliser <kbd>maj</kbd>+<kbd>⬆️ ⬇</kbd><br>
     Cf <a href="https://github.com/junegunn/fzf.vim/issues/358">Keyboard bindings for scrolling preview window? junegunn/fzf.vim#358</a>.
-</p>
-
-
-<h3 id="logalize">Logalize</h3>
-
-<p>Affichage de log avec coloration syntaxique... et on peut même ajouter les siennes avec un descripteur YAML ! Mais de base beaucoup de formats sont déjà pris en charge.</p>
-
-<figure>
-    <a href="logalize.jpg">
-        <img 
-            src="logalize.jpg" 
-            alt="Affichage d'un log avec Logalize"
-            class="pretty-img screenshot-img"
-            width="1200" height="294" data-responsive-img
-        >
-    </a>
-    <figcaption>Affichage d'un log avec Logalize</figcaption>
-</figure>
-
-<p class="callout" data-variant="info">
-    A récupérer sur GitHub : <a href="https://github.com/deponian/logalize">deponian/logalize: Fast and extensible log colorizer Alternative to ccze</a>
 </p>
 
 
