@@ -11,6 +11,7 @@ class GepapirChangelog {
         return [
             new ChangelogEntry('2026-07-07', '9.1.0', [
                 'GEPApiR CSS : callouts amélioration des couleurs',
+                'Informatique : mini modif formulations dans le chapitre Linux',
                 'Informatique Linux shell : déplacement Legalize dans les utilitaires',
                 'Informatique Linux shell : TUI ajout lien Terminal Trove',
             ]),
