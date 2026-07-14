@@ -117,12 +117,17 @@ img.screenshot-img
 /** Liens */
 a:link
 {
-    color: #004A4A;
+    color: #0D6E6E;
 }
 
 a:visited
 {
-    color: #9A9A9A;
+    color: #5A7A7A;
+}
+
+a:hover
+{
+    color: #0A5555;
 }
 
 /** Blocs contenu */
@@ -289,6 +294,18 @@ label:hover
   box-shadow: 1px 1px 8px rgba(0,0,0,0.8);
 }
 
+.callout a:link,
+.callout a:visited
+{
+    color: #7FE0DE;
+    text-decoration: underline;
+}
+
+.callout a:hover
+{
+    color: #AEF0EF;
+}
+
 .callout :where(ul, li) {
   background-color: transparent;
   color: inherit;
@@ -313,6 +330,15 @@ label:hover
   --callout-icon: "🔥";
   --callout-bg: #1a2929;
   --callout-fg: #53dfdd;
+}
+.callout[data-variant="tip"] a:link,
+.callout[data-variant="tip"] a:visited
+{
+    color: #9AD0FF;
+}
+.callout[data-variant="tip"] a:hover
+{
+    color: #C4E4FF;
 }
 
 .callout[data-variant="warning"] {

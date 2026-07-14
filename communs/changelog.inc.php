@@ -9,7 +9,8 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2026-07-07', '9.1.0', [
+            new ChangelogEntry('2026-07-14', '9.1.0', [
+                'GEPApiR CSS : correction des couleurs de liens',
                 'GEPApiR CSS : callouts amélioration des couleurs',
                 'Informatique : mini modif formulations dans le chapitre Linux',
                 'Informatique Linux shell : déplacement Legalize dans les utilitaires',
