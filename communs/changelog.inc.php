@@ -12,6 +12,7 @@ class GepapirChangelog {
             new ChangelogEntry('2026-07-14', '9.1.0', [
                 'GEPApiR CSS : correction des couleurs de liens',
                 'GEPApiR CSS : callouts amélioration des couleurs',
+                'ToC : ajout d\'un emoji dans le titre',
                 'Informatique : mini modif formulations dans le chapitre Linux',
                 'Informatique Linux shell : déplacement Legalize dans les utilitaires',
                 'Informatique Linux shell : TUI ajout lien Terminal Trove',
