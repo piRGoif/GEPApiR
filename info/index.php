@@ -59,7 +59,7 @@ require_once('info_h1.inc');
 	Voici ce que j'ai adopté sur mon poste de travail :
 		<ul>
 			<li><a href="linux/shell.php">Personnalisation de la ligne de commande</a></li>
-			<li>(à venir bientôt !!) Gnome : ma configuration</li>
+			<li><a href="linux/gnome.php">Gnome trucs et astuces</a></li>
 		</ul>
 	</li>
 </ul>
