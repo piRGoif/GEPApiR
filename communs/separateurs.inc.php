@@ -2,9 +2,9 @@
 /*-------------------------------------------------------------------------------------------
  Fonction writeHR()
    Permet d'écrire un HR comme il faut (cycle entre n image différentes)
-   Ini -> $tab_sep[] contenant les classes des séparateurs
-       -> $cpt_sepindice du dernier séparateur imprimé
-   /!\ à insérer en tête de page /!\
+   Ini → $tab_sep[] contenant les classes des séparateurs
+       → $cpt_sepindice du dernier séparateur imprimé
+   ⚠️ à insérer en tête de page ⚠️
  Version 20140813
 -------------------------------------------------------------------------------------------*/
 

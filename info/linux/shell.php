@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "05/07/2026";
+$date_maj = "07/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -227,7 +227,7 @@ Le mieux pour voir un étendu de ces fonctionnalités disponibles immédiatement
 <p class="callout" data-variant="info">Référence dans la documentation officielle Python : <a href="https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments">Creating Virtual Environments</a></p>
 
 <p class="callout" data-variant="tip">Il existe de multiples solutions pour automatiquement activer le venv lorsque l'on entre dans le répertoire, et donc éviter de devoir manuellement lancer son activation...<br>
-Je peux citer par exemple <a href="https://github.com/safigo/fish-autovenv">safigo/fish-autovenv: Automatically activate/deactivate Python virtual enviroments when entering/leaving a directory</a></code></p>
+Je peux citer par exemple <a href="https://github.com/safigo/fish-autovenv">safigo/fish-autovenv: Automatically activate/deactivate Python virtual enviroments when entering/leaving a directory</a></p>
 
 
 
@@ -275,6 +275,27 @@ Exemple d'usage :</p>
 </p>
 
 
+<h3 id="logalize">Logalize</h3>
+
+<p>Affichage de log avec coloration syntaxique... et on peut même ajouter les siennes avec un descripteur YAML ! Mais de base beaucoup de formats sont déjà pris en charge.</p>
+
+<figure>
+    <a href="logalize.jpg">
+        <img 
+            src="logalize.jpg" 
+            alt="Affichage d'un log avec Logalize"
+            class="pretty-img screenshot-img"
+            width="1200" height="294" data-responsive-img
+        >
+    </a>
+    <figcaption>Affichage d'un log avec Logalize</figcaption>
+</figure>
+
+<p class="callout" data-variant="info">
+    A récupérer sur GitHub : <a href="https://github.com/deponian/logalize">deponian/logalize: Fast and extensible log colorizer Alternative to ccze</a>
+</p>
+
+
 
 <?= writeHR() ?>
 
@@ -293,6 +314,10 @@ Exemple d'usage :</p>
 </blockquote>
 
 <p class="callout" data-variant="info">Voici donc quelques exemples d'interfaces qui agrémentent efficacement le terminal, et dont je me sert au quotidien !</p>
+
+<p class="callout" data-variant="tip">
+    Pour trouver d'autres outils TUI sympa, aller consulter le site de référence et notamment sa sélection "Tool of the Week" : <a href="https://terminaltrove.com/explore/?__cf_chl_f_tk=s5wSR3_VLLvZZ8GHg_T.LqDi4p_lODtKNt9R4iZz47Q-1783444723-1.0.1.1-BLwekVLo1XyQTg6v0E1XnEo66cRx1wQwwwA5n.QWFh4">Search and Explore Terminal Tools - Terminal Trove</a>
+</p>
 
 
 <h3 id="lazyssh">Lazy SSH</h3>
@@ -348,27 +373,6 @@ Je me sert particulièrement de :</p>
 <p class="callout" data-variant="tip">
     Au passage, dans le navigateur de fichiers il est bien possible de scroller la preview avec le clavier : pour cela il faut utiliser <kbd>maj</kbd>+<kbd>⬆️ ⬇</kbd><br>
     Cf <a href="https://github.com/junegunn/fzf.vim/issues/358">Keyboard bindings for scrolling preview window? junegunn/fzf.vim#358</a>.
-</p>
-
-
-<h3 id="logalize">Logalize</h3>
-
-<p>Affichage de log avec coloration syntaxique... et on peut même ajouter les siennes avec un descripteur YAML ! Mais de base beaucoup de formats sont déjà pris en charge.</p>
-
-<figure>
-    <a href="logalize.jpg">
-        <img 
-            src="logalize.jpg" 
-            alt="Affichage d'un log avec Logalize"
-            class="pretty-img screenshot-img"
-            width="1200" height="294" data-responsive-img
-        >
-    </a>
-    <figcaption>Affichage d'un log avec Logalize</figcaption>
-</figure>
-
-<p class="callout" data-variant="info">
-    A récupérer sur GitHub : <a href="https://github.com/deponian/logalize">deponian/logalize: Fast and extensible log colorizer Alternative to ccze</a>
 </p>
 
 

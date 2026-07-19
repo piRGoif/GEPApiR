@@ -202,7 +202,7 @@ cd $OLDPWD # idem mais avec var d'env
 </p>
 
 <p class="callout" data-variant="tip">
-    Avec le shell Fish, une commande permet de parcourir l'historique des répertoires visités, cf <a href="shell.php#fishshell_cmd_cdh">le répertoire dans la page personnalisation du shell</a>
+    Avec le shell Fish, la commande <code>cdh</code> permet de parcourir l'historique des répertoires visités, cf <a href="shell.php#fishshell_cmd_cdh">le chapitre dédié dans la page personnalisation du shell</a>
 </p>
 
 

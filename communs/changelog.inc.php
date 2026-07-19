@@ -9,6 +9,15 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-07-19', '9.1.0', [
+                'GEPApiR CSS : correction des couleurs de liens',
+                'GEPApiR CSS : callouts amélioration des couleurs',
+                'ToC : ajout d\'un emoji dans le titre',
+                'Informatique : mini modif formulations dans le chapitre Linux',
+                'Informatique Linux shell : déplacement Legalize dans les utilitaires',
+                'Informatique Linux shell : TUI ajout lien Terminal Trove',
+                'Informatique Linux Gnome : nouvelle page !',
+            ]),
             new ChangelogEntry('2026-07-05', '9.0.8', [
                 'Musiques : ajout lien big band SMH',
                 'Musiques : ajout dates sur les renforts',
