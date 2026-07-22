@@ -11,6 +11,7 @@ class GepapirChangelog {
         return [
             new ChangelogEntry('2026-07-22', '9.1.1', [
                 'ToC : lorsque un lien est sélectionné un effet de surbrillance le met en évidence',
+                'Musiques : petits compléments sur les renforts',
             ]),
             new ChangelogEntry('2026-07-19', '9.1.0', [
                 'GEPApiR CSS : correction des couleurs de liens',
