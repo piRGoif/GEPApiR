@@ -24,7 +24,7 @@ function generateTOC(toc) {
 	setCss();
 	
 	var i2 = 0, i3 = 0, i4 = 0;
-	toc = toc.appendChild(document.createElement("ul"));
+	tocList = toc.appendChild(document.createElement("ul"));
 	for (var i = 0; i < document.body.childNodes.length; ++i) {
 		var node = document.body.childNodes[i];
 		var tagName = node.nodeName.toLowerCase();
@@ -35,28 +35,28 @@ function generateTOC(toc) {
 			isHeadingNode = true;
 			++i4;
 			if (i4 == 1) {
-				toc.lastChild.lastChild.lastChild.appendChild(document.createElement("ul"));
+				tocList.lastChild.lastChild.lastChild.appendChild(document.createElement("ul"));
 			}
 			sectionNumber = i2 + "." + i3 + "." + i4;
 			headingId = "section" + sectionNumber;
-			tocParentNode = toc.lastChild.lastChild.lastChild.lastChild;
+			tocParentNode = tocList.lastChild.lastChild.lastChild.lastChild;
 		}
 		else if (tagName == "h3") {
 			isHeadingNode = true;
 			++i3, i4 = 0;
 			if (i3 == 1) {
-				toc.lastChild.appendChild(document.createElement("ul"));
+				tocList.lastChild.appendChild(document.createElement("ul"));
 			}
 			sectionNumber = i2 + "." + i3;
 			headingId = "section" + sectionNumber;
-			tocParentNode = toc.lastChild.lastChild;
+			tocParentNode = tocList.lastChild.lastChild;
 		}
 		else if (tagName == "h2") {
 			isHeadingNode = true;
 			++i2, i3 = 0, i4 = 0;
 			sectionNumber = i2;
 			headingId = "section" + sectionNumber;
-			tocParentNode = toc;
+			tocParentNode = tocList;
 		}
 		
 		if (isHeadingNode) {
@@ -65,6 +65,12 @@ function generateTOC(toc) {
 			tocParentNode.appendChild(document.createElement("li")).appendChild(createLink("#" + sectionHeadingId, node.innerHTML));
 		}
 	}
+	
+	tocList.addEventListener("click", function(e) {
+		if (e.target.closest("a")) {
+			toc.removeAttribute("open");
+		}
+	});
 }
 
 /**

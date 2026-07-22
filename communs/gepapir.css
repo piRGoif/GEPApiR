@@ -9,11 +9,17 @@
 /******************
  GepapiR commun
 ******************/
-
 .travaux
 {
     text-align: center;
 }
+
+
+:root {
+    --panel-bg: #DAE2FE url("../images/fonds/nuages_background.jpg") repeat scroll;
+    --panel-font: bold 1rem arial, helvetica, sans-serif;
+}
+
 
 /** Footer documents (informatique, ...) */
 p#version
@@ -514,14 +520,14 @@ nav ul
     margin: auto;
     padding: 0 1.5em;
 
-    background: #DAE2FE url("../images/fonds/nuages_background.jpg") repeat scroll;
+    background: var(--panel-bg);
     opacity: 0.9;
     border: 1px solid grey;
     border-bottom: none;
     border-radius: 5% 5% 0 0 / 1em 1em 0 0;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 
-    font: bold 1em arial, helvetica, sans-serif;
+    font: var(--panel-font);
 
     text-align: center;
 }
@@ -628,8 +634,8 @@ nav a:link, nav a:visited
 
     border: 1px solid grey;
     border-radius: 0 0 0 10px;
-    background-color: #808080;
-    opacity: 0.85;
+    background: var(--panel-bg);
+    opacity: 0.9;
     box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
 }
 
@@ -641,17 +647,15 @@ nav a:link, nav a:visited
 details#toc
 {
     max-width: 30%;
-    max-height: 70%;
-    overflow: auto;
     text-align: center;
     z-index: 10; /* to fix blockquote beeing above details content */
     transition: all .7s ease-in-out;
 }
 
-details#toc>summary
+details#toc > summary
 {
     padding: 0.3em;
-    font-weight: bolder;
+    font: var(--panel-font);
     cursor: pointer;
     transition: margin 400ms ease-out;
 }
@@ -660,14 +664,26 @@ details#toc[open] summary {
   margin-bottom: 10px; /* to fake open/close transition. Source https://stackoverflow.com/a/73447722 ! */
 }
 
-details#toc ul
+details#toc > ul
 {
     padding: 0.1em 0;
     padding-left: 30px;
-    margin: 0;
     background-color: white;
     border-radius: 10px;
     text-align: left;
+
+    max-height: 60vh;
+    overflow-y: auto;              /* scroll is local to this box, not the page */
+    overscroll-behavior: contain;  /* scrolling to the end doesn't drag the page */
+
+    /* always-visible slim scrollbar (Firefox honours this) */
+    scrollbar-width: thin;
+    scrollbar-color: #808080 transparent;
+}
+
+details#toc > ul ul
+{
+    margin: 0.8rem 0.5rem;
 }
 
 

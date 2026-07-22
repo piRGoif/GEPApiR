@@ -11,6 +11,8 @@ class GepapirChangelog {
         return [
             new ChangelogEntry('2026-07-22', '9.1.1', [
                 'ToC : lorsque un lien est sélectionné un effet de surbrillance le met en évidence',
+                'ToC : amélioration rendu, maintenant similaire au menu principal et avec une scrollbar',
+                'ToC : fermeture après clic',
                 'Déplacement dates maj de la fin au début de document',
                 'Musiques : petits compléments sur les renforts',
                 'Informatique Linux Gnome : petites corrections',
