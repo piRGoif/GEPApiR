@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/08/2005";
-$date_maj = "05/07/2026";
+$date_maj = "22/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../";
@@ -32,6 +32,12 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 require_once('zicmue_h1.inc');
 ?>
 </h1>
+
+
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
 
 
 
@@ -161,7 +167,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 	<li>Le fantastique <a href="https://www.le-gro.com/">Grenoble Reggae Orchestra</a> dès que je peux !</li>
 	<li>2026 : <a href="https://www.smh-big-band.com/">Big Band de Saint Martin d'Hères</a></li>
 	<li>2018, 2019 : Big Mother Funker, groupe hélas disparu :~(</li>
-	<li>2018 : <a href="https://ord-meylan.fr/">Orchestre Régional du Dauphiné</a> (souvenir d'un exceptionnel projet Queen en 2018 !)</li>
+	<li>2018 : <a href="https://ord-meylan.fr/">Orchestre Régional du Dauphiné</a> (exceptionnel <a href="https://ord-meylan.fr/saison-actuelle/2017-the-show-must-go-on/">projet Queen</a> avec la chorale du lycée Champollion 🤩, et spectacle "Le premier concert de l’ours Paddington")</li>
 </ul>
 
 
@@ -323,7 +329,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

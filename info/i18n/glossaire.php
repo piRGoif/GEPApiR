@@ -32,6 +32,12 @@ est dans le domaine de l'internationalisation...</p>
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?=writeHR()?>
 
 
@@ -174,7 +180,7 @@ le principe a été repris à de nombreux endroits. Et c'est le cas en HTTP.</dd
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

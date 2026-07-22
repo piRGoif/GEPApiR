@@ -22,6 +22,13 @@ Performances
 </h1>
 
 
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
@@ -302,7 +309,7 @@ pour vos besoins : <br>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

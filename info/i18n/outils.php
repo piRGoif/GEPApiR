@@ -29,6 +29,12 @@ Outils & docs</h1>
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?=writeHR()?>
 
 
@@ -145,7 +151,7 @@ d'internationalisation.</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

@@ -24,6 +24,12 @@ Menu de navigation
 
 
 <?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
+<?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
@@ -184,7 +190,7 @@ nav a:hover
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

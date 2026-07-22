@@ -70,6 +70,12 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?= writeHR() ?>
 
 
@@ -340,7 +346,7 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

@@ -22,6 +22,13 @@ require_once($RelBasePath . 'communs/header2.inc.php');
     Développement Notes / Domino et Doctype <abbr title="Hypertext Markup Language">HTML</abbr></h1>
 
 
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
@@ -143,7 +150,7 @@ HTML
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

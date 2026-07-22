@@ -9,6 +9,15 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-07-22', '9.1.1', [
+                'ToC : lorsque un lien est sélectionné un effet de surbrillance le met en évidence',
+                'ToC : amélioration rendu, maintenant similaire au menu principal et avec une scrollbar',
+                'ToC : fermeture après clic',
+                'Déplacement dates maj de la fin au début de document',
+                'Musiques : petits compléments sur les renforts',
+                'Informatique Linux Gnome : petites corrections',
+                'Informatique Linux Shell : modif raccourci clavier avec flèches',
+            ]),
             new ChangelogEntry('2026-07-19', '9.1.0', [
                 'GEPApiR CSS : correction des couleurs de liens',
                 'GEPApiR CSS : callouts amélioration des couleurs',

@@ -35,6 +35,12 @@ de pages sur le Web.</p>
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?=writeHR()?>
 
 
@@ -169,7 +175,7 @@ concurrent et évidemment non compatible...</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

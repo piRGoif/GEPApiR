@@ -1,10 +1,10 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "19/07/2026";
+$date_maj = "22/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
-$title = "Gnome trucs et astuces - Linux - Informatique [GEPApiR]";
+$title = "Gnome trucs et astuces (configuration, applications, extensions) - Linux - Informatique [GEPApiR]";
 
 require_once($RelBasePath . 'communs/header1.inc.php');
 require_once($RelBasePath . 'communs/highlight.inc.php');
@@ -16,8 +16,14 @@ require_once($RelBasePath . 'communs/header2.inc.php');
     <?
     require_once('../info_h1.inc');
     ?><br>
-    Linux - Gnome trucs et astuces
+    Linux - Gnome trucs et astuces (configuration, applications, extensions)
 </h1>
+
+
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
 
 
 
@@ -43,7 +49,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <p>Mais... pourquoi ne pas être simplement retourné à KDE ? Hé bien, l'expérience avec cet autre gestionnaire de fenêtres est quand même fort sympathique !<p>
     
 
-<p class="callout" data-variant="info">Si jamais vous n'êtes pas familier des termes Gnome vu que plusieurs seront cités ici, aller voir cette page qui donne une bonne introduction : <a href="https://help.ubuntu.com/stable/ubuntu-help/shell-introduction.html.en">Visual overview of GNOME</a></p>
+<p class="callout" data-variant="info">Si jamais vous n'êtes pas familier des termes utilisés dans l'interface de Gnome et vu que plusieurs seront cités ici, aller voir cette page qui donne une bonne introduction : <a href="https://help.ubuntu.com/stable/ubuntu-help/shell-introduction.html.en">Visual overview of GNOME</a></p>
 
 <p>Les plus/moins pour moi :</p>
 
@@ -191,9 +197,9 @@ La solution a été de :</p>
 </figure>
 
 
-<h3>🌙 Veille écran</h3>
+<h3 id="veille_ecran">🌙 Veille écran</h3>
 
-<p>Par défaut, sur une courte inactivité (30s) l'écran devient noir.</p>
+<p>Par défaut, sur une courte inactivité (30s) l'écran devient noir. Cela peut être problématique lorsque l'on a un écran externe comme écran principal et que celui-ci met un peu de temps à se réveiller...</p>
 
 <p>Pour changer ce comportement, c'est possible avec <a href="https://apps.gnome.org/fr/DconfEditor/">Dconf editor</a> :</p>
 
@@ -201,6 +207,8 @@ La solution a été de :</p>
     <li>Ouvrir org → gnome → settings-daemon → plugins→power</li>
     <li>Modifier la valeur idle-brightness</li>
 </ul>
+
+<p class="callout" data-variant="tip">Pour compléter voir aussi l'extension <a href="#unblank_lock_screen">"Unblank lock screen" plus bas</a></p>
 
 <p class="callout" data-variant="info">Un fil de discussion sur ce problème : <a href="https://askubuntu.com/questions/1408394/my-screen-goes-black-after-30-seconds-of-inactivity-in-ubuntu-22-04/1519439#1519439">my screen goes black after 30 seconds of inactivity in Ubuntu 22.04 - Ask Ubuntu</a></p>
 
@@ -254,15 +262,15 @@ La solution a été de :</p>
 <p>🔍 Les fonctionnalités que je recherche particulièrement :</p>
 
 <ul>
-    <li>treeview de l'arborescence, avec focus sur le répertoire courant</li>
-    <li>panneau d'emplacements personnalisables</li>
-    <li>barre d'adresse modifiable au clavier</li>
-    <li>multi onglets ré-ouverts au démarrage</li>
-    <li>barre d'adresse modifiable au clavier</li>
-    <li>gestion des archives (création, extraction, ouverture, modification)</li>
-    <li>gestion des partages SMB et WebDav</li>
-    <li>gestion SCP</li>
-    <li>affichage des volumes montés et de l'espace occupé</li>
+    <li>Treeview de l'arborescence, avec focus sur le répertoire courant</li>
+    <li>Panneau d'emplacements personnalisables</li>
+    <li>Barre d'adresse modifiable au clavier</li>
+    <li>Multi onglets ré-ouverts au démarrage</li>
+    <li>Barre d'adresse modifiable au clavier</li>
+    <li>Gestion des archives (création, extraction, ouverture, modification)</li>
+    <li>Gestion des partages SMB et WebDav</li>
+    <li>Gestion SCP</li>
+    <li>Affichage des volumes montés et de l'espace occupé</li>
 </ul>
 
 <p>J'ai donc essayé plusieurs gestionnaire de fichiers (c'était en 2025, les choses ont peut être changé ensuite...) :</p>
@@ -346,11 +354,11 @@ Quelques astuces sur Dolphin :
         </ul>
     </dd>
     <dt><a href="https://extensions.gnome.org/extension/4709/another-window-session-manager/">Another Window Session Manager</a></dt>
-    <dd>Pour moi c'est un des défauts majeur de Gnome : les dimensions et positions des fenêtres ne sont pas vraiment enregistrées... Cette extension permet de créer des <b>profils pour sauvegarder le positionnement des fenêtres</b>. Ces profils peuvent être activés manuellement (une icone dans la top bar permet de les activer très rapidement) ou au démarrage. Dans les deux cas on pourra soit redimensionner / repositionner les fenêtres courantes, soit carrément ouvrir les applications manquantes.</dd>
+    <dd>Cette extension permet de créer des <b>profils pour sauvegarder le positionnement des fenêtres</b>. Pour moi c'est un des défauts majeur de Gnome : les dimensions et positions des fenêtres ne sont pas vraiment enregistrées... Les profils proposés par cette extenstion peuvent être activés manuellement (une icone dans la top bar permet de le faire très rapidement) ou au démarrage. Dans les deux cas on pourra soit redimensionner / repositionner les fenêtres courantes, soit carrément ouvrir les applications manquantes.</dd>
     <dt><a href="https://extensions.gnome.org/extension/7855/dash-in-panel/">Dash in panel</a></dt>
-    <dd>Utilisateur de Windows, j'aime pouvoir voir les applications ouvertes, et par conséquent savoir quel raccourci utiliser pour basculer sur quelle fenêtre (<kbd>Windows</kbd> + <kbd>chiffre</kbd>). Cette extension <b>ajoute le dash dans la top bar</b>, avec surlignage des applications lancées, masquage du bouton activities, possibilité de configurer le clic sur l'icone pour alterner entre focus et réduction de l'application (ou même cycle entre les fenêtres de l'application s'il y en a plusieures)</dd>
+    <dd><b>Ajoute le dash dans la top bar</b>. Utilisateur de Windows, j'aime pouvoir voir les applications ouvertes, et par conséquent savoir quel raccourci utiliser pour basculer sur quelle fenêtre (<kbd>Windows</kbd> + <kbd>chiffre</kbd>). Le dash ajouté par l'extension ressemble à une barre des tâches, avec surlignage des applications lancées, masquage du bouton activities, possibilité de configurer le clic sur l'icone pour alterner entre focus et réduction de l'application (ou même cycle entre les fenêtres de l'application s'il y en a plusieures)</dd>
     <dt><a href="https://extensions.gnome.org/extension/7065/tiling-shell/">Tiling Shell</a></dt>
-    <dd>Permet de créer des <b>dispositions de fenêtres en tuiles</b> et de les appeler par une icone dans la top bar, ou simplement de déplacer une fenêtre dans une tuile par glisser / déposer comme sur Windows</dd>
+    <dd>Permet de créer des <b>dispositions de fenêtres en tuiles</b> et de les appeler par une icone dans la top bar, ou simplement de déplacer une fenêtre dans une tuile par glisser / déposer vers un bord de l'écran comme sur Windows</dd>
 </dl>
 
 
@@ -359,9 +367,9 @@ Quelques astuces sur Dolphin :
 
 <dl>
     <dt><a href="https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/">Bing Wallpaper</a></dt>
-    <dd><b>Personnalisation du papier peint avec les images du jour Bing</b> (une très belle collection que l'on peut parcourir sur <a href="https://dailybing.com/">Daily Bing</a>). Des options permettent de réaliser une sauvegarde en local avec un nettoyage automatique, de mettre des images en favoris ou dans la corbeille, de choisir une image au hasard sur une périodicité personnalisée.</dd>
+    <dd><b>Personnalisation du papier peint avec les images du jour Bing</b> (une très belle collection, pour s'en convaincre on peut la parcourir sur <a href="https://dailybing.com/">Daily Bing</a>). Des options permettent de réaliser une sauvegarde en local avec un nettoyage automatique, de mettre des images en favoris ou dans la corbeille, de choisir une image au hasard sur une périodicité personnalisée.</dd>
     <dt><a href="https://extensions.gnome.org/extension/6313/dim-background-windows/">Dim Background Windows</a></dt>
-    <dd>Sur les <b>fenêtres en arrière plan permet de modifier brightness et saturation</b>, désactivable sur raccourci. Très pratique pour ne jamais douter de la fenêtre qui a réellement le focus !</dd>
+    <dd>Sur les <b>fenêtres en arrière plan permet de modifier luminosité et saturation</b>, désactivable sur raccourci. Très pratique pour ne jamais douter de la fenêtre qui a réellement le focus !</dd>
     <dt><a href="https://extensions.gnome.org/extension/3843/just-perfection/">Just perfection</a></dt>
     <dd><b>Très nombreuses personnalisation Gnome</b>. Sur ma configuration j'ai ajouté :
         <ul>
@@ -400,7 +408,7 @@ Quelques astuces sur Dolphin :
     <dt><a href="https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/">Bluetooth Battery Meter</a></dt>
     <dd>Affiche le <b>niveau de batterie des périphériques Bluetooth</b></dd>
     <dt><a href="https://extensions.gnome.org/extension/2917/bring-out-submenu-of-power-offlogout-button/">Bring Out Submenu Of Power Off Button</a></dt>
-    <dd>Par défaut, on a un seul menu alimentation qui ouvre un sous menu. Cette extension permet de <b>créer des boutons à côté pour atteindre plus rapidement les actions habituelles</b> comme éteindre ou se déconnecter</dd>
+    <dd><b>Modifie le system menu pour rendre plus accessible les options derrière le bouton alimentation</b>. Par défaut, on a un seul menu alimentation qui ouvre un sous menu, grace à cette extension les actions habituelles comme éteindre ou se déconnecter deviennent accessibles avec un clic de moins !</dd>
 </dl>
 
 
@@ -426,13 +434,13 @@ Quelques astuces sur Dolphin :
     <dt><a href="https://extensions.gnome.org/extension/779/clipboard-indicator/" id="clipboard_indicator">Clipboard indicator</a></dt>
     <dd><b>Historique du presse papier</b>, accessible sur raccourci clavier : de quoi retrouver le <kbd>Windows</kbd> + <kbd>v</kbd> auquel je suis habitué ❤️</dd>
     <dt><a href="https://extensions.gnome.org/extension/53/pomodoro/">Pomodoro</a></dt>
-    <dd>Inclus de base, pas besoin d'installer ! Comme son nom l'indique <b>ajoute dans la top bar un minuteur <a href="https://fr.wikipedia.org/wiki/Technique_Pomodoro">Pomodoro</a></b>. Personnalisation possible de la durée de travail, des pauses et pauses longues, du nombre de répétitions avant une pause longue</dd>
+    <dd>Comme son nom l'indique <b>ajoute dans la top bar un minuteur <a href="https://fr.wikipedia.org/wiki/Technique_Pomodoro">Pomodoro</a></b>. Personnalisation possible de la durée de travail, des pauses et pauses longues, du nombre de répétitions avant une pause longue. Et en plus c'est inclus de base, pas besoin d'installer ! </dd>
     <dt><a href="https://extensions.gnome.org/extension/7/removable-drive-menu/">Removable Drive Menu</a></dt>
     <dd><b>Ajoute dans la top bar une icone de déconnexion</b> quand on a un media amovible connecté</dd>
     <dt><a href="https://extensions.gnome.org/extension/4356/top-bar-organizer/">Top Bar Organizer</a></dt>
-    <dd>Indispensable ! Permet de complètement <b>configurer l'ordre d'affichage dans la top bar</b> (zones gauche, centre, droite)</dd>
-    <dt><a href="https://extensions.gnome.org/extension/1414/unblank/">Unblanck lock screen</a></dt>
-    <dd><b>N'éteint pas tout de suite l'écran lorsque la session est verrouillée</b>. Pratique pour les écrans qui nécessitent du temps pour sortir de veille !<br>
+    <dd>Permet de complètement <b>configurer l'ordre d'affichage dans la top bar</b> (zones gauche, centre, droite) : indispensable !</dd>
+    <dt><a href="https://extensions.gnome.org/extension/1414/unblank/" id="unblank_lock_screen">Unblanck lock screen</a></dt>
+    <dd><b>N'éteint pas tout de suite l'écran lorsque la session est verrouillée</b>. Pratique pour les écrans qui nécessitent du temps pour sortir de veille ! A voir aussi plus haut <a href="#veille_ecran">la configuration pour l'écran de verrouillage</a> !<br>
     Cf <a href="https://www.reddit.com/r/archlinux/comments/1bwg4d4/how_do_i_prevent_gnome_from_turning_off_my/">Comment puis-je empêcher GNOME d'éteindre mes écrans lorsque je verrouille ma session ? : r/archlinux</a></dd>
     <dt><a href="https://extensions.gnome.org/extension/5416/wifi-qrcode/">Wifi QR Code</a></dt>
     <dd>Permet d'afficher un <b>QR code du Wifi actif</b>, dans le drop down système de la top bar</dd>
@@ -460,7 +468,7 @@ Quelques astuces sur Dolphin :
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

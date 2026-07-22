@@ -31,6 +31,12 @@ que des carrés, etc etc (...)</p>
 
 
 <?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
+<?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
 
@@ -316,7 +322,7 @@ de Alan J Flavell. D'ailleurs, on retourne s'y plonger de ce pas...</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

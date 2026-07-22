@@ -22,6 +22,13 @@ Table des matières (TOC) dynamique
 </h1>
 
 
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
@@ -200,7 +207,7 @@ tard, et donc pour l'instant pas de transitions !</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 
