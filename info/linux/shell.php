@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "07/07/2026";
+$date_maj = "22/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -377,7 +377,7 @@ Je me sert particulièrement de :</p>
 </p>
 
 <p class="callout" data-variant="tip">
-    Au passage, dans le navigateur de fichiers il est bien possible de scroller la preview avec le clavier : pour cela il faut utiliser <kbd>maj</kbd>+<kbd>⬆️ ⬇</kbd><br>
+    Au passage, dans le navigateur de fichiers il est bien possible de scroller la preview avec le clavier : pour cela il faut utiliser <kbd>Maj</kbd>+<kbd>Flèche haut / bas</kbd><br>
     Cf <a href="https://github.com/junegunn/fzf.vim/issues/358">Keyboard bindings for scrolling preview window? junegunn/fzf.vim#358</a>.
 </p>
 

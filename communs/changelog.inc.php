@@ -14,6 +14,7 @@ class GepapirChangelog {
                 'Déplacement dates maj de la fin au début de document',
                 'Musiques : petits compléments sur les renforts',
                 'Informatique Linux Gnome : petites corrections',
+                'Informatique Linux Shell : modif raccourci clavier avec flèches',
             ]),
             new ChangelogEntry('2026-07-19', '9.1.0', [
                 'GEPApiR CSS : correction des couleurs de liens',
