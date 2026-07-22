@@ -73,6 +73,18 @@ h1:hover>span.permalink, h2:hover>span.permalink, h3:hover>span.permalink, h4:ho
 	display: initial;
 }
 
+
+:target {
+  border-radius: 4px;
+  animation: flash-highlight 1.2s ease-in-out 3;
+}
+
+@keyframes flash-highlight {
+  0%, 100% { background-color: transparent; }
+  50%      { background-color: #fff176; }
+}
+
+
 figure
 {
     margin: 1.5em 4%;
