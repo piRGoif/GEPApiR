@@ -23,6 +23,13 @@ Outils pour le concepteur de site personnel (et plus)
 <p>Une petite liste d'outils pratiques pour le concepteur de site personnel !</p>
 
 
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
@@ -146,7 +153,7 @@ ces limitations : <a href="http://www.goodsync.com/how-it-works/free-vs-pro">Goo
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

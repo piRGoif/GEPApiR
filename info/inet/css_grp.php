@@ -24,6 +24,13 @@ pré-processeurs, variables)</h1>
 </h1>
 
 
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
@@ -225,7 +232,7 @@ HTML
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

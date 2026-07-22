@@ -35,6 +35,12 @@ require_once('zicmue_h1.inc');
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?=writeHR()?>
 
 
@@ -323,7 +329,7 @@ Actuellement (rentrée 2025), j'ai l'immense plaisir de jouer avec :</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

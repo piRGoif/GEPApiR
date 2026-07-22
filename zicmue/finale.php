@@ -24,6 +24,12 @@ Finale</h1>
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?=writeHR()?>
 
 
@@ -130,7 +136,7 @@ appliquer sur la bonne couche, cad la couche 2) :</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

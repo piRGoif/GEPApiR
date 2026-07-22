@@ -22,6 +22,13 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 </h1>
 
 
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
@@ -89,7 +96,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

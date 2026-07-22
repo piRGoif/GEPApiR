@@ -35,6 +35,12 @@ utiliser ? Voici un petit tour d'horizon pour pouvoir faire son choix.</p>
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?=writeHR()?>
 
 
@@ -201,7 +207,7 @@ utilisable largement avant <abbr>Iso</abbr> Latin-9 !</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

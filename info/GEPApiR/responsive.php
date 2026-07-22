@@ -23,6 +23,12 @@ Responsive design
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <p?
 require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 ?>
@@ -324,7 +330,7 @@ onDomReady(writeCSSRespImg);
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 

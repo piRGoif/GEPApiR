@@ -21,6 +21,12 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 
 
 
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
+
 <?= writeHR() ?>
 
 
@@ -90,7 +96,7 @@ Et puis plus tard, envoyer sur GitHub !</p>
 
 
 <?
-require_once($RelBasePath . 'communs/dates-maj-footer.inc.php');
+require_once($RelBasePath . 'communs/footer.inc.php');
 ?>
 
 
