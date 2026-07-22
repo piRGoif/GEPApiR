@@ -6,8 +6,8 @@
 
 
 require_once($RelBasePath . 'communs/http_headers.inc.php');
-
 require_once($RelBasePath . 'communs/separateurs.inc.php');
+require_once($RelBasePath . 'communs/changelog.inc.php');
 
 ?><!DOCTYPE html>
 
@@ -43,7 +43,7 @@ require_once($RelBasePath . 'communs/separateurs.inc.php');
 
 
 
-<link href="<?=$RelBasePath?>communs/gepapir?2026-02-19" rel="stylesheet" type="text/css">
+<link href="<?=$RelBasePath?>communs/gepapir?v<?=GepapirChangelog::getCurrentVersion()?>" rel="stylesheet" type="text/css">
 
 
 
