@@ -79,6 +79,14 @@ h1:hover>span.permalink, h2:hover>span.permalink, h3:hover>span.permalink, h4:ho
 	display: initial;
 }
 
+@media screen and (max-width: 700px)
+{
+    h2, h3, h4
+    {
+        margin: 1em 2%;
+    }
+}
+
 
 :target {
   border-radius: 4px;
@@ -371,6 +379,20 @@ label:hover
   --callout-fg: #ff868b;
 }
 
+@media screen and (max-width: 900px)
+{
+    .callout {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    .callout {
+        width: 75%;
+    }
+}
+
 
 
 /******************
@@ -613,9 +635,9 @@ nav a:link, nav a:visited
     nav a
     {
         margin: 0;
-        padding: 1.5em 0.1em;
+        padding: 1em 0.1em;
         
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 }
 
@@ -693,13 +715,25 @@ details#toc > ul ul
 */
 @media screen and (max-width: 700px)
 {
-    details#toc {
-    	font-size: 0.85em;
-    	max-width: 40%;
-    	max-height: 60%;
+    details#toc, details#toc > summary {
+    	font-size: 1rem;
     }
+    details#toc {
+    	max-width: 40%;
+    }
+    details#toc > ul * {
+        max-height: 40vh;
+        font-size: 0.8rem;
+    }
+    
 }
 
 @media screen and (max-width: 590px)
 {
+    details#toc > summary {
+        font-size: 0.85rem;
+    }
+    details#toc > ul * {
+        font-size: 0.75rem;
+    }
 }

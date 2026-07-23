@@ -7,10 +7,11 @@
 
 
 /******************************
- Modifie les images avec l'attribut "data-responsive-img" :
+ Modifie les images avec l'attribut "data-responsive-img" et des attributs width/height renseignés :
 	 - ajoute le dimensionnement en css
 	 - supprime les attributs width / height du tag img
-	 - ajoute du css pour basculer en width: 98% si le max-device-width est > width + 5
+	 - ajoute du css pour basculer le width en relatif si le max-device-width est > width + 5
+Pour conserver une dimension max inférieure à la taille de l'image, ajouter un attribut style
 ******************************/
 function writeCSSRespImg() {
 	var elements = document.getElementsByTagName("img"),
@@ -63,7 +64,7 @@ img${cssClassName}
 	img.${cssClassName}
 
 	{
-		width: 98%;
+		width: 90%;
 		height: auto;
 	}
 }
