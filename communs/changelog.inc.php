@@ -11,6 +11,7 @@ class GepapirChangelog {
         return [
             new ChangelogEntry('2026-07-25', '9.1.3', [
                 'CSS : amélioration pour les petits écrans (menu, callouts, toc, titres, image responsive, Linux Gnome, GEPApiR responsive)',
+                'ToC : fix bug max-height pouvant entrainer des chevauchements de listes',
                 'JS : bascule sur l\'url rewrite',
             ]),
             new ChangelogEntry('2026-07-22', '9.1.2', [

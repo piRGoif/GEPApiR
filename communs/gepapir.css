@@ -721,8 +721,11 @@ details#toc > ul ul
     details#toc {
     	max-width: 40%;
     }
+    details#toc > ul {
+        max-height: 60vh;
+    }
+    
     details#toc > ul * {
-        max-height: 40vh;
         font-size: 0.8rem;
     }
     
