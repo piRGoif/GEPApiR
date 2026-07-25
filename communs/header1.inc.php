@@ -47,7 +47,7 @@ require_once($RelBasePath . 'communs/changelog.inc.php');
 
 
 
-<script src="<?= $RelBasePath ?>communs/ondomready/ondomready.jz"></script>
+<script src="<?= $RelBasePath ?>communs/ondomready/ondomready"></script>
 
 
 
