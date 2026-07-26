@@ -170,7 +170,7 @@ unité "%".</p>
 </code></pre>
 	</dd>
 	<dt>Si la largeur <= 590px</dt>
-	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-590.png" width="256" height="34"
+	<dd><img src="<?=$RelBasePath?>images/info/gepapir-nav-590.png" width="503" height="67"
 	data-responsive-img>
 <pre><code class="css">
 @media screen and (max-width: 590px)

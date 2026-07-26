@@ -72,7 +72,13 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <p>Voici donc les leçons que j'ai tirées de l'expérience, et les réglages et extensions que j'utilise avec bonheur au quotidien !</p>
 
 <figure>
-    <a href="gnome_screenshot_piR_2026-04.webp"><img src="gnome_screenshot_piR_2026-04.webp" alt="Capture d'écran de mon bureau Gnome sous Debian 13" class="pretty-img screenshot-img"></a>
+    <a href="gnome_screenshot_piR_2026-04.webp">
+        <img src="gnome_screenshot_piR_2026-04.webp" 
+            alt="Capture d'écran de mon bureau Gnome sous Debian 13" 
+            class="pretty-img screenshot-img"
+            width="1920" height="1080" data-responsive-img
+        >
+    </a>
     <figcaption>Capture d'écran de mon bureau Gnome sous Debian 13</figcaption>
 </figure>
 
@@ -192,7 +198,12 @@ La solution a été de :</p>
 <p>Indispensable... et disponible avec une extension ! J'ai adopté Clipboard indicator, voir <a href="#clipboard_indicator">plus bas</a> !</p>
 
 <figure>
-    <a href="gnome_clipboard_indicator.webp"><img src="gnome_clipboard_indicator.webp" alt="Capture d'écran du menu de l'extension Clipboard Indicator" width="400"></a>
+    <a href="gnome_clipboard_indicator.webp">
+        <img src="gnome_clipboard_indicator.webp" 
+            alt="Capture d'écran du menu de l'extension Clipboard Indicator" 
+            width="1062" height="1052" data-responsive-img style="max-width: 400px;"
+        >
+    </a>
     <figcaption>Capture d'écran du menu de l'extension Clipboard Indicator</figcaption>
 </figure>
 
@@ -241,7 +252,13 @@ La solution a été de :</p>
 <p>Indispensable pour la suite : permet de parcourir les extensions disponibles sur <a href="https://extensions.gnome.org/">https://extensions.gnome.org/</a>, de les installer / désactiver / supprimer en un clic !</p>
 
 <figure>
-    <a href="gnome_gestionnaire_extensions.webp"><img src="gnome_gestionnaire_extensions.webp" alt="Ecran principal du logiciel, avec une liste d'extensions" class="pretty-img screenshot-img"></a>
+    <a href="gnome_gestionnaire_extensions.webp">
+        <img src="gnome_gestionnaire_extensions.webp" 
+            alt="Ecran principal du logiciel, avec une liste d'extensions" 
+            class="pretty-img screenshot-img" 
+            width="850" height="650" data-responsive-img
+        >
+    </a>
     <figcaption>Ecran principal du logiciel, avec une liste d'extensions</figcaption>
 </figure>
 
