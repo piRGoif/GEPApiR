@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "13/08/2014";
-$date_maj = "06/02/2026";
+$date_maj = "30/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -71,8 +71,10 @@ et <a href="http://www.w3.org/html/wg/drafts/html/master/interactive-elements.ht
 echo htmlspecialchars(<<<'HTML'
 <details id="toc" class="toolbox">
 <summary>Table des matières</summary>
-<a id="toc-open" onClick="toggleToc()">+</a>
-<a id="toc-close" onClick="toggleToc()">X</a>
+<ul>
+	<li>...</li>
+	...
+</ul>
 </details>
 HTML
 );
@@ -85,9 +87,25 @@ HTML
 
 <h3>CSS</h3>
 
-<p>Pour l'affichage, j'utilise <code>position:fixed</code>. On évite que le contenu
-déborde de l'écran avec <code>max-width</code> et <code>max-height</code> ainsi
-qu'un <code>overflow: auto</code>.</p>
+<p>Pour l'affichage :</p>
+
+<ul>
+	<li>sur la balise <code>details</code>
+		<ul>
+			<li><code>position:fixed</code></li>
+			<li>On évite que le contenu déborde de l'écran avec <code>max-width</code> (unité %)</li>
+		</ul>
+	</li>
+	<li>sur la liste <code>&lt;ul></code>
+		<ul>
+			<li><code>overflow: auto</code> ainsi que <code>overscroll-behavior</code> pour que lorsque l'on arrive en bas de scroll on ne continue pas avec la scrollbar de la page</li>
+			<li><code>max-height</code> (unité <a href="https://drafts.csswg.org/css-values/#vh">vh</a>) : ainsi le titre est toujours visible pendant le scroll</li>
+			<li>stylage de la scrollbar de cette boite avec <code>scrollbar-width</code> et <code>scrollbar-color</code></li>
+		</ul>
+	</li>
+</ul>
+
+<p>Extraits de la CSS (version complète à retrouver <a href="https://github.com/piRGoif/GEPApiR/blob/develop/communs/gepapir.css">sur le dépôt</a>) :</p>
 
 <pre><code class="css">
 .toolbox
@@ -95,23 +113,48 @@ qu'un <code>overflow: auto</code>.</p>
 position: fixed;
 top: 0;
 right: 0;
-
-padding: 0.3em;
-
-border: 1px dotted black;
-border-radius: 0 0 0 10px;
-background-color: gray;
-opacity: 0.85;
 }
 
 details#toc
 {
-max-width: 50%;
-max-height: 80%;
-overflow: auto;
-text-align: center;
+max-width: 30%;
+z-index: 10; /* to fix blockquote beeing above details content */
+}
+
+details#toc > ul
+{
+max-height: 60vh;
+
+overflow-y: auto;
+overscroll-behavior: contain;
+
+scrollbar-width: thin;
+scrollbar-color: #808080 transparent;
 }
 </code></pre>
+
+<h4>Transition quand on clique sur un titre</h4>
+
+<p>Deux effets intéressants :</p>
+
+<ul>
+	<li>Pour les pages disposant d'une ToC on fixe <code>scroll-behavior: smooth</code> : ainsi le navigateur va faire un effet de défilement jusqu'au titre plutôt que de l'afficher directement !
+	<li>Comme le titre cible n'est pas toujours en haut de page, effet de surbrillance à l'ouverture avec à une animation
+</ul>
+
+<pre><code class="css">
+:target {
+  animation: flash-highlight 1.2s ease-in-out 3;
+}
+
+@keyframes flash-highlight {
+  0%, 100% { background-color: transparent; }
+  50%      { background-color: #fff176; }
+}
+</code></pre>
+
+<p class="callout" data-variant="info">Plus d'informations sur <code>scroll-behavior</code> : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior">scroll-behavior CSS property - CSS | MDN</a></p>
+<p class="callout" data-variant="info">Plus d'informations sur <code>:target</code> : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target">:target CSS pseudo-class - CSS | MDN</a></p>
 
 
 <h3>JavaScript</h3>
@@ -122,41 +165,7 @@ présent par ailleurs.<br>
 La fonction <code>toggleToc()</code> est cablée sur les liens d'ouverture / fermeture
 et va permettre d'afficher ou masquer la table.</p>
 
-<pre><code class="html">
-&lt;script src="...">&lt;/script> // librairie de Matt Whitlock modifiée
-&lt;script>
-var HIDE_CLASS = "hide";
-
-function getTocElement() {
-	return document.getElementById("toc").getElementsByTagName("ul")[0];
-}
-
-// Affiche ou masque la TOC à chaque appel
-function toggleToc() {
-	var ul = getTocElement();
-	var newDispValue = (ul.className == HIDE_CLASS) ? "" : HIDE_CLASS;
-
-	if (newDispValue == HIDE_CLASS) {
-		// on ferme la TOC
-		document.getElementById("toc-open").style.display = "";
-		document.getElementById("toc-close").style.display = "none";
-	} else {
-		// on ouvre la TOC
-		document.getElementById("toc-open").style.display = "none";
-		document.getElementById("toc-close").style.display = "";
-	}
-	ul.className = newDispValue;
-}
-
-onDomReady(function() {
-	generateTOC(document.getElementById("toc"));
-	getTocElement().className = HIDE_CLASS;
-	document.getElementById("toc-close").style.display="none";
-});
-&lt;/script>
-</code></pre>
-
-<p class="callout" data-variant="info">Le <a href="https://github.com/piRGoif/GEPApiR/blob/develop/communs/toc/toc.js">code de la librairie est disponible sur GitHub</a></p>
+<p class="callout" data-variant="info">Le code est <a href="https://github.com/piRGoif/GEPApiR/blob/develop/communs/toc/toc.js">est visible sur GitHub</a></p>
 
 
 
@@ -175,11 +184,7 @@ Mais c'est quand même assez "overkill"...<br><br>
 Une autre ici : <a href="http://www.alsacreations.com/tuto/lire/1234-creer-volet-coulissant-CSS3-target-transition.html">Créer un volet coulissant en CSS3 avec :target et transition - Alsacreations</a>.<br>
 Mais difficilement applicable dans mon cas...</p>
 
-<p>J'ai tenté d'utiliser une classe nommée "hide" comme ci-dessous, qui
-joue sur <code>width</code>, <code>height</code> et <code>opacity</code> plutôt
-que <code>display</code>. L'affichage et le masquage de la TOC se fait donc en
-jouant sur la valeur de l'attribut <code>className</code> du noeud (vide ou avec
-la valeur "hide").</p>
+<p>J'ai triché : simplement à la fermeture une transition ajoute une modification de la margin. Ca n'est pas une vraie transition en douceur mais ça apporte une petite animation qui est sympathique !</p>
 
 <pre><code class="css">
 details#toc>ul
@@ -187,18 +192,11 @@ details#toc>ul
 transition: all .7s ease-in-out;
 }
 
-details#toc>ul.hide, details#toc>ul.hide *
+details#toc > summary
 {
-width: 0;
-height: 0;
-opacity: 0;
+transition: margin 400ms ease-out;
 }
 </code></pre>
-
-<p class="callout" data-variant="warning">Il ne s'agit clairement pas d'une solution idéale : la transition ne s'exécutant
-pas à la fermeture, des artefacts de liens restant après fermeture, et des problèmes
-apparaissant avec le <code>overflow: auto</code> !... Ca sera à améliorer plus
-tard, et donc pour l'instant pas de transitions !</p>
 
 
 
