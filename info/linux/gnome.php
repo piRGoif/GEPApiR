@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "22/07/2026";
+$date_maj = "30/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -150,7 +150,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "[]"
 <ul>
     <li><kbd>Windows</kbd> : bascule vers l'activities overview, en tapant immédiatement après on recherchera dans les applications ce qui permet d'en lancer une rapidement</li>
     <li><kbd>Windows</kbd> + <kbd>1</kbd>..<kbd>0</kbd> : comme sur Windows, bascule d'une application ouverte à une autre (basé sur la position dans le dash). La valeur 0 ouvre la dernière de la liste</li>
-    <li><kbd>Windows</kbd> + <kbd>Maj</kbd> + <kbd>S</kbd> : capture d'écran</li>
+    <li><kbd>Windows</kbd> + <kbd>Maj</kbd> + <kbd>S</kbd> : lancement de l'outil de capture d'écran</li>
+    <li><kbd>Windows</kbd> + <kbd>Impr. Ecran</kbd> : capture d'écran de la fenêtre courante</li>
     <li><kbd>Windows</kbd> + <kbd>Flèche haut/bas</kbd> : bascule fenêtre courante entre les états agrandit / normal / réduit</li>
     <li><kbd>Windows</kbd> + <kbd>Flèche gauche/droite</kbd> : bascule fenêtre courante sur moitié gauche écran / normal / moitié droite écran</li>
     <li><kbd>Windows</kbd> + <kbd>Maj</kbd> + <kbd>Flèche</kbd> : déplacement fenêtre courante sur un autre écran</li>

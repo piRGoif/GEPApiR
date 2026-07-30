@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-07-30', '9.1.4', [
+                'Informatique Linux Gnome : ajout raccourci capture fenêtre courante',
+            ]),
             new ChangelogEntry('2026-07-25', '9.1.3', [
                 'CSS : amélioration pour les petits écrans (menu, callouts, toc, titres, image responsive, Linux Gnome, GEPApiR responsive)',
                 'ToC : fix bug max-height pouvant entrainer des chevauchements de listes',
