@@ -427,6 +427,8 @@ Quelques astuces sur Dolphin :
     <dd>Affiche le <b>niveau de batterie des périphériques Bluetooth</b></dd>
     <dt><a href="https://extensions.gnome.org/extension/2917/bring-out-submenu-of-power-offlogout-button/">Bring Out Submenu Of Power Off Button</a></dt>
     <dd><b>Modifie le system menu pour rendre plus accessible les options derrière le bouton alimentation</b>. Par défaut, on a un seul menu alimentation qui ouvre un sous menu, grace à cette extension les actions habituelles comme éteindre ou se déconnecter deviennent accessibles avec un clic de moins !</dd>
+    <dt><a href="https://extensions.gnome.org/extension/4655/date-menu-formatter/">Date Menu Formatter</a></dt>
+    <dd>Permet de <b>modifier le format affiché de la date/heure courante</b></dd>
 </dl>
 
 
