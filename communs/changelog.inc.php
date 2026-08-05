@@ -9,7 +9,14 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
-            new ChangelogEntry('2026-07-30', '9.1.4', [
+            new ChangelogEntry('2026-08-06', '9.1.4', [
+                'Informatique Linux Commandes : réorganisation de la section commandes usuelles',
+                'Informatique Linux Commandes : ajout redirections',
+                'Informatique Linux Commandes : compléments ls',
+                'Informatique Linux Commandes : compléments ln',
+                'Informatique Linux Commandes : compléments grep',
+                'Informatique Linux Commandes : compléments scp (url fish)',
+                'Informatique Linux Commandes : compléments VIM',
                 'Informatique Linux Gnome : ajout raccourci capture fenêtre courante',
                 'Informatique Linux Gnome : ajout extension Date Menu Formatter',
                 'Informatique Linux Gnome : complément URL fish',
