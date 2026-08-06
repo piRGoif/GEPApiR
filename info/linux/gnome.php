@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "22/07/2026";
+$date_maj = "30/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -150,7 +150,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "[]"
 <ul>
     <li><kbd>Windows</kbd> : bascule vers l'activities overview, en tapant immédiatement après on recherchera dans les applications ce qui permet d'en lancer une rapidement</li>
     <li><kbd>Windows</kbd> + <kbd>1</kbd>..<kbd>0</kbd> : comme sur Windows, bascule d'une application ouverte à une autre (basé sur la position dans le dash). La valeur 0 ouvre la dernière de la liste</li>
-    <li><kbd>Windows</kbd> + <kbd>Maj</kbd> + <kbd>S</kbd> : capture d'écran</li>
+    <li><kbd>Windows</kbd> + <kbd>Maj</kbd> + <kbd>S</kbd> : lancement de l'outil de capture d'écran</li>
+    <li><kbd>Windows</kbd> + <kbd>Impr. Ecran</kbd> : capture d'écran de la fenêtre courante</li>
     <li><kbd>Windows</kbd> + <kbd>Flèche haut/bas</kbd> : bascule fenêtre courante entre les états agrandit / normal / réduit</li>
     <li><kbd>Windows</kbd> + <kbd>Flèche gauche/droite</kbd> : bascule fenêtre courante sur moitié gauche écran / normal / moitié droite écran</li>
     <li><kbd>Windows</kbd> + <kbd>Maj</kbd> + <kbd>Flèche</kbd> : déplacement fenêtre courante sur un autre écran</li>
@@ -310,7 +311,7 @@ Quelques astuces sur Dolphin :
         <ul>
             <li><b>SMB</b> : <code>smb://user:password@host/share</code></li>
             <li><b>WebDAV</b> : <code>davs://user:password@host/path</code></li>
-            <li><b>SCP</b> : <code>fish://user@host:port</code></li>
+            <li><b>SCP</b> : <code>fish://user@host:port/path</code></li>
         </ul>
     </li>
 </ul>
@@ -426,6 +427,8 @@ Quelques astuces sur Dolphin :
     <dd>Affiche le <b>niveau de batterie des périphériques Bluetooth</b></dd>
     <dt><a href="https://extensions.gnome.org/extension/2917/bring-out-submenu-of-power-offlogout-button/">Bring Out Submenu Of Power Off Button</a></dt>
     <dd><b>Modifie le system menu pour rendre plus accessible les options derrière le bouton alimentation</b>. Par défaut, on a un seul menu alimentation qui ouvre un sous menu, grace à cette extension les actions habituelles comme éteindre ou se déconnecter deviennent accessibles avec un clic de moins !</dd>
+    <dt><a href="https://extensions.gnome.org/extension/4655/date-menu-formatter/">Date Menu Formatter</a></dt>
+    <dd>Permet de <b>modifier le format affiché de la date/heure courante</b></dd>
 </dl>
 
 

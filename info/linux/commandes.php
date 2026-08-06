@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "01/07/2026";
+$date_maj = "05/07/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -60,22 +60,6 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <h2>Opérations usuelles</h2>
 
-<h3>Copie répertoire</h3>
-
-<pre><code class="bash"><?echo htmlspecialchars(<<<'HTML'
-cp -r /my_directory <target>
-
-cp -ar source/. destination
-# a = preserve file attrib + symlinks
-# . = copie aussi fichiers / dossiers cachés
-HTML
-);?>
-</code></pre>
-
-<p class="callout" data-variant="info">
-    Les paramètres <code>-r</code> et <code>-R</code> sont équivalents, cf <a href="https://manpages.debian.org/trixie/coreutils/cp.1.en.html#R">page man</a>
-</p>
-
 <h3>Contenu fichier</h3>
 
 <h4 id="cat_more_less"><code>cat</code>, <code>more</code>, <code>less</code></h4>
@@ -121,7 +105,7 @@ HTML
     Ou cet article sur le site de Stéphane Robert : <a href="https://blog.stephane-robert.info/docs/outils/fichiers/bat/">bat, un cat survitaminé</a>
 </p>
 
-<h4 id="logs">Logs</h4>
+<h4 id="logs">Exploitation de logs</h4>
 
 <p>Les commandes <code>head</code> et <code>tail</code> pour voir contenu en début ou fin de fichier. Par défaut, les 2 commandes affichent 10 lignes, pour changer ce nombre utiliser <code>-n &lt;nb_lignes></code> ou simplement <code>- &lt;nb_lignes></code> (ancienne syntaxe).<br>
 Le paramètre <code>f</code> permet de rafraichir en continu, pratique pour suivre un log par exemple !</p>
@@ -145,7 +129,48 @@ BASH
 );?></code></pre>
 
 
+<h4>Redirections</h4>
+
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+echo "Hello world" > fichier.txt # écrase
+echo "Ligne 2" >> fichier.txt # ajoute à la fin
+
+commande > output.log 2>&1 # redirige stdout ET stderr vers output.log
+BASH
+);?></code></pre>
+
+<p class="callout" data-variant="info">
+    Un billet sur le blog de Korben listant ces redirection avec pas mal de détails : <a href="https://korben.info/redirections-bash-qui-sauvent-ta-vie.html">Shells Unix - 5 redirections que vous copiez sans comprendre - Korben</a>
+</p>
+
+
+
 <h3 id="tree">Contenu arborescence</h3>
+
+
+<h4>Liste fichiers</h4>
+
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+ls -lh
+# ls -l = ll (long listing)
+# h = human readable : tailles en Ko, Mo, Go
+
+ls -d my_dirs_*
+# d = affiche uniquement les répertoires (et pas leur contenu)
+BASH
+);?></code></pre>
+
+
+<h4 id="comptage">Comptage</h4>
+
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+<commande> | wc -l
+BASH
+);?></code></pre>
+
+<p>Paramètre <code>l</code> pour le nombre de lignes.</p>
+
+<h4>Analyse arborescence</h4>
 
 <p>Avec la commande <code>tree</code> on peut afficher le contenu d'une arborescence</p>
 
@@ -167,15 +192,49 @@ tree -adugph ~/Documents/logs | less
 BASH
 );?></code></pre>
 
+<h4>Copie répertoire</h4>
+
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+cp -r /my_directory <target>
+
+cp -ar source/. destination
+# a = preserve file attrib + symlinks
+# . = copie aussi fichiers / dossiers cachés
+BASH
+);?>
+</code></pre>
+
+<p class="callout" data-variant="info">
+    Les paramètres <code>-r</code> et <code>-R</code> sont équivalents, cf <a href="https://manpages.debian.org/trixie/coreutils/cp.1.en.html#R">page man</a>
+</p>
+
+<h4>Liens symboliques</h4>
+
+<p>Création lien symbolique :</p>
+
+<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+ln -s target_directory symlink_name
+# s = lien symbolique plutôt que physique
+# target_directory = relatif à l'emplacement de symlink
+
+ln -sr subdir/target_directory subdir/symlink_name
+ln -s target_directory subdir/symlink_name
+# r = target_directory relatif au répertoire courant (et non à l'emplacement du symlink)
+BASH
+);?></code></pre>
+
+
+
+
 
 <h3 id="permissions">Permissions</h3>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
 chmod +wx <fichier> # ajout à tous drois d'écriture et exécution
 # options possibles :
-# u : user (propriétaire)
-# g : group
-# o : others
+# u = user (propriétaire)
+# g = group
+# o = others
 # + / - / = (égal : écrase)
 # r / w / x
 chmod g+x <fichier> # droit d'exécution au groupe
@@ -188,7 +247,7 @@ BASH
 );?></code></pre>
 
 
-<h3 id="historique">Historique</h3>
+<h3 id="historique">Historique commandes</h3>
 
 <p class="callout" data-variant="info">Sur le shell le raccourci <kbd>Ctrl</kbd>+<kbd>R</kbd> permet de rechercher dans l'historique des commandes. Indispensable !</p>
 
@@ -210,16 +269,6 @@ cd $OLDPWD # idem mais avec var d'env
 <p class="callout" data-variant="tip">
     Avec le shell Fish, la commande <code>cdh</code> permet de parcourir l'historique des répertoires visités, cf <a href="shell.php#fishshell_cmd_cdh">le chapitre dédié dans la page personnalisation du shell</a>
 </p>
-
-
-<h3 id="comptage">Comptage</h3>
-
-<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
-<commande> | wc -l
-BASH
-);?></code></pre>
-
-<p>Paramètre <code>l</code> pour le nombre de lignes.</p>
 
 
 
@@ -281,6 +330,7 @@ grep -rn <file> -e "<pattern>"
 # r = recursive
 # i = not case sensitive
 # n = affiche le no de ligne
+# C n = affiche n lignes avant et après l'occurrence
 # c = compte le nb d'occurrences, liste chaque fichier
 
 # Déplacer les fichiers trouvés :
@@ -288,7 +338,18 @@ grep -lir <chaine>" <source> | xargs mv -t <dest>
 BASH
 );?></code></pre>
 
-<p class="callout" data-variant="tip"><code>zgrep</code> : recherche dans les fichiers normaux mais aussi les archives gzip !</p>
+<p class="callout" data-variant="tip">
+    <code>zgrep</code> : recherche dans les fichiers normaux mais aussi les archives gzip !<br>
+    Les paramètres sont les mêmes.
+</p>
+
+<div class="callout" data-variant="info">
+    Références sur l'outil :
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Man_page">Manpage</a> chez Debian : <a href="https://manpages.debian.org/trixie/grep/grep.1.en.html">grep(1) — grep — Debian trixie — Debian Manpages</a>
+        <li>Le toujours excellent Stéphane Robert a une page parfaite sur l'outil : <a href="https://blog.stephane-robert.info/docs/admin-serveurs/linux/grep/">Maîtriser Grep : Recherche Linux efficace</a>
+    </ul>  
+</div>
 
 
 
@@ -337,13 +398,6 @@ BASH
 
 <pre><code class="bash">rm -rf /my_directory</code></pre>
     
-<p>Création lien symbolique (paramètre <code>-s</code> pour lien symbolique plutôt que physique) :</p>
-
-<pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
-ln -s my_directory_target my_link_name
-BASH
-);?></code></pre>
-
 <p class="callout" data-variant="tip">
     L'utilitaire TUI <a href="https://dev.yorhel.nl/ncdu">ncdu</a> est très pratique pour visualiser l'espace occupé dans une hiérarchie de répertoires.
 </p>
@@ -446,15 +500,27 @@ BASH
 <p>L'utilitaire SCP permet de transférer des fichiers à une machine sur laquelle on a un accès SSH.</p>
 
 <pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
+# ⬆️ Sens montant
 scp /file/to/send username@remote:/where/to/put/remotely
 scp -P 10022 <file> myuser@mymachine.fr:/tmp 
 # -P : n° port si différent du 22 par défaut
 # -r : récursif (permet de transférer des répertoires)
 # -c : compression
+
+# ⬇️ Sens descendant
 scp username@remote:/file/to/receive /where/to/put/locally
 scp username@remote_1:/file/to/get username@remote_2:/where/to/put
 BASH
 );?></code></pre>
+
+<p class="callout" data-variant="tip">
+    Si ses configurations de connexion SSH sont sauvegardées dans <code>~/.ssh/config</code>, on peut se connecter avec le nom de la configuration plutôt que l'url complète : <code>scp /file/to/send my_config:/where/to/put/remotely</code>
+</p>
+
+<p class="callout" data-variant="tip">
+    On peut aussi se connecter avec son gestionnaire de fichier avec une URL <a href="https://en.wikipedia.org/wiki/Files_transferred_over_shell_protocol">fish://</a> si la machine accepte ce protocole.<br>
+    Cf <a href="gnome.php#dolphin">chapitre consacré à Dolphin dans la page Gnome</a>.
+</p>
 
 <p class="callout" data-variant="info">
     Une excellente référence sur SCP est présente sur le site de Stéphane Robert : <a href="https://blog.stephane-robert.info/docs/admin-serveurs/linux/scp/">SCP : transfert de fichiers sécurisé</a>
@@ -626,11 +692,11 @@ BASH
 <h3 id="vi-commands">Commandes</h3>
 
 <ul>
-    <li><strong>Divers</strong>
+    <li><strong>Navigation</strong>
         <ul>
-            <li><kbd>d</kbd><kbd>d</kbd> remove line</li>
-            <li><kbd>:</kbd><kbd>e</kbd> reload file</li>
-            <li>Afficher les n° de ligne, en mode commande : <code>:set number</code>, et désactiver avec <code>:set nonumber</code></li>
+            <li><kbd>g</kbd><kbd>g</kbd> goto beginning of file</li>
+            <li><kbd>G</kbd> goto end of file</li>
+            <li><kbd>:</kbd><kbd>1</kbd><kbd>2</kbd> goto line 12</li>
         </ul>
     </li>
     <li><strong>Recherche</strong>
@@ -641,23 +707,37 @@ BASH
             <li><kbd>N</kbd> search previous</li>
         </ul>
     </li>
-    <li><strong>Navigation</strong>
-        <ul>
-            <li><kbd>g</kbd><kbd>g</kbd> goto beginning of file</li>
-            <li><kbd>G</kbd> goto end of file</li>
-            <li><kbd>:</kbd><kbd>1</kbd><kbd>2</kbd> goto line 12</li>
-        </ul>
-    </li>
     <li><strong>Copier / coller</strong>
         <ul>
             <li><kbd>y</kbd><kbd>y</kbd> ou <kbd>Y</kbd> yank line (copy)</li>
             <li><kbd>p</kbd> paste after</li>
             <li><kbd>P</kbd> paste before</li>
             <li><kbd>Y</kbd><kbd>P</kbd> / <kbd>Y</kbd><kbd>p</kbd> / <kbd>y</kbd><kbd>y</kbd><kbd>p</kbd> copy and paste line</li>
+            <li><kbd>Maj</kbd> + Clic : sélectionner à la souris</li>
+            <li><kbd>Ctrl</kbd> + <kbd>Maj</kbd> + Clic : sélection rectangulaire </li>
             <li>Autoriser le copier/coller et la sélection à la souris, en mode commande : <code>:set mouse=r</code></li>
         </ul>
     </li>
+    <li><strong>Divers</strong>
+        <ul>
+            <li><kbd>d</kbd><kbd>d</kbd> remove line</li>
+            <li><kbd>:</kbd><kbd>e</kbd> reload file</li>
+            <li>Afficher les n° de ligne, en mode commande : <code>:set number</code>, et désactiver avec <code>:set nonumber</code></li>
+        </ul>
+    </li>
 </ul>
+
+<div class="callout" data-variant="note">
+    Il existe même des easters eggs dans VIM :
+    <ul>
+        <li><code>:help 42</code></li>
+        <li><code>:Ni!</code></li>
+        <li><code>:help bar</code></li>
+    </ul>
+    Découvert grace à ce chouette billet du blog de Korben : <a href="https://lesjoiesducode.fr/easter-eggs-programmation-histoire">Les meilleurs easter eggs cachés dans vos langages et outils de développeurs</a>
+</div>
+
+
 
 <h3 id="vimdiff">Comparer 2 fichiers avec <code>vimdiff</code></h3>
 

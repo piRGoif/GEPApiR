@@ -9,6 +9,20 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-08-06', '9.1.4', [
+                'Informatique Linux Commandes : réorganisation de la section commandes usuelles',
+                'Informatique Linux Commandes : ajout redirections',
+                'Informatique Linux Commandes : compléments ls',
+                'Informatique Linux Commandes : compléments ln',
+                'Informatique Linux Commandes : compléments grep',
+                'Informatique Linux Commandes : compléments scp (url fish)',
+                'Informatique Linux Commandes : compléments VIM',
+                'Informatique Linux Gnome : ajout raccourci capture fenêtre courante',
+                'Informatique Linux Gnome : ajout extension Date Menu Formatter',
+                'Informatique Linux Gnome : complément URL fish',
+                'Généralisation de l\'anti cache',
+                'GEPApiR CSS : actualisation suite aux dernières mises à jour',
+            ]),
             new ChangelogEntry('2026-07-25', '9.1.3', [
                 'CSS : amélioration pour les petits écrans (menu, callouts, toc, titres, image responsive, Linux Gnome, GEPApiR responsive)',
                 'ToC : fix bug max-height pouvant entrainer des chevauchements de listes',
