@@ -311,7 +311,7 @@ Quelques astuces sur Dolphin :
         <ul>
             <li><b>SMB</b> : <code>smb://user:password@host/share</code></li>
             <li><b>WebDAV</b> : <code>davs://user:password@host/path</code></li>
-            <li><b>SCP</b> : <code>fish://user@host:port</code></li>
+            <li><b>SCP</b> : <code>fish://user@host:port/path</code></li>
         </ul>
     </li>
 </ul>

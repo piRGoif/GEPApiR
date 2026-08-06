@@ -12,6 +12,7 @@ class GepapirChangelog {
             new ChangelogEntry('2026-07-30', '9.1.4', [
                 'Informatique Linux Gnome : ajout raccourci capture fenêtre courante',
                 'Informatique Linux Gnome : ajout extension Date Menu Formatter',
+                'Informatique Linux Gnome : complément URL fish',
                 'Généralisation de l\'anti cache',
                 'GEPApiR CSS : actualisation suite aux dernières mises à jour',
             ]),
