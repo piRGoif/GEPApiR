@@ -342,8 +342,8 @@ label:hover
 
 .callout[data-variant="note"] {
   --callout-icon: "✏️";
-  --callout-bg: #141d2b;
-  --callout-fg: #cfe1ff;
+  --callout-bg: #1c1830;
+  --callout-fg: #c4a8ff;
 }
 
 .callout[data-variant="info"] {
