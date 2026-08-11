@@ -9,6 +9,10 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-08-11', '9.1.5', [
+                'CSS : callouts note en violet',
+                'Informatique Linux Gnome : quelques corrections de typo et des reformulations',
+            ]),
             new ChangelogEntry('2026-08-06', '9.1.4', [
                 'Informatique Linux Commandes : réorganisation de la section commandes usuelles',
                 'Informatique Linux Commandes : ajout redirections',

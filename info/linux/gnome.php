@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "30/07/2026";
+$date_maj = "11/08/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -171,7 +171,7 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "[]"
 <ul>
     <li><strong>Polices</strong> : permet de spécifier un facteur de mise à l'échelle &lt; 1, ce qui n'est pas possible dans l'application paramètres système 😒</li>
     <li><strong>Fenêtres</strong> : on peut y configurer les actions sur la barre de titre des fenêtres. Pour ma part, la maximisation verticale m'est fort utile !</li>
-    <li><strong>Applications au démarrage</strong> : permet de se retrouver prêt à travailler ! (à la nuance près que les fenêtres s'ouvriront à des potitions et tailles un peu au hasard à chaque fois 🙄)</li>
+    <li><strong>Applications au démarrage</strong> : permet de se retrouver prêt à travailler ! (à la nuance près que les fenêtres s'ouvriront à des positions et tailles un peu au hasard à chaque fois 🙄)</li>
 </ul>
 
 
@@ -229,7 +229,7 @@ La solution a été de :</p>
 
 <p class="callout" data-variant="tip">Pour accéder aux préférences : clic droit → Preferences</p>
 
-<p>Terminator est le terminal par défaut sur Gnome. 2 options intéressantes à configurer dans ce logiciel :</p>
+<p>Terminator est le terminal par défaut sur Gnome. Quelques options intéressantes à configurer dans ce logiciel :</p>
 
 <ul>
     <li>Préférences → Profils → Général : <b>Copier la sélection</b><br>
@@ -270,7 +270,7 @@ La solution a été de :</p>
 
 <p>Permet de sauvegarder et restaurer sa configuration Gnome, incluant les extensions. Indispensable !</p>
 
-<p class="callout" data-variant="info">A récupérer sur <a href="https://github.com/vikdevelop/SaveDesktop">https://github.com/vikdevelop/SaveDesktop</a></p>
+<p class="callout" data-variant="info">A récupérer directement dans le magasin d'applications de l'OS, ou sur <a href="https://github.com/vikdevelop/SaveDesktop">https://github.com/vikdevelop/SaveDesktop</a></p>
 
 
 <h3 id="dolphin">📁 Gestionnaire de fichiers : Doplhin</h3>
@@ -284,14 +284,13 @@ La solution a été de :</p>
     <li>Panneau d'emplacements personnalisables</li>
     <li>Barre d'adresse modifiable au clavier</li>
     <li>Multi onglets ré-ouverts au démarrage</li>
-    <li>Barre d'adresse modifiable au clavier</li>
     <li>Gestion des archives (création, extraction, ouverture, modification)</li>
     <li>Gestion des partages SMB et WebDav</li>
     <li>Gestion SCP</li>
     <li>Affichage des volumes montés et de l'espace occupé</li>
 </ul>
 
-<p>J'ai donc essayé plusieurs gestionnaire de fichiers (c'était en 2025, les choses ont peut être changé ensuite...) :</p>
+<p>J'ai donc essayé plusieurs gestionnaire de fichiers (c'était en 2025, les choses ont peut être changé depuis ?) :</p>
 
 <ul>
     <li><b>Nautilus</b> (défaut Gnome) : gère bien SMB et WebDav ! Mais... entre l'absence de treeview et des onglets persistants...</li>
@@ -460,10 +459,11 @@ Quelques astuces sur Dolphin :
     <dt><a href="https://extensions.gnome.org/extension/4356/top-bar-organizer/">Top Bar Organizer</a></dt>
     <dd>Permet de complètement <b>configurer l'ordre d'affichage dans la top bar</b> (zones gauche, centre, droite) : indispensable !</dd>
     <dt><a href="https://extensions.gnome.org/extension/1414/unblank/" id="unblank_lock_screen">Unblanck lock screen</a></dt>
-    <dd><b>N'éteint pas tout de suite l'écran lorsque la session est verrouillée</b>. Pratique pour les écrans qui nécessitent du temps pour sortir de veille ! A voir aussi plus haut <a href="#veille_ecran">la configuration pour l'écran de verrouillage</a> !<br>
-    Cf <a href="https://www.reddit.com/r/archlinux/comments/1bwg4d4/how_do_i_prevent_gnome_from_turning_off_my/">Comment puis-je empêcher GNOME d'éteindre mes écrans lorsque je verrouille ma session ? : r/archlinux</a></dd>
+    <dd><b>N'éteint pas tout de suite l'écran lorsque la session est verrouillée</b>. Pratique pour les écrans qui nécessitent du temps pour sortir de veille !<br>
+    A voir aussi plus haut <a href="#veille_ecran">la configuration pour l'écran de verrouillage</a> !<br>
+    Et sur ce problème, ce fil de discussion où est suggérée cette extension mais aussi quelques autres solutions : <a href="https://www.reddit.com/r/archlinux/comments/1bwg4d4/how_do_i_prevent_gnome_from_turning_off_my/">Comment puis-je empêcher GNOME d'éteindre mes écrans lorsque je verrouille ma session ? : r/archlinux</a></dd>
     <dt><a href="https://extensions.gnome.org/extension/5416/wifi-qrcode/">Wifi QR Code</a></dt>
-    <dd>Permet d'afficher un <b>QR code du Wifi actif</b>, dans le drop down système de la top bar</dd>
+    <dd>Affiche un <b>QR code du Wifi actif</b> dans le drop down système de la top bar</dd>
     <dt><a href="https://extensions.gnome.org/extension/6784/wiggle/">Wiggle</a></dt>
     <dd>Permet de <b>retrouver son curseur de souris</b> : après l'avoir agité pendant un temps donné, le curseur est agrandit.<br>
     ℹ️Il existe aussi une option dans les paramètres Gnome d'accessibilité : l'appui répété de la touche <kbd>Ctrl</kbd> ajoute sur le curseur un effet de surbrillance</dd>
