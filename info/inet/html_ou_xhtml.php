@@ -1,7 +1,7 @@
 <?php
 ob_start('ob_gzhandler');
 $date_creation = "19/07/2005";
-$date_maj = "16/10/2014";
+$date_maj = "27/09/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -21,18 +21,18 @@ require_once($RelBasePath . 'communs/header2.inc.php');
     <br>
     <abbr title="HyperText Markup Language">HTML</abbr> ou <abbr title="eXtensible HyperText Markup Language">XHTML</abbr>&nbsp;?</h1>
 
-<p>Ce document a été écrit au cours de l'année 2005, alors que beaucoup de concepteurs
-    fonçaient tête baissée vers XHTML, en oubliant un peu vite à mon goût le HTML Strict.
-    Il m'avait paru important de souligner les avantages mais aussi les inconvénients
-    de cette bascule vers XHTML... Car ça n'est pas anodin ! Je me suis donc lancé
-    dans la rédaction de ce document avec la volonté de construire une synthèse claire
-    et complète !</p>
-
-<p>Depuis bien sûr, le paysage a bien évolué ! Le HTML 5 qui était alors défendu par
-    le <a href="http://whatwg.org/">WhatWG</a> a été intégré dans les technologies du
-    W3C, les navigateurs ont commencé à bien l'implémenter... La question ne se pose donc
-    plus du tout de la même manière bien sûr ! Cependant, il reste utile de connaitre
-    ces quelques subtilités.</p>
+<p class="callout" data-variant="info">Ce document a été écrit au cours de l'année 2005, alors que beaucoup de concepteurs
+fonçaient tête baissée vers XHTML, en oubliant un peu vite à mon goût le HTML Strict.
+Il m'avait paru important de souligner les avantages mais aussi les inconvénients
+de cette bascule vers XHTML... Car ça n'est pas anodin ! Je me suis donc lancé
+dans la rédaction de ce document avec la volonté de construire une synthèse claire
+et complète !<br>
+<br>
+Depuis bien sûr, le paysage a bien évolué ! Le HTML 5 qui était alors défendu par
+le <a href="http://whatwg.org/">WhatWG</a> a été intégré dans les technologies du
+W3C, les navigateurs ont commencé à bien l'implémenter... La question ne se pose donc
+plus du tout de la même manière bien sûr ! Cependant, il reste utile de connaitre
+ces quelques subtilités.</p>
 
 
 
@@ -147,7 +147,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
     <li>Strict</li>
 </ul>
 
-<p>Vous retrouverez ces définitions dans <a href="http://www.w3.org/TR/xhtml1/#dtds">les recommandations <abbr>XHTML</abbr></a>
+<p class="callout" data-variant="info">Vous retrouverez ces définitions dans <a href="http://www.w3.org/TR/xhtml1/#dtds">les recommandations <abbr>XHTML</abbr></a>
     comme dans <a href="http://www.w3.org/TR/html401/struct/global.html#version-info">celles pour <abbr>HTML</abbr></a>.
     Un article d'OpenWeb, [<a href="#openweb">Pourquoi plusieurs variantes de <abbr>DTD</abbr> en <abbr>XHTML</abbr>&nbsp;?</a>]
     (qui traite d'ailleurs autant de HTML
@@ -244,7 +244,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
         de formulaire, cf plus bas)</li>
 </ul>
 
-<p>Ces différences sont bien détaillées dans le <a href="http://www.w3.org/TR/xhtml1/#diffs">chapitre 4 de la recommandation <abbr>XHTML</abbr> 1.0</a>,
+<p class="callout" data-variant="info">Ces différences sont bien détaillées dans le <a href="http://www.w3.org/TR/xhtml1/#diffs">chapitre 4 de la recommandation <abbr>XHTML</abbr> 1.0</a>,
     et aussi dans un article d'OpenWeb&nbsp;: [<a href="#openweb">Passer du <abbr>HTML</abbr> au <abbr>XHTML</abbr></a>].</p>
 
 
@@ -255,7 +255,9 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
     Plus de détails sur le sujet dans <a href="http://www.w3.org/TR/xhtml1/#h-4.10">le chapitre 4.10 de la recommandation</a>
     et dans <a href="http://www.w3.org/TR/xhtml1/#C_8">le chapitre 8 de son annexe C</a>.</p>
 
-<p>Les éléments de formulaire (élément input) conservent bien l'attribut name.<br>
+<p>Les éléments de formulaire (élément input) conservent bien l'attribut name.</p>
+
+<p class="callout" data-variant="note">
     A ce sujet, consulter cette discussion sur le groupe Usenet fr.comp.infosystemes.www.auteurs :
     <a href="http://groups.google.com/group/fr.comp.text.xml/browse_thread/thread/898f525c8f387ea8/e3e45d11c61937ab">Id, name et radio</a>.</p>
 
@@ -366,7 +368,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
     l'adapter pour qu'il soit correctement lu en text/html par
     d'anciens agents.</p>
 
-<p>L'excellent document [<a href="#hixie">Sending <abbr>XHTML</abbr> as text/html Considered Harmful</a>]
+<p class="callout" data-variant="note">L'excellent document [<a href="#hixie">Sending <abbr>XHTML</abbr> as text/html Considered Harmful</a>]
     (un must-read, vraiment&nbsp;!) a d'ailleurs été écris au départ en pensant aux
     problèmes rencontrés en passant un document <abbr>XHTML</abbr> du text/html au
     application/xhtml+xml...</p>

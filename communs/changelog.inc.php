@@ -16,6 +16,7 @@ class GepapirChangelog {
                 'Informatique Linux Gnome : ajout raccourci clavier pour maximiser verticalement',
                 'Informatique Linux Commandes : petit refactor et compléments sur le ménage disque',
                 'Informatique Linux Commandes : compléments dans la section copier/coller de VI',
+                'Informatique HTML ou XHTML : ajout de callouts',
             ]),
             new ChangelogEntry('2026-08-11', '9.1.5', [
                 'CSS : callouts note en violet',
