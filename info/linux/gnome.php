@@ -141,6 +141,19 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "[]"
 <p class="callout" data-variant="info">Fil de discussion qui donne une solution avec l'utilitaire dconf : <a href="https://askubuntu.com/questions/1077037/ubuntu-18-04-keystroke-alt-shift-ctrl-down-does-not-work/1378045#1378045">unity - Ubuntu 18.04 Keystroke Alt + Shift + (Ctrl) + Down does not work - Ask Ubuntu</a></p>
 
 
+<h3 id="shortcuts_max_vert">⌨️ Configuration : ajouter un raccourci clavier pour maximiser verticalement</h3>
+
+<p>Sur windows, <kbd>Windows</kbd> + <kbd>Flèche haut</kbd> maximise la fenêtre courante verticalement. Sur Gnome, ce raccourci n'existe pas par défaut, et ce raccourci est assigné au déplacement de la fenêtre sur l'écran du haut. Comme je voulais conserver ce raccourci, j'en ai assigné un nouveau pour pouvoir maximiser verticalement la fenêtre courante.</p>
+
+<p>Dans les paramètres de Gnome :</p>
+
+<ul>
+    <li>Paramètres → Clavier → Raccourcis clavier → Voir et personnaliser les raccourcis</li>
+    <li>Section "Fenêtres" puis raccourci "Maximiser la fenêtre verticalement"</li>
+    <li>Raccourci = <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Maj</kbd> + <kbd>Flèche haut</kbd></li>
+</ul>
+
+
 <h3 id="shortcuts">⌨️ Raccourcis clavier utiles</h3>
 
 <p>Beaucoup de raccourcis clavier très utiles dans Windows sont également présents par défaut dans Gnome ! Et Gnome en propose aussi quelques un supplémentaires.</p>
