@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "11/08/2026";
+$date_maj = "26/09/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -376,6 +376,8 @@ Quelques astuces sur Dolphin :
     <dd><b>Ajoute le dash dans la top bar</b>. Utilisateur de Windows, j'aime pouvoir voir les applications ouvertes, et par conséquent savoir quel raccourci utiliser pour basculer sur quelle fenêtre (<kbd>Windows</kbd> + <kbd>chiffre</kbd>). Le dash ajouté par l'extension ressemble à une barre des tâches, avec surlignage des applications lancées, masquage du bouton activities, possibilité de configurer le clic sur l'icone pour alterner entre focus et réduction de l'application (ou même cycle entre les fenêtres de l'application s'il y en a plusieures)</dd>
     <dt><a href="https://extensions.gnome.org/extension/7065/tiling-shell/">Tiling Shell</a></dt>
     <dd>Permet de créer des <b>dispositions de fenêtres en tuiles</b> et de les appeler par une icone dans la top bar, ou simplement de déplacer une fenêtre dans une tuile par glisser / déposer vers un bord de l'écran comme sur Windows</dd>
+    <dt><a href="https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/">Always Show Titles In Overview</a></dt>
+    <dd><b>Complète la vue Overview</b> pour toujours afficher le nom et l'icone de l'application (par défaut, c'ets uniquement au survol)</dd>
 </dl>
 
 
