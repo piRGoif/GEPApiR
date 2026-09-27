@@ -1,7 +1,7 @@
 <?php
 ob_start('ob_gzhandler');
 $date_creation = "19/07/2005";
-$date_maj = "27/09/2026";
+$date_maj = "14/10/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -21,18 +21,19 @@ require_once($RelBasePath . 'communs/header2.inc.php');
     <br>
     <abbr title="HyperText Markup Language">HTML</abbr> ou <abbr title="eXtensible HyperText Markup Language">XHTML</abbr>&nbsp;?</h1>
 
-<p class="callout" data-variant="info">Ce document a été écrit au cours de l'année 2005, alors que beaucoup de concepteurs
+<div class="callout" data-variant="info">
+    <p>Ce document a été écrit au cours de l'année 2005, alors que beaucoup de concepteurs
 fonçaient tête baissée vers XHTML, en oubliant un peu vite à mon goût le HTML Strict.
 Il m'avait paru important de souligner les avantages mais aussi les inconvénients
 de cette bascule vers XHTML... Car ça n'est pas anodin ! Je me suis donc lancé
 dans la rédaction de ce document avec la volonté de construire une synthèse claire
-et complète !<br>
-<br>
-Depuis bien sûr, le paysage a bien évolué ! Le HTML 5 qui était alors défendu par
+et complète !</p>
+    <p>Depuis bien sûr, le paysage a bien évolué ! Le HTML 5 qui était alors défendu par
 le <a href="http://whatwg.org/">WhatWG</a> a été intégré dans les technologies du
 W3C, les navigateurs ont commencé à bien l'implémenter... La question ne se pose donc
 plus du tout de la même manière bien sûr ! Cependant, il reste utile de connaitre
 ces quelques subtilités.</p>
+</div>
 
 
 
