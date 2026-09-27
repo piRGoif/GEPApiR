@@ -713,6 +713,8 @@ BASH
     <li><strong>Copier / coller</strong>
         <ul>
             <li><kbd>y</kbd><kbd>y</kbd> ou <kbd>Y</kbd> yank line (copy)</li>
+            <li><kbd>3</kbd><kbd>y</kbd><kbd>y</kbd> copies de 3 lignes (courante + les 2 suivantes)</li>
+            <li><kbd>d</kbd><kbd>d</kbd> couper la ligne courante (idem que la copie, ajouter un chiffre pour indiquer un nombre de lignes)</li>
             <li><kbd>p</kbd> paste after</li>
             <li><kbd>P</kbd> paste before</li>
             <li><kbd>Y</kbd><kbd>P</kbd> / <kbd>Y</kbd><kbd>p</kbd> / <kbd>y</kbd><kbd>y</kbd><kbd>p</kbd> copy and paste line</li>
