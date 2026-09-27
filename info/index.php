@@ -81,6 +81,22 @@ require_once($RelBasePath . 'communs/dates.inc.php');
 
 
 
+<h2 id="inet">Internet</h2>
+
+<ul>
+	<li><a href="inet/css_grp.php">CSS : application de la même mise en forme sur plusieurs éléments (groupement, pré-processeurs, variables)</a></li>
+	<li><a href="inet/balises_auto_fermantes.php">HTML 5 : <code>&lt;br&gt;</code> ou <code>&lt;br/&gt;</code> ?</a></li>
+	<li>Que choisir : <a href="inet/html_ou_xhtml.php"><abbr title="HyperText Markup Language">HTML</abbr> ou <abbr title="eXtensible HyperText Markup Language">XHTML ?</abbr></a></li>
+	<li><a href="inet/outils.php">Outils pour le concepteur de site personnel (et plus)</a></li>
+	<li><a href="inet/ND_doctype.php">Développement Notes / Domino et Doctype HTML</a></li>
+</ul>
+
+
+
+<?=writeHR()?>
+
+
+
 <h2 id="GepapiR">La GepapiR côté technique</h2>
 
 <p>Quelques détails sur les techniques utilisées sur ce site... Pour la plupart des
@@ -97,21 +113,6 @@ développéees pour l'occasion. Ces articles sont un moyen d'apprendre ces techn
 	<li><a href="GEPApiR/toc_gen.php">Table des matières (TOC) dynamique</a></li>
 	<li><a href="GEPApiR/referencement.php">Référencement</a></li>
 	<li><a href="GEPApiR/link_target.php">Liens : option "ouverture dans une nouvelle fenêtre"</a></li>
-</ul>
-
-
-
-<?=writeHR()?>
-
-
-
-<h2 id="inet">Internet</h2>
-
-<ul>
-	<li><a href="inet/outils.php">Outils pour le concepteur de site personnel (et plus)</a></li>
-	<li>Que choisir : <a href="inet/html_ou_xhtml.php"><abbr title="HyperText Markup Language">HTML</abbr> ou <abbr title="eXtensible HyperText Markup Language">XHTML ?</abbr></a></li>
-	<li><a href="inet/css_grp.php">CSS : application de la même mise en forme sur plusieurs éléments (groupement, pré-processeurs, variables)</a></li>
-	<li><a href="inet/ND_doctype.php">Développement Notes / Domino et Doctype HTML</a></li>
 </ul>
 
 

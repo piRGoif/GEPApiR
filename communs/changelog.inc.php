@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-09-27', '9.2.0', [
+                'Informatique : nouvelle page "HTML 5 : &lt;br&gt; ou &lt;br/&gt; ?"'
+            ]),
             new ChangelogEntry('2026-09-27', '9.1.6', [
                 'Informatique Linux Shell : ajout fork neossh pour LazySSH',
                 'Informatique Linux Gnome : ajout extension "Always Show Titles In Overview"',
