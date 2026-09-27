@@ -1,4 +1,7 @@
 <?php ob_start('ob_gzhandler');
+$date_creation = "26/05/2012"; // avant le passage sur git, plus vieille date archivée sur Wayback Machine :/ 
+$date_maj = "26/09/2026";
+
 // NAVIGATION
 $RelBasePath = "../";
 $title = "Informatique [GEPApiR]";
@@ -14,6 +17,14 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 require_once('info_h1.inc');
 ?>
 </h1>
+
+
+
+<?
+require_once($RelBasePath . 'communs/dates.inc.php');
+?>
+
+
 
 <?= writeHR() ?>
 

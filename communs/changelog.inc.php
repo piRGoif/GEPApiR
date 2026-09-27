@@ -9,6 +9,15 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-09-27', '9.1.6', [
+                'Informatique Linux Shell : ajout fork neossh pour LazySSH',
+                'Informatique Linux Gnome : ajout extension "Always Show Titles In Overview"',
+                'Informatique Linux Gnome : ajout extension "System Monitor Next" et "GxLoad"',
+                'Informatique Linux Gnome : ajout raccourci clavier pour maximiser verticalement',
+                'Informatique Linux Commandes : petit refactor et compléments sur le ménage disque',
+                'Informatique Linux Commandes : compléments dans la section copier/coller de VI',
+                'Informatique HTML ou XHTML : ajout de callouts',
+            ]),
             new ChangelogEntry('2026-08-11', '9.1.5', [
                 'CSS : callouts note en violet',
                 'Informatique Linux Gnome : quelques corrections de typo et des reformulations',

@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "05/07/2026";
+$date_maj = "26/09/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -366,7 +366,10 @@ stat <fichier> # infos dont le type (fichier, répertoire, symlink), les dates, 
 BASH
 );?></code></pre>
 
-<h3 id="espace_disque">Stats espace disque</h3>
+
+<h3>Ménage disque</h3>
+
+<h4>Espace occupé</h4>
 
 <p>Espace disponible et occupé sur les différents points de montage :</p>
 
@@ -387,21 +390,20 @@ BASH
 
 <pre><code class="bash">du -Sm | sort -n</code></pre>
 
-<p>Stats sur les iNodes :</p>
+<p class="callout" data-variant="tip">
+    L'utilitaire TUI <a href="https://dev.yorhel.nl/ncdu">ncdu</a> est très pratique pour visualiser l'espace occupé dans une hiérarchie de répertoires.
+</p>
+
+<p>Stats sur les <a href="https://en.wikipedia.org/wiki/Inode">iNodes</a> :</p>
 
 <pre><code class="bash">df -i</code></pre>
 
-
-<h3>Ménage disque</h3>
+<h4>Commandes de suppression</h4>
 
 <p>Suppression de répertoire (paramètre <code>r</code>=récursif, <code>f</code>=force) :</p>
 
 <pre><code class="bash">rm -rf /my_directory</code></pre>
     
-<p class="callout" data-variant="tip">
-    L'utilitaire TUI <a href="https://dev.yorhel.nl/ncdu">ncdu</a> est très pratique pour visualiser l'espace occupé dans une hiérarchie de répertoires.
-</p>
-
 <p>Tâches de nettoyage à effectuer régulièrement :</p>
     
 <pre><code class="bash"><?echo htmlspecialchars(<<<'BASH'
@@ -412,10 +414,11 @@ du -sh /var/log
 docker system df # regarder en particulier build cache
 docker system prune # ⚠️attention va supprimer aussi les container arrêtés !
 docker builder prune --all # juste le build cache
-docker image prune -a
 docker volume prune
 
-docker images
+docker images -a # ou docker image list, paramètre -a = ajoute les intermédiaires et dandling (pas taggée et pas utilisée par un container)
+docker image prune -a
+
 docker rmi <id_ou_tag>
 
 # 3️⃣ apt
@@ -710,6 +713,8 @@ BASH
     <li><strong>Copier / coller</strong>
         <ul>
             <li><kbd>y</kbd><kbd>y</kbd> ou <kbd>Y</kbd> yank line (copy)</li>
+            <li><kbd>3</kbd><kbd>y</kbd><kbd>y</kbd> copies de 3 lignes (courante + les 2 suivantes)</li>
+            <li><kbd>d</kbd><kbd>d</kbd> couper la ligne courante (idem que la copie, ajouter un chiffre pour indiquer un nombre de lignes)</li>
             <li><kbd>p</kbd> paste after</li>
             <li><kbd>P</kbd> paste before</li>
             <li><kbd>Y</kbd><kbd>P</kbd> / <kbd>Y</kbd><kbd>p</kbd> / <kbd>y</kbd><kbd>y</kbd><kbd>p</kbd> copy and paste line</li>

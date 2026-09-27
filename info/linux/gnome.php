@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "11/08/2026";
+$date_maj = "26/09/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -72,8 +72,8 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <p>Voici donc les leçons que j'ai tirées de l'expérience, et les réglages et extensions que j'utilise avec bonheur au quotidien !</p>
 
 <figure>
-    <a href="gnome_screenshot_piR_2026-04.webp">
-        <img src="gnome_screenshot_piR_2026-04.webp" 
+    <a href="gnome_screenshot_piR_2026-09.webp">
+        <img src="gnome_screenshot_piR_2026-09.webp" 
             alt="Capture d'écran de mon bureau Gnome sous Debian 13" 
             class="pretty-img screenshot-img"
             width="1920" height="1080" data-responsive-img
@@ -139,6 +139,19 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "[]"
 </code></pre>
 
 <p class="callout" data-variant="info">Fil de discussion qui donne une solution avec l'utilitaire dconf : <a href="https://askubuntu.com/questions/1077037/ubuntu-18-04-keystroke-alt-shift-ctrl-down-does-not-work/1378045#1378045">unity - Ubuntu 18.04 Keystroke Alt + Shift + (Ctrl) + Down does not work - Ask Ubuntu</a></p>
+
+
+<h3 id="shortcuts_max_vert">⌨️ Configuration : ajouter un raccourci clavier pour maximiser verticalement</h3>
+
+<p>Sur windows, <kbd>Windows</kbd> + <kbd>Flèche haut</kbd> maximise la fenêtre courante verticalement. Sur Gnome, ce raccourci n'existe pas par défaut, et ce raccourci est assigné au déplacement de la fenêtre sur l'écran du haut. Comme je voulais conserver ce raccourci, j'en ai assigné un nouveau pour pouvoir maximiser verticalement la fenêtre courante.</p>
+
+<p>Dans les paramètres de Gnome :</p>
+
+<ul>
+    <li>Paramètres → Clavier → Raccourcis clavier → Voir et personnaliser les raccourcis</li>
+    <li>Section "Fenêtres" puis raccourci "Maximiser la fenêtre verticalement"</li>
+    <li>Raccourci = <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Maj</kbd> + <kbd>Flèche haut</kbd></li>
+</ul>
 
 
 <h3 id="shortcuts">⌨️ Raccourcis clavier utiles</h3>
@@ -376,6 +389,8 @@ Quelques astuces sur Dolphin :
     <dd><b>Ajoute le dash dans la top bar</b>. Utilisateur de Windows, j'aime pouvoir voir les applications ouvertes, et par conséquent savoir quel raccourci utiliser pour basculer sur quelle fenêtre (<kbd>Windows</kbd> + <kbd>chiffre</kbd>). Le dash ajouté par l'extension ressemble à une barre des tâches, avec surlignage des applications lancées, masquage du bouton activities, possibilité de configurer le clic sur l'icone pour alterner entre focus et réduction de l'application (ou même cycle entre les fenêtres de l'application s'il y en a plusieures)</dd>
     <dt><a href="https://extensions.gnome.org/extension/7065/tiling-shell/">Tiling Shell</a></dt>
     <dd>Permet de créer des <b>dispositions de fenêtres en tuiles</b> et de les appeler par une icone dans la top bar, ou simplement de déplacer une fenêtre dans une tuile par glisser / déposer vers un bord de l'écran comme sur Windows</dd>
+    <dt><a href="https://extensions.gnome.org/extension/1689/always-show-titles-in-overview/">Always Show Titles In Overview</a></dt>
+    <dd><b>Complète la vue Overview</b> pour toujours afficher le nom et l'icone de l'application (par défaut, c'ets uniquement au survol)</dd>
 </dl>
 
 
@@ -415,7 +430,11 @@ Quelques astuces sur Dolphin :
 
 <dl>
     <dt><a href="https://extensions.gnome.org/extension/6682/astra-monitor/">Astra Monitor</a></dt>
-    <dd><b>Des moniteurs système dans la top bar</b>, complètement personnalisables, et qui peuvent être repliés par défaut</dd>
+    <dd><b>Des moniteurs système dans la top bar</b>, complètement personnalisables, et qui peuvent être repliés par défaut. Mais... ils prennent quand même beaucoup de place !</dd>
+    <dt><a href="https://extensions.gnome.org/extension/3010/system-monitor-next/">system-monitor-next</a></dt>
+    <dd><b>Autres moniteurs système dans la top bar</b>, très personnalisables comme Astra... Mais ils prennent moins de place et ils sont plus jolis !</dd>
+    <dt><a href="https://extensions.gnome.org/extension/9067/gxload/">GXLoad</a></dt>
+    <dd><b>Ajout du load dans la top bar</b>, ainsi en un clin d'oeil on peut repérer si la machine est vraiment chargée</dd>
     <dt><a href="https://extensions.gnome.org/extension/595/autohide-battery/">Autohide battery</a></dt>
     <dd><b>Masque la batterie sur seuil</b></dd>
     <dt><a href="https://extensions.gnome.org/extension/5718/battery-indicator-icon/">Battery indicator icon</a></dt>

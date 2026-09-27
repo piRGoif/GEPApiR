@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "22/07/2026";
+$date_maj = "26/09/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -344,6 +344,11 @@ Exemple d'usage :</p>
 
 <p class="callout" data-variant="info">
     À récupérer sur GitHub : <a href="https://github.com/Adembc/lazyssh">Adembc/lazyssh: A terminal-based SSH manager inspired by lazydocker and k9s - Written in go</a>
+</p>
+
+<p class="callout" data-variant="note">
+    Note de septembre 2026 : un fork a été créé car effectivement le dépôt initial n'a plus d'activité. Ce fork a déjà remonté beaucoup de nouveautés&nbsp;!<br>
+    Il est disponible ici : <a href="https://github.com/WhiteRoseLK/neossh">GitHub - WhiteRoseLK/neossh: An actively maintained fork and continuation of lazyssh by @Adembc · GitHub</a>
 </p>
 
 
