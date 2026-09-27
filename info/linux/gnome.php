@@ -72,8 +72,8 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <p>Voici donc les leçons que j'ai tirées de l'expérience, et les réglages et extensions que j'utilise avec bonheur au quotidien !</p>
 
 <figure>
-    <a href="gnome_screenshot_piR_2026-04.webp">
-        <img src="gnome_screenshot_piR_2026-04.webp" 
+    <a href="gnome_screenshot_piR_2026-09.webp">
+        <img src="gnome_screenshot_piR_2026-09.webp" 
             alt="Capture d'écran de mon bureau Gnome sous Debian 13" 
             class="pretty-img screenshot-img"
             width="1920" height="1080" data-responsive-img
@@ -417,7 +417,11 @@ Quelques astuces sur Dolphin :
 
 <dl>
     <dt><a href="https://extensions.gnome.org/extension/6682/astra-monitor/">Astra Monitor</a></dt>
-    <dd><b>Des moniteurs système dans la top bar</b>, complètement personnalisables, et qui peuvent être repliés par défaut</dd>
+    <dd><b>Des moniteurs système dans la top bar</b>, complètement personnalisables, et qui peuvent être repliés par défaut. Mais... ils prennent quand même beaucoup de place !</dd>
+    <dt><a href="https://extensions.gnome.org/extension/3010/system-monitor-next/">system-monitor-next</a></dt>
+    <dd><b>Autres moniteurs système dans la top bar</b>, très personnalisables comme Astra... Mais ils prennent moins de place et ils sont plus jolis !</dd>
+    <dt><a href="https://extensions.gnome.org/extension/9067/gxload/">GXLoad</a></dt>
+    <dd><b>Ajout du load dans la top bar</b>, ainsi en un clin d'oeil on peut repérer si la machine est vraiment chargée</dd>
     <dt><a href="https://extensions.gnome.org/extension/595/autohide-battery/">Autohide battery</a></dt>
     <dd><b>Masque la batterie sur seuil</b></dd>
     <dt><a href="https://extensions.gnome.org/extension/5718/battery-indicator-icon/">Battery indicator icon</a></dt>

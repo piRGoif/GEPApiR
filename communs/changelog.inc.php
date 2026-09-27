@@ -12,6 +12,7 @@ class GepapirChangelog {
             new ChangelogEntry('2026-09-27', '9.1.6', [
                 'Informatique Linux Shell : ajout fork neossh pour LazySSH',
                 'Informatique Linux Gnome : ajout extension "Always Show Titles In Overview"',
+                'Informatique Linux Gnome : ajout extension "System Monitor Next" et "GxLoad"',
             ]),
             new ChangelogEntry('2026-08-11', '9.1.5', [
                 'CSS : callouts note en violet',
