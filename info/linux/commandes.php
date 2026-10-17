@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "26/09/2026";
+$date_maj = "17/10/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -425,8 +425,18 @@ docker rmi <id_ou_tag>
 sudo apt autoremove
 sudo apt autoclean
 # on peut avoir par exemple sa partition /boot qui déborde suite à une maj de noyau
+
+# 4️⃣ autre
+rm -rf ~/.local/share/Trash/* # corbeille (Debian)
+uv cache clean && pip cache purge
 BASH
 );?></code></pre>
+
+
+<div class="callout" data-variant="tip">
+    <p>Si vous utilisez un IDE Jetbrains (PHPStorm, PyCharm, ...) alors allez voir dans <a href="https://www.jetbrains.com/toolbox-app/">Jetbrains Toolbox</a> : Menu → Paramètres → Outils</p>
+    <p>Une question de la FAQ détaille tout ça : <a href="https://www.jetbrains.com/help/toolbox-app/frequently-asked-questions.html#way-to-reduce-disk-space-usage">Is there a way to reduce the Toolbox App’s disk space usage?</a></p>
+</div>
 
 
 
