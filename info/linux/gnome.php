@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/10/2025";
-$date_maj = "26/09/2026";
+$date_maj = "17/10/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -39,9 +39,9 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <h2>Introduction</h2>
 
-<p>
-    Arrivant dans la société <a href="https://www.algoo.fr/">Algoo</a> en juillet 2025, j'ai été équipé d'un poste Debian 13 avec un gestionnaire de fenêtres Gnome. Et... habitué à KDE, mes débuts ont été difficiles ! Effectivement les possibilités de configuration sont limitées et pas forcément évidentes à trouver, et il y a une miriade d'extensions... Alors voilà ce que j'ai appris, ou plutôt ce que j'aurais savoir avant de débuter :)
-</p>
+<p>🤔Arrivant dans la société <a href="https://www.algoo.fr/">Algoo</a> en juillet 2025, j'ai été équipé d'un poste Debian 13 avec un gestionnaire de fenêtres Gnome. Et... habitué à KDE, mes débuts ont été difficiles !</p>
+<p>😓Effectivement les possibilités de configuration sont limitées et pas forcément évidentes à trouver, et il y a une myriade d'extensions...</p>
+<p>➡️Alors voilà ce que j'ai appris, ou plutôt ce que j'aurais aimé savoir avant de débuter :)</p>
 
 
 <h3 id="procons">Avantages / inconvénients de Gnome</h3>
@@ -49,7 +49,7 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <p>Mais... pourquoi ne pas être simplement retourné à KDE ? Hé bien, l'expérience avec cet autre gestionnaire de fenêtres est quand même fort sympathique !<p>
     
 
-<p class="callout" data-variant="info">Si jamais vous n'êtes pas familier des termes utilisés dans l'interface de Gnome et vu que plusieurs seront cités ici, aller voir cette page qui donne une bonne introduction : <a href="https://help.ubuntu.com/stable/ubuntu-help/shell-introduction.html.en">Visual overview of GNOME</a></p>
+<p class="callout" data-variant="info">Si jamais vous n'êtes pas familier des termes utilisés dans l'interface de Gnome et vu que plusieurs seront cités ici, allez voir cette page qui donne une bonne introduction : <a href="https://help.ubuntu.com/stable/ubuntu-help/shell-introduction.html.en">Visual overview of GNOME</a></p>
 
 <p>Les plus/moins pour moi :</p>
 
@@ -143,7 +143,16 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "[]"
 
 <h3 id="shortcuts_max_vert">⌨️ Configuration : ajouter un raccourci clavier pour maximiser verticalement</h3>
 
-<p>Sur windows, <kbd>Windows</kbd> + <kbd>Flèche haut</kbd> maximise la fenêtre courante verticalement. Sur Gnome, ce raccourci n'existe pas par défaut, et ce raccourci est assigné au déplacement de la fenêtre sur l'écran du haut. Comme je voulais conserver ce raccourci, j'en ai assigné un nouveau pour pouvoir maximiser verticalement la fenêtre courante.</p>
+<p>🪟 Sur <strong>Windows</strong>, <kbd>Windows</kbd> + <kbd>Flèche haut</kbd> maximise la fenêtre courante verticalement.<p>
+
+<p>🐧Sur <strong>Gnome</strong> :</p>
+
+<ul>
+    <li>ce raccourci est assigné au déplacement de la fenêtre sur l'écran du haut</li>
+    <li>l'action "maximiser la fenêtre verticalement" n'est pas assignée par défaut</li>
+</ul>
+
+<p>Comme je voulais conserver le raccourci Gnome existant, j'en ai assigné un nouveau pour pouvoir maximiser verticalement la fenêtre courante.</p>
 
 <p>Dans les paramètres de Gnome :</p>
 
