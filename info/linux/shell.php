@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "05/11/2025";
-$date_maj = "26/09/2026";
+$date_maj = "17/10/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -326,29 +326,28 @@ Exemple d'usage :</p>
 </p>
 
 
-<h3 id="lazyssh">Lazy SSH</h3>
+<h3 id="neossh">neossh</h3>
 
 <p>Une interface qui permet de visualiser, créer, trier, chercher, supprimer des hôtes SSH, et bien sûr de lancer une connexion ! Il y a même un système de tags qui permet de catégoriser les entrées, et la gestion du port forwarding !</p>
 
 <figure>
-    <a href="tui_lazyssh.webp">
+    <a href="tui_neossh.webp">
         <img 
-            src="tui_lazyssh.webp" 
-            alt="Capture d'écran de Lazy SSH en action"
+            src="tui_neossh.webp" 
+            alt="Capture d'écran de neossh en action"
             class="pretty-img screenshot-img"
-            width="1892" height="1040" data-responsive-img
+            width="1579" height="886" data-responsive-img
         >
     </a>
-    <figcaption>Capture d'écran de Lazy SSH en action</figcaption>
+    <figcaption>Capture d'écran de neossh en action</figcaption>
 </figure>
 
 <p class="callout" data-variant="info">
-    À récupérer sur GitHub : <a href="https://github.com/Adembc/lazyssh">Adembc/lazyssh: A terminal-based SSH manager inspired by lazydocker and k9s - Written in go</a>
+    À récupérer sur GitHub : <a href="https://github.com/WhiteRoseLK/neossh">GitHub - WhiteRoseLK/neossh: An actively maintained fork and continuation of lazyssh by @Adembc · GitHub</a>
 </p>
 
 <p class="callout" data-variant="note">
-    Note de septembre 2026 : un fork a été créé car effectivement le dépôt initial n'a plus d'activité. Ce fork a déjà remonté beaucoup de nouveautés&nbsp;!<br>
-    Il est disponible ici : <a href="https://github.com/WhiteRoseLK/neossh">GitHub - WhiteRoseLK/neossh: An actively maintained fork and continuation of lazyssh by @Adembc · GitHub</a>
+    Note de octobre 2026 : neossh est un fork de Lazy SSH (<a href="https://github.com/Adembc/lazyssh">Adembc/lazyssh: A terminal-based SSH manager inspired by lazydocker and k9s - Written in go</a>). Le fork a été créé car Lazy SSH n'avait plus d'activité depuis 1 an, et c'est toujours le cas... Et à contratio le développement de neossh est très actif !
 </p>
 
 

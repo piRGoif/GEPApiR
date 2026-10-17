@@ -11,6 +11,7 @@ class GepapirChangelog {
         return [
             new ChangelogEntry('2026-10-14', '9.2.0', [
                 'Informatique : nouvelle page "HTML 5 : &lt;br&gt; ou &lt;br/&gt; ?"',
+                'Informatique Linux Shell : remplacement de Lazy SSH par neossh',
                 'GEPApiR CSS : gestion des p dans les callouts, amélioration du positionnement de l\'emoji',
             ]),
             new ChangelogEntry('2026-09-27', '9.1.6', [
