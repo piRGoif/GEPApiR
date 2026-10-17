@@ -1,6 +1,6 @@
 <?php ob_start('ob_gzhandler');
 $date_creation = "26/09/2006";
-$date_maj = "14/10/2026";
+$date_maj = "17/10/2026";
 
 // NAVIGATION
 $RelBasePath = "../../";
@@ -42,11 +42,15 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 
 <h2>Introduction</h2>
 
-<p>Plusieurs fois ces derniers temps j'ai rencontré des développeurs qui considéraient qu'il faut un slash finales sur les balises sans contenu comme &lt;br>.</p>
+<p>✅ <code>&lt;br/></code><br>
+Plusieurs fois ces derniers temps j'ai rencontré des développeurs qui considéraient qu'il est obligatoire d'ajouter un slash final sur les balises sans contenu  (balises auto-fermantes).</p>
 
-<p>Moi qui ait connu les égarements du W3C avec XHTML (et donc entre autre joyeusetés l'obligation de ces slash final de partout), l'apparition de HTML 5 au sein du WhatWG puis son adoption fulgurante par l'industrie et enfin sa reprise par le W3C et la disparition de XHTML, j'étais persuadé du contraire...</p>
+<p>🚫 <code>&lt;br></code><br>
+Moi qui ait connu les égarements du W3C avec XHTML (et donc entre autre joyeusetés l'obligation de ces slash final de partout), et en réaction l'apparition de HTML 5 au sein du WhatWG puis son adoption fulgurante par l'industrie et enfin sa reprise par le W3C et la disparition de XHTML, j'étais persuadé du contraire...</p>
 
-<p>Alors, en HTML 5 on ferme toutes les balises ou pas ?</p>
+<p>🤔❓<br>
+Alors, en HTML 5 on ferme toutes les balises ou pas ?<br>
+<i>Vous allez voir, la réponse n'est pas si simple, et vous risquez d'apprendre des choses importantes !</i></p>
 
 
 
@@ -57,14 +61,11 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <h2>Validateur W3C</h2>
 
 <div class="callout" data-variant="info">
-	<p>Le W3C est le consortium international responsable de la standardisation du web. Ils fournissent un outil de validation du HTML disponible sur <a href="https://validator.w3.org/">https://validator.w3.org/</a>.</p>
+	<p>Le W3C est le consortium international responsable de la standardisation du web.<br>
+	Il fournit un outil de validation du HTML disponible sur <a href="https://validator.w3.org/">https://validator.w3.org/</a>.</p>
 	<p>On en apprend plus sur <a href="https://validator.w3.org/docs/about.html">la page "about"</a> de l'outil :</p>
 	<blockquote cite="https://validator.w3.org/docs/about.html" lang="en">
 		<p>Most Web documents are written using markup languages, such as HTML or XHTML. These languages are defined by technical specifications, which usually include a machine-readable formal grammar (and vocabulary). The act of checking a document against these constraints is called validation, and this is what the Markup Validator does.</p>
-	</blockquote>
-	<p>Voir aussi dans la page d'aide, la question <a href="https://validator.w3.org/docs/help.html#validandconform">Is validity the same thing as conformance?</a></p>
-	<blockquote cite="https://validator.w3.org/docs/help.html#validandconform" lang="en">
-		<p>Markup languages are defined in technical specifications, which generally include a formal grammar. A document is valid when it is correctly written in accordance to the formal grammar, whereas conformance relates to the specification itself. The two might be equivalent, but in most cases, some conformance requirements cannot be expressed in the grammar, making validity only a part of the conformance.</p>
 	</blockquote>
 </div>
 
@@ -117,7 +118,7 @@ HTML
 
 <h3>Conclusion</h3>
 
-<p><strong>Dans les 2 cas le code HTML est validé</strong>, que ce soit sans slash final ou avec. Cependant, lorsqu'il est présent le validateur indique un potentiel problème, qui parait facile à éviter...</p>
+<p>✨<strong>Dans les 2 cas le code HTML est validé</strong>, que ce soit sans slash final ou avec. Cependant, lorsqu'il est présent le validateur indique un potentiel problème, mais qui parait facile à éviter...</p>
 
 
 
@@ -127,7 +128,17 @@ HTML
 
 <h2>Specifications W3C</h2>
 
-<p><strong>Si les deux formes de balises sont valides 🤔, que disent les spécifications ?</strong></p>
+<div class="callout" data-variant="warning">
+	<p>Dans la page d'aide du validateur, on retrouve la question <a href="https://validator.w3.org/docs/help.html#validandconform">Is validity the same thing as conformance?</a></p>
+	<blockquote cite="https://validator.w3.org/docs/help.html#validandconform" lang="en">
+		<p>Markup languages are defined in technical specifications, which generally include a formal grammar. A document is valid when it is correctly written in accordance to the formal grammar, whereas conformance relates to the specification itself. The two might be equivalent, but in most cases, some conformance requirements cannot be expressed in the grammar, making validity only a part of the conformance.</p>
+	</blockquote>
+	<p>➡️ Bref, le validateur c'est une chose, mais il faut aussi aller fouiller les spécifications !</p>
+</div>
+
+
+<hr>
+
 
 <h3>HTML 4</h3>
 
@@ -137,13 +148,26 @@ HTML
 	HTML 4 is an SGML application conforming to International Standard ISO 8879
 </blockquote>
 
-<p>Le fait de ne pas avoir de tag auto-fermant est indiqué ici <a href="https://www.w3.org/TR/html401/intro/sgmltut.html#h-3.2.1">https://www.w3.org/TR/html401/intro/sgmltut.html#h-3.2.1</a> :</p>
+<p>Le fait de ne pas avoir de tag auto-fermant est indiqué dans la page <a href="https://www.w3.org/TR/html401/intro/sgmltut.html#h-3.2.1">https://www.w3.org/TR/html401/intro/sgmltut.html#h-3.2.1</a> :</p>
 
 <blockquote>
 	Some HTML element types allow authors to omit end tags (e.g., the P and LI element types). A few element types also allow the start tags to be omitted; for example, HEAD and BODY. The HTML DTD indicates for each element type whether the start tag and end tag are required.
 </blockquote>
 
 <p class="callout" data-variant="info">Et sur la <a href="https://www.w3.org/TR/html401/index/elements.html">liste des éléments HTML 4</a> on retrouve la catégorie "Empty"</p>
+
+<h4>Fin de HTML 4</h4>
+
+<div class="callout" data-variant="warning">
+	<p>Le développement de HTML 4 est arrêté depuis 2018, cf section "history" du standard :</p>
+	<ul>
+		<li><a href="https://www.w3.org/standards/history/html40/">HTML 4.0 Recommendation publication history | Standards | W3C</a></li>
+		<li><a href="https://www.w3.org/standards/history/html401/">HTML 4.01 Specification publication history | Standards | W3C</a></li>
+	</ul>
+</div>
+
+
+<hr>
 
 
 <h3>XHTML</h3>
@@ -172,26 +196,28 @@ HTML
 
 <h4>Fin de XHTML</h4>
 
-<div class="callout" data-variant="note">
-<p>Le W3C a annoncé en 2007 fermer son groupe de travail XHTML, comme on peut le voir <a href="https://www.w3.org/2009/06/xhtml-faq.html">dans la FAQ</a> :</p>
-
-<blockquote>
-	While we recognize the value of the XHTML 2 Working Group's contributions over the years, after discussion with the participants, W3C management has decided to allow the Working Group's charter to expire at the end of 2009 and not to renew it.
-</blockquote>
+<div class="callout" data-variant="warning">
+	<p>Le W3C a annoncé en 2007 fermer son groupe de travail XHTML 2, comme on peut le voir <a href="https://www.w3.org/2009/06/xhtml-faq.html">dans la FAQ</a> :</p>
+	<blockquote>
+		While we recognize the value of the XHTML 2 Working Group's contributions over the years, after discussion with the participants, W3C management has decided to allow the Working Group's charter to expire at the end of 2009 and not to renew it.
+	</blockquote>
+	<p>Le dernier document du groupe de travail (<a href="https://www.w3.org/TR/2010/NOTE-xhtml2-20101216/">XHTML™ 2.0</a> en décembre 2010) contient dans son introduction :</p>
+	<blockquote>
+		<p>The XHTML2 Working Group's charter expired before it could complete work on this document. It is possible that the work will be continued by another group in the future</p>
+	</blockquote>
+	<p>Les 3 spécifications ont été passées en statut "retired" :</p>
+	<ul>
+		<li>2010 : <a href="https://www.w3.org/standards/history/xhtml2/">XHTML™ 2.0 publication history | Standards | W3C</a></li>
+		<li>2018 : <a href="https://www.w3.org/standards/history/xhtml11/">XHTML™ 1.1 - Module-based XHTML - Second Edition publication history | Standards | W3C</a></li>
+		<li>2018 : <a href="https://www.w3.org/standards/history/xhtml1/">XHTML™ 1.0 The Extensible HyperText Markup Language (Second Edition) publication history | Standards | W3C</a></li>
+	</ul>
 </div>
+
+
+<hr>
 
 
 <h3 id="html5">HTML 5</h3>
-
-<div class="callout" data-variant="note">
-	<p>Depuis 2019, les specs du HTML 5 ne sont plus hébergées par le W3C mais sur le site dédié <a href="https://html.spec.whatwg.org/">HTML Standard</a>.</p>
-	<p>Pour les détails voir les documents suivants :</p>
-	<ul>
-		<li><a href="https://www.w3.org/news/2019/w3c-and-the-whatwg-have-just-signed-an-agreement-to-collaborate-on-the-development-of-a-single-version-of-the-html-and-dom-specifications/">W3C and the WHATWG signed an agreement to collaborate on a single version of HTML and DOM | 2019 | News | W3C</a>
-		<li><a href="https://html.spec.whatwg.org/multipage/introduction.html#history-2">HTML Standard - History</a>
-		<li><a href="https://whatwg.org/faq">FAQ — WHATWG</a>
-	</ul>
-</div>
 
 <h4>HTML 5 : du SGML ou du XHTML ?</h4>
 
@@ -207,7 +233,7 @@ HTML
 	Doctypes from earlier versions of HTML were longer because the HTML language was SGML-based and therefore required a reference to a DTD. This is no longer the case
 </blockquote>
 
-<p class="callout" data-variant="note">Notez que l'ensemble de ce document ne contient aucune référence ni à SGML ni à XML !</p>
+<p class="callout" data-variant="note">Notez que l'ensemble de ce document ne contient <strong>aucune référence ni à SGML ni à XML</strong> !</p>
 
 
 <h4>Information du validateur W3C</h4>
@@ -233,6 +259,31 @@ HTML
 </blockquote>
 
 <p class="callout" data-variant="note">En HTML 4 la spécification ne parle pas de "Void Elements" mais de "Empty Elements" (notion SGML).</p>
+
+
+<h4>HTML 5, c'est du passé ?</h4>
+
+<p class="callout" data-variant="warning">HTML 5 n'est plus développé (statut "retired") depuis 2018 : <a href="https://www.w3.org/standards/history/html5/">HTML5 publication history | Standards | W3C</a></p>
+
+
+<hr>
+
+
+<h3>HTML aujourd'hui ?</h3>
+
+<div class="callout" data-variant="info">
+	<p>Alors que le développement de HTML 4, XHTML et HTML 5 sont arrêtés, les travaux sur les évolutions de HTML se poursuivent cependant !<br>
+	Mais sous le nom de "<strong>Living Standard</strong>".</p>
+	
+	<p>Voir :</p>
+	
+	<ul>
+		<li>L'annonce officielle datée de... 2011 : <a href="https://blog.whatwg.org/html-is-the-new-html5">The WHATWG Blog — HTML is the new HTML5</a></li>
+		<li>Billet du W3C de 2019 précisant la répartition du travail entre W3C et WhatWG : <a href="https://www.w3.org/blog/2019/w3c-and-whatwg-to-work-together-to-advance-the-open-web-platform/">W3C and WHATWG to work together to advance the open Web platform | 2019 | Blog | W3C</a></li>
+		<li>Section "history" du Living Standard : <a href="https://html.spec.whatwg.org/multipage/introduction.html#history-2">HTML Standard</a></li>
+		<li><a href="https://whatwg.org/faq">FAQ — WHATWG</a></li>
+	</ul>
+</div>
 
 
 
