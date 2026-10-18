@@ -43,14 +43,15 @@ require_once($RelBasePath . 'communs/toc/toc-html.inc.html');
 <h2>Introduction</h2>
 
 <p>✅ <code>&lt;br/></code><br>
-Plusieurs fois ces derniers temps j'ai rencontré des développeurs qui considéraient qu'il est obligatoire d'ajouter un slash final sur les balises sans contenu  (balises auto-fermantes).</p>
+Plusieurs fois ces derniers temps j'ai rencontré des développeurs qui considéraient que en HTML 5 il est obligatoire d'ajouter un slash final sur les balises sans contenu  (balises auto-fermantes).</p>
 
 <p>🚫 <code>&lt;br></code><br>
 Moi qui ait connu les égarements du W3C avec XHTML (et donc entre autre joyeusetés l'obligation de ces slash final de partout), et en réaction l'apparition de HTML 5 au sein du WhatWG puis son adoption fulgurante par l'industrie et enfin sa reprise par le W3C et la disparition de XHTML, j'étais persuadé du contraire...</p>
 
 <p>🤔❓<br>
-Alors, en HTML 5 on ferme toutes les balises ou pas ?<br>
-<i>Vous allez voir, la réponse n'est pas si simple, et vous risquez d'apprendre des choses importantes !</i></p>
+Alors, en HTML 5 on ferme toutes les balises ou pas ?</p>
+
+<p><i>Vous allez voir, la réponse n'est pas si simple, et vous risquez d'apprendre des choses intéressantes !</i></p>
 
 
 
@@ -133,7 +134,7 @@ HTML
 	<blockquote cite="https://validator.w3.org/docs/help.html#validandconform" lang="en">
 		<p>Markup languages are defined in technical specifications, which generally include a formal grammar. A document is valid when it is correctly written in accordance to the formal grammar, whereas conformance relates to the specification itself. The two might be equivalent, but in most cases, some conformance requirements cannot be expressed in the grammar, making validity only a part of the conformance.</p>
 	</blockquote>
-	<p>➡️ Bref, le validateur c'est une chose, mais il faut aussi aller fouiller les spécifications !</p>
+	<p>➡️ Bref, le validateur c'est une chose, mais il faut aussi aller fouiller les spécifications ! Allons y !</p>
 </div>
 
 
