@@ -9,6 +9,9 @@ class GepapirChangelog {
     public static function getChangelogEntries()
     {
         return [
+            new ChangelogEntry('2026-10-18', '9.2.2', [
+                'Corrections de prb de validation HTML',
+            ]),
             new ChangelogEntry('2026-10-18', '9.2.1', [
                 'Informatique : "HTML 5 : &lt;br&gt; ou &lt;br/&gt; ?" petites corrections',
             ]),

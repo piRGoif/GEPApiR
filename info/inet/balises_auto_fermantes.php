@@ -19,7 +19,7 @@ require_once($RelBasePath . 'communs/header2.inc.php');
 require_once('../info_h1.inc');
 ?>
 <br>
-HTML5 : <code>&lt;br&gt;</code> ou <code>&lt;br/&gt;</code> ?</h1>
+HTML5 : <code>&lt;br&gt;</code> ou <code>&lt;br/&gt;</code> ?
 </h1>
 
 

@@ -112,7 +112,7 @@ Ci dessous les dernières mises à jour sur le site :
 </p>
 
 <p class="callout" data-variant="tip">
-    Elles sont également <a href="rss.php">disponibles en RSS <img src="images/feed-icon.gif"></a> !
+    Elles sont également <a href="rss.php">disponibles en RSS <img src="images/feed-icon.gif" alt="RSS feed icon"></a> !
 </p>
 
 <?
